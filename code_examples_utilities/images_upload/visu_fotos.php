@@ -3,15 +3,15 @@ if(!empty($_GET['id'])){
     //DB details
     $dbHost     = 'localhost';
     $dbUsername = 'root';
-    $dbPassword = '*****';
-    $dbName     = 'programacionnet';
+    $dbPassword = '';
+    $dbName     = 'repo_test';
     
     //Create connection and select DB
     $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
     
     //Check connection
     if($db->connect_error){
-       die("Connection failed: " . $db->connect_error);
+       die("Conexión fallida: " . $db->connect_error);
     }
     
     //Get image data from database
@@ -24,7 +24,7 @@ if(!empty($_GET['id'])){
         header("Content-type: image/jpg"); 
         echo $imgData['image']; 
     }else{
-        echo 'Image not found...';
+        echo 'Imagen no encontrada...';
     }
 }
 ?>

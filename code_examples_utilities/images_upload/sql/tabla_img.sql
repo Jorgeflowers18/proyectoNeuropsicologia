@@ -1,3 +1,4 @@
+CREATE TABLE `usuarios`
 CREATE TABLE `images` (
  `id` int(11) NOT NULL AUTO_INCREMENT,
  `image` longblob NOT NULL,

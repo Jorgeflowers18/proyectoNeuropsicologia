@@ -12,15 +12,15 @@ if(isset($_POST["submit"])){
         //DB details
         $dbHost     = 'localhost';
         $dbUsername = 'root';
-        $dbPassword = '*****';
-        $dbName     = 'programacionnet';
+        $dbPassword = '';
+        $dbName     = 'repo_test';
         
         //Create connection and select DB
         $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
         
         // Check connection
         if($db->connect_error){
-            die("Connection failed: " . $db->connect_error);
+            die("Conexión fallida: " . $db->connect_error);
         }
         
         $dataTime = date("Y-m-d H:i:s");
@@ -28,9 +28,9 @@ if(isset($_POST["submit"])){
         //Insert image content into database
         $insert = $db->query("INSERT into images (image, created) VALUES ('$imgContent', '$dataTime')");
         if($insert){
-            echo "File uploaded successfully.";
+            echo "Archivo cargado con éxito.";
         }else{
-            echo "File upload failed, please try again.";
+            echo "Carga de archivo fallido. Inténtelo de nuevo.";
         } 
     }else{
         echo "Please select an image file to upload.";
