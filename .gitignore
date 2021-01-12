@@ -1,0 +1,17 @@
+joomla/administrator/
+joomla/bin/
+joomla/cache/
+joomla/cli/
+joomla/includes/
+joomla/language/
+joomla/layouts/
+joomla/libraries/
+joomla/media/
+joomla/tmp/
+joomla/configuration.php
+joomla/htaccess.txt
+joomla/index.php
+joomla/LICENSE.txt
+joomla/README.txt
+joomla/robots.txt
+joomla/web.config.txt
