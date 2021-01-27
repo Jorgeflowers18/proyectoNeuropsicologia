@@ -1,3 +1,5 @@
+
+
 #sp-texto{
     background: rgb(246, 142, 19);
     padding: 40px;
@@ -6,9 +8,14 @@
 #sp-caracteristica{
     padding: 40px;
 }
-#sp-slider{
-    display: flex;
+
+
+#sp-caracteristica{
+    border-color: azure;
+    box-shadow: 23px;
+    
 }
+
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors

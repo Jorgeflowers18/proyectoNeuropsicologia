@@ -149,6 +149,6 @@ if ($custom_js = $this->params->get('custom_js'))
     <?php if ($this->params->get('goto_top', 0)) : ?>
         <a href="#" class="sp-scroll-up" aria-label="Scroll Up"><span class="fa fa-chevron-up" aria-hidden="true"></span></a>
     <?php endif; ?>
-    <div align="center"><a target="_blank" href="https://enginetemplates.com/free-joomla-templates/" title="Free Joomla! templates by Engine Templates">Free Joomla! templates</a> by <a href="https://enginetemplates.com/" target="_blank" title="Joomla templates & Wordpress themes Marketplace">Engine Templates</a></div>
+   
     </body>
 </html>
