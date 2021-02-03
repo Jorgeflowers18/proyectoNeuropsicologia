@@ -109,7 +109,7 @@ ul.social-icons > li {
   margin: 0 3px;
 }
 #sp-header {
-  height: 73px;
+  height: 60px;
   left: 0;
   position: relative;
   top: 0;
@@ -118,7 +118,7 @@ ul.social-icons > li {
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.10);
 }
 #sp-header .logo {
-  height: 73px;
+  height: 60px;
   display: inline-flex;
   margin: 0;
   align-items: center;
@@ -1099,7 +1099,7 @@ input[type="text"]:not(.form-control):focus, input[type="email"]:not(.form-contr
 .sp-megamenu-parent > li > a, .sp-megamenu-parent > li > span {
   display: inline-block;
   padding: 0 15px;
-  line-height: 73px;
+  line-height: 60px;
   font-size: 14px;
   margin: 0;
 }
@@ -1280,8 +1280,8 @@ input[type="text"]:not(.form-control):focus, input[type="email"]:not(.form-contr
 }
 #offcanvas-toggler {
   display: block;
-  height: 73px;
-  line-height: 73px;
+  height: 60px;
+  line-height: 60px;
   font-size: 20px;
 }
 #offcanvas-toggler > span:hover {
