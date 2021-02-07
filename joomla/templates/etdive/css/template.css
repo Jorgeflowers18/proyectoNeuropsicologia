@@ -181,17 +181,10 @@ ul.social-icons > li {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 #sp-main-body {
-  padding: 25px 0;
+  padding: 100px 0;
 }
 .com-sppagebuilder #sp-main-body {
   padding: 0;
-}
-#sp-informacion{
-    background-color: rgb(246, 142, 19);
-    padding: 40px;
-}
-#sp-descripcion{
-    padding: 50px;
 }
 #sp-left .sp-module, #sp-right .sp-module {
   margin-top: 50px;
