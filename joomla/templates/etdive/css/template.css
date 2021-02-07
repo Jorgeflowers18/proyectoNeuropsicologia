@@ -181,7 +181,7 @@ ul.social-icons > li {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 #sp-main-body {
-  padding: 100px 0;
+  padding: 25px 0;
 }
 .com-sppagebuilder #sp-main-body {
   padding: 0;
@@ -206,6 +206,13 @@ ul.social-icons > li {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+#sp-informacion{
+    padding: 40px;
+    background-color: rgb(246, 142, 19);
+}
+#sp-descripcion{
+    padding: 40px;
 }
 #sp-left .sp-module ul > li, #sp-right .sp-module ul > li {
   display: block;
