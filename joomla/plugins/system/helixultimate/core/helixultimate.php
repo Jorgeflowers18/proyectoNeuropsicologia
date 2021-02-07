@@ -12,8 +12,6 @@ jimport('joomla.filesystem.file');
 jimport('joomla.filesystem.folder');
 jimport('joomla.filter.filteroutput');
 
-use Joomla\Utilities\ArrayHelper;
-
 class HelixUltimate
 {
     public $params;
@@ -148,7 +146,7 @@ class HelixUltimate
 
         if($view == 'form' && $layout == 'edit')
         {
-            $doc->addStylesheet( \JURI::root(true) . '/plugins/system/helixultimate/assets/css/frontend-edit.css');
+            $doc->addStylesheet(JURI::root(true) . '\plugins/system/helixultimate/assets/css/frontend-edit.css');
         }
         
         $this->add_js('popper.min.js, bootstrap.min.js');
@@ -367,16 +365,10 @@ class HelixUltimate
 
         foreach ($row->attr as $key => &$column)
         {
-            $column->settings->disable_modules = isset($column->settings->name) ? $this->disable_details_page_modules( $column->settings->name ) : false;
-
             if (!$column->settings->column_type)
             {
                 if (!$this->count_modules($column->settings->name))
                 {
-                    $inactive_col += $column->settings->grid_size;
-                    unset($row->attr[$key]);
-                }
-                if( $column->settings->disable_modules && $this->count_modules($column->settings->name) ){
                     $inactive_col += $column->settings->grid_size;
                     unset($row->attr[$key]);
                 }
@@ -570,17 +562,6 @@ class HelixUltimate
         return ($this->doc->countModules($position) or $this->has_feature($position));
     }
 
-    /**
-     * Disable module only from article page
-     * Type: @feature
-     */
-    private function disable_details_page_modules( $position ){
-        $article_and_disable = ($this->app->input->get('view') == 'article' && $this->params->get('disable_module'));
-        $match_positions = $position == 'left' || $position == 'right';
-
-        return ($article_and_disable && $match_positions);
-    }
-
     private function has_feature($position)
     {
         if (in_array($position, $this->in_positions))
@@ -752,7 +733,7 @@ class HelixUltimate
 
                 if (!in_array($font->fontFamily, $systemFonts))
                 {
-                    $fontUrl = '//fonts.googleapis.com/css?family='. str_replace(' ', '+', $font->fontFamily) .':100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap';
+                    $fontUrl = '//fonts.googleapis.com/css?family='. $font->fontFamily .':100,100i,300,300i,400,400i,500,500i,700,700i,900,900i';
                 
                     if (isset($font->fontSubset) && $font->fontSubset)
                     {
@@ -782,20 +763,6 @@ class HelixUltimate
 
                 $fontCSS .= "}\n";
 
-                if (isset($font->fontSize_sm) && $font->fontSize_sm){
-                    $fontCSS .= '@media (min-width:768px) and (max-width:991px){';
-                    $fontCSS .= $key . "{";
-                    $fontCSS .= 'font-size: ' . $font->fontSize_sm . 'px;';
-                    $fontCSS .= "}\n}\n";
-                }
-
-
-                if (isset($font->fontSize_xs) && $font->fontSize_xs){
-                    $fontCSS .= '@media (max-width:767px){';
-                    $fontCSS .= $key . "{";
-                    $fontCSS .= 'font-size: ' . $font->fontSize_xs . 'px;';
-                    $fontCSS .= "}\n}\n";
-                }
                 $doc->addStyledeclaration($fontCSS);
             }
         }
@@ -824,9 +791,6 @@ class HelixUltimate
     public function compress_js($excludes = '')
     {
         require_once(__DIR__ . '/classes/Minifier.php');
-
-        // add conflict files in the exclude
-        $excludes = ($excludes) ? $excludes . ', core.js, tinymce.min.js' : 'core.js, tinymce.min.js';
 
         $app       = JFactory::getApplication();
         $cachetime = $app->get('cachetime', 15);
@@ -943,6 +907,7 @@ class HelixUltimate
         $root_url        = \JURI::root(true);
         $minifiedCode    = '';
         $md5sum          = '';
+
         //Check all local stylesheets
         foreach ($all_stylesheets as $key => $value)
         {
@@ -958,10 +923,8 @@ class HelixUltimate
 
             if (\JFile::exists($css_file))
             {
-                $css_file = str_replace("\\", "/", $css_file);
                 $stylesheets[] = $key;
                 $md5sum .= md5($key);
-                
                 $compressed = $this->minifyCss(file_get_contents($css_file));
 
                 $fixUrl = preg_replace_callback('/url\(([^\):]*)\)/', function ($matches){
@@ -969,9 +932,7 @@ class HelixUltimate
                         global $absolute_url;
 
                         $url = str_replace(array('"', '\''), '', $matches[1]);
-                        if(preg_match('/\.(jpg|png|jpeg|mp4|gif|JPEG|JPG|PNG|GIF)$/', $url)) {
-                            return "url('$url')";
-                        }
+
                         $base = dirname($absolute_url);
                         while (preg_match('/^\.\.\//', $url))
                         {
@@ -992,129 +953,29 @@ class HelixUltimate
         //Compress All stylesheets
         if ($minifiedCode)
         {
-
-            // if cache file isn't exist then create it
             if (!\JFolder::exists($cache_path))
             {
                 \JFolder::create($cache_path, 0755);
             }
-            
-            $file = $cache_path . '/' . md5($md5sum) . '.css';
-            if (!\JFile::exists($file))
-            {
-                \JFile::write($file, $minifiedCode);
-            }
             else
             {
-                if (filesize($file) == 0 || ((filemtime($file) + $cachetime * 60) < time()))
+                $file = $cache_path . '/' . md5($md5sum) . '.css';
+
+                if (!\JFile::exists($file))
                 {
                     \JFile::write($file, $minifiedCode);
                 }
+                else
+                {
+                    if (filesize($file) == 0 || ((filemtime($file) + $cachetime * 60) < time()))
+                    {
+                        \JFile::write($file, $minifiedCode);
+                    }
+                }
+                $this->doc->addStylesheet(\JURI::base(true) . '/cache/com_templates/templates/' . $this->template->template . '/' . md5($md5sum) . '.css');
             }
-            $this->doc->addStylesheet(\JURI::base(true) . '/cache/com_templates/templates/' . $this->template->template . '/' . md5($md5sum) . '.css');
         }
 
         return;
-    }
-
-    public static function getRelatedArticles($params){
-        $user   = JFactory::getUser();
-		$userId = $user->get('id');
-		$guest  = $user->get('guest');
-		$groups = $user->getAuthorisedViewLevels();
-        $authorised = JAccess::getAuthorisedViewLevels($userId);
-        $db = JFactory::getDbo();
-        $app = JFactory::getApplication();
-        $nullDate = $db->quote($db->getNullDate());
-        $nowDate  = $db->quote(JFactory::getDate()->toSql());
-        $item_id = $params['item_id'];
-        $maximum = isset($params['maximum']) ? (int) $params['maximum'] : 5;
-        $maximum = $maximum < 1 ? 5 : $maximum;
-        $catId = isset($params['catId']) ? (int) $params['catId'] : null;
-        $tagids = [];
-        if( isset($params['itemTags']) && count($params['itemTags']) ){
-            $itemTags = $params['itemTags'];
-            foreach( $itemTags as $tag ){
-                array_push($tagids, $tag->id );
-            }
-        }
-        
-        // Category filter
-        $catItemIds = $tagItemIds = $itemIds = [];
-		if ( $catId !== null ) {
-            $catQuery = $db->getQuery(true)
-                ->clear()
-                ->select('id')
-                ->from($db->quoteName('#__content'))
-                ->where($db->quoteName('catid'). " = " .$catId)
-                ->setLimit($maximum+1);
-                $db->setQuery($catQuery);
-                $catItemIds = $db->loadColumn();
-		}
-
-		// tags filter
-		if (is_array($tagids) && count($tagids)) {
-			$tagId = implode(',', ArrayHelper::toInteger($tagids));
-			if ($tagId) {
-                $subQuery = $db->getQuery(true)
-                    ->clear()
-					->select('DISTINCT content_item_id as id')
-					->from($db->quoteName('#__contentitem_tag_map'))
-					->where('tag_id IN (' . $tagId . ')')
-					->where('type_alias = ' . $db->quote('com_content.article'));
-                $db->setQuery($subQuery);
-                $tagItemIds = $db->loadColumn();
-			}
-        }
-        
-        $itemIds = array_unique(array_merge($catItemIds, $tagItemIds));
-        
-        if( count($itemIds) < 1 ){
-            return [];
-        }
-        $itemIds = implode(',', ArrayHelper::toInteger($itemIds));
-        $query = $db->getQuery(true);
-
-        $query->clear()
-            ->select('a.*')
-            ->select('a.alias as slug')
-            ->from($db->quoteName('#__content', 'a'))
-            ->select($db->quoteName('b.alias', 'category_alias'))
-            ->select($db->quoteName('b.title', 'category'))
-            ->select($db->quoteName('b.access', 'category_access'))
-            ->select($db->quoteName('u.name', 'author'))
-            ->join('LEFT', $db->quoteName('#__categories', 'b') . ' ON (' . $db->quoteName('a.catid') . ' = ' . $db->quoteName('b.id') . ')')
-            ->join('LEFT', $db->quoteName('#__users', 'u') . ' ON (' . $db->quoteName('a.created_by') . ' = ' . $db->quoteName('u.id') . ')')
-            ->where($db->quoteName('a.access')." IN (" . implode( ',', $authorised ) . ")")
-            ->where('a.id IN (' . $itemIds . ')')
-            ->where('a.id != ' . (int) $item_id);
-        // Language filter
-        if ($app->getLanguageFilter()) {
-            $query->where('a.language IN (' . $db->Quote(JFactory::getLanguage()->getTag()) . ',' . $db->Quote('*') . ')');
-        }
-        $query->where('(a.publish_down = ' . $nullDate . ' OR a.publish_down >= ' . $nowDate . ')');
-        $query->where($db->quoteName('a.state') . ' = ' . $db->quote(1));
-        $query->order($db->quoteName('a.created') . ' DESC')
-		->setLimit($maximum);
-        $db->setQuery($query);
-        $items = $db->loadObjectList();
-        foreach( $items as &$item ){
-            $item->slug    	= $item->id . ':' . $item->slug;
-            $item->catslug 	= $item->catid . ':' . $item->category_alias;
-            $item->params = JComponentHelper::getParams('com_content');
-            $access = (isset($item->access) && $item->access) ? $item->access : true;
-            
-            if ($access) {
-                $item->params->set('access-view', true);
-			} else {
-				if ($item->catid == 0 || $item->category_access === null) {
-					$item->params->set('access-view', in_array($item->access, $groups));
-				} else {
-					$item->params->set('access-view', in_array($item->access, $groups) && in_array($item->category_access, $groups));
-				}
-			}
-
-        }
-        return $items;
     }
 }

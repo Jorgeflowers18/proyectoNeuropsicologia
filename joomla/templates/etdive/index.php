@@ -146,9 +146,6 @@ if ($custom_js = $this->params->get('custom_js'))
     <jdoc:include type="modules" name="debug" style="none" />
     
     <!-- Go to top -->
-    <?php if ($this->params->get('goto_top', 0)) : ?>
-        <a href="#" class="sp-scroll-up" aria-label="Scroll Up"><span class="fa fa-chevron-up" aria-hidden="true"></span></a>
-    <?php endif; ?>
-   
+
     </body>
 </html>
