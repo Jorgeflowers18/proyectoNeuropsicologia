@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 08-02-2021 a las 08:18:58
--- Versión del servidor: 10.4.13-MariaDB
--- Versión de PHP: 7.4.7
+-- Host: 127.0.0.1
+-- Generation Time: Feb 08, 2021 at 09:42 AM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 8.0.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `joomla`
+-- Database: `joomla`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_action_logs`
+-- Table structure for table `f3ts9_action_logs`
 --
 
 CREATE TABLE `f3ts9_action_logs` (
@@ -39,7 +39,7 @@ CREATE TABLE `f3ts9_action_logs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_action_logs`
+-- Dumping data for table `f3ts9_action_logs`
 --
 
 INSERT INTO `f3ts9_action_logs` (`id`, `message_language_key`, `message`, `log_date`, `extension`, `user_id`, `item_id`, `ip_address`) VALUES
@@ -868,12 +868,106 @@ INSERT INTO `f3ts9_action_logs` (`id`, `message_language_key`, `message`, `log_d
 (817, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__extensions\"}', '2021-02-08 07:17:34', 'com_checkin', 380, 380, '127.0.0.1'),
 (818, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UNPUBLISHED', '{\"action\":\"unpublish\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN\",\"id\":10014,\"title\":\"Button - ARI Docs Viewer\",\"itemlink\":\"index.php?option=com_plugins&task=plugin.edit&extension_id=10014\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 07:17:34', 'com_plugins.plugin', 380, 10014, '127.0.0.1'),
 (819, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__extensions\"}', '2021-02-08 07:17:37', 'com_checkin', 380, 380, '127.0.0.1'),
-(820, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UNPUBLISHED', '{\"action\":\"unpublish\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN\",\"id\":10015,\"title\":\"System - ARI Docs Viewer\",\"itemlink\":\"index.php?option=com_plugins&task=plugin.edit&extension_id=10015\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 07:17:37', 'com_plugins.plugin', 380, 10015, '127.0.0.1');
+(820, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UNPUBLISHED', '{\"action\":\"unpublish\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN\",\"id\":10015,\"title\":\"System - ARI Docs Viewer\",\"itemlink\":\"index.php?option=com_plugins&task=plugin.edit&extension_id=10015\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 07:17:37', 'com_plugins.plugin', 380, 10015, '127.0.0.1'),
+(821, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_ADDED', '{\"action\":\"add\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_MEDIA\",\"id\":0,\"title\":\"anatomia_craneo.png\",\"itemlink\":\"index.php?option=com_media&task=file.edit&id=0\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 07:39:33', 'com_media.file', 380, 0, '127.0.0.1'),
+(822, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_ADDED', '{\"action\":\"add\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":22,\"title\":\"Partes del cr\\u00e1neo\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=22\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 07:40:53', 'com_content.article', 380, 22, '127.0.0.1'),
+(823, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_ADDED', '{\"action\":\"add\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":23,\"title\":\"Fotos de neuronas\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=23\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 07:41:36', 'com_content.article', 380, 23, '127.0.0.1'),
+(824, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_ADDED', '{\"action\":\"add\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_MEDIA\",\"id\":0,\"title\":\"caja_toraxicajpg.jpg\",\"itemlink\":\"index.php?option=com_media&task=file.edit&id=0\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 07:43:15', 'com_media.file', 380, 0, '127.0.0.1'),
+(825, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_ADDED', '{\"action\":\"add\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_MEDIA\",\"id\":0,\"title\":\"equipo.png\",\"itemlink\":\"index.php?option=com_media&task=file.edit&id=0\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 07:43:15', 'com_media.file', 380, 0, '127.0.0.1');
+INSERT INTO `f3ts9_action_logs` (`id`, `message_language_key`, `message`, `log_date`, `extension`, `user_id`, `item_id`, `ip_address`) VALUES
+(826, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_ADDED', '{\"action\":\"add\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":24,\"title\":\"La Caja Tor\\u00e1cica\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=24\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 07:44:57', 'com_content.article', 380, 24, '127.0.0.1'),
+(827, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_ADDED', '{\"action\":\"add\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_MEDIA\",\"id\":0,\"title\":\"anatomia_craneo.png\",\"itemlink\":\"index.php?option=com_media&task=file.edit&id=0\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 07:46:57', 'com_media.file', 380, 0, '127.0.0.1'),
+(828, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_ADDED', '{\"action\":\"add\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_MEDIA\",\"id\":0,\"title\":\"barin_examination.jpg\",\"itemlink\":\"index.php?option=com_media&task=file.edit&id=0\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 07:46:57', 'com_media.file', 380, 0, '127.0.0.1'),
+(829, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_ADDED', '{\"action\":\"add\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_MEDIA\",\"id\":0,\"title\":\"caja_toraxicajpg.jpg\",\"itemlink\":\"index.php?option=com_media&task=file.edit&id=0\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 07:46:57', 'com_media.file', 380, 0, '127.0.0.1'),
+(830, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_ADDED', '{\"action\":\"add\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_MEDIA\",\"id\":0,\"title\":\"cerebro_plasma.jpg\",\"itemlink\":\"index.php?option=com_media&task=file.edit&id=0\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 07:46:57', 'com_media.file', 380, 0, '127.0.0.1'),
+(831, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_ADDED', '{\"action\":\"add\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_MEDIA\",\"id\":0,\"title\":\"partes_cerebro.jpg\",\"itemlink\":\"index.php?option=com_media&task=file.edit&id=0\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 07:46:57', 'com_media.file', 380, 0, '127.0.0.1'),
+(832, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_ADDED', '{\"action\":\"add\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_MEDIA\",\"id\":0,\"title\":\"pulmones.jpg\",\"itemlink\":\"index.php?option=com_media&task=file.edit&id=0\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 07:46:57', 'com_media.file', 380, 0, '127.0.0.1'),
+(833, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_ADDED', '{\"action\":\"add\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":25,\"title\":\"Imagen de neurona\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=25\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 07:50:50', 'com_content.article', 380, 25, '127.0.0.1'),
+(834, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_MENU_ITEM\",\"id\":111,\"title\":\"Fotos\",\"itemlink\":\"index.php?option=com_menus&task=item.edit&id=111\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 07:52:26', 'com_menus.item', 380, 111, '127.0.0.1'),
+(835, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__menu\"}', '2021-02-08 07:52:26', 'com_checkin', 380, 380, '127.0.0.1'),
+(836, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_MENU_ITEM\",\"id\":111,\"title\":\"Fotos\",\"itemlink\":\"index.php?option=com_menus&task=item.edit&id=111\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 07:53:18', 'com_menus.item', 380, 111, '127.0.0.1'),
+(837, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_MENU_ITEM\",\"id\":112,\"title\":\"Videos\",\"itemlink\":\"index.php?option=com_menus&task=item.edit&id=112\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 07:53:37', 'com_menus.item', 380, 112, '127.0.0.1'),
+(838, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__menu\"}', '2021-02-08 07:53:37', 'com_checkin', 380, 380, '127.0.0.1'),
+(839, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_MENU_ITEM\",\"id\":113,\"title\":\"Podcasts\",\"itemlink\":\"index.php?option=com_menus&task=item.edit&id=113\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 07:53:49', 'com_menus.item', 380, 113, '127.0.0.1'),
+(840, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__menu\"}', '2021-02-08 07:53:49', 'com_checkin', 380, 380, '127.0.0.1'),
+(841, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_MENU_ITEM\",\"id\":113,\"title\":\"Podcasts\",\"itemlink\":\"index.php?option=com_menus&task=item.edit&id=113\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 07:54:02', 'com_menus.item', 380, 113, '127.0.0.1'),
+(842, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__menu\"}', '2021-02-08 07:54:02', 'com_checkin', 380, 380, '127.0.0.1'),
+(843, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_MENU_ITEM\",\"id\":114,\"title\":\"Documentos\",\"itemlink\":\"index.php?option=com_menus&task=item.edit&id=114\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 07:54:15', 'com_menus.item', 380, 114, '127.0.0.1'),
+(844, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__menu\"}', '2021-02-08 07:54:15', 'com_checkin', 380, 380, '127.0.0.1'),
+(845, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_MODULE\",\"id\":95,\"title\":\"Men\\u00fa del Repositorio\",\"extension_name\":\"Men\\u00fa del Repositorio\",\"itemlink\":\"index.php?option=com_modules&task=module.edit&id=95\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 07:56:17', 'com_modules.module', 380, 95, '127.0.0.1'),
+(846, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__modules\"}', '2021-02-08 07:56:17', 'com_checkin', 380, 380, '127.0.0.1'),
+(847, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__modules\"}', '2021-02-08 07:56:41', 'com_checkin', 380, 380, '127.0.0.1'),
+(848, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_CATEGORY\",\"id\":15,\"title\":\"Fotos\",\"itemlink\":\"index.php?option=com_categories&task=category.edit&id=15\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 07:58:49', 'com_categories.category', 380, 15, '127.0.0.1'),
+(849, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__categories\"}', '2021-02-08 07:58:49', 'com_checkin', 380, 380, '127.0.0.1'),
+(850, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_MENU_ITEM\",\"id\":111,\"title\":\"Fotos\",\"itemlink\":\"index.php?option=com_menus&task=item.edit&id=111\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 07:59:45', 'com_menus.item', 380, 111, '127.0.0.1'),
+(851, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__menu\"}', '2021-02-08 07:59:45', 'com_checkin', 380, 380, '127.0.0.1'),
+(852, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_CATEGORY\",\"id\":15,\"title\":\"Fotos\",\"itemlink\":\"index.php?option=com_categories&task=category.edit&id=15\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:00:47', 'com_categories.category', 380, 15, '127.0.0.1'),
+(853, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__categories\"}', '2021-02-08 08:00:47', 'com_checkin', 380, 380, '127.0.0.1'),
+(854, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_CATEGORY\",\"id\":18,\"title\":\"Fotos cargadas al repositorio\",\"itemlink\":\"index.php?option=com_categories&task=category.edit&id=18\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:01:06', 'com_categories.category', 380, 18, '127.0.0.1'),
+(855, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__categories\"}', '2021-02-08 08:01:06', 'com_checkin', 380, 380, '127.0.0.1'),
+(856, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_CATEGORY\",\"id\":19,\"title\":\"Art\\u00edculos con fotos\",\"itemlink\":\"index.php?option=com_categories&task=category.edit&id=19\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:05:31', 'com_categories.category', 380, 19, '127.0.0.1'),
+(857, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__categories\"}', '2021-02-08 08:05:31', 'com_checkin', 380, 380, '127.0.0.1'),
+(858, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_CATEGORY\",\"id\":21,\"title\":\"Art\\u00edculos con videos\",\"itemlink\":\"index.php?option=com_categories&task=category.edit&id=21\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:06:31', 'com_categories.category', 380, 21, '127.0.0.1'),
+(859, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__categories\"}', '2021-02-08 08:06:31', 'com_checkin', 380, 380, '127.0.0.1'),
+(860, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_CATEGORY\",\"id\":22,\"title\":\"Videos cargados al repositorio\",\"itemlink\":\"index.php?option=com_categories&task=category.edit&id=22\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:07:06', 'com_categories.category', 380, 22, '127.0.0.1'),
+(861, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__categories\"}', '2021-02-08 08:07:06', 'com_checkin', 380, 380, '127.0.0.1'),
+(862, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_CATEGORY\",\"id\":24,\"title\":\"Podcasts cargadas al repositorio\",\"itemlink\":\"index.php?option=com_categories&task=category.edit&id=24\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:07:51', 'com_categories.category', 380, 24, '127.0.0.1'),
+(863, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__categories\"}', '2021-02-08 08:07:51', 'com_checkin', 380, 380, '127.0.0.1'),
+(864, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_CATEGORY\",\"id\":25,\"title\":\"Art\\u00edculos con podcasts\",\"itemlink\":\"index.php?option=com_categories&task=category.edit&id=25\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:08:57', 'com_categories.category', 380, 25, '127.0.0.1'),
+(865, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__categories\"}', '2021-02-08 08:08:57', 'com_checkin', 380, 380, '127.0.0.1'),
+(866, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":20,\"title\":\"Cerebro\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=20\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:19:06', 'com_content.article', 380, 20, '127.0.0.1'),
+(867, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__content\"}', '2021-02-08 08:19:06', 'com_checkin', 380, 380, '127.0.0.1'),
+(868, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__content\"}', '2021-02-08 08:19:41', 'com_checkin', 380, 380, '127.0.0.1'),
+(869, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_TRASHED', '{\"action\":\"trash\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":19,\"title\":\"Cerebro\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=19\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:19:41', 'com_content.article', 380, 19, '127.0.0.1'),
+(870, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_ADDED', '{\"action\":\"add\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":26,\"title\":\"Art\\u00edculo sobre las partes del cerebro\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=26\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:21:16', 'com_content.article', 380, 26, '127.0.0.1'),
+(871, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":26,\"title\":\"Art\\u00edculo sobre las partes del cerebro\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=26\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:23:47', 'com_content.article', 380, 26, '127.0.0.1'),
+(872, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__content\"}', '2021-02-08 08:23:47', 'com_checkin', 380, 380, '127.0.0.1'),
+(873, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":26,\"title\":\"Art\\u00edculo sobre las partes del cerebro\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=26\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:25:06', 'com_content.article', 380, 26, '127.0.0.1'),
+(874, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__content\"}', '2021-02-08 08:25:06', 'com_checkin', 380, 380, '127.0.0.1'),
+(875, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":26,\"title\":\"Art\\u00edculo sobre las partes del cerebro\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=26\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:25:45', 'com_content.article', 380, 26, '127.0.0.1'),
+(876, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__content\"}', '2021-02-08 08:25:45', 'com_checkin', 380, 380, '127.0.0.1'),
+(877, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":26,\"title\":\"Art\\u00edculo sobre las partes del cerebro\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=26\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:26:11', 'com_content.article', 380, 26, '127.0.0.1'),
+(878, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__content\"}', '2021-02-08 08:26:11', 'com_checkin', 380, 380, '127.0.0.1'),
+(879, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":26,\"title\":\"Art\\u00edculo sobre las partes del cerebro\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=26\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:26:17', 'com_content.article', 380, 26, '127.0.0.1'),
+(880, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__content\"}', '2021-02-08 08:26:17', 'com_checkin', 380, 380, '127.0.0.1'),
+(881, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_ADDED', '{\"action\":\"add\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":27,\"title\":\"Documento de las neuronas\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=27\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:26:56', 'com_content.article', 380, 27, '127.0.0.1'),
+(882, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_ADDED', '{\"action\":\"add\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":28,\"title\":\"Documento de la caja tor\\u00e1cica\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=28\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:27:27', 'com_content.article', 380, 28, '127.0.0.1'),
+(883, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":27,\"title\":\"Documento de las neuronas\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=27\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:27:58', 'com_content.article', 380, 27, '127.0.0.1'),
+(884, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__content\"}', '2021-02-08 08:27:58', 'com_checkin', 380, 380, '127.0.0.1'),
+(885, 'PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED', '{\"action\":\"install\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN\",\"id\":\"10017\",\"name\":\"Content - Embed Google Docs Viewer\",\"extension_name\":\"Content - Embed Google Docs Viewer\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:32:20', 'com_installer', 380, 10017, '127.0.0.1'),
+(886, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":28,\"title\":\"Documento de la caja tor\\u00e1cica\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=28\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:35:28', 'com_content.article', 380, 28, '127.0.0.1'),
+(887, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__content\"}', '2021-02-08 08:35:28', 'com_checkin', 380, 380, '127.0.0.1'),
+(888, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":28,\"title\":\"Documento de la caja tor\\u00e1cica\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=28\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:36:10', 'com_content.article', 380, 28, '127.0.0.1'),
+(889, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__content\"}', '2021-02-08 08:36:10', 'com_checkin', 380, 380, '127.0.0.1'),
+(890, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":28,\"title\":\"Documento de la caja tor\\u00e1cica\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=28\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:36:37', 'com_content.article', 380, 28, '127.0.0.1'),
+(891, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__content\"}', '2021-02-08 08:36:37', 'com_checkin', 380, 380, '127.0.0.1'),
+(892, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":28,\"title\":\"Documento de la caja tor\\u00e1cica\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=28\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:37:21', 'com_content.article', 380, 28, '127.0.0.1'),
+(893, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__content\"}', '2021-02-08 08:37:21', 'com_checkin', 380, 380, '127.0.0.1'),
+(894, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":28,\"title\":\"Documento de la caja tor\\u00e1cica\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=28\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:38:01', 'com_content.article', 380, 28, '127.0.0.1'),
+(895, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__content\"}', '2021-02-08 08:38:01', 'com_checkin', 380, 380, '127.0.0.1'),
+(896, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":28,\"title\":\"Documento de la caja tor\\u00e1cica\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=28\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:38:30', 'com_content.article', 380, 28, '127.0.0.1'),
+(897, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__content\"}', '2021-02-08 08:38:30', 'com_checkin', 380, 380, '127.0.0.1'),
+(898, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":28,\"title\":\"Documento de la caja tor\\u00e1cica\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=28\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:38:44', 'com_content.article', 380, 28, '127.0.0.1'),
+(899, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__content\"}', '2021-02-08 08:38:44', 'com_checkin', 380, 380, '127.0.0.1'),
+(900, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":28,\"title\":\"Documento de la caja tor\\u00e1cica\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=28\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:38:59', 'com_content.article', 380, 28, '127.0.0.1'),
+(901, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__content\"}', '2021-02-08 08:38:59', 'com_checkin', 380, 380, '127.0.0.1'),
+(902, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":28,\"title\":\"Documento de la caja tor\\u00e1cica\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=28\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:39:14', 'com_content.article', 380, 28, '127.0.0.1'),
+(903, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__content\"}', '2021-02-08 08:39:14', 'com_checkin', 380, 380, '127.0.0.1'),
+(904, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":28,\"title\":\"Documento de la caja tor\\u00e1cica\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=28\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:39:30', 'com_content.article', 380, 28, '127.0.0.1'),
+(905, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__content\"}', '2021-02-08 08:39:30', 'com_checkin', 380, 380, '127.0.0.1'),
+(906, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":28,\"title\":\"Documento de la caja tor\\u00e1cica\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=28\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:40:08', 'com_content.article', 380, 28, '127.0.0.1'),
+(907, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__content\"}', '2021-02-08 08:40:08', 'com_checkin', 380, 380, '127.0.0.1'),
+(908, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":28,\"title\":\"Documento de la caja tor\\u00e1cica\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=28\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:40:51', 'com_content.article', 380, 28, '127.0.0.1'),
+(909, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__content\"}', '2021-02-08 08:40:51', 'com_checkin', 380, 380, '127.0.0.1'),
+(910, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":28,\"title\":\"Documento de la caja tor\\u00e1cica\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=28\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:41:26', 'com_content.article', 380, 28, '127.0.0.1'),
+(911, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__content\"}', '2021-02-08 08:41:26', 'com_checkin', 380, 380, '127.0.0.1'),
+(912, 'PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED', '{\"action\":\"update\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_ARTICLE\",\"id\":28,\"title\":\"Documento de la caja tor\\u00e1cica\",\"itemlink\":\"index.php?option=com_content&task=article.edit&id=28\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\"}', '2021-02-08 08:41:50', 'com_content.article', 380, 28, '127.0.0.1'),
+(913, 'PLG_ACTIONLOG_JOOMLA_USER_CHECKIN', '{\"action\":\"checkin\",\"type\":\"PLG_ACTIONLOG_JOOMLA_TYPE_USER\",\"id\":\"380\",\"title\":\"danielM117\",\"itemlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"userid\":\"380\",\"username\":\"danielM117\",\"accountlink\":\"index.php?option=com_users&task=user.edit&id=380\",\"table\":\"#__content\"}', '2021-02-08 08:41:50', 'com_checkin', 380, 380, '127.0.0.1');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_action_logs_extensions`
+-- Table structure for table `f3ts9_action_logs_extensions`
 --
 
 CREATE TABLE `f3ts9_action_logs_extensions` (
@@ -882,7 +976,7 @@ CREATE TABLE `f3ts9_action_logs_extensions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_action_logs_extensions`
+-- Dumping data for table `f3ts9_action_logs_extensions`
 --
 
 INSERT INTO `f3ts9_action_logs_extensions` (`id`, `extension`) VALUES
@@ -908,7 +1002,7 @@ INSERT INTO `f3ts9_action_logs_extensions` (`id`, `extension`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_action_logs_users`
+-- Table structure for table `f3ts9_action_logs_users`
 --
 
 CREATE TABLE `f3ts9_action_logs_users` (
@@ -920,7 +1014,7 @@ CREATE TABLE `f3ts9_action_logs_users` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_action_log_config`
+-- Table structure for table `f3ts9_action_log_config`
 --
 
 CREATE TABLE `f3ts9_action_log_config` (
@@ -934,7 +1028,7 @@ CREATE TABLE `f3ts9_action_log_config` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_action_log_config`
+-- Dumping data for table `f3ts9_action_log_config`
 --
 
 INSERT INTO `f3ts9_action_log_config` (`id`, `type_title`, `type_alias`, `id_holder`, `title_holder`, `table_name`, `text_prefix`) VALUES
@@ -961,7 +1055,7 @@ INSERT INTO `f3ts9_action_log_config` (`id`, `type_title`, `type_alias`, `id_hol
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_assets`
+-- Table structure for table `f3ts9_assets`
 --
 
 CREATE TABLE `f3ts9_assets` (
@@ -976,71 +1070,71 @@ CREATE TABLE `f3ts9_assets` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_assets`
+-- Dumping data for table `f3ts9_assets`
 --
 
 INSERT INTO `f3ts9_assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`, `title`, `rules`) VALUES
-(1, 0, 0, 277, 0, 'root.1', 'Root Asset', '{\"core.login.site\":{\"6\":1,\"2\":1},\"core.login.admin\":{\"6\":1},\"core.login.offline\":{\"6\":1},\"core.admin\":{\"8\":1},\"core.manage\":{\"7\":1},\"core.create\":{\"6\":1,\"3\":1},\"core.delete\":{\"6\":1},\"core.edit\":{\"6\":1,\"4\":1},\"core.edit.state\":{\"6\":1,\"5\":1},\"core.edit.own\":{\"6\":1,\"3\":1}}'),
+(1, 0, 0, 303, 0, 'root.1', 'Root Asset', '{\"core.login.site\":{\"6\":1,\"2\":1},\"core.login.admin\":{\"6\":1},\"core.login.offline\":{\"6\":1},\"core.admin\":{\"8\":1},\"core.manage\":{\"7\":1},\"core.create\":{\"6\":1,\"3\":1},\"core.delete\":{\"6\":1},\"core.edit\":{\"6\":1,\"4\":1},\"core.edit.state\":{\"6\":1,\"5\":1},\"core.edit.own\":{\"6\":1,\"3\":1}}'),
 (2, 1, 1, 2, 1, 'com_admin', 'com_admin', '{}'),
 (3, 1, 3, 6, 1, 'com_banners', 'com_banners', '{\"core.admin\":{\"7\":1},\"core.manage\":{\"6\":1}}'),
 (4, 1, 7, 8, 1, 'com_cache', 'com_cache', '{\"core.admin\":{\"7\":1},\"core.manage\":{\"7\":1}}'),
 (5, 1, 9, 10, 1, 'com_checkin', 'com_checkin', '{\"core.admin\":{\"7\":1},\"core.manage\":{\"7\":1}}'),
 (6, 1, 11, 12, 1, 'com_config', 'com_config', '{}'),
 (7, 1, 13, 16, 1, 'com_contact', 'com_contact', '{\"core.admin\":{\"7\":1},\"core.manage\":{\"6\":1}}'),
-(8, 1, 17, 104, 1, 'com_content', 'com_content', '{\"core.admin\":{\"7\":1},\"core.manage\":{\"6\":1,\"11\":1,\"12\":1},\"core.create\":{\"3\":1,\"11\":1,\"10\":1,\"12\":1},\"core.edit\":{\"4\":1,\"11\":1,\"12\":1},\"core.edit.state\":{\"5\":1,\"11\":1,\"12\":1},\"core.edit.own\":{\"11\":1,\"10\":1,\"12\":1},\"core.delete\":{\"12\":1}}'),
-(9, 1, 105, 106, 1, 'com_cpanel', 'com_cpanel', '{}'),
-(10, 1, 107, 108, 1, 'com_installer', 'com_installer', '{\"core.manage\":{\"7\":0},\"core.delete\":{\"7\":0},\"core.edit.state\":{\"7\":0}}'),
-(11, 1, 109, 112, 1, 'com_languages', 'com_languages', '{\"core.admin\":{\"7\":1}}'),
-(12, 1, 113, 114, 1, 'com_login', 'com_login', '{}'),
-(13, 1, 115, 116, 1, 'com_mailto', 'com_mailto', '{}'),
-(14, 1, 117, 118, 1, 'com_massmail', 'com_massmail', '{}'),
-(15, 1, 119, 120, 1, 'com_media', 'com_media', '{\"core.admin\":{\"7\":1,\"10\":1,\"11\":1,\"12\":1},\"core.manage\":{\"6\":1},\"core.create\":{\"3\":1,\"11\":1,\"12\":1,\"10\":1},\"core.delete\":{\"5\":1,\"12\":1}}'),
-(16, 1, 121, 124, 1, 'com_menus', 'com_menus', '{\"core.admin\":{\"7\":1}}'),
-(17, 1, 125, 126, 1, 'com_messages', 'com_messages', '{\"core.admin\":{\"7\":1},\"core.manage\":{\"7\":1}}'),
-(18, 1, 127, 202, 1, 'com_modules', 'com_modules', '{\"core.admin\":{\"7\":1}}'),
-(19, 1, 203, 206, 1, 'com_newsfeeds', 'com_newsfeeds', '{\"core.admin\":{\"7\":1},\"core.manage\":{\"6\":1}}'),
-(20, 1, 207, 208, 1, 'com_plugins', 'com_plugins', '{\"core.admin\":{\"7\":1},\"core.manage\":{\"12\":1},\"core.edit.state\":{\"12\":1},\"core.edit\":{\"12\":1}}'),
-(21, 1, 209, 210, 1, 'com_redirect', 'com_redirect', '{\"core.admin\":{\"7\":1}}'),
-(22, 1, 211, 212, 1, 'com_search', 'com_search', '{\"core.admin\":{\"7\":1},\"core.manage\":{\"6\":1}}'),
-(23, 1, 213, 214, 1, 'com_templates', 'com_templates', '{\"core.admin\":{\"7\":1}}'),
-(24, 1, 215, 218, 1, 'com_users', 'com_users', '{\"core.admin\":{\"7\":1},\"core.manage\":{\"11\":1,\"12\":1},\"core.create\":{\"11\":1,\"12\":1,\"10\":1},\"core.edit.state\":{\"11\":1,\"12\":1},\"core.edit\":{\"11\":1,\"12\":1,\"10\":1},\"core.delete\":{\"12\":1}}'),
-(26, 1, 219, 220, 1, 'com_wrapper', 'com_wrapper', '{}'),
+(8, 1, 17, 118, 1, 'com_content', 'com_content', '{\"core.admin\":{\"7\":1},\"core.manage\":{\"6\":1,\"11\":1,\"12\":1},\"core.create\":{\"3\":1,\"11\":1,\"10\":1,\"12\":1},\"core.edit\":{\"4\":1,\"11\":1,\"12\":1},\"core.edit.state\":{\"5\":1,\"11\":1,\"12\":1},\"core.edit.own\":{\"11\":1,\"10\":1,\"12\":1},\"core.delete\":{\"12\":1}}'),
+(9, 1, 119, 120, 1, 'com_cpanel', 'com_cpanel', '{}'),
+(10, 1, 121, 122, 1, 'com_installer', 'com_installer', '{\"core.manage\":{\"7\":0},\"core.delete\":{\"7\":0},\"core.edit.state\":{\"7\":0}}'),
+(11, 1, 123, 126, 1, 'com_languages', 'com_languages', '{\"core.admin\":{\"7\":1}}'),
+(12, 1, 127, 128, 1, 'com_login', 'com_login', '{}'),
+(13, 1, 129, 130, 1, 'com_mailto', 'com_mailto', '{}'),
+(14, 1, 131, 132, 1, 'com_massmail', 'com_massmail', '{}'),
+(15, 1, 133, 134, 1, 'com_media', 'com_media', '{\"core.admin\":{\"7\":1,\"10\":1,\"11\":1,\"12\":1},\"core.manage\":{\"6\":1},\"core.create\":{\"3\":1,\"11\":1,\"12\":1,\"10\":1},\"core.delete\":{\"5\":1,\"12\":1}}'),
+(16, 1, 135, 138, 1, 'com_menus', 'com_menus', '{\"core.admin\":{\"7\":1}}'),
+(17, 1, 139, 140, 1, 'com_messages', 'com_messages', '{\"core.admin\":{\"7\":1},\"core.manage\":{\"7\":1}}'),
+(18, 1, 141, 216, 1, 'com_modules', 'com_modules', '{\"core.admin\":{\"7\":1}}'),
+(19, 1, 217, 220, 1, 'com_newsfeeds', 'com_newsfeeds', '{\"core.admin\":{\"7\":1},\"core.manage\":{\"6\":1}}'),
+(20, 1, 221, 222, 1, 'com_plugins', 'com_plugins', '{\"core.admin\":{\"7\":1},\"core.manage\":{\"12\":1},\"core.edit.state\":{\"12\":1},\"core.edit\":{\"12\":1}}'),
+(21, 1, 223, 224, 1, 'com_redirect', 'com_redirect', '{\"core.admin\":{\"7\":1}}'),
+(22, 1, 225, 226, 1, 'com_search', 'com_search', '{\"core.admin\":{\"7\":1},\"core.manage\":{\"6\":1}}'),
+(23, 1, 227, 228, 1, 'com_templates', 'com_templates', '{\"core.admin\":{\"7\":1}}'),
+(24, 1, 229, 232, 1, 'com_users', 'com_users', '{\"core.admin\":{\"7\":1},\"core.manage\":{\"11\":1,\"12\":1},\"core.create\":{\"11\":1,\"12\":1,\"10\":1},\"core.edit.state\":{\"11\":1,\"12\":1},\"core.edit\":{\"11\":1,\"12\":1,\"10\":1},\"core.delete\":{\"12\":1}}'),
+(26, 1, 233, 234, 1, 'com_wrapper', 'com_wrapper', '{}'),
 (27, 8, 18, 23, 2, 'com_content.category.2', 'Inicio', '{\"core.create\":{\"10\":0,\"11\":0},\"core.edit\":{\"11\":0},\"core.edit.state\":{\"11\":0}}'),
 (28, 3, 4, 5, 2, 'com_banners.category.3', 'Uncategorised', '{}'),
 (29, 7, 14, 15, 2, 'com_contact.category.4', 'Uncategorised', '{}'),
-(30, 19, 204, 205, 2, 'com_newsfeeds.category.5', 'Uncategorised', '{}'),
-(32, 24, 216, 217, 2, 'com_users.category.7', 'Uncategorised', '{}'),
-(33, 1, 221, 222, 1, 'com_finder', 'com_finder', '{\"core.admin\":{\"7\":1},\"core.manage\":{\"6\":1}}'),
-(34, 1, 223, 224, 1, 'com_joomlaupdate', 'com_joomlaupdate', '{}'),
-(35, 1, 225, 226, 1, 'com_tags', 'com_tags', '{}'),
-(36, 1, 227, 228, 1, 'com_contenthistory', 'com_contenthistory', '{}'),
-(37, 1, 229, 230, 1, 'com_ajax', 'com_ajax', '{}'),
-(38, 1, 231, 232, 1, 'com_postinstall', 'com_postinstall', '{}'),
-(39, 18, 128, 129, 2, 'com_modules.module.1', 'Main Menu', '{}'),
-(40, 18, 130, 131, 2, 'com_modules.module.2', 'Login', '{}'),
-(41, 18, 132, 133, 2, 'com_modules.module.3', 'Popular Articles', '{}'),
-(42, 18, 134, 135, 2, 'com_modules.module.4', 'Recently Added Articles', '{}'),
-(43, 18, 136, 137, 2, 'com_modules.module.8', 'Toolbar', '{}'),
-(44, 18, 138, 139, 2, 'com_modules.module.9', 'Quick Icons', '{}'),
-(45, 18, 140, 141, 2, 'com_modules.module.10', 'Logged-in Users', '{}'),
-(46, 18, 142, 143, 2, 'com_modules.module.12', 'Admin Menu', '{}'),
-(47, 18, 144, 145, 2, 'com_modules.module.13', 'Admin Submenu', '{}'),
-(48, 18, 146, 147, 2, 'com_modules.module.14', 'User Status', '{}'),
-(49, 18, 148, 149, 2, 'com_modules.module.15', 'Title', '{}'),
-(50, 18, 150, 151, 2, 'com_modules.module.16', 'Iniciar sesión', '{}'),
-(51, 18, 152, 153, 2, 'com_modules.module.17', 'Breadcrumbs', '{}'),
-(52, 18, 154, 155, 2, 'com_modules.module.79', 'Multilanguage status', '{}'),
-(53, 18, 156, 157, 2, 'com_modules.module.86', 'Joomla Version', '{}'),
-(54, 16, 122, 123, 2, 'com_menus.menu.1', 'Main Menu', '{}'),
-(55, 18, 158, 159, 2, 'com_modules.module.87', 'Sample Data', '{}'),
-(56, 1, 233, 234, 1, 'com_privacy', 'com_privacy', '{}'),
-(57, 1, 235, 236, 1, 'com_actionlogs', 'com_actionlogs', '{}'),
-(58, 18, 160, 161, 2, 'com_modules.module.88', 'Latest Actions', '{}'),
-(59, 18, 162, 163, 2, 'com_modules.module.89', 'Privacy Dashboard', '{}'),
-(60, 11, 110, 111, 2, 'com_languages.language.2', 'Spanish (español)', '{}'),
-(61, 18, 164, 165, 2, 'com_modules.module.90', 'Carga de Videos', '{}'),
-(62, 1, 237, 238, 1, 'com_djimageslider', 'com_djimageslider', '{}'),
-(63, 18, 166, 167, 2, 'com_modules.module.91', 'DJ-ImageSlider', '{}'),
+(30, 19, 218, 219, 2, 'com_newsfeeds.category.5', 'Uncategorised', '{}'),
+(32, 24, 230, 231, 2, 'com_users.category.7', 'Uncategorised', '{}'),
+(33, 1, 235, 236, 1, 'com_finder', 'com_finder', '{\"core.admin\":{\"7\":1},\"core.manage\":{\"6\":1}}'),
+(34, 1, 237, 238, 1, 'com_joomlaupdate', 'com_joomlaupdate', '{}'),
+(35, 1, 239, 240, 1, 'com_tags', 'com_tags', '{}'),
+(36, 1, 241, 242, 1, 'com_contenthistory', 'com_contenthistory', '{}'),
+(37, 1, 243, 244, 1, 'com_ajax', 'com_ajax', '{}'),
+(38, 1, 245, 246, 1, 'com_postinstall', 'com_postinstall', '{}'),
+(39, 18, 142, 143, 2, 'com_modules.module.1', 'Main Menu', '{}'),
+(40, 18, 144, 145, 2, 'com_modules.module.2', 'Login', '{}'),
+(41, 18, 146, 147, 2, 'com_modules.module.3', 'Popular Articles', '{}'),
+(42, 18, 148, 149, 2, 'com_modules.module.4', 'Recently Added Articles', '{}'),
+(43, 18, 150, 151, 2, 'com_modules.module.8', 'Toolbar', '{}'),
+(44, 18, 152, 153, 2, 'com_modules.module.9', 'Quick Icons', '{}'),
+(45, 18, 154, 155, 2, 'com_modules.module.10', 'Logged-in Users', '{}'),
+(46, 18, 156, 157, 2, 'com_modules.module.12', 'Admin Menu', '{}'),
+(47, 18, 158, 159, 2, 'com_modules.module.13', 'Admin Submenu', '{}'),
+(48, 18, 160, 161, 2, 'com_modules.module.14', 'User Status', '{}'),
+(49, 18, 162, 163, 2, 'com_modules.module.15', 'Title', '{}'),
+(50, 18, 164, 165, 2, 'com_modules.module.16', 'Iniciar sesión', '{}'),
+(51, 18, 166, 167, 2, 'com_modules.module.17', 'Breadcrumbs', '{}'),
+(52, 18, 168, 169, 2, 'com_modules.module.79', 'Multilanguage status', '{}'),
+(53, 18, 170, 171, 2, 'com_modules.module.86', 'Joomla Version', '{}'),
+(54, 16, 136, 137, 2, 'com_menus.menu.1', 'Main Menu', '{}'),
+(55, 18, 172, 173, 2, 'com_modules.module.87', 'Sample Data', '{}'),
+(56, 1, 247, 248, 1, 'com_privacy', 'com_privacy', '{}'),
+(57, 1, 249, 250, 1, 'com_actionlogs', 'com_actionlogs', '{}'),
+(58, 18, 174, 175, 2, 'com_modules.module.88', 'Latest Actions', '{}'),
+(59, 18, 176, 177, 2, 'com_modules.module.89', 'Privacy Dashboard', '{}'),
+(60, 11, 124, 125, 2, 'com_languages.language.2', 'Spanish (español)', '{}'),
+(61, 18, 178, 179, 2, 'com_modules.module.90', 'Carga de Videos', '{}'),
+(62, 1, 251, 252, 1, 'com_djimageslider', 'com_djimageslider', '{}'),
+(63, 18, 180, 181, 2, 'com_modules.module.91', 'DJ-ImageSlider', '{}'),
 (64, 27, 19, 20, 3, 'com_content.article.1', 'Inicio', '{}'),
 (65, 8, 24, 27, 2, 'com_content.category.8', 'Repositorio', '{\"core.create\":{\"11\":0,\"10\":0},\"core.edit\":{\"11\":0},\"core.edit.state\":{\"11\":0}}'),
 (66, 8, 28, 31, 2, 'com_content.category.9', 'Equipo', '{\"core.create\":{\"11\":0,\"10\":0},\"core.edit\":{\"11\":0},\"core.edit.state\":{\"11\":0}}'),
@@ -1063,67 +1157,80 @@ INSERT INTO `f3ts9_assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`, `t
 (83, 81, 61, 62, 3, 'com_content.article.11', 'Agregar nuevo video', '{}'),
 (84, 81, 63, 64, 3, 'com_content.article.12', 'Agregar nuevo documento', '{}'),
 (85, 81, 65, 66, 3, 'com_content.article.13', 'Agregar nuevo podcast', '{}'),
-(86, 18, 168, 169, 2, 'com_modules.module.92', 'Carga de Fotos', '{}'),
-(87, 18, 170, 171, 2, 'com_modules.module.93', 'Carga de Podcast', '{}'),
-(88, 18, 172, 173, 2, 'com_modules.module.94', 'Carga de Documentos', '{}'),
-(89, 18, 174, 175, 2, 'com_modules.module.95', 'Menu', '{}'),
-(90, 8, 68, 79, 2, 'com_content.category.17', 'Fotos Nuevas', '{}'),
-(91, 1, 239, 240, 1, '#__ucm_content.1', '#__ucm_content.1', '{}'),
-(92, 90, 69, 72, 3, 'com_content.category.18', 'Fotos cargadas al repositorio', '{}'),
-(93, 1, 241, 242, 1, '#__ucm_content.2', '#__ucm_content.2', '{}'),
-(94, 90, 73, 78, 3, 'com_content.category.19', 'Artículos con fotos', '{}'),
-(95, 1, 243, 244, 1, '#__ucm_content.3', '#__ucm_content.3', '{}'),
-(96, 8, 80, 85, 2, 'com_content.category.20', 'Videos Nuevos', '{}'),
-(97, 1, 245, 246, 1, '#__ucm_content.4', '#__ucm_content.4', '{}'),
-(98, 96, 81, 82, 3, 'com_content.category.21', 'Artículos con videos', '{}'),
-(99, 1, 247, 248, 1, '#__ucm_content.5', '#__ucm_content.5', '{}'),
-(100, 96, 83, 84, 3, 'com_content.category.22', 'Videos cargados al repositorio', '{}'),
-(101, 1, 249, 250, 1, '#__ucm_content.6', '#__ucm_content.6', '{}'),
-(102, 8, 86, 91, 2, 'com_content.category.23', 'Podcast Nuevos', '{}'),
-(103, 1, 251, 252, 1, '#__ucm_content.7', '#__ucm_content.7', '{}'),
-(104, 102, 87, 88, 3, 'com_content.category.24', 'Podcasts cargadas al repositorio', '{}'),
-(105, 1, 253, 254, 1, '#__ucm_content.8', '#__ucm_content.8', '{}'),
-(106, 102, 89, 90, 3, 'com_content.category.25', 'Artículos con podcasts', '{}'),
-(107, 1, 255, 256, 1, '#__ucm_content.9', '#__ucm_content.9', '{}'),
-(108, 8, 92, 103, 2, 'com_content.category.26', 'Documentos Nuevos', '{}'),
-(109, 1, 257, 258, 1, '#__ucm_content.10', '#__ucm_content.10', '{}'),
-(110, 108, 93, 96, 3, 'com_content.category.27', 'PDF', '{}'),
-(111, 1, 259, 260, 1, '#__ucm_content.11', '#__ucm_content.11', '{}'),
-(112, 108, 97, 98, 3, 'com_content.category.28', 'Word', '{}'),
-(113, 1, 261, 262, 1, '#__ucm_content.12', '#__ucm_content.12', '{}'),
-(114, 108, 99, 100, 3, 'com_content.category.29', 'Excel', '{}'),
-(115, 1, 263, 264, 1, '#__ucm_content.13', '#__ucm_content.13', '{}'),
-(116, 108, 101, 102, 3, 'com_content.category.30', 'Power Point', '{}'),
-(117, 1, 265, 266, 1, '#__ucm_content.14', '#__ucm_content.14', '{}'),
+(86, 18, 182, 183, 2, 'com_modules.module.92', 'Carga de Fotos', '{}'),
+(87, 18, 184, 185, 2, 'com_modules.module.93', 'Carga de Podcast', '{}'),
+(88, 18, 186, 187, 2, 'com_modules.module.94', 'Carga de Documentos', '{}'),
+(89, 18, 188, 189, 2, 'com_modules.module.95', 'Menú del Repositorio', '{}'),
+(90, 8, 68, 87, 2, 'com_content.category.17', 'Fotos Nuevas', '{}'),
+(91, 1, 253, 254, 1, '#__ucm_content.1', '#__ucm_content.1', '{}'),
+(92, 90, 69, 76, 3, 'com_content.category.18', 'Fotos cargadas al repositorio', '{}'),
+(93, 1, 255, 256, 1, '#__ucm_content.2', '#__ucm_content.2', '{}'),
+(94, 90, 77, 86, 3, 'com_content.category.19', 'Artículos con fotos', '{}'),
+(95, 1, 257, 258, 1, '#__ucm_content.3', '#__ucm_content.3', '{}'),
+(96, 8, 88, 93, 2, 'com_content.category.20', 'Videos Nuevos', '{}'),
+(97, 1, 259, 260, 1, '#__ucm_content.4', '#__ucm_content.4', '{}'),
+(98, 96, 89, 90, 3, 'com_content.category.21', 'Artículos con videos', '{}'),
+(99, 1, 261, 262, 1, '#__ucm_content.5', '#__ucm_content.5', '{}'),
+(100, 96, 91, 92, 3, 'com_content.category.22', 'Videos cargados al repositorio', '{}'),
+(101, 1, 263, 264, 1, '#__ucm_content.6', '#__ucm_content.6', '{}'),
+(102, 8, 94, 99, 2, 'com_content.category.23', 'Podcast Nuevos', '{}'),
+(103, 1, 265, 266, 1, '#__ucm_content.7', '#__ucm_content.7', '{}'),
+(104, 102, 95, 96, 3, 'com_content.category.24', 'Podcasts cargadas al repositorio', '{}'),
+(105, 1, 267, 268, 1, '#__ucm_content.8', '#__ucm_content.8', '{}'),
+(106, 102, 97, 98, 3, 'com_content.category.25', 'Artículos con podcasts', '{}'),
+(107, 1, 269, 270, 1, '#__ucm_content.9', '#__ucm_content.9', '{}'),
+(108, 8, 100, 117, 2, 'com_content.category.26', 'Documentos Nuevos', '{}'),
+(109, 1, 271, 272, 1, '#__ucm_content.10', '#__ucm_content.10', '{}'),
+(110, 108, 101, 104, 3, 'com_content.category.27', 'PDF', '{}'),
+(111, 1, 273, 274, 1, '#__ucm_content.11', '#__ucm_content.11', '{}'),
+(112, 108, 105, 112, 3, 'com_content.category.28', 'Word', '{}'),
+(113, 1, 275, 276, 1, '#__ucm_content.12', '#__ucm_content.12', '{}'),
+(114, 108, 113, 114, 3, 'com_content.category.29', 'Excel', '{}'),
+(115, 1, 277, 278, 1, '#__ucm_content.13', '#__ucm_content.13', '{}'),
+(116, 108, 115, 116, 3, 'com_content.category.30', 'Power Point', '{}'),
+(117, 1, 279, 280, 1, '#__ucm_content.14', '#__ucm_content.14', '{}'),
 (122, 92, 70, 71, 4, 'com_content.article.16', 'Lámina del cuerpo ', '{}'),
-(123, 94, 74, 75, 4, 'com_content.article.17', 'Las neuronas', '{}'),
-(124, 1, 267, 268, 1, '#__ucm_content.17', '#__ucm_content.17', '{}'),
-(125, 18, 176, 177, 2, 'com_modules.module.96', 'InformacionNeo', '{}'),
-(126, 18, 178, 179, 2, 'com_modules.module.97', 'InformacionNeo2', '{}'),
-(127, 18, 180, 181, 2, 'com_modules.module.98', 'Fotos', '{}'),
-(128, 18, 182, 183, 2, 'com_modules.module.99', 'videos', '{}'),
-(129, 18, 184, 185, 2, 'com_modules.module.100', 'podcast', '{}'),
-(130, 18, 186, 187, 2, 'com_modules.module.101', 'Documentos', '{}'),
-(131, 18, 188, 189, 2, 'com_modules.module.102', 'antecedentes', '{}'),
-(132, 18, 190, 191, 2, 'com_modules.module.103', 'otrasmaterias', '{}'),
-(133, 18, 192, 193, 2, 'com_modules.module.104', 'InformacionADC', '{}'),
-(134, 18, 194, 195, 2, 'com_modules.module.105', 'Foto de inicio', '{}'),
-(135, 18, 196, 197, 2, 'com_modules.module.106', 'Equipo', '{}'),
-(136, 18, 198, 199, 2, 'com_modules.module.107', 'proyecto', '{}'),
-(137, 18, 200, 201, 2, 'com_modules.module.108', 'Repositorio', '{}'),
-(138, 1, 269, 270, 1, 'com_fields', 'com_fields', '{}'),
-(139, 1, 271, 272, 1, 'com_associations', 'com_associations', '{}'),
+(123, 94, 78, 79, 4, 'com_content.article.17', 'Las neuronas', '{}'),
+(124, 1, 281, 282, 1, '#__ucm_content.17', '#__ucm_content.17', '{}'),
+(125, 18, 190, 191, 2, 'com_modules.module.96', 'InformacionNeo', '{}'),
+(126, 18, 192, 193, 2, 'com_modules.module.97', 'InformacionNeo2', '{}'),
+(127, 18, 194, 195, 2, 'com_modules.module.98', 'Fotos', '{}'),
+(128, 18, 196, 197, 2, 'com_modules.module.99', 'videos', '{}'),
+(129, 18, 198, 199, 2, 'com_modules.module.100', 'podcast', '{}'),
+(130, 18, 200, 201, 2, 'com_modules.module.101', 'Documentos', '{}'),
+(131, 18, 202, 203, 2, 'com_modules.module.102', 'antecedentes', '{}'),
+(132, 18, 204, 205, 2, 'com_modules.module.103', 'otrasmaterias', '{}'),
+(133, 18, 206, 207, 2, 'com_modules.module.104', 'InformacionADC', '{}'),
+(134, 18, 208, 209, 2, 'com_modules.module.105', 'Foto de inicio', '{}'),
+(135, 18, 210, 211, 2, 'com_modules.module.106', 'Equipo', '{}'),
+(136, 18, 212, 213, 2, 'com_modules.module.107', 'proyecto', '{}'),
+(137, 18, 214, 215, 2, 'com_modules.module.108', 'Repositorio', '{}'),
+(138, 1, 283, 284, 1, 'com_fields', 'com_fields', '{}'),
+(139, 1, 285, 286, 1, 'com_associations', 'com_associations', '{}'),
 (140, 27, 21, 22, 3, 'com_content.article.18', 'Prueba2BA', '{}'),
 (141, 76, 55, 56, 3, 'com_content.article.19', 'Cerebro', '{}'),
-(142, 1, 273, 274, 1, '#__ucm_content.18', '#__ucm_content.18', '{}'),
-(143, 94, 76, 77, 4, 'com_content.article.20', 'Cerebro', '{}'),
-(144, 1, 275, 276, 1, '#__ucm_content.19', '#__ucm_content.19', '{}'),
-(145, 110, 94, 95, 4, 'com_content.article.21', 'Prueba de ari', '{}');
+(142, 1, 287, 288, 1, '#__ucm_content.18', '#__ucm_content.18', '{}'),
+(143, 94, 80, 81, 4, 'com_content.article.20', 'Cerebro', '{}'),
+(144, 1, 289, 290, 1, '#__ucm_content.19', '#__ucm_content.19', '{}'),
+(145, 110, 102, 103, 4, 'com_content.article.21', 'Prueba de ari', '{}'),
+(146, 94, 82, 83, 4, 'com_content.article.22', 'Partes del cráneo', '{}'),
+(147, 1, 291, 292, 1, '#__ucm_content.20', '#__ucm_content.20', '{}'),
+(148, 92, 72, 73, 4, 'com_content.article.23', 'Fotos de neuronas', '{}'),
+(149, 1, 293, 294, 1, '#__ucm_content.21', '#__ucm_content.21', '{}'),
+(150, 94, 84, 85, 4, 'com_content.article.24', 'La Caja Torácica', '{}'),
+(151, 1, 295, 296, 1, '#__ucm_content.22', '#__ucm_content.22', '{}'),
+(152, 92, 74, 75, 4, 'com_content.article.25', 'Imagen de neurona', '{}'),
+(153, 1, 297, 298, 1, '#__ucm_content.23', '#__ucm_content.23', '{}'),
+(154, 112, 106, 107, 4, 'com_content.article.26', 'Artículo sobre las partes del cerebro', '{}'),
+(155, 1, 299, 300, 1, '#__ucm_content.24', '#__ucm_content.24', '{}'),
+(156, 112, 110, 111, 4, 'com_content.article.27', 'Documento de las neuronas', '{}'),
+(157, 112, 108, 109, 4, 'com_content.article.28', 'Documento de la caja torácica', '{}'),
+(158, 1, 301, 302, 1, '#__ucm_content.25', '#__ucm_content.25', '{}');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_associations`
+-- Table structure for table `f3ts9_associations`
 --
 
 CREATE TABLE `f3ts9_associations` (
@@ -1135,7 +1242,7 @@ CREATE TABLE `f3ts9_associations` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_banners`
+-- Table structure for table `f3ts9_banners`
 --
 
 CREATE TABLE `f3ts9_banners` (
@@ -1178,7 +1285,7 @@ CREATE TABLE `f3ts9_banners` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_banner_clients`
+-- Table structure for table `f3ts9_banner_clients`
 --
 
 CREATE TABLE `f3ts9_banner_clients` (
@@ -1201,7 +1308,7 @@ CREATE TABLE `f3ts9_banner_clients` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_banner_tracks`
+-- Table structure for table `f3ts9_banner_tracks`
 --
 
 CREATE TABLE `f3ts9_banner_tracks` (
@@ -1214,7 +1321,7 @@ CREATE TABLE `f3ts9_banner_tracks` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_categories`
+-- Table structure for table `f3ts9_categories`
 --
 
 CREATE TABLE `f3ts9_categories` (
@@ -1248,7 +1355,7 @@ CREATE TABLE `f3ts9_categories` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_categories`
+-- Dumping data for table `f3ts9_categories`
 --
 
 INSERT INTO `f3ts9_categories` (`id`, `asset_id`, `parent_id`, `lft`, `rgt`, `level`, `path`, `extension`, `title`, `alias`, `note`, `description`, `published`, `checked_out`, `checked_out_time`, `access`, `params`, `metadesc`, `metakey`, `metadata`, `created_user_id`, `created_time`, `modified_user_id`, `modified_time`, `hits`, `language`, `version`) VALUES
@@ -1265,17 +1372,17 @@ INSERT INTO `f3ts9_categories` (`id`, `asset_id`, `parent_id`, `lft`, `rgt`, `le
 (12, 73, 1, 17, 18, 1, 'podcasts', 'com_content', 'Podcasts', 'podcasts', '', '', 1, 0, '0000-00-00 00:00:00', 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', '', '', '{\"author\":\"\",\"robots\":\"\"}', 380, '2021-02-06 04:38:42', 380, '2021-02-06 08:32:03', 0, '*', 1),
 (13, 74, 1, 19, 20, 1, 'documentos', 'com_content', 'Documentos', 'documentos', '', '', 1, 0, '0000-00-00 00:00:00', 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', '', '', '{\"author\":\"\",\"robots\":\"\"}', 380, '2021-02-06 04:38:58', 380, '2021-02-06 08:32:23', 0, '*', 1),
 (14, 75, 1, 15, 16, 1, 'videos', 'com_content', 'Videos', 'videos', '', '', 1, 0, '0000-00-00 00:00:00', 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', '', '', '{\"author\":\"\",\"robots\":\"\"}', 380, '2021-02-06 04:39:37', 380, '2021-02-06 08:34:22', 0, '*', 1),
-(15, 76, 1, 13, 14, 1, 'fotos', 'com_content', 'Fotos', 'fotos', '', '', 1, 0, '0000-00-00 00:00:00', 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', '', '', '{\"author\":\"\",\"robots\":\"\"}', 380, '2021-02-06 04:40:15', 380, '2021-02-06 08:35:01', 0, '*', 1),
+(15, 76, 1, 13, 14, 1, 'fotos', 'com_content', 'Fotos', 'fotos', '', '<p>Esta categoría contiene unicamente artículos con fotos que se han cargado al repositorio Blow your mind.</p>', 1, 0, '0000-00-00 00:00:00', 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', '', '', '{\"author\":\"\",\"robots\":\"\"}', 380, '2021-02-06 04:40:15', 380, '2021-02-08 08:00:47', 0, '*', 1),
 (16, 81, 1, 27, 28, 1, 'carga', 'com_content', 'Carga', 'carga', '', '', 1, 380, '2021-02-06 08:35:05', 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', '', '', '{\"author\":\"\",\"robots\":\"\"}', 380, '2021-02-06 05:21:18', 0, '2021-02-06 05:21:18', 0, '*', 1),
 (17, 90, 1, 29, 34, 1, 'fotos-nuevas', 'com_content', 'Fotos Nuevas', 'fotos-nuevas', '', '', 1, 0, '0000-00-00 00:00:00', 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', '', '', '{\"author\":\"\",\"robots\":\"\"}', 380, '2021-02-06 08:41:45', 0, '2021-02-06 08:41:45', 0, '*', 1),
-(18, 92, 17, 30, 31, 2, 'fotos-nuevas/fotos-cargadas-al-repositorio', 'com_content', 'Fotos cargadas al repositorio', 'fotos-cargadas-al-repositorio', '', '', 1, 0, '0000-00-00 00:00:00', 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', '', '', '{\"author\":\"\",\"robots\":\"\"}', 380, '2021-02-06 08:42:47', 0, '2021-02-06 08:42:47', 0, '*', 1),
-(19, 94, 17, 32, 33, 2, 'fotos-nuevas/articulos-con-fotos', 'com_content', 'Artículos con fotos', 'articulos-con-fotos', '', '', 1, 0, '0000-00-00 00:00:00', 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', '', '', '{\"author\":\"\",\"robots\":\"\"}', 380, '2021-02-06 08:43:15', 0, '2021-02-06 08:43:15', 0, '*', 1),
+(18, 92, 17, 30, 31, 2, 'fotos-nuevas/fotos-cargadas-al-repositorio', 'com_content', 'Fotos cargadas al repositorio', 'fotos-cargadas-al-repositorio', '', '<p>Esta categoría contiene unicamente artículos con fotos que se han cargado al repositorio Blow your mind.</p>', 1, 0, '0000-00-00 00:00:00', 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', '', '', '{\"author\":\"\",\"robots\":\"\"}', 380, '2021-02-06 08:42:47', 380, '2021-02-08 08:01:06', 0, '*', 1),
+(19, 94, 17, 32, 33, 2, 'fotos-nuevas/articulos-con-fotos', 'com_content', 'Artículos con fotos', 'articulos-con-fotos', '', '<p>Esta categoría contiene unicamente artículos con fotos e información de descripción que se han cargado al repositorio Blow your mind.</p>', 1, 0, '0000-00-00 00:00:00', 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', '', '', '{\"author\":\"\",\"robots\":\"\"}', 380, '2021-02-06 08:43:15', 380, '2021-02-08 08:05:31', 0, '*', 1),
 (20, 96, 1, 35, 40, 1, 'videos-nuevos', 'com_content', 'Videos Nuevos', 'videos-nuevos', '', '', 1, 0, '0000-00-00 00:00:00', 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', '', '', '{\"author\":\"\",\"robots\":\"\"}', 380, '2021-02-06 08:43:49', 0, '2021-02-06 08:43:49', 0, '*', 1),
-(21, 98, 20, 36, 37, 2, 'videos-nuevos/articulos-con-videos', 'com_content', 'Artículos con videos', 'articulos-con-videos', '', '', 1, 0, '0000-00-00 00:00:00', 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', '', '', '{\"author\":\"\",\"robots\":\"\"}', 380, '2021-02-06 08:44:33', 0, '2021-02-06 08:44:33', 0, '*', 1),
-(22, 100, 20, 38, 39, 2, 'videos-nuevos/videos-cargados-al-repositorio', 'com_content', 'Videos cargados al repositorio', 'videos-cargados-al-repositorio', '', '', 1, 0, '0000-00-00 00:00:00', 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', '', '', '{\"author\":\"\",\"robots\":\"\"}', 380, '2021-02-06 08:46:20', 0, '2021-02-06 08:46:20', 0, '*', 1),
+(21, 98, 20, 36, 37, 2, 'videos-nuevos/articulos-con-videos', 'com_content', 'Artículos con videos', 'articulos-con-videos', '', '<p>Esta categoría contiene unicamente artículos con videos e información descriptiva que se han cargado al repositorio Blow your mind. Los videos pueden cargarse desde el propio repositorio o pueden ser a través de youtube.</p>', 1, 0, '0000-00-00 00:00:00', 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', '', '', '{\"author\":\"\",\"robots\":\"\"}', 380, '2021-02-06 08:44:33', 380, '2021-02-08 08:06:31', 0, '*', 1),
+(22, 100, 20, 38, 39, 2, 'videos-nuevos/videos-cargados-al-repositorio', 'com_content', 'Videos cargados al repositorio', 'videos-cargados-al-repositorio', '', '<p>Esta categoría contiene unicamente artículos con videos que se han cargado al repositorio Blow your mind. Los videos pueden cargarse desde el propio repositorio o pueden ser a través de youtube.</p>', 1, 0, '0000-00-00 00:00:00', 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', '', '', '{\"author\":\"\",\"robots\":\"\"}', 380, '2021-02-06 08:46:20', 380, '2021-02-08 08:07:06', 0, '*', 1),
 (23, 102, 1, 41, 46, 1, 'podcast-nuevos', 'com_content', 'Podcast Nuevos', 'podcast-nuevos', '', '', 1, 0, '0000-00-00 00:00:00', 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', '', '', '{\"author\":\"\",\"robots\":\"\"}', 380, '2021-02-06 08:47:29', 0, '2021-02-06 08:47:29', 0, '*', 1),
-(24, 104, 23, 42, 43, 2, 'podcast-nuevos/podcasts-cargadas-al-repositorio', 'com_content', 'Podcasts cargadas al repositorio', 'podcasts-cargadas-al-repositorio', '', '', 1, 0, '0000-00-00 00:00:00', 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', '', '', '{\"author\":\"\",\"robots\":\"\"}', 380, '2021-02-06 08:47:46', 0, '2021-02-06 08:47:46', 0, '*', 1),
-(25, 106, 23, 44, 45, 2, 'podcast-nuevos/articulos-con-podcasts', 'com_content', 'Artículos con podcasts', 'articulos-con-podcasts', '', '', 1, 0, '0000-00-00 00:00:00', 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', '', '', '{\"author\":\"\",\"robots\":\"\"}', 380, '2021-02-06 08:48:12', 0, '2021-02-06 08:48:12', 0, '*', 1),
+(24, 104, 23, 42, 43, 2, 'podcast-nuevos/podcasts-cargadas-al-repositorio', 'com_content', 'Podcasts cargadas al repositorio', 'podcasts-cargadas-al-repositorio', '', '<p>Esta categoría contiene unicamente artículos con audios y podcasts que se han cargado al repositorio Blow your mind.</p>', 1, 0, '0000-00-00 00:00:00', 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', '', '', '{\"author\":\"\",\"robots\":\"\"}', 380, '2021-02-06 08:47:46', 380, '2021-02-08 08:07:51', 0, '*', 1),
+(25, 106, 23, 44, 45, 2, 'podcast-nuevos/articulos-con-podcasts', 'com_content', 'Artículos con podcasts', 'articulos-con-podcasts', '', '<p>Esta categoría contiene unicamente artículos con audios y podcasts e información descriptiva como el texto del audio que se han cargado al repositorio Blow your mind.</p>', 1, 0, '0000-00-00 00:00:00', 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', '', '', '{\"author\":\"\",\"robots\":\"\"}', 380, '2021-02-06 08:48:12', 380, '2021-02-08 08:08:57', 0, '*', 1),
 (26, 108, 1, 47, 56, 1, 'documentos-nuevos', 'com_content', 'Documentos Nuevos', 'documentos-nuevos', '', '', 1, 0, '0000-00-00 00:00:00', 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', '', '', '{\"author\":\"\",\"robots\":\"\"}', 380, '2021-02-06 09:23:55', 380, '2021-02-08 06:25:10', 0, '*', 1),
 (27, 110, 26, 48, 49, 2, 'documentos-nuevos/pdf', 'com_content', 'PDF', 'pdf', '', '', 1, 0, '0000-00-00 00:00:00', 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', '', '', '{\"author\":\"\",\"robots\":\"\"}', 380, '2021-02-06 09:26:00', 0, '2021-02-06 09:26:00', 0, '*', 1),
 (28, 112, 26, 50, 51, 2, 'documentos-nuevos/word', 'com_content', 'Word', 'word', '', '', 1, 0, '0000-00-00 00:00:00', 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', '', '', '{\"author\":\"\",\"robots\":\"\"}', 380, '2021-02-06 09:26:37', 0, '2021-02-06 09:26:37', 0, '*', 1),
@@ -1285,7 +1392,7 @@ INSERT INTO `f3ts9_categories` (`id`, `asset_id`, `parent_id`, `lft`, `rgt`, `le
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_contact_details`
+-- Table structure for table `f3ts9_contact_details`
 --
 
 CREATE TABLE `f3ts9_contact_details` (
@@ -1337,7 +1444,7 @@ CREATE TABLE `f3ts9_contact_details` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_content`
+-- Table structure for table `f3ts9_content`
 --
 
 CREATE TABLE `f3ts9_content` (
@@ -1375,13 +1482,13 @@ CREATE TABLE `f3ts9_content` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_content`
+-- Dumping data for table `f3ts9_content`
 --
 
 INSERT INTO `f3ts9_content` (`id`, `asset_id`, `title`, `alias`, `introtext`, `fulltext`, `state`, `catid`, `created`, `created_by`, `created_by_alias`, `modified`, `modified_by`, `checked_out`, `checked_out_time`, `publish_up`, `publish_down`, `images`, `urls`, `attribs`, `version`, `ordering`, `metakey`, `metadesc`, `access`, `hits`, `metadata`, `featured`, `language`, `xreference`, `note`) VALUES
-(1, 64, 'Inicio', 'prueba', '', '', 1, 2, '2021-02-06 03:21:18', 380, '', '2021-02-07 07:04:39', 380, 0, '0000-00-00 00:00:00', '2021-02-06 03:21:18', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 10, 1, '', '', 1, 330, '{\"robots\":\"\",\"author\":\"\",\"rights\":\"\",\"xreference\":\"\"}', 0, '*', '', ''),
-(2, 69, 'Inicio de sesión y registro', 'inicio-de-sesion-y-registro', '', '', 1, 11, '2021-02-06 03:51:57', 380, '', '2021-02-07 07:07:32', 380, 0, '0000-00-00 00:00:00', '2021-02-06 03:51:57', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 9, 0, '', '', 1, 104, '{\"robots\":\"\",\"author\":\"\",\"rights\":\"\",\"xreference\":\"\"}', 1, '*', '', ''),
-(3, 70, 'Repositorio', 'repositorio', '', '', 1, 8, '2021-02-06 04:36:01', 380, '', '2021-02-06 04:36:01', 0, 0, '0000-00-00 00:00:00', '2021-02-06 04:36:01', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 1, 0, '', '', 1, 94, '{\"robots\":\"\",\"author\":\"\",\"rights\":\"\",\"xreference\":\"\"}', 0, '*', '', ''),
+(1, 64, 'Inicio', 'prueba', '', '', 1, 2, '2021-02-06 03:21:18', 380, '', '2021-02-07 07:04:39', 380, 0, '0000-00-00 00:00:00', '2021-02-06 03:21:18', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 10, 2, '', '', 1, 336, '{\"robots\":\"\",\"author\":\"\",\"rights\":\"\",\"xreference\":\"\"}', 0, '*', '', ''),
+(2, 69, 'Inicio de sesión y registro', 'inicio-de-sesion-y-registro', '', '', 1, 11, '2021-02-06 03:51:57', 380, '', '2021-02-07 07:07:32', 380, 0, '0000-00-00 00:00:00', '2021-02-06 03:51:57', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 9, 0, '', '', 1, 105, '{\"robots\":\"\",\"author\":\"\",\"rights\":\"\",\"xreference\":\"\"}', 1, '*', '', ''),
+(3, 70, 'Repositorio', 'repositorio', '', '', 1, 8, '2021-02-06 04:36:01', 380, '', '2021-02-06 04:36:01', 0, 0, '0000-00-00 00:00:00', '2021-02-06 04:36:01', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 1, 0, '', '', 1, 96, '{\"robots\":\"\",\"author\":\"\",\"rights\":\"\",\"xreference\":\"\"}', 0, '*', '', ''),
 (4, 71, 'Proyecto', 'proyecto', '', '', 1, 10, '2021-02-06 04:36:45', 380, '', '2021-02-06 04:36:45', 0, 0, '0000-00-00 00:00:00', '2021-02-06 04:36:45', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 1, 0, '', '', 1, 37, '{\"robots\":\"\",\"author\":\"\",\"rights\":\"\",\"xreference\":\"\"}', 0, '*', '', ''),
 (5, 72, 'Equipo', 'equipo', '', '', 1, 9, '2021-02-06 04:37:31', 380, '', '2021-02-06 04:37:31', 0, 0, '0000-00-00 00:00:00', '2021-02-06 04:37:31', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 1, 0, '', '', 1, 46, '{\"robots\":\"\",\"author\":\"\",\"rights\":\"\",\"xreference\":\"\"}', 0, '*', '', ''),
 (6, 77, 'Fotos', 'fotos', '', '', 1, 15, '2021-02-06 04:41:01', 380, '', '2021-02-06 04:41:01', 0, 0, '0000-00-00 00:00:00', '2021-02-06 04:41:01', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 1, 1, '', '', 2, 1, '{\"robots\":\"\",\"author\":\"\",\"rights\":\"\",\"xreference\":\"\"}', 0, '*', '', ''),
@@ -1392,17 +1499,24 @@ INSERT INTO `f3ts9_content` (`id`, `asset_id`, `title`, `alias`, `introtext`, `f
 (11, 83, 'Agregar nuevo video', 'agregar-nuevo-video', '', '', 1, 16, '2021-02-06 05:23:37', 380, '', '2021-02-06 05:23:37', 0, 0, '0000-00-00 00:00:00', '2021-02-06 05:23:37', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 1, 2, '', '', 2, 0, '{\"robots\":\"\",\"author\":\"\",\"rights\":\"\",\"xreference\":\"\"}', 0, '*', '', ''),
 (12, 84, 'Agregar nuevo documento', 'agregar-nuevo-documento', '', '', 1, 16, '2021-02-06 05:24:05', 380, '', '2021-02-06 05:24:05', 0, 0, '0000-00-00 00:00:00', '2021-02-06 05:24:05', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 1, 1, '', '', 2, 0, '{\"robots\":\"\",\"author\":\"\",\"rights\":\"\",\"xreference\":\"\"}', 0, '*', '', ''),
 (13, 85, 'Agregar nuevo podcast', 'agregar-nuevo-podcast', '', '', 1, 16, '2021-02-06 05:24:22', 380, '', '2021-02-08 06:22:41', 380, 0, '0000-00-00 00:00:00', '2021-02-06 05:24:22', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 2, 0, '', '', 2, 0, '{\"robots\":\"\",\"author\":\"\",\"rights\":\"\",\"xreference\":\"\"}', 0, '*', '', ''),
-(16, 122, 'Lámina del cuerpo ', 'lamina-del-cuerpo', '<p><img src=\"images/imagenes/lamina_1.JPG\" alt=\"\" /></p>', '', 1, 18, '2021-02-07 00:24:02', 382, '', '2021-02-07 00:25:33', 380, 0, '0000-00-00 00:00:00', '2021-02-07 00:24:35', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 3, 0, '', '', 1, 0, '{\"robots\":\"\",\"author\":\"\",\"rights\":\"\",\"xreference\":\"\"}', 0, '*', '', ''),
-(17, 123, 'Las neuronas', 'las-neuronas', '<p><img src=\"images/imagenes/conexiones2.jpg\" alt=\"\" width=\"420\" height=\"210\" /></p>\r\n<p>Las neuronas tienen la capacidad de comunicarse con precisión, rapidez y a larga distancia con otras células, ya sean nerviosas, musculares o glandulares. A través de las neuronas se transmiten señales eléctricas denominadas impulsos nerviosos. Estos impulsos nerviosos viajan por toda la neurona comenzando por las dendritas hasta llegar a los botones terminales, que se pueden conectar con otra neurona, fibras musculares o glándulas. La conexión entre una neurona y otra se denomina sinapsis. Las neuronas conforman e interconectan los tres componentes del sistema nervioso: sensitivo, motor e integrador o mixto; de esta manera, un estímulo que es captado en alguna región sensorial entrega cierta información que es conducida a través de las neuronas y es analizada por el componente integrador, el cual puede elaborar una respuesta, cuya señal es conducida a través de las neuronas. Dicha respuesta es ejecutada mediante una acción motora, como la contracción muscular o secreción glandular.  </p>', '', 1, 19, '2021-02-07 00:55:24', 382, '', '2021-02-07 01:00:53', 380, 0, '0000-00-00 00:00:00', '2021-02-07 00:55:40', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 3, 1, '', '', 1, 1, '{\"robots\":\"\",\"author\":\"\",\"rights\":\"\",\"xreference\":\"\"}', 0, '*', '', ''),
-(18, 140, 'Prueba2BA', 'cerebro', '<h3>Las partes del cerebro:</h3>\r\n<p><img src=\"images/fotos/barin_examination.jpg\" width=\"800\" height=\"555\" /></p>\r\n<p>Tenemos 5 zonas en que se divide un cerebro en Mar, Venus, Neptune, Saturn y jupiter.</p>', '', 1, 2, '2021-02-07 21:40:44', 380, '', '2021-02-07 21:40:44', 0, 0, '0000-00-00 00:00:00', '2021-02-07 21:40:44', '0000-00-00 00:00:00', '{}', '{}', '{\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 1, 0, '', '', 1, 0, '{}', 0, '*', '', ''),
-(19, 141, 'Cerebro', 'cerebro', '<p><img src=\"images/fotos/barin_examination.jpg\" width=\"800\" height=\"500\" /></p>\r\n<p> </p>\r\n<p>Las zonas del cerebro son:</p>', '', 1, 15, '2021-02-07 22:43:18', 380, '', '2021-02-07 22:43:18', 0, 0, '0000-00-00 00:00:00', '2021-02-07 22:43:18', '0000-00-00 00:00:00', '{}', '{}', '{\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 1, 0, '', '', 1, 0, '{}', 0, '*', '', ''),
-(20, 143, 'Cerebro', 'cerebro', '<p><img src=\"images/fotos/barin_examination.jpg\" alt=\"\" /></p>\r\n<p> </p>\r\n<p>dadsadadasd</p>', '', 1, 19, '2021-02-07 22:47:32', 380, '', '2021-02-07 22:47:32', 0, 0, '0000-00-00 00:00:00', '2021-02-07 22:47:32', '0000-00-00 00:00:00', '{}', '{}', '{\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 1, 0, '', '', 1, 0, '{}', 0, '*', '', ''),
-(21, 145, 'Prueba de ari', 'prueba-de-ari', '<p><code></code></p>\r\n<p><code>{aridoc engine=\"google\" width=\"550\" height=\"450\"}images/archivos/PruebaDJmodulo.pdf{/aridoc}</code></p>\r\n<p><code>{aridoc engine=\"google\" width=\"600\" height=\"300\"}images/archivos/proyecto_practoicum.pptx{/aridoc}</code><br /><code></code></p>\r\n<p><code>{aridoc engine=\"office\" width=\"550\" height=\"450\"}images/archivos/proyecto_practoicum.pptx{/aridoc}</code></p>\r\n<p><code>{aridoc engine=\"pdfjs\" width=\"600\" height=\"300\"}images/archivos/PruebaDJmodulo.pdf{/aridoc}</code></p>\r\n<p><code>{aridoc engine=\"google\" width=\"600\" height=\"300\"}http://bibliotecadigital.usb.edu.co/bitstream/10819/3858/1/Historia_Neuropsicologia_Facultad_Leal_2017.pdf{/aridoc}</code><br /><code></code><br /><code></code></p>', '', 1, 27, '2021-02-08 01:13:25', 380, '', '2021-02-08 06:20:36', 380, 0, '0000-00-00 00:00:00', '2021-02-08 01:13:25', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 37, 0, '', '', 1, 0, '{}', 0, '*', '', '');
+(16, 122, 'Lámina del cuerpo ', 'lamina-del-cuerpo', '<p><img src=\"images/imagenes/lamina_1.JPG\" alt=\"\" /></p>', '', 1, 18, '2021-02-07 00:24:02', 382, '', '2021-02-07 00:25:33', 380, 0, '0000-00-00 00:00:00', '2021-02-07 00:24:35', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 3, 2, '', '', 1, 0, '{\"robots\":\"\",\"author\":\"\",\"rights\":\"\",\"xreference\":\"\"}', 0, '*', '', ''),
+(17, 123, 'Las neuronas', 'las-neuronas', '<p><img src=\"images/imagenes/conexiones2.jpg\" alt=\"\" width=\"420\" height=\"210\" /></p>\r\n<p>Las neuronas tienen la capacidad de comunicarse con precisión, rapidez y a larga distancia con otras células, ya sean nerviosas, musculares o glandulares. A través de las neuronas se transmiten señales eléctricas denominadas impulsos nerviosos. Estos impulsos nerviosos viajan por toda la neurona comenzando por las dendritas hasta llegar a los botones terminales, que se pueden conectar con otra neurona, fibras musculares o glándulas. La conexión entre una neurona y otra se denomina sinapsis. Las neuronas conforman e interconectan los tres componentes del sistema nervioso: sensitivo, motor e integrador o mixto; de esta manera, un estímulo que es captado en alguna región sensorial entrega cierta información que es conducida a través de las neuronas y es analizada por el componente integrador, el cual puede elaborar una respuesta, cuya señal es conducida a través de las neuronas. Dicha respuesta es ejecutada mediante una acción motora, como la contracción muscular o secreción glandular.  </p>', '', 1, 19, '2021-02-07 00:55:24', 382, '', '2021-02-07 01:00:53', 380, 0, '0000-00-00 00:00:00', '2021-02-07 00:55:40', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 3, 3, '', '', 1, 2, '{\"robots\":\"\",\"author\":\"\",\"rights\":\"\",\"xreference\":\"\"}', 0, '*', '', ''),
+(18, 140, 'Prueba2BA', 'cerebro', '<h3>Las partes del cerebro:</h3>\r\n<p><img src=\"images/fotos/barin_examination.jpg\" width=\"800\" height=\"555\" /></p>\r\n<p>Tenemos 5 zonas en que se divide un cerebro en Mar, Venus, Neptune, Saturn y jupiter.</p>', '', 1, 2, '2021-02-07 21:40:44', 380, '', '2021-02-07 21:40:44', 0, 0, '0000-00-00 00:00:00', '2021-02-07 21:40:44', '0000-00-00 00:00:00', '{}', '{}', '{\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 1, 1, '', '', 1, 0, '{}', 0, '*', '', ''),
+(19, 141, 'Cerebro', 'cerebro', '<p><img src=\"images/fotos/barin_examination.jpg\" width=\"800\" height=\"500\" /></p>\r\n<p> </p>\r\n<p>Las zonas del cerebro son:</p>', '', -2, 15, '2021-02-07 22:43:18', 380, '', '2021-02-07 22:43:18', 0, 0, '0000-00-00 00:00:00', '2021-02-07 22:43:18', '0000-00-00 00:00:00', '{}', '{}', '{\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 1, 0, '', '', 1, 1, '{}', 0, '*', '', ''),
+(20, 143, 'Cerebro', 'cerebro', '<p><img src=\"images/fotos/barin_examination.jpg\" alt=\"\" width=\"787\" height=\"426\" /></p>\r\n<p> </p>\r\n<p>Un ejemplo de la examinación del cerebro humano.</p>', '', 1, 19, '2021-02-07 22:47:32', 380, '', '2021-02-08 08:19:06', 380, 380, '2021-02-08 08:19:14', '2021-02-07 22:47:32', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 2, 2, '', '', 1, 0, '{}', 0, '*', '', ''),
+(21, 145, 'Prueba de ari', 'prueba-de-ari', '<p><code></code></p>\r\n<p><code>{aridoc engine=\"google\" width=\"550\" height=\"450\"}images/archivos/PruebaDJmodulo.pdf{/aridoc}</code></p>\r\n<p><code>{aridoc engine=\"google\" width=\"600\" height=\"300\"}images/archivos/proyecto_practoicum.pptx{/aridoc}</code><br /><code></code></p>\r\n<p><code>{aridoc engine=\"office\" width=\"550\" height=\"450\"}images/archivos/proyecto_practoicum.pptx{/aridoc}</code></p>\r\n<p><code>{aridoc engine=\"pdfjs\" width=\"600\" height=\"300\"}images/archivos/PruebaDJmodulo.pdf{/aridoc}</code></p>\r\n<p><code>{aridoc engine=\"google\" width=\"600\" height=\"300\"}http://bibliotecadigital.usb.edu.co/bitstream/10819/3858/1/Historia_Neuropsicologia_Facultad_Leal_2017.pdf{/aridoc}</code><br /><code></code><br /><code></code></p>', '', 1, 27, '2021-02-08 01:13:25', 380, '', '2021-02-08 06:20:36', 380, 0, '0000-00-00 00:00:00', '2021-02-08 01:13:25', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 37, 0, '', '', 1, 0, '{}', 0, '*', '', ''),
+(22, 146, 'Partes del cráneo', 'partes-del-craneo', '<p><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"images/anatomia_craneo.png\" alt=\"\" width=\"469\" height=\"365\" /></p>\r\n<p>El cráneo es el esqueleto de la cabeza y diversos huesos constituyen sus dos partes: el neurocráneo y esplacnocráneo. El neurocráneo es la caja ósea del encéfalo y sus cubiertas membranosas. En un adulto, está formado por una serie de ocho huesos: cuatro impares centrados en la línea media (frontal, etmoides, esfenoides y occipital) y dos series de pares bilaterales (temporal y parietal). Los huesos del denominado neurocráneo en conjunto conforman otras dos estructuras anatómicas: Los huesos frontal, parietales y occipital suelen conformar una estructura de techo parecido a una cúpula, denominada calvaria o bóveda craneal, mientras que el hueso esfenoides y temporales forman parte de la base del cráneo.</p>\r\n<p>El esplacnocráneo o viscerocráneo, también llamado esqueleto facial, constituye la parte anterior del cráneo y se compone de los huesos que rodean la boca (maxilares y mandíbula), la nariz/cavidad nasal y la mayor parte de las cavidades orbitarias. Este consta de 14 huesos irregulares: dos huesos impares centrados (mandíbula y vómer) y seis huesos pares bilaterales (maxilar, cornete nasal inferior, cigomático, palatino, nasal y lagrimal). Los maxilares y la mandíbula albergan los dientes; dicho de otra manera, proporcionan las cavidades y el hueso de sostén para los dientes maxilares y mandibulares. Los maxilares forman la mayor parte del esqueleto facial superior, fijado a la base del cráneo. La mandíbula forma el esqueleto facial inferior, siendo este de carácter móvil al articularse con la base del cráneo en las articulaciones temporomandibulares.</p>', '', 1, 19, '2021-02-08 07:40:53', 380, '', '2021-02-08 07:40:53', 0, 0, '0000-00-00 00:00:00', '2021-02-08 07:40:53', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 1, 1, '', '', 2, 1, '{}', 0, '*', '', ''),
+(23, 148, 'Fotos de neuronas', 'fotos-de-neuronas', '<p><img src=\"images/imagenes/cerebro.jpg\" alt=\"\" /></p>', '', 1, 18, '2021-02-08 07:41:36', 380, '', '2021-02-08 07:41:36', 0, 0, '0000-00-00 00:00:00', '2021-02-08 07:41:36', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 1, 1, '', '', 1, 1, '{}', 0, '*', '', ''),
+(24, 150, 'La Caja Torácica', 'la-caja-toracica', '<p> </p>\r\n<p><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"images/caja_toraxicajpg.jpg\" alt=\"\" /></p>\r\n<p style=\"text-align: justify;\">El tórax es la parte del cuerpo humano que está entre la base del cuello y el diafragma. Contiene a los pulmones, el corazón, voluminosos vasos sanguíneos, linfáticos y la arteria aorta (ascendente, arco y descendente), la vena cava inferior, la cadena ganglionar simpática de donde salen las ramas esplácnicas, las venas ácigos (mayor y menor), el esófago y el conducto torácico. Su división fundamentalmente consiste en el mediastino y las dos cavidades pulmonares.</p>\r\n<p style=\"text-align: justify;\">Tiene forma de cono truncado o pirámide y su pared está formada por los arcos costales (costillas) y los músculos intercostales, que se unen anteriormente al hueso esternón por medio de cartílagos y posteriormente a la columna vertebral. La función de esta formación osteocartilaginosa, es la de proteger los órganos internos de los traumatismos mecánicos, que de otra manera podrían lesionarlos.</p>\r\n<p style=\"text-align: justify;\">La caja torácica tiene la particularidad de ser expansible, permitiendo la inspiración (inhalación). Además, su último par de costillas son flotantes, ya que están unidas solo a las vértebras, en la parte posterior, lo que permite su ensanchamiento en el embarazo.</p>\r\n<p style=\"text-align: justify;\">El nombre deriva del Latín thorax, y este del griego -θώραξ-; que significa propiamente coraza.</p>', '', 1, 19, '2021-02-08 07:44:57', 380, '', '2021-02-08 07:44:57', 0, 0, '0000-00-00 00:00:00', '2021-02-08 07:44:57', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 1, 0, '', '', 1, 4, '{}', 0, '*', '', ''),
+(25, 152, 'Imagen de neurona', 'imagen-de-neurona', '<p><img src=\"images/imagenes/cerebro.jpg\" alt=\"\" width=\"680\" height=\"372\" /></p>', '', 1, 18, '2021-02-08 07:50:50', 380, '', '2021-02-08 07:50:50', 0, 0, '0000-00-00 00:00:00', '2021-02-08 07:50:50', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 1, 0, '', '', 1, 0, '{}', 0, '*', '', ''),
+(26, 154, 'Artículo sobre las partes del cerebro', 'articulo-sobre-las-partes-del-cerebro', '<pre><code>{google_docs}https://docs.google.com/document/d/e/2PACX-1vSZbk0N2NhHRhkYJiuwxQr3hS1Il6eB3IQv9BVQyEXNZQWtidVILIjoequx4Zm9jQ/pub{/google_docs}</code></pre>', '', 1, 28, '2021-02-08 08:21:16', 380, '', '2021-02-08 08:26:17', 380, 0, '0000-00-00 00:00:00', '2021-02-08 08:21:16', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 6, 1, '', '', 2, 0, '{}', 0, '*', '', ''),
+(27, 156, 'Documento de las neuronas', 'documento-de-las-neuronas', '<pre><code>{google_docs}https://docs.google.com/document/d/e/2PACX-1vRHDfDQkeHDSuAcz9YMIqCdWHUTBxkyK3BToJ99H6e0IQcRGav5Ic5gV07oCQaZPg/pub{/google_docs}</code></pre>', '', 1, 28, '2021-02-08 08:26:56', 380, '', '2021-02-08 08:27:58', 380, 0, '0000-00-00 00:00:00', '2021-02-08 08:26:56', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 2, 0, '', '', 1, 0, '{}', 0, '*', '', ''),
+(28, 157, 'Documento de la caja torácica', 'documento-de-la-caja-toracica', '<pre><code>{google_docs}https://docs.google.com/document/d/e/2PACX-1vSmgygovOW6cJq1iehDIl9py3JZydg4doXNKHIn90WvzZlWyTza3-gk6vtwC_x7KQ/pub{/google_docs}</code></pre>', '', 1, 28, '2021-02-08 08:27:27', 380, '', '2021-02-08 08:41:50', 380, 380, '2021-02-08 08:41:50', '2021-02-08 08:27:27', '0000-00-00 00:00:00', '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 15, 0, '', '', 1, 1, '{}', 0, '*', '', '');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_contentitem_tag_map`
+-- Table structure for table `f3ts9_contentitem_tag_map`
 --
 
 CREATE TABLE `f3ts9_contentitem_tag_map` (
@@ -1415,28 +1529,36 @@ CREATE TABLE `f3ts9_contentitem_tag_map` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Maps items from content tables to tags';
 
 --
--- Volcado de datos para la tabla `f3ts9_contentitem_tag_map`
+-- Dumping data for table `f3ts9_contentitem_tag_map`
 --
 
 INSERT INTO `f3ts9_contentitem_tag_map` (`type_alias`, `core_content_id`, `content_item_id`, `tag_id`, `tag_date`, `type_id`) VALUES
 ('com_content.article', 17, 17, 2, '2021-02-07 01:00:53', 1),
 ('com_content.article', 17, 17, 3, '2021-02-07 01:00:53', 1),
 ('com_content.article', 18, 19, 2, '2021-02-07 22:43:18', 1),
-('com_content.article', 19, 20, 2, '2021-02-07 22:47:32', 1),
+('com_content.article', 19, 20, 3, '2021-02-08 08:19:06', 1),
+('com_content.article', 20, 22, 3, '2021-02-08 07:40:54', 1),
+('com_content.article', 21, 23, 2, '2021-02-08 07:41:36', 1),
+('com_content.article', 21, 23, 4, '2021-02-08 07:41:36', 1),
+('com_content.article', 22, 24, 3, '2021-02-08 07:44:58', 1),
+('com_content.article', 23, 25, 2, '2021-02-08 07:50:51', 1),
+('com_content.article', 23, 25, 4, '2021-02-08 07:50:51', 1),
+('com_content.article', 24, 26, 11, '2021-02-08 08:26:17', 1),
+('com_content.article', 25, 28, 11, '2021-02-08 08:41:51', 1),
 ('com_content.category', 1, 17, 2, '2021-02-06 08:41:47', 5),
 ('com_content.category', 1, 17, 3, '2021-02-06 08:41:47', 5),
 ('com_content.category', 1, 17, 4, '2021-02-06 08:41:47', 5),
-('com_content.category', 2, 18, 2, '2021-02-06 08:42:48', 5),
-('com_content.category', 2, 18, 4, '2021-02-06 08:42:48', 5),
-('com_content.category', 3, 19, 3, '2021-02-06 08:43:16', 5),
+('com_content.category', 2, 18, 2, '2021-02-08 08:01:06', 5),
+('com_content.category', 2, 18, 4, '2021-02-08 08:01:06', 5),
+('com_content.category', 3, 19, 3, '2021-02-08 08:05:31', 5),
 ('com_content.category', 4, 20, 5, '2021-02-06 08:43:51', 5),
 ('com_content.category', 4, 20, 6, '2021-02-06 08:43:51', 5),
-('com_content.category', 5, 21, 6, '2021-02-06 08:44:34', 5),
-('com_content.category', 6, 22, 5, '2021-02-06 08:46:21', 5),
+('com_content.category', 5, 21, 6, '2021-02-08 08:06:31', 5),
+('com_content.category', 6, 22, 5, '2021-02-08 08:07:06', 5),
 ('com_content.category', 7, 23, 7, '2021-02-06 08:47:31', 5),
 ('com_content.category', 7, 23, 8, '2021-02-06 08:47:31', 5),
-('com_content.category', 8, 24, 7, '2021-02-06 08:47:47', 5),
-('com_content.category', 9, 25, 8, '2021-02-06 08:48:13', 5),
+('com_content.category', 8, 24, 7, '2021-02-08 08:07:51', 5),
+('com_content.category', 9, 25, 8, '2021-02-08 08:08:57', 5),
 ('com_content.category', 10, 26, 9, '2021-02-08 06:25:10', 5),
 ('com_content.category', 10, 26, 10, '2021-02-08 06:25:10', 5),
 ('com_content.category', 10, 26, 11, '2021-02-08 06:25:10', 5),
@@ -1463,7 +1585,7 @@ INSERT INTO `f3ts9_contentitem_tag_map` (`type_alias`, `core_content_id`, `conte
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_content_frontpage`
+-- Table structure for table `f3ts9_content_frontpage`
 --
 
 CREATE TABLE `f3ts9_content_frontpage` (
@@ -1472,7 +1594,7 @@ CREATE TABLE `f3ts9_content_frontpage` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_content_frontpage`
+-- Dumping data for table `f3ts9_content_frontpage`
 --
 
 INSERT INTO `f3ts9_content_frontpage` (`content_id`, `ordering`) VALUES
@@ -1481,7 +1603,7 @@ INSERT INTO `f3ts9_content_frontpage` (`content_id`, `ordering`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_content_rating`
+-- Table structure for table `f3ts9_content_rating`
 --
 
 CREATE TABLE `f3ts9_content_rating` (
@@ -1494,7 +1616,7 @@ CREATE TABLE `f3ts9_content_rating` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_content_types`
+-- Table structure for table `f3ts9_content_types`
 --
 
 CREATE TABLE `f3ts9_content_types` (
@@ -1509,7 +1631,7 @@ CREATE TABLE `f3ts9_content_types` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_content_types`
+-- Dumping data for table `f3ts9_content_types`
 --
 
 INSERT INTO `f3ts9_content_types` (`type_id`, `type_title`, `type_alias`, `table`, `rules`, `field_mappings`, `router`, `content_history_options`) VALUES
@@ -1530,7 +1652,7 @@ INSERT INTO `f3ts9_content_types` (`type_id`, `type_title`, `type_alias`, `table
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_core_log_searches`
+-- Table structure for table `f3ts9_core_log_searches`
 --
 
 CREATE TABLE `f3ts9_core_log_searches` (
@@ -1541,7 +1663,7 @@ CREATE TABLE `f3ts9_core_log_searches` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_djimageslider`
+-- Table structure for table `f3ts9_djimageslider`
 --
 
 CREATE TABLE `f3ts9_djimageslider` (
@@ -1563,7 +1685,7 @@ CREATE TABLE `f3ts9_djimageslider` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_extensions`
+-- Table structure for table `f3ts9_extensions`
 --
 
 CREATE TABLE `f3ts9_extensions` (
@@ -1588,7 +1710,7 @@ CREATE TABLE `f3ts9_extensions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_extensions`
+-- Dumping data for table `f3ts9_extensions`
 --
 
 INSERT INTO `f3ts9_extensions` (`extension_id`, `package_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
@@ -1627,7 +1749,7 @@ INSERT INTO `f3ts9_extensions` (`extension_id`, `package_id`, `name`, `type`, `e
 (35, 0, 'com_privacy', 'component', 'com_privacy', '', 1, 1, 1, 1, '{\"name\":\"com_privacy\",\"type\":\"component\",\"creationDate\":\"May 2018\",\"author\":\"Joomla! Project\",\"copyright\":\"(C) 2005 - 2020 Open Source Matters. All rights reserved.\",\"authorEmail\":\"admin@joomla.org\",\"authorUrl\":\"www.joomla.org\",\"version\":\"3.9.0\",\"description\":\"COM_PRIVACY_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"privacy\"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (36, 0, 'com_actionlogs', 'component', 'com_actionlogs', '', 1, 1, 1, 1, '{\"name\":\"com_actionlogs\",\"type\":\"component\",\"creationDate\":\"May 2018\",\"author\":\"Joomla! Project\",\"copyright\":\"Copyright (C) 2005 - 2020 Open Source Matters. All rights reserved.\",\"authorEmail\":\"admin@joomla.org\",\"authorUrl\":\"www.joomla.org\",\"version\":\"3.9.0\",\"description\":\"COM_ACTIONLOGS_XML_DESCRIPTION\",\"group\":\"\"}', '{\"ip_logging\":1,\"csv_delimiter\":\",\",\"loggable_extensions\":[\"com_banners\",\"com_content\",\"com_cache\",\"com_newsfeeds\",\"com_categories\",\"com_contact\",\"com_checkin\",\"com_tags\",\"com_config\",\"com_modules\",\"com_installer\",\"com_messages\",\"com_menus\",\"com_media\",\"com_templates\",\"com_plugins\",\"com_redirect\",\"com_users\"]}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (102, 0, 'LIB_PHPUTF8', 'library', 'phputf8', '', 0, 1, 1, 1, '{\"name\":\"LIB_PHPUTF8\",\"type\":\"library\",\"creationDate\":\"2006\",\"author\":\"Harry Fuecks\",\"copyright\":\"Copyright various authors\",\"authorEmail\":\"hfuecks@gmail.com\",\"authorUrl\":\"http:\\/\\/sourceforge.net\\/projects\\/phputf8\",\"version\":\"0.5\",\"description\":\"LIB_PHPUTF8_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"phputf8\"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
-(103, 0, 'LIB_JOOMLA', 'library', 'joomla', '', 0, 1, 1, 1, '{\"name\":\"LIB_JOOMLA\",\"type\":\"library\",\"creationDate\":\"2008\",\"author\":\"Joomla! Project\",\"copyright\":\"Copyright (C) 2005 - 2020 Open Source Matters. All rights reserved.\",\"authorEmail\":\"admin@joomla.org\",\"authorUrl\":\"https:\\/\\/www.joomla.org\",\"version\":\"13.1\",\"description\":\"LIB_JOOMLA_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"joomla\"}', '{\"mediaversion\":\"39dd61a27a4cecdb832a2833a765c82c\"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(103, 0, 'LIB_JOOMLA', 'library', 'joomla', '', 0, 1, 1, 1, '{\"name\":\"LIB_JOOMLA\",\"type\":\"library\",\"creationDate\":\"2008\",\"author\":\"Joomla! Project\",\"copyright\":\"Copyright (C) 2005 - 2020 Open Source Matters. All rights reserved.\",\"authorEmail\":\"admin@joomla.org\",\"authorUrl\":\"https:\\/\\/www.joomla.org\",\"version\":\"13.1\",\"description\":\"LIB_JOOMLA_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"joomla\"}', '{\"mediaversion\":\"fe9571486c08ad3a34fca22e91ef3358\"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (104, 0, 'LIB_IDNA', 'library', 'idna_convert', '', 0, 1, 1, 1, '{\"name\":\"LIB_IDNA\",\"type\":\"library\",\"creationDate\":\"2004\",\"author\":\"phlyLabs\",\"copyright\":\"2004-2011 phlyLabs Berlin, http:\\/\\/phlylabs.de\",\"authorEmail\":\"phlymail@phlylabs.de\",\"authorUrl\":\"http:\\/\\/phlylabs.de\",\"version\":\"0.8.0\",\"description\":\"LIB_IDNA_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"idna_convert\"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (105, 0, 'FOF', 'library', 'fof', '', 0, 1, 1, 1, '{\"name\":\"FOF\",\"type\":\"library\",\"creationDate\":\"2015-04-22 13:15:32\",\"author\":\"Nicholas K. Dionysopoulos \\/ Akeeba Ltd\",\"copyright\":\"(C)2011-2015 Nicholas K. Dionysopoulos\",\"authorEmail\":\"nicholas@akeebabackup.com\",\"authorUrl\":\"https:\\/\\/www.akeebabackup.com\",\"version\":\"2.4.3\",\"description\":\"LIB_FOF_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"fof\"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (106, 0, 'LIB_PHPASS', 'library', 'phpass', '', 0, 1, 1, 1, '{\"name\":\"LIB_PHPASS\",\"type\":\"library\",\"creationDate\":\"2004-2006\",\"author\":\"Solar Designer\",\"copyright\":\"\",\"authorEmail\":\"solar@openwall.com\",\"authorUrl\":\"http:\\/\\/www.openwall.com\\/phpass\\/\",\"version\":\"0.3\",\"description\":\"LIB_PHPASS_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"phpass\"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
@@ -1726,7 +1848,7 @@ INSERT INTO `f3ts9_extensions` (`extension_id`, `package_id`, `name`, `type`, `e
 (451, 0, 'plg_search_tags', 'plugin', 'tags', 'search', 0, 1, 1, 0, '{\"name\":\"plg_search_tags\",\"type\":\"plugin\",\"creationDate\":\"March 2014\",\"author\":\"Joomla! Project\",\"copyright\":\"Copyright (C) 2005 - 2020 Open Source Matters. All rights reserved.\",\"authorEmail\":\"admin@joomla.org\",\"authorUrl\":\"www.joomla.org\",\"version\":\"3.0.0\",\"description\":\"PLG_SEARCH_TAGS_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"tags\"}', '{\"search_limit\":\"50\",\"show_tagged_items\":\"1\"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (452, 0, 'plg_system_updatenotification', 'plugin', 'updatenotification', 'system', 0, 1, 1, 0, '{\"name\":\"plg_system_updatenotification\",\"type\":\"plugin\",\"creationDate\":\"May 2015\",\"author\":\"Joomla! Project\",\"copyright\":\"Copyright (C) 2005 - 2020 Open Source Matters. All rights reserved.\",\"authorEmail\":\"admin@joomla.org\",\"authorUrl\":\"www.joomla.org\",\"version\":\"3.5.0\",\"description\":\"PLG_SYSTEM_UPDATENOTIFICATION_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"updatenotification\"}', '{\"lastrun\":1612768449}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (453, 0, 'plg_editors-xtd_module', 'plugin', 'module', 'editors-xtd', 0, 1, 1, 0, '{\"name\":\"plg_editors-xtd_module\",\"type\":\"plugin\",\"creationDate\":\"October 2015\",\"author\":\"Joomla! Project\",\"copyright\":\"Copyright (C) 2005 - 2020 Open Source Matters. All rights reserved.\",\"authorEmail\":\"admin@joomla.org\",\"authorUrl\":\"www.joomla.org\",\"version\":\"3.5.0\",\"description\":\"PLG_MODULE_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"module\"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
-(454, 0, 'plg_system_stats', 'plugin', 'stats', 'system', 0, 1, 1, 0, '{\"name\":\"plg_system_stats\",\"type\":\"plugin\",\"creationDate\":\"November 2013\",\"author\":\"Joomla! Project\",\"copyright\":\"Copyright (C) 2005 - 2020 Open Source Matters. All rights reserved.\",\"authorEmail\":\"admin@joomla.org\",\"authorUrl\":\"www.joomla.org\",\"version\":\"3.5.0\",\"description\":\"PLG_SYSTEM_STATS_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"stats\"}', '{\"mode\":1,\"lastrun\":1612730324,\"unique_id\":\"4fce88d1e0cb00ba8bf6e4757708c620049c5109\",\"interval\":12}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(454, 0, 'plg_system_stats', 'plugin', 'stats', 'system', 0, 1, 1, 0, '{\"name\":\"plg_system_stats\",\"type\":\"plugin\",\"creationDate\":\"November 2013\",\"author\":\"Joomla! Project\",\"copyright\":\"Copyright (C) 2005 - 2020 Open Source Matters. All rights reserved.\",\"authorEmail\":\"admin@joomla.org\",\"authorUrl\":\"www.joomla.org\",\"version\":\"3.5.0\",\"description\":\"PLG_SYSTEM_STATS_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"stats\"}', '{\"mode\":1,\"lastrun\":1612773527,\"unique_id\":\"4fce88d1e0cb00ba8bf6e4757708c620049c5109\",\"interval\":12}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (455, 0, 'plg_installer_packageinstaller', 'plugin', 'packageinstaller', 'installer', 0, 1, 1, 1, '{\"name\":\"plg_installer_packageinstaller\",\"type\":\"plugin\",\"creationDate\":\"May 2016\",\"author\":\"Joomla! Project\",\"copyright\":\"Copyright (C) 2005 - 2020 Open Source Matters. All rights reserved.\",\"authorEmail\":\"admin@joomla.org\",\"authorUrl\":\"www.joomla.org\",\"version\":\"3.6.0\",\"description\":\"PLG_INSTALLER_PACKAGEINSTALLER_PLUGIN_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"packageinstaller\"}', '', '', '', 0, '0000-00-00 00:00:00', 1, 0),
 (456, 0, 'PLG_INSTALLER_FOLDERINSTALLER', 'plugin', 'folderinstaller', 'installer', 0, 1, 1, 1, '{\"name\":\"PLG_INSTALLER_FOLDERINSTALLER\",\"type\":\"plugin\",\"creationDate\":\"May 2016\",\"author\":\"Joomla! Project\",\"copyright\":\"Copyright (C) 2005 - 2020 Open Source Matters. All rights reserved.\",\"authorEmail\":\"admin@joomla.org\",\"authorUrl\":\"www.joomla.org\",\"version\":\"3.6.0\",\"description\":\"PLG_INSTALLER_FOLDERINSTALLER_PLUGIN_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"folderinstaller\"}', '', '', '', 0, '0000-00-00 00:00:00', 2, 0),
 (457, 0, 'PLG_INSTALLER_URLINSTALLER', 'plugin', 'urlinstaller', 'installer', 0, 1, 1, 1, '{\"name\":\"PLG_INSTALLER_URLINSTALLER\",\"type\":\"plugin\",\"creationDate\":\"May 2016\",\"author\":\"Joomla! Project\",\"copyright\":\"Copyright (C) 2005 - 2020 Open Source Matters. All rights reserved.\",\"authorEmail\":\"admin@joomla.org\",\"authorUrl\":\"www.joomla.org\",\"version\":\"3.6.0\",\"description\":\"PLG_INSTALLER_URLINSTALLER_PLUGIN_XML_DESCRIPTION\",\"group\":\"\",\"filename\":\"urlinstaller\"}', '', '', '', 0, '0000-00-00 00:00:00', 3, 0),
@@ -1793,12 +1915,12 @@ INSERT INTO `f3ts9_extensions` (`extension_id`, `package_id`, `name`, `type`, `e
 (10014, 10016, 'Button - ARI Docs Viewer', 'plugin', 'aridocsviewer', 'editors-xtd', 0, 0, 1, 0, '{\"name\":\"Button - ARI Docs Viewer\",\"type\":\"plugin\",\"creationDate\":\"July 2018\",\"author\":\"ARI Soft\",\"copyright\":\"ARI Soft\",\"authorEmail\":\"info@ari-soft.com\",\"authorUrl\":\"www.ari-soft.com\",\"version\":\"2.2.0\",\"description\":\"PLG_EDITOR_XTD_ARIDOCSVIEWER\",\"group\":\"\",\"filename\":\"aridocsviewer\"}', '{\"width\":\"\",\"height\":\"\"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (10015, 10016, 'System - ARI Docs Viewer', 'plugin', 'aridocsviewer', 'system', 0, 0, 1, 0, '{\"name\":\"System - ARI Docs Viewer\",\"type\":\"plugin\",\"creationDate\":\"September 2016\",\"author\":\"ARI Soft\",\"copyright\":\"ARI Soft\",\"authorEmail\":\"info@ari-soft.com\",\"authorUrl\":\"www.ari-soft.com\",\"version\":\"2.1.1\",\"description\":\"ARI_DOCS_VIEWER_PLUGIN\",\"group\":\"\",\"filename\":\"aridocsviewer\"}', '{\"engine\":\"iframe\",\"opt_loadingPane\":\"1\",\"opt_class\":\"\",\"opt_showDownloadLink\":\"0\",\"loadJQuery\":\"1\",\"callNC\":\"1\"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (10016, 0, 'ARI Docs Viewer', 'package', 'pkg_aridocsviewer', '', 0, 1, 1, 0, '{\"name\":\"ARI Docs Viewer\",\"type\":\"package\",\"creationDate\":\"November 2018\",\"author\":\"ARI Soft\",\"copyright\":\"ARI Soft\",\"authorEmail\":\"info@ari-soft.com\",\"authorUrl\":\"www.ari-soft.com\",\"version\":\"2.2.1\",\"description\":\"The package contains \'ARI Docs Viewer\' library, plugin and editor button.\",\"group\":\"\",\"filename\":\"pkg_aridocsviewer\"}', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
-(10017, 0, 'Content - Embed Google Docs Viewer', 'plugin', 'embed_google_docs_viewer', 'content', 0, 0, 1, 0, '{\"name\":\"Content - Embed Google Docs Viewer\",\"type\":\"plugin\",\"creationDate\":\"18 Aug 2019\",\"author\":\"Petteri Kivim\\u00e4ki\",\"copyright\":\"(C)2012-2019 Petteri Kivim\\u00e4ki\",\"authorEmail\":\"petteri.kivimaki@helsinki.fi\",\"authorUrl\":\"\",\"version\":\"1.5.0\",\"description\":\"PLG_EMBED_GOOGLE_DOCS_VIEWER_DESC\",\"group\":\"\",\"filename\":\"embed_google_docs_viewer\"}', '{\"base_url\":\"\",\"add_link\":\"1\",\"link_position\":\"bottom\",\"link_label\":\"View in full screen\",\"google_docs_mode\":\"0\",\"height\":\"400\",\"width\":\"300\",\"border\":\"0\",\"border_style\":\"solid\",\"border_color\":\"#000000\",\"https\":\"1\",\"language\":\"-\"}', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+(10017, 0, 'Content - Embed Google Docs Viewer', 'plugin', 'embed_google_docs_viewer', 'content', 0, 1, 1, 0, '{\"name\":\"Content - Embed Google Docs Viewer\",\"type\":\"plugin\",\"creationDate\":\"18 Aug 2019\",\"author\":\"Petteri Kivim\\u00e4ki\",\"copyright\":\"(C)2012-2019 Petteri Kivim\\u00e4ki\",\"authorEmail\":\"petteri.kivimaki@helsinki.fi\",\"authorUrl\":\"\",\"version\":\"1.5.0\",\"description\":\"PLG_EMBED_GOOGLE_DOCS_VIEWER_DESC\",\"group\":\"\",\"filename\":\"embed_google_docs_viewer\"}', '{\"base_url\":\"\",\"add_link\":\"1\",\"link_position\":\"bottom\",\"link_label\":\"View in full screen\",\"google_docs_mode\":\"0\",\"height\":\"400\",\"width\":\"300\",\"border\":\"0\",\"border_style\":\"solid\",\"border_color\":\"#000000\",\"https\":\"1\",\"language\":\"-\"}', '', '', 0, '0000-00-00 00:00:00', 0, 0);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_fields`
+-- Table structure for table `f3ts9_fields`
 --
 
 CREATE TABLE `f3ts9_fields` (
@@ -1831,7 +1953,7 @@ CREATE TABLE `f3ts9_fields` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_fields_categories`
+-- Table structure for table `f3ts9_fields_categories`
 --
 
 CREATE TABLE `f3ts9_fields_categories` (
@@ -1842,7 +1964,7 @@ CREATE TABLE `f3ts9_fields_categories` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_fields_groups`
+-- Table structure for table `f3ts9_fields_groups`
 --
 
 CREATE TABLE `f3ts9_fields_groups` (
@@ -1868,7 +1990,7 @@ CREATE TABLE `f3ts9_fields_groups` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_fields_values`
+-- Table structure for table `f3ts9_fields_values`
 --
 
 CREATE TABLE `f3ts9_fields_values` (
@@ -1880,7 +2002,7 @@ CREATE TABLE `f3ts9_fields_values` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_finder_filters`
+-- Table structure for table `f3ts9_finder_filters`
 --
 
 CREATE TABLE `f3ts9_finder_filters` (
@@ -1903,7 +2025,7 @@ CREATE TABLE `f3ts9_finder_filters` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_finder_links`
+-- Table structure for table `f3ts9_finder_links`
 --
 
 CREATE TABLE `f3ts9_finder_links` (
@@ -1931,7 +2053,7 @@ CREATE TABLE `f3ts9_finder_links` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_finder_links_terms0`
+-- Table structure for table `f3ts9_finder_links_terms0`
 --
 
 CREATE TABLE `f3ts9_finder_links_terms0` (
@@ -1943,7 +2065,7 @@ CREATE TABLE `f3ts9_finder_links_terms0` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_finder_links_terms1`
+-- Table structure for table `f3ts9_finder_links_terms1`
 --
 
 CREATE TABLE `f3ts9_finder_links_terms1` (
@@ -1955,7 +2077,7 @@ CREATE TABLE `f3ts9_finder_links_terms1` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_finder_links_terms2`
+-- Table structure for table `f3ts9_finder_links_terms2`
 --
 
 CREATE TABLE `f3ts9_finder_links_terms2` (
@@ -1967,7 +2089,7 @@ CREATE TABLE `f3ts9_finder_links_terms2` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_finder_links_terms3`
+-- Table structure for table `f3ts9_finder_links_terms3`
 --
 
 CREATE TABLE `f3ts9_finder_links_terms3` (
@@ -1979,7 +2101,7 @@ CREATE TABLE `f3ts9_finder_links_terms3` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_finder_links_terms4`
+-- Table structure for table `f3ts9_finder_links_terms4`
 --
 
 CREATE TABLE `f3ts9_finder_links_terms4` (
@@ -1991,7 +2113,7 @@ CREATE TABLE `f3ts9_finder_links_terms4` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_finder_links_terms5`
+-- Table structure for table `f3ts9_finder_links_terms5`
 --
 
 CREATE TABLE `f3ts9_finder_links_terms5` (
@@ -2003,7 +2125,7 @@ CREATE TABLE `f3ts9_finder_links_terms5` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_finder_links_terms6`
+-- Table structure for table `f3ts9_finder_links_terms6`
 --
 
 CREATE TABLE `f3ts9_finder_links_terms6` (
@@ -2015,7 +2137,7 @@ CREATE TABLE `f3ts9_finder_links_terms6` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_finder_links_terms7`
+-- Table structure for table `f3ts9_finder_links_terms7`
 --
 
 CREATE TABLE `f3ts9_finder_links_terms7` (
@@ -2027,7 +2149,7 @@ CREATE TABLE `f3ts9_finder_links_terms7` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_finder_links_terms8`
+-- Table structure for table `f3ts9_finder_links_terms8`
 --
 
 CREATE TABLE `f3ts9_finder_links_terms8` (
@@ -2039,7 +2161,7 @@ CREATE TABLE `f3ts9_finder_links_terms8` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_finder_links_terms9`
+-- Table structure for table `f3ts9_finder_links_terms9`
 --
 
 CREATE TABLE `f3ts9_finder_links_terms9` (
@@ -2051,7 +2173,7 @@ CREATE TABLE `f3ts9_finder_links_terms9` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_finder_links_termsa`
+-- Table structure for table `f3ts9_finder_links_termsa`
 --
 
 CREATE TABLE `f3ts9_finder_links_termsa` (
@@ -2063,7 +2185,7 @@ CREATE TABLE `f3ts9_finder_links_termsa` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_finder_links_termsb`
+-- Table structure for table `f3ts9_finder_links_termsb`
 --
 
 CREATE TABLE `f3ts9_finder_links_termsb` (
@@ -2075,7 +2197,7 @@ CREATE TABLE `f3ts9_finder_links_termsb` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_finder_links_termsc`
+-- Table structure for table `f3ts9_finder_links_termsc`
 --
 
 CREATE TABLE `f3ts9_finder_links_termsc` (
@@ -2087,7 +2209,7 @@ CREATE TABLE `f3ts9_finder_links_termsc` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_finder_links_termsd`
+-- Table structure for table `f3ts9_finder_links_termsd`
 --
 
 CREATE TABLE `f3ts9_finder_links_termsd` (
@@ -2099,7 +2221,7 @@ CREATE TABLE `f3ts9_finder_links_termsd` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_finder_links_termse`
+-- Table structure for table `f3ts9_finder_links_termse`
 --
 
 CREATE TABLE `f3ts9_finder_links_termse` (
@@ -2111,7 +2233,7 @@ CREATE TABLE `f3ts9_finder_links_termse` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_finder_links_termsf`
+-- Table structure for table `f3ts9_finder_links_termsf`
 --
 
 CREATE TABLE `f3ts9_finder_links_termsf` (
@@ -2123,7 +2245,7 @@ CREATE TABLE `f3ts9_finder_links_termsf` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_finder_taxonomy`
+-- Table structure for table `f3ts9_finder_taxonomy`
 --
 
 CREATE TABLE `f3ts9_finder_taxonomy` (
@@ -2136,7 +2258,7 @@ CREATE TABLE `f3ts9_finder_taxonomy` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `f3ts9_finder_taxonomy`
+-- Dumping data for table `f3ts9_finder_taxonomy`
 --
 
 INSERT INTO `f3ts9_finder_taxonomy` (`id`, `parent_id`, `title`, `state`, `access`, `ordering`) VALUES
@@ -2145,7 +2267,7 @@ INSERT INTO `f3ts9_finder_taxonomy` (`id`, `parent_id`, `title`, `state`, `acces
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_finder_taxonomy_map`
+-- Table structure for table `f3ts9_finder_taxonomy_map`
 --
 
 CREATE TABLE `f3ts9_finder_taxonomy_map` (
@@ -2156,7 +2278,7 @@ CREATE TABLE `f3ts9_finder_taxonomy_map` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_finder_terms`
+-- Table structure for table `f3ts9_finder_terms`
 --
 
 CREATE TABLE `f3ts9_finder_terms` (
@@ -2174,7 +2296,7 @@ CREATE TABLE `f3ts9_finder_terms` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_finder_terms_common`
+-- Table structure for table `f3ts9_finder_terms_common`
 --
 
 CREATE TABLE `f3ts9_finder_terms_common` (
@@ -2183,7 +2305,7 @@ CREATE TABLE `f3ts9_finder_terms_common` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `f3ts9_finder_terms_common`
+-- Dumping data for table `f3ts9_finder_terms_common`
 --
 
 INSERT INTO `f3ts9_finder_terms_common` (`term`, `language`) VALUES
@@ -2301,7 +2423,7 @@ INSERT INTO `f3ts9_finder_terms_common` (`term`, `language`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_finder_tokens`
+-- Table structure for table `f3ts9_finder_tokens`
 --
 
 CREATE TABLE `f3ts9_finder_tokens` (
@@ -2317,7 +2439,7 @@ CREATE TABLE `f3ts9_finder_tokens` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_finder_tokens_aggregate`
+-- Table structure for table `f3ts9_finder_tokens_aggregate`
 --
 
 CREATE TABLE `f3ts9_finder_tokens_aggregate` (
@@ -2337,7 +2459,7 @@ CREATE TABLE `f3ts9_finder_tokens_aggregate` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_finder_types`
+-- Table structure for table `f3ts9_finder_types`
 --
 
 CREATE TABLE `f3ts9_finder_types` (
@@ -2349,7 +2471,7 @@ CREATE TABLE `f3ts9_finder_types` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_languages`
+-- Table structure for table `f3ts9_languages`
 --
 
 CREATE TABLE `f3ts9_languages` (
@@ -2370,7 +2492,7 @@ CREATE TABLE `f3ts9_languages` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_languages`
+-- Dumping data for table `f3ts9_languages`
 --
 
 INSERT INTO `f3ts9_languages` (`lang_id`, `asset_id`, `lang_code`, `title`, `title_native`, `sef`, `image`, `description`, `metakey`, `metadesc`, `sitename`, `published`, `access`, `ordering`) VALUES
@@ -2380,7 +2502,7 @@ INSERT INTO `f3ts9_languages` (`lang_id`, `asset_id`, `lang_code`, `title`, `tit
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_menu`
+-- Table structure for table `f3ts9_menu`
 --
 
 CREATE TABLE `f3ts9_menu` (
@@ -2411,7 +2533,7 @@ CREATE TABLE `f3ts9_menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_menu`
+-- Dumping data for table `f3ts9_menu`
 --
 
 INSERT INTO `f3ts9_menu` (`id`, `menutype`, `title`, `alias`, `note`, `path`, `link`, `type`, `published`, `parent_id`, `level`, `component_id`, `checked_out`, `checked_out_time`, `browserNav`, `access`, `img`, `template_style_id`, `params`, `lft`, `rgt`, `home`, `language`, `client_id`) VALUES
@@ -2446,10 +2568,10 @@ INSERT INTO `f3ts9_menu` (`id`, `menutype`, `title`, `alias`, `note`, `path`, `l
 (108, 'mainmenu', 'Repositorio', 'repositorio', '', 'repositorio', 'index.php?option=com_content&view=article&id=3', 'component', 1, 1, 1, 22, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{\"show_title\":\"\",\"link_titles\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_vote\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_hits\":\"\",\"show_tags\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"menu-anchor_title\":\"\",\"menu-anchor_css\":\"\",\"menu_image\":\"\",\"menu_image_css\":\"\",\"menu_text\":1,\"menu_show\":1,\"page_title\":\"\",\"show_page_heading\":\"\",\"page_heading\":\"\",\"pageclass_sfx\":\"\",\"menu-meta_description\":\"\",\"menu-meta_keywords\":\"\",\"robots\":\"\",\"secure\":0,\"helixultimatemenulayout\":\"{\\\"width\\\":600,\\\"menualign\\\":\\\"right\\\",\\\"megamenu\\\":0,\\\"showtitle\\\":1,\\\"faicon\\\":\\\"fa-book\\\",\\\"customclass\\\":\\\"\\\",\\\"dropdown\\\":\\\"right\\\",\\\"badge\\\":\\\"\\\",\\\"badge_position\\\":\\\"\\\",\\\"badge_bg_color\\\":\\\"\\\",\\\"badge_text_color\\\":\\\"\\\",\\\"layout\\\":[]}\",\"helixultimate_enable_page_title\":\"0\",\"helixultimate_page_title_alt\":\"\",\"helixultimate_page_subtitle\":\"\",\"helixultimate_page_title_heading\":\"h2\",\"helixultimate_page_title_bg_color\":\"\",\"helixultimate_page_title_bg_image\":\"\"}', 43, 60, 0, '*', 0),
 (109, 'mainmenu', 'Equipo', 'equipo', '', 'equipo', 'index.php?option=com_content&view=article&id=5', 'component', 1, 1, 1, 22, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{\"show_title\":\"\",\"link_titles\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_vote\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_hits\":\"\",\"show_tags\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"menu-anchor_title\":\"\",\"menu-anchor_css\":\"\",\"menu_image\":\"\",\"menu_image_css\":\"\",\"menu_text\":1,\"menu_show\":1,\"page_title\":\"\",\"show_page_heading\":\"\",\"page_heading\":\"\",\"pageclass_sfx\":\"\",\"menu-meta_description\":\"\",\"menu-meta_keywords\":\"\",\"robots\":\"\",\"secure\":0,\"helixultimatemenulayout\":\"{\\\"width\\\":600,\\\"menualign\\\":\\\"right\\\",\\\"megamenu\\\":0,\\\"showtitle\\\":1,\\\"faicon\\\":\\\"fa-users\\\",\\\"customclass\\\":\\\"\\\",\\\"dropdown\\\":\\\"right\\\",\\\"badge\\\":\\\"\\\",\\\"badge_position\\\":\\\"\\\",\\\"badge_bg_color\\\":\\\"\\\",\\\"badge_text_color\\\":\\\"\\\",\\\"layout\\\":[]}\",\"helixultimate_enable_page_title\":\"0\",\"helixultimate_page_title_alt\":\"\",\"helixultimate_page_subtitle\":\"\",\"helixultimate_page_title_heading\":\"h2\",\"helixultimate_page_title_bg_color\":\"\",\"helixultimate_page_title_bg_image\":\"\"}', 61, 62, 0, '*', 0),
 (110, 'mainmenu', 'Proyecto', 'proyecto', '', 'proyecto', 'index.php?option=com_content&view=article&id=4', 'component', 1, 1, 1, 22, 0, '0000-00-00 00:00:00', 0, 1, ' ', 0, '{\"show_title\":\"\",\"link_titles\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_vote\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_hits\":\"\",\"show_tags\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"menu-anchor_title\":\"\",\"menu-anchor_css\":\"\",\"menu_image\":\"\",\"menu_image_css\":\"\",\"menu_text\":1,\"menu_show\":1,\"page_title\":\"\",\"show_page_heading\":\"\",\"page_heading\":\"\",\"pageclass_sfx\":\"\",\"menu-meta_description\":\"\",\"menu-meta_keywords\":\"\",\"robots\":\"\",\"secure\":0,\"helixultimatemenulayout\":\"{\\\"width\\\":600,\\\"menualign\\\":\\\"right\\\",\\\"megamenu\\\":0,\\\"showtitle\\\":1,\\\"faicon\\\":\\\"fa-folder-open-o\\\",\\\"customclass\\\":\\\"\\\",\\\"dropdown\\\":\\\"right\\\",\\\"badge\\\":\\\"\\\",\\\"badge_position\\\":\\\"\\\",\\\"badge_bg_color\\\":\\\"\\\",\\\"badge_text_color\\\":\\\"\\\",\\\"layout\\\":[]}\",\"helixultimate_enable_page_title\":\"0\",\"helixultimate_page_title_alt\":\"\",\"helixultimate_page_subtitle\":\"\",\"helixultimate_page_title_heading\":\"h2\",\"helixultimate_page_title_bg_color\":\"\",\"helixultimate_page_title_bg_image\":\"\"}', 63, 64, 0, '*', 0),
-(111, 'mainmenu', 'Fotos', 'fotos', '', 'repositorio/fotos', 'index.php?option=com_content&view=categories&id=17', 'component', 1, 108, 2, 22, 0, '0000-00-00 00:00:00', 0, 2, ' ', 0, '{\"show_base_description\":\"\",\"categories_description\":\"\",\"maxLevelcat\":\"\",\"show_empty_categories_cat\":\"1\",\"show_subcat_desc_cat\":\"\",\"show_cat_num_articles_cat\":\"\",\"show_category_title\":\"1\",\"show_description\":\"\",\"show_description_image\":\"\",\"maxLevel\":\"-1\",\"show_empty_categories\":\"1\",\"show_no_articles\":\"\",\"show_subcat_desc\":\"\",\"show_cat_num_articles\":\"1\",\"num_leading_articles\":\"\",\"num_intro_articles\":\"\",\"num_columns\":\"4\",\"num_links\":\"\",\"multi_column_order\":\"\",\"show_subcategory_content\":\"-1\",\"orderby_pri\":\"alpha\",\"orderby_sec\":\"rdate\",\"order_date\":\"created\",\"show_pagination_limit\":\"\",\"filter_field\":\"\",\"show_headings\":\"\",\"list_show_date\":\"\",\"date_format\":\"\",\"list_show_hits\":\"\",\"list_show_author\":\"\",\"display_num\":\"0\",\"show_pagination\":\"\",\"show_pagination_results\":\"\",\"article_layout\":\"_:default\",\"show_title\":\"\",\"link_titles\":\"\",\"show_intro\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_vote\":\"\",\"show_readmore\":\"\",\"show_readmore_title\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"show_feed_link\":\"\",\"feed_summary\":\"\",\"menu-anchor_title\":\"\",\"menu-anchor_css\":\"\",\"menu_image\":\"\",\"menu_image_css\":\"\",\"menu_text\":1,\"menu_show\":1,\"page_title\":\"\",\"show_page_heading\":\"\",\"page_heading\":\"\",\"pageclass_sfx\":\"\",\"menu-meta_description\":\"\",\"menu-meta_keywords\":\"\",\"robots\":\"\",\"secure\":0,\"helixultimatemenulayout\":\"{\\\"width\\\":600,\\\"menualign\\\":\\\"right\\\",\\\"megamenu\\\":0,\\\"showtitle\\\":1,\\\"faicon\\\":\\\"fa-camera-retro\\\",\\\"customclass\\\":\\\"\\\",\\\"dropdown\\\":\\\"right\\\",\\\"badge\\\":\\\"\\\",\\\"badge_position\\\":\\\"\\\",\\\"badge_bg_color\\\":\\\"\\\",\\\"badge_text_color\\\":\\\"\\\",\\\"layout\\\":[]}\",\"helixultimate_enable_page_title\":\"0\",\"helixultimate_page_title_alt\":\"\",\"helixultimate_page_subtitle\":\"\",\"helixultimate_page_title_heading\":\"h2\",\"helixultimate_page_title_bg_color\":\"\",\"helixultimate_page_title_bg_image\":\"\"}', 44, 47, 0, '*', 0),
-(112, 'mainmenu', 'Videos', 'videos', '', 'repositorio/videos', 'index.php?option=com_content&view=categories&id=20', 'component', 1, 108, 2, 22, 0, '0000-00-00 00:00:00', 0, 2, ' ', 0, '{\"show_base_description\":\"\",\"categories_description\":\"\",\"maxLevelcat\":\"\",\"show_empty_categories_cat\":\"\",\"show_subcat_desc_cat\":\"\",\"show_cat_num_articles_cat\":\"\",\"show_category_title\":\"\",\"show_description\":\"\",\"show_description_image\":\"\",\"maxLevel\":\"\",\"show_empty_categories\":\"1\",\"show_no_articles\":\"\",\"show_subcat_desc\":\"\",\"show_cat_num_articles\":\"\",\"num_leading_articles\":\"\",\"num_intro_articles\":\"\",\"num_columns\":\"\",\"num_links\":\"\",\"multi_column_order\":\"\",\"show_subcategory_content\":\"\",\"orderby_pri\":\"\",\"orderby_sec\":\"\",\"order_date\":\"created\",\"show_pagination_limit\":\"\",\"filter_field\":\"title\",\"show_headings\":\"\",\"list_show_date\":\"\",\"date_format\":\"\",\"list_show_hits\":\"\",\"list_show_author\":\"\",\"display_num\":\"0\",\"show_pagination\":\"\",\"show_pagination_results\":\"\",\"article_layout\":\"_:default\",\"show_title\":\"\",\"link_titles\":\"\",\"show_intro\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_vote\":\"\",\"show_readmore\":\"\",\"show_readmore_title\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"show_feed_link\":\"\",\"feed_summary\":\"\",\"menu-anchor_title\":\"\",\"menu-anchor_css\":\"\",\"menu_image\":\"\",\"menu_image_css\":\"\",\"menu_text\":1,\"menu_show\":1,\"page_title\":\"\",\"show_page_heading\":\"\",\"page_heading\":\"\",\"pageclass_sfx\":\"\",\"menu-meta_description\":\"\",\"menu-meta_keywords\":\"\",\"robots\":\"\",\"secure\":0,\"helixultimatemenulayout\":\"{\\\"width\\\":600,\\\"menualign\\\":\\\"right\\\",\\\"megamenu\\\":0,\\\"showtitle\\\":1,\\\"faicon\\\":\\\"fa-video-camera\\\",\\\"customclass\\\":\\\"\\\",\\\"dropdown\\\":\\\"right\\\",\\\"badge\\\":\\\"\\\",\\\"badge_position\\\":\\\"\\\",\\\"badge_bg_color\\\":\\\"\\\",\\\"badge_text_color\\\":\\\"\\\",\\\"layout\\\":[]}\",\"helixultimate_enable_page_title\":\"0\",\"helixultimate_page_title_alt\":\"\",\"helixultimate_page_subtitle\":\"\",\"helixultimate_page_title_heading\":\"h2\",\"helixultimate_page_title_bg_color\":\"\",\"helixultimate_page_title_bg_image\":\"\"}', 48, 51, 0, '*', 0),
-(113, 'mainmenu', 'Podcasts', 'podcasts', '', 'repositorio/podcasts', 'index.php?option=com_content&view=categories&id=23', 'component', 1, 108, 2, 22, 0, '0000-00-00 00:00:00', 0, 2, ' ', 0, '{\"show_base_description\":\"\",\"categories_description\":\"\",\"maxLevelcat\":\"\",\"show_empty_categories_cat\":\"\",\"show_subcat_desc_cat\":\"\",\"show_cat_num_articles_cat\":\"\",\"show_category_title\":\"\",\"show_description\":\"\",\"show_description_image\":\"\",\"maxLevel\":\"\",\"show_empty_categories\":\"1\",\"show_no_articles\":\"\",\"show_subcat_desc\":\"\",\"show_cat_num_articles\":\"\",\"num_leading_articles\":\"\",\"num_intro_articles\":\"\",\"num_columns\":\"\",\"num_links\":\"\",\"multi_column_order\":\"\",\"show_subcategory_content\":\"\",\"orderby_pri\":\"\",\"orderby_sec\":\"\",\"order_date\":\"\",\"show_pagination_limit\":\"\",\"filter_field\":\"\",\"show_headings\":\"\",\"list_show_date\":\"\",\"date_format\":\"\",\"list_show_hits\":\"\",\"list_show_author\":\"\",\"display_num\":\"10\",\"show_pagination\":\"\",\"show_pagination_results\":\"\",\"article_layout\":\"_:default\",\"show_title\":\"\",\"link_titles\":\"\",\"show_intro\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_vote\":\"\",\"show_readmore\":\"\",\"show_readmore_title\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"show_feed_link\":\"\",\"feed_summary\":\"\",\"menu-anchor_title\":\"\",\"menu-anchor_css\":\"\",\"menu_image\":\"\",\"menu_image_css\":\"\",\"menu_text\":1,\"menu_show\":1,\"page_title\":\"\",\"show_page_heading\":\"\",\"page_heading\":\"\",\"pageclass_sfx\":\"\",\"menu-meta_description\":\"\",\"menu-meta_keywords\":\"\",\"robots\":\"\",\"secure\":0,\"helixultimatemenulayout\":\"{\\\"width\\\":600,\\\"menualign\\\":\\\"right\\\",\\\"megamenu\\\":0,\\\"showtitle\\\":1,\\\"faicon\\\":\\\"fa-file-sound-o\\\",\\\"customclass\\\":\\\"\\\",\\\"dropdown\\\":\\\"right\\\",\\\"badge\\\":\\\"\\\",\\\"badge_position\\\":\\\"\\\",\\\"badge_bg_color\\\":\\\"\\\",\\\"badge_text_color\\\":\\\"\\\",\\\"layout\\\":[]}\",\"helixultimate_enable_page_title\":\"0\",\"helixultimate_page_title_alt\":\"\",\"helixultimate_page_subtitle\":\"\",\"helixultimate_page_title_heading\":\"h2\",\"helixultimate_page_title_bg_color\":\"\",\"helixultimate_page_title_bg_image\":\"\"}', 52, 55, 0, '*', 0),
-(114, 'mainmenu', 'Documentos', 'documentos', '', 'repositorio/documentos', 'index.php?option=com_content&view=categories&id=26', 'component', 1, 108, 2, 22, 0, '0000-00-00 00:00:00', 0, 2, ' ', 0, '{\"show_base_description\":\"\",\"categories_description\":\"\",\"maxLevelcat\":\"\",\"show_empty_categories_cat\":\"\",\"show_subcat_desc_cat\":\"\",\"show_cat_num_articles_cat\":\"\",\"show_category_title\":\"\",\"show_description\":\"\",\"show_description_image\":\"\",\"maxLevel\":\"\",\"show_empty_categories\":\"1\",\"show_no_articles\":\"\",\"show_subcat_desc\":\"\",\"show_cat_num_articles\":\"1\",\"num_leading_articles\":\"\",\"num_intro_articles\":\"\",\"num_columns\":\"\",\"num_links\":\"\",\"multi_column_order\":\"\",\"show_subcategory_content\":\"\",\"orderby_pri\":\"\",\"orderby_sec\":\"\",\"order_date\":\"\",\"show_pagination_limit\":\"\",\"filter_field\":\"\",\"show_headings\":\"\",\"list_show_date\":\"\",\"date_format\":\"\",\"list_show_hits\":\"\",\"list_show_author\":\"\",\"display_num\":\"10\",\"show_pagination\":\"\",\"show_pagination_results\":\"\",\"article_layout\":\"_:default\",\"show_title\":\"\",\"link_titles\":\"\",\"show_intro\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_vote\":\"\",\"show_readmore\":\"\",\"show_readmore_title\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"show_feed_link\":\"\",\"feed_summary\":\"\",\"menu-anchor_title\":\"\",\"menu-anchor_css\":\"\",\"menu_image\":\"\",\"menu_image_css\":\"\",\"menu_text\":1,\"menu_show\":1,\"page_title\":\"\",\"show_page_heading\":\"\",\"page_heading\":\"\",\"pageclass_sfx\":\"\",\"menu-meta_description\":\"\",\"menu-meta_keywords\":\"\",\"robots\":\"\",\"secure\":0,\"helixultimatemenulayout\":\"{\\\"width\\\":600,\\\"menualign\\\":\\\"right\\\",\\\"megamenu\\\":0,\\\"showtitle\\\":1,\\\"faicon\\\":\\\"fa-files-o\\\",\\\"customclass\\\":\\\"\\\",\\\"dropdown\\\":\\\"right\\\",\\\"badge\\\":\\\"\\\",\\\"badge_position\\\":\\\"\\\",\\\"badge_bg_color\\\":\\\"\\\",\\\"badge_text_color\\\":\\\"\\\",\\\"layout\\\":[]}\",\"helixultimate_enable_page_title\":\"0\",\"helixultimate_page_title_alt\":\"\",\"helixultimate_page_subtitle\":\"\",\"helixultimate_page_title_heading\":\"h2\",\"helixultimate_page_title_bg_color\":\"\",\"helixultimate_page_title_bg_image\":\"\"}', 56, 59, 0, '*', 0),
+(111, 'mainmenu', 'Fotos', 'fotos', '', 'repositorio/fotos', 'index.php?option=com_content&view=categories&id=17', 'component', 1, 108, 2, 22, 0, '0000-00-00 00:00:00', 0, 2, ' ', 0, '{\"show_base_description\":\"\",\"categories_description\":\"\",\"maxLevelcat\":\"\",\"show_empty_categories_cat\":\"1\",\"show_subcat_desc_cat\":\"\",\"show_cat_num_articles_cat\":\"\",\"show_category_title\":\"1\",\"show_description\":\"1\",\"show_description_image\":\"\",\"maxLevel\":\"-1\",\"show_empty_categories\":\"1\",\"show_no_articles\":\"\",\"show_subcat_desc\":\"\",\"show_cat_num_articles\":\"1\",\"num_leading_articles\":\"\",\"num_intro_articles\":\"\",\"num_columns\":\"4\",\"num_links\":\"\",\"multi_column_order\":\"\",\"show_subcategory_content\":\"-1\",\"orderby_pri\":\"alpha\",\"orderby_sec\":\"rdate\",\"order_date\":\"created\",\"show_pagination_limit\":\"\",\"filter_field\":\"\",\"show_headings\":\"\",\"list_show_date\":\"\",\"date_format\":\"\",\"list_show_hits\":\"\",\"list_show_author\":\"\",\"display_num\":\"0\",\"show_pagination\":\"\",\"show_pagination_results\":\"\",\"article_layout\":\"_:default\",\"show_title\":\"1\",\"link_titles\":\"\",\"show_intro\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_vote\":\"\",\"show_readmore\":\"\",\"show_readmore_title\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"show_feed_link\":\"\",\"feed_summary\":\"\",\"menu-anchor_title\":\"\",\"menu-anchor_css\":\"\",\"menu_image\":\"\",\"menu_image_css\":\"\",\"menu_text\":1,\"menu_show\":1,\"page_title\":\"\",\"show_page_heading\":\"\",\"page_heading\":\"\",\"pageclass_sfx\":\"\",\"menu-meta_description\":\"\",\"menu-meta_keywords\":\"\",\"robots\":\"\",\"secure\":0,\"helixultimatemenulayout\":\"{\\\"width\\\":600,\\\"menualign\\\":\\\"right\\\",\\\"megamenu\\\":0,\\\"showtitle\\\":1,\\\"faicon\\\":\\\"fa-camera-retro\\\",\\\"customclass\\\":\\\"\\\",\\\"dropdown\\\":\\\"right\\\",\\\"badge\\\":\\\"\\\",\\\"badge_position\\\":\\\"\\\",\\\"badge_bg_color\\\":\\\"\\\",\\\"badge_text_color\\\":\\\"\\\",\\\"layout\\\":[]}\",\"helixultimate_enable_page_title\":\"0\",\"helixultimate_page_title_alt\":\"\",\"helixultimate_page_subtitle\":\"\",\"helixultimate_page_title_heading\":\"h2\",\"helixultimate_page_title_bg_color\":\"\",\"helixultimate_page_title_bg_image\":\"\"}', 44, 47, 0, '*', 0),
+(112, 'mainmenu', 'Videos', 'videos', '', 'repositorio/videos', 'index.php?option=com_content&view=categories&id=20', 'component', 1, 108, 2, 22, 0, '0000-00-00 00:00:00', 0, 2, ' ', 0, '{\"show_base_description\":\"\",\"categories_description\":\"\",\"maxLevelcat\":\"\",\"show_empty_categories_cat\":\"\",\"show_subcat_desc_cat\":\"\",\"show_cat_num_articles_cat\":\"\",\"show_category_title\":\"\",\"show_description\":\"\",\"show_description_image\":\"\",\"maxLevel\":\"\",\"show_empty_categories\":\"1\",\"show_no_articles\":\"\",\"show_subcat_desc\":\"\",\"show_cat_num_articles\":\"\",\"num_leading_articles\":\"\",\"num_intro_articles\":\"\",\"num_columns\":\"\",\"num_links\":\"\",\"multi_column_order\":\"\",\"show_subcategory_content\":\"\",\"orderby_pri\":\"\",\"orderby_sec\":\"\",\"order_date\":\"created\",\"show_pagination_limit\":\"\",\"filter_field\":\"title\",\"show_headings\":\"\",\"list_show_date\":\"\",\"date_format\":\"\",\"list_show_hits\":\"\",\"list_show_author\":\"\",\"display_num\":\"0\",\"show_pagination\":\"\",\"show_pagination_results\":\"\",\"article_layout\":\"_:default\",\"show_title\":\"1\",\"link_titles\":\"\",\"show_intro\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_vote\":\"\",\"show_readmore\":\"\",\"show_readmore_title\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"show_feed_link\":\"\",\"feed_summary\":\"\",\"menu-anchor_title\":\"\",\"menu-anchor_css\":\"\",\"menu_image\":\"\",\"menu_image_css\":\"\",\"menu_text\":1,\"menu_show\":1,\"page_title\":\"\",\"show_page_heading\":\"\",\"page_heading\":\"\",\"pageclass_sfx\":\"\",\"menu-meta_description\":\"\",\"menu-meta_keywords\":\"\",\"robots\":\"\",\"secure\":0,\"helixultimatemenulayout\":\"{\\\"width\\\":600,\\\"menualign\\\":\\\"right\\\",\\\"megamenu\\\":0,\\\"showtitle\\\":1,\\\"faicon\\\":\\\"fa-video-camera\\\",\\\"customclass\\\":\\\"\\\",\\\"dropdown\\\":\\\"right\\\",\\\"badge\\\":\\\"\\\",\\\"badge_position\\\":\\\"\\\",\\\"badge_bg_color\\\":\\\"\\\",\\\"badge_text_color\\\":\\\"\\\",\\\"layout\\\":[]}\",\"helixultimate_enable_page_title\":\"0\",\"helixultimate_page_title_alt\":\"\",\"helixultimate_page_subtitle\":\"\",\"helixultimate_page_title_heading\":\"h2\",\"helixultimate_page_title_bg_color\":\"\",\"helixultimate_page_title_bg_image\":\"\"}', 48, 51, 0, '*', 0),
+(113, 'mainmenu', 'Podcasts', 'podcasts', '', 'repositorio/podcasts', 'index.php?option=com_content&view=categories&id=23', 'component', 1, 108, 2, 22, 0, '0000-00-00 00:00:00', 0, 2, ' ', 0, '{\"show_base_description\":\"\",\"categories_description\":\"\",\"maxLevelcat\":\"\",\"show_empty_categories_cat\":\"\",\"show_subcat_desc_cat\":\"\",\"show_cat_num_articles_cat\":\"\",\"show_category_title\":\"\",\"show_description\":\"\",\"show_description_image\":\"\",\"maxLevel\":\"\",\"show_empty_categories\":\"1\",\"show_no_articles\":\"\",\"show_subcat_desc\":\"\",\"show_cat_num_articles\":\"\",\"num_leading_articles\":\"\",\"num_intro_articles\":\"\",\"num_columns\":\"\",\"num_links\":\"\",\"multi_column_order\":\"\",\"show_subcategory_content\":\"\",\"orderby_pri\":\"\",\"orderby_sec\":\"\",\"order_date\":\"\",\"show_pagination_limit\":\"\",\"filter_field\":\"\",\"show_headings\":\"\",\"list_show_date\":\"\",\"date_format\":\"\",\"list_show_hits\":\"\",\"list_show_author\":\"\",\"display_num\":\"10\",\"show_pagination\":\"\",\"show_pagination_results\":\"\",\"article_layout\":\"_:default\",\"show_title\":\"1\",\"link_titles\":\"\",\"show_intro\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_vote\":\"\",\"show_readmore\":\"\",\"show_readmore_title\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"show_feed_link\":\"\",\"feed_summary\":\"\",\"menu-anchor_title\":\"\",\"menu-anchor_css\":\"\",\"menu_image\":\"\",\"menu_image_css\":\"\",\"menu_text\":1,\"menu_show\":1,\"page_title\":\"\",\"show_page_heading\":\"\",\"page_heading\":\"\",\"pageclass_sfx\":\"\",\"menu-meta_description\":\"\",\"menu-meta_keywords\":\"\",\"robots\":\"\",\"secure\":0,\"helixultimatemenulayout\":\"{\\\"width\\\":600,\\\"menualign\\\":\\\"right\\\",\\\"megamenu\\\":0,\\\"showtitle\\\":1,\\\"faicon\\\":\\\"fa-file-sound-o\\\",\\\"customclass\\\":\\\"\\\",\\\"dropdown\\\":\\\"right\\\",\\\"badge\\\":\\\"\\\",\\\"badge_position\\\":\\\"\\\",\\\"badge_bg_color\\\":\\\"\\\",\\\"badge_text_color\\\":\\\"\\\",\\\"layout\\\":[]}\",\"helixultimate_enable_page_title\":\"0\",\"helixultimate_page_title_alt\":\"\",\"helixultimate_page_subtitle\":\"\",\"helixultimate_page_title_heading\":\"h2\",\"helixultimate_page_title_bg_color\":\"\",\"helixultimate_page_title_bg_image\":\"\"}', 52, 55, 0, '*', 0),
+(114, 'mainmenu', 'Documentos', 'documentos', '', 'repositorio/documentos', 'index.php?option=com_content&view=categories&id=26', 'component', 1, 108, 2, 22, 0, '0000-00-00 00:00:00', 0, 2, ' ', 0, '{\"show_base_description\":\"\",\"categories_description\":\"\",\"maxLevelcat\":\"\",\"show_empty_categories_cat\":\"\",\"show_subcat_desc_cat\":\"\",\"show_cat_num_articles_cat\":\"\",\"show_category_title\":\"\",\"show_description\":\"\",\"show_description_image\":\"\",\"maxLevel\":\"\",\"show_empty_categories\":\"1\",\"show_no_articles\":\"\",\"show_subcat_desc\":\"\",\"show_cat_num_articles\":\"1\",\"num_leading_articles\":\"\",\"num_intro_articles\":\"\",\"num_columns\":\"\",\"num_links\":\"\",\"multi_column_order\":\"\",\"show_subcategory_content\":\"\",\"orderby_pri\":\"\",\"orderby_sec\":\"\",\"order_date\":\"\",\"show_pagination_limit\":\"\",\"filter_field\":\"\",\"show_headings\":\"\",\"list_show_date\":\"\",\"date_format\":\"\",\"list_show_hits\":\"\",\"list_show_author\":\"\",\"display_num\":\"10\",\"show_pagination\":\"\",\"show_pagination_results\":\"\",\"article_layout\":\"_:default\",\"show_title\":\"1\",\"link_titles\":\"\",\"show_intro\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_vote\":\"\",\"show_readmore\":\"\",\"show_readmore_title\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"show_feed_link\":\"\",\"feed_summary\":\"\",\"menu-anchor_title\":\"\",\"menu-anchor_css\":\"\",\"menu_image\":\"\",\"menu_image_css\":\"\",\"menu_text\":1,\"menu_show\":1,\"page_title\":\"\",\"show_page_heading\":\"\",\"page_heading\":\"\",\"pageclass_sfx\":\"\",\"menu-meta_description\":\"\",\"menu-meta_keywords\":\"\",\"robots\":\"\",\"secure\":0,\"helixultimatemenulayout\":\"{\\\"width\\\":600,\\\"menualign\\\":\\\"right\\\",\\\"megamenu\\\":0,\\\"showtitle\\\":1,\\\"faicon\\\":\\\"fa-files-o\\\",\\\"customclass\\\":\\\"\\\",\\\"dropdown\\\":\\\"right\\\",\\\"badge\\\":\\\"\\\",\\\"badge_position\\\":\\\"\\\",\\\"badge_bg_color\\\":\\\"\\\",\\\"badge_text_color\\\":\\\"\\\",\\\"layout\\\":[]}\",\"helixultimate_enable_page_title\":\"0\",\"helixultimate_page_title_alt\":\"\",\"helixultimate_page_subtitle\":\"\",\"helixultimate_page_title_heading\":\"h2\",\"helixultimate_page_title_bg_color\":\"\",\"helixultimate_page_title_bg_image\":\"\"}', 56, 59, 0, '*', 0),
 (115, 'mainmenu', 'Nueva Foto', 'nueva-foto', '', 'repositorio/fotos/nueva-foto', 'index.php?option=com_content&view=form&layout=edit', 'component', 1, 111, 3, 22, 0, '0000-00-00 00:00:00', 0, 2, ' ', 0, '{\"enable_category\":\"0\",\"catid\":\"\",\"redirect_menuitem\":\"\",\"custom_cancel_redirect\":\"0\",\"cancel_redirect_menuitem\":\"\",\"menu-anchor_title\":\"\",\"menu-anchor_css\":\"\",\"menu_image\":\"\",\"menu_image_css\":\"\",\"menu_text\":1,\"menu_show\":1,\"page_title\":\"\",\"show_page_heading\":\"\",\"page_heading\":\"\",\"pageclass_sfx\":\"\",\"menu-meta_description\":\"\",\"menu-meta_keywords\":\"\",\"robots\":\"\",\"secure\":0,\"helixultimatemenulayout\":\"{\\\"width\\\":600,\\\"menualign\\\":\\\"right\\\",\\\"megamenu\\\":0,\\\"showtitle\\\":1,\\\"faicon\\\":\\\"fa-upload\\\",\\\"customclass\\\":\\\"\\\",\\\"dropdown\\\":\\\"right\\\",\\\"badge\\\":\\\"\\\",\\\"badge_position\\\":\\\"\\\",\\\"badge_bg_color\\\":\\\"\\\",\\\"badge_text_color\\\":\\\"\\\",\\\"layout\\\":[]}\",\"helixultimate_enable_page_title\":\"0\",\"helixultimate_page_title_alt\":\"\",\"helixultimate_page_subtitle\":\"\",\"helixultimate_page_title_heading\":\"h2\",\"helixultimate_page_title_bg_color\":\"\",\"helixultimate_page_title_bg_image\":\"\"}', 45, 46, 0, '*', 0),
 (116, 'mainmenu', 'Nuevo Video', 'nuevo-video', '', 'repositorio/videos/nuevo-video', 'index.php?option=com_content&view=form&layout=edit', 'component', 1, 112, 3, 22, 0, '0000-00-00 00:00:00', 0, 2, ' ', 0, '{\"enable_category\":\"0\",\"catid\":\"\",\"redirect_menuitem\":\"\",\"custom_cancel_redirect\":\"0\",\"cancel_redirect_menuitem\":\"\",\"menu-anchor_title\":\"\",\"menu-anchor_css\":\"\",\"menu_image\":\"\",\"menu_image_css\":\"\",\"menu_text\":1,\"menu_show\":1,\"page_title\":\"\",\"show_page_heading\":\"\",\"page_heading\":\"\",\"pageclass_sfx\":\"\",\"menu-meta_description\":\"\",\"menu-meta_keywords\":\"\",\"robots\":\"\",\"secure\":0,\"helixultimatemenulayout\":\"{\\\"width\\\":600,\\\"menualign\\\":\\\"right\\\",\\\"megamenu\\\":0,\\\"showtitle\\\":1,\\\"faicon\\\":\\\"fa-upload\\\",\\\"customclass\\\":\\\"\\\",\\\"dropdown\\\":\\\"right\\\",\\\"badge\\\":\\\"\\\",\\\"badge_position\\\":\\\"\\\",\\\"badge_bg_color\\\":\\\"\\\",\\\"badge_text_color\\\":\\\"\\\",\\\"layout\\\":[]}\",\"helixultimate_enable_page_title\":\"0\",\"helixultimate_page_title_alt\":\"\",\"helixultimate_page_subtitle\":\"\",\"helixultimate_page_title_heading\":\"h2\",\"helixultimate_page_title_bg_color\":\"\",\"helixultimate_page_title_bg_image\":\"\"}', 49, 50, 0, '*', 0),
 (117, 'mainmenu', 'Nuevo Podcast', 'nuevo-podcast', '', 'repositorio/podcasts/nuevo-podcast', 'index.php?option=com_content&view=form&layout=edit', 'component', 1, 113, 3, 22, 0, '0000-00-00 00:00:00', 0, 2, ' ', 0, '{\"enable_category\":\"0\",\"catid\":\"\",\"redirect_menuitem\":\"\",\"custom_cancel_redirect\":\"0\",\"cancel_redirect_menuitem\":\"\",\"menu-anchor_title\":\"\",\"menu-anchor_css\":\"\",\"menu_image\":\"\",\"menu_image_css\":\"\",\"menu_text\":1,\"menu_show\":1,\"page_title\":\"\",\"show_page_heading\":\"\",\"page_heading\":\"\",\"pageclass_sfx\":\"\",\"menu-meta_description\":\"\",\"menu-meta_keywords\":\"\",\"robots\":\"\",\"secure\":0,\"helixultimatemenulayout\":\"{\\\"width\\\":600,\\\"menualign\\\":\\\"right\\\",\\\"megamenu\\\":0,\\\"showtitle\\\":1,\\\"faicon\\\":\\\"fa-upload\\\",\\\"customclass\\\":\\\"\\\",\\\"dropdown\\\":\\\"right\\\",\\\"badge\\\":\\\"\\\",\\\"badge_position\\\":\\\"\\\",\\\"badge_bg_color\\\":\\\"\\\",\\\"badge_text_color\\\":\\\"\\\",\\\"layout\\\":[]}\",\"helixultimate_enable_page_title\":\"0\",\"helixultimate_page_title_alt\":\"\",\"helixultimate_page_subtitle\":\"\",\"helixultimate_page_title_heading\":\"h2\",\"helixultimate_page_title_bg_color\":\"\",\"helixultimate_page_title_bg_image\":\"\"}', 53, 54, 0, '*', 0),
@@ -2458,7 +2580,7 @@ INSERT INTO `f3ts9_menu` (`id`, `menutype`, `title`, `alias`, `note`, `path`, `l
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_menu_types`
+-- Table structure for table `f3ts9_menu_types`
 --
 
 CREATE TABLE `f3ts9_menu_types` (
@@ -2471,7 +2593,7 @@ CREATE TABLE `f3ts9_menu_types` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_menu_types`
+-- Dumping data for table `f3ts9_menu_types`
 --
 
 INSERT INTO `f3ts9_menu_types` (`id`, `asset_id`, `menutype`, `title`, `description`, `client_id`) VALUES
@@ -2480,7 +2602,7 @@ INSERT INTO `f3ts9_menu_types` (`id`, `asset_id`, `menutype`, `title`, `descript
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_messages`
+-- Table structure for table `f3ts9_messages`
 --
 
 CREATE TABLE `f3ts9_messages` (
@@ -2496,7 +2618,7 @@ CREATE TABLE `f3ts9_messages` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_messages`
+-- Dumping data for table `f3ts9_messages`
 --
 
 INSERT INTO `f3ts9_messages` (`message_id`, `user_id_from`, `user_id_to`, `folder_id`, `date_time`, `state`, `priority`, `subject`, `message`) VALUES
@@ -2510,7 +2632,7 @@ INSERT INTO `f3ts9_messages` (`message_id`, `user_id_from`, `user_id_to`, `folde
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_messages_cfg`
+-- Table structure for table `f3ts9_messages_cfg`
 --
 
 CREATE TABLE `f3ts9_messages_cfg` (
@@ -2522,7 +2644,7 @@ CREATE TABLE `f3ts9_messages_cfg` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_modules`
+-- Table structure for table `f3ts9_modules`
 --
 
 CREATE TABLE `f3ts9_modules` (
@@ -2547,7 +2669,7 @@ CREATE TABLE `f3ts9_modules` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_modules`
+-- Dumping data for table `f3ts9_modules`
 --
 
 INSERT INTO `f3ts9_modules` (`id`, `asset_id`, `title`, `note`, `content`, `ordering`, `position`, `checked_out`, `checked_out_time`, `publish_up`, `publish_down`, `published`, `module`, `access`, `showtitle`, `params`, `client_id`, `language`) VALUES
@@ -2574,7 +2696,7 @@ INSERT INTO `f3ts9_modules` (`id`, `asset_id`, `title`, `note`, `content`, `orde
 (92, 86, 'Carga de Fotos', '', '', 1, 'content-bottom', 0, '0000-00-00 00:00:00', '2021-02-06 05:20:36', '0000-00-00 00:00:00', 1, 'mod_easyfileuploader', 2, 1, '{\"efu_parent\":\"images\",\"efu_folder\":\"imagenes\",\"efu_maxsize\":\"471859200\",\"efu_custom\":\"1\",\"efu_label\":\"Seleccione el archivo a cargar:\",\"efu_button\":\"Cargar\",\"efu_question\":\"\\u00bfReemplazar los archivos existentes con los que archivos a cargar?\",\"efu_yes\":\"Si\",\"efu_no\":\"No\",\"efu_filetypes\":\"image\\/jpeg;image\\/gif;image\\/bmp;image\\/x-ms-bmp\",\"efu_default_replace\":\"0\",\"efu_replace\":\"0\",\"efu_scriptsinarchives\":\"0\",\"efu_variable\":\"fileToUpload\",\"efu_multiple\":\"1\",\"efu_shownofile\":\"0\",\"efu_user\":\"0\",\"moduleclass_sfx\":\"\",\"layout\":\"_:default\",\"module_tag\":\"div\",\"bootstrap_size\":\"0\",\"header_tag\":\"h3\",\"header_class\":\"\",\"style\":\"0\"}', 0, '*'),
 (93, 87, 'Carga de Podcast', '', '', 1, 'content-bottom', 0, '0000-00-00 00:00:00', '2021-02-06 05:20:36', '0000-00-00 00:00:00', 1, 'mod_easyfileuploader', 2, 1, '{\"efu_parent\":\"images\",\"efu_folder\":\"podcasts\",\"efu_maxsize\":\"471859200\",\"efu_custom\":\"1\",\"efu_label\":\"Seleccione el archivo a cargar:\",\"efu_button\":\"Cargar\",\"efu_question\":\"\\u00bfReemplazar los archivos existentes con los que archivos a cargar?\",\"efu_yes\":\"Si\",\"efu_no\":\"No\",\"efu_filetypes\":\"audio\\/x-opus+ogg;audio\\/mpeg;audio\\/x-aiff;audio\\/x-wav;audio\\/mp4;audio\\/ogg;audio\\/aiff;audio\\/wav;audio\\/x-m4a\",\"efu_default_replace\":\"0\",\"efu_replace\":\"0\",\"efu_scriptsinarchives\":\"0\",\"efu_variable\":\"fileToUpload\",\"efu_multiple\":\"1\",\"efu_shownofile\":\"0\",\"efu_user\":\"0\",\"moduleclass_sfx\":\"\",\"layout\":\"_:default\",\"module_tag\":\"div\",\"bootstrap_size\":\"0\",\"header_tag\":\"h3\",\"header_class\":\"\",\"style\":\"0\"}', 0, '*'),
 (94, 88, 'Carga de Documentos', '', '', 1, 'content-bottom', 0, '0000-00-00 00:00:00', '2021-02-06 05:20:36', '0000-00-00 00:00:00', 1, 'mod_easyfileuploader', 2, 1, '{\"efu_parent\":\"images\",\"efu_folder\":\"documentos\",\"efu_maxsize\":\"471859200\",\"efu_custom\":\"1\",\"efu_label\":\"Seleccione el archivo a cargar:\",\"efu_button\":\"Cargar\",\"efu_question\":\"\\u00bfReemplazar los archivos existentes con los que archivos a cargar?\",\"efu_yes\":\"Si\",\"efu_no\":\"No\",\"efu_filetypes\":\"application\\/pdf;application\\/msword;application\\/vnd.openxmlformats-officedocument.wordprocessingdml.document;application\\/vnd.ms-excel;application\\/vnd.openxmlformats-officedocument.spreadsheetml.sheet;application\\/vnd.ms-powerpoint;application;vnd.openxmlformats-officedocument.presentationml.slideshow;application\\/bnd.ms-powerpoint;application\\/vnd.openxmlformats-officedocument.presentationml.presentation;application\\/vnd.openxmlformats-officedocument.presentationml.slideshow;application\\/vnd.openxmlformats-officedocument.wordprocessingml.document\",\"efu_default_replace\":\"0\",\"efu_replace\":\"0\",\"efu_scriptsinarchives\":\"0\",\"efu_variable\":\"fileToUpload\",\"efu_multiple\":\"1\",\"efu_shownofile\":\"0\",\"efu_user\":\"0\",\"moduleclass_sfx\":\"\",\"layout\":\"_:default\",\"module_tag\":\"div\",\"bootstrap_size\":\"0\",\"header_tag\":\"h3\",\"header_class\":\"\",\"style\":\"0\"}', 0, '*'),
-(95, 89, 'Menu', '', NULL, 1, 'offcanvas', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_menu', 1, 0, '{\"menutype\":\"mainmenu\",\"base\":\"\",\"startLevel\":1,\"endLevel\":0,\"showAllChildren\":1,\"tag_id\":\"\",\"class_sfx\":\"\",\"window_open\":\"\",\"layout\":\"_:default\",\"moduleclass_sfx\":\"\",\"cache\":1,\"cache_time\":900,\"cachemode\":\"itemid\",\"module_tag\":\"div\",\"bootstrap_size\":\"0\",\"header_tag\":\"h3\",\"header_class\":\"\",\"style\":\"0\"}', 0, '*'),
+(95, 89, 'Menú del Repositorio', '', NULL, 1, 'offcanvas', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_menu', 1, 1, '{\"menutype\":\"mainmenu\",\"base\":\"\",\"startLevel\":1,\"endLevel\":0,\"showAllChildren\":1,\"tag_id\":\"\",\"class_sfx\":\"\",\"window_open\":\"\",\"layout\":\"_:default\",\"moduleclass_sfx\":\"\",\"cache\":1,\"cache_time\":900,\"cachemode\":\"itemid\",\"module_tag\":\"div\",\"bootstrap_size\":\"0\",\"header_tag\":\"h3\",\"header_class\":\"\",\"style\":\"0\"}', 0, '*'),
 (96, 125, 'InformacionNeo', '', '<h2>Neuropsicología</h2>\r\n<p><img src=\"images/fotos/cerebro.jpg\" width=\"500\" height=\"400\" /></p>\r\n<p>La Neuropsicología se basa en principio realizar un diagnóstico preciso de las alteraciones de las funciones superiores afectadas: habla, lenguaje, memoria, atención, mediante una entrevista inicial con el paciente. </p>', 1, 'position5', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_custom', 1, 0, '{\"prepare_content\":0,\"backgroundimage\":\"\",\"layout\":\"_:default\",\"moduleclass_sfx\":\"\",\"cache\":1,\"cache_time\":900,\"cachemode\":\"static\",\"module_tag\":\"div\",\"bootstrap_size\":\"0\",\"header_tag\":\"h3\",\"header_class\":\"\",\"style\":\"0\"}', 0, '*'),
 (97, 126, 'InformacionNeo2', '', '<h2>Psicología</h2>\r\n<p><br />La definición de psicología nace de la palabra psique, cuyo significado es espíritu/alma y logos, que significa tratado o estudio. Ambas palabras conjugadas hacen referencia al estudio del alma y el espíritu, sin embargo, con el paso del tiempo, la comunidad científica fue realizando diferentes investigaciones y llegaron a la conclusión que la psicología no podía simplemente estudiar algo no es aceptado por muchos, que va más allá de algo etéreo como el espíritu y que debe tomarse como una ciencia, por lo que hacer la pregunta sobre qué es la psicología abarca más lo esperado.</p>', 1, 'position6', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_custom', 1, 0, '{\"prepare_content\":0,\"backgroundimage\":\"\",\"layout\":\"_:default\",\"moduleclass_sfx\":\"\",\"cache\":1,\"cache_time\":900,\"cachemode\":\"static\",\"module_tag\":\"div\",\"bootstrap_size\":\"0\",\"header_tag\":\"h3\",\"header_class\":\"\",\"style\":\"0\"}', 0, '*'),
 (98, 127, 'Fotos', '', '<h3 style=\"text-align: center;\">Imagenes</h3>\r\n<p><img src=\"images/Navegacion/fotos.png\" width=\"800\" height=\"500\" /></p>\r\n<p>Este módulo cuenta con características de subida de imágenes con la posibilidad de dar una descripción a la misma, con el fin de ser una información más didáctica y fácil de digerir.</p>', 1, 'position1', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_custom', 1, 0, '{\"prepare_content\":0,\"backgroundimage\":\"\",\"layout\":\"_:default\",\"moduleclass_sfx\":\"\",\"cache\":1,\"cache_time\":900,\"cachemode\":\"static\",\"module_tag\":\"div\",\"bootstrap_size\":\"0\",\"header_tag\":\"h3\",\"header_class\":\"\",\"style\":\"0\"}', 0, '*'),
@@ -2592,7 +2714,7 @@ INSERT INTO `f3ts9_modules` (`id`, `asset_id`, `title`, `note`, `content`, `orde
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_modules_menu`
+-- Table structure for table `f3ts9_modules_menu`
 --
 
 CREATE TABLE `f3ts9_modules_menu` (
@@ -2601,7 +2723,7 @@ CREATE TABLE `f3ts9_modules_menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_modules_menu`
+-- Dumping data for table `f3ts9_modules_menu`
 --
 
 INSERT INTO `f3ts9_modules_menu` (`moduleid`, `menuid`) VALUES
@@ -2648,7 +2770,7 @@ INSERT INTO `f3ts9_modules_menu` (`moduleid`, `menuid`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_newsfeeds`
+-- Table structure for table `f3ts9_newsfeeds`
 --
 
 CREATE TABLE `f3ts9_newsfeeds` (
@@ -2687,7 +2809,7 @@ CREATE TABLE `f3ts9_newsfeeds` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_overrider`
+-- Table structure for table `f3ts9_overrider`
 --
 
 CREATE TABLE `f3ts9_overrider` (
@@ -2700,7 +2822,7 @@ CREATE TABLE `f3ts9_overrider` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_postinstall_messages`
+-- Table structure for table `f3ts9_postinstall_messages`
 --
 
 CREATE TABLE `f3ts9_postinstall_messages` (
@@ -2721,7 +2843,7 @@ CREATE TABLE `f3ts9_postinstall_messages` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_postinstall_messages`
+-- Dumping data for table `f3ts9_postinstall_messages`
 --
 
 INSERT INTO `f3ts9_postinstall_messages` (`postinstall_message_id`, `extension_id`, `title_key`, `description_key`, `action_key`, `language_extension`, `language_client_id`, `type`, `action_file`, `action`, `condition_file`, `condition_method`, `version_introduced`, `enabled`) VALUES
@@ -2738,7 +2860,7 @@ INSERT INTO `f3ts9_postinstall_messages` (`postinstall_message_id`, `extension_i
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_privacy_consents`
+-- Table structure for table `f3ts9_privacy_consents`
 --
 
 CREATE TABLE `f3ts9_privacy_consents` (
@@ -2755,7 +2877,7 @@ CREATE TABLE `f3ts9_privacy_consents` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_privacy_requests`
+-- Table structure for table `f3ts9_privacy_requests`
 --
 
 CREATE TABLE `f3ts9_privacy_requests` (
@@ -2771,7 +2893,7 @@ CREATE TABLE `f3ts9_privacy_requests` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_redirect_links`
+-- Table structure for table `f3ts9_redirect_links`
 --
 
 CREATE TABLE `f3ts9_redirect_links` (
@@ -2790,7 +2912,7 @@ CREATE TABLE `f3ts9_redirect_links` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_schemas`
+-- Table structure for table `f3ts9_schemas`
 --
 
 CREATE TABLE `f3ts9_schemas` (
@@ -2799,7 +2921,7 @@ CREATE TABLE `f3ts9_schemas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_schemas`
+-- Dumping data for table `f3ts9_schemas`
 --
 
 INSERT INTO `f3ts9_schemas` (`extension_id`, `version_id`) VALUES
@@ -2809,7 +2931,7 @@ INSERT INTO `f3ts9_schemas` (`extension_id`, `version_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_session`
+-- Table structure for table `f3ts9_session`
 --
 
 CREATE TABLE `f3ts9_session` (
@@ -2823,18 +2945,17 @@ CREATE TABLE `f3ts9_session` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_session`
+-- Dumping data for table `f3ts9_session`
 --
 
 INSERT INTO `f3ts9_session` (`session_id`, `client_id`, `guest`, `time`, `data`, `userid`, `username`) VALUES
-(0x343238703563333537666d35756c713162676e30646c7661746f, 0, 0, 1612765860, 'joomla|s:1016:\"TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjozOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjE6e3M6OToiX19kZWZhdWx0IjtPOjg6InN0ZENsYXNzIjo0OntzOjc6InNlc3Npb24iO086ODoic3RkQ2xhc3MiOjM6e3M6NzoiY291bnRlciI7aTo3O3M6NToidGltZXIiO086ODoic3RkQ2xhc3MiOjM6e3M6NToic3RhcnQiO2k6MTYxMjc2NTUyMztzOjQ6Imxhc3QiO2k6MTYxMjc2NTg1NjtzOjM6Im5vdyI7aToxNjEyNzY1ODYwO31zOjU6InRva2VuIjtzOjMyOiJ4YTZNOTB4dDIxUjVCdDBSVGJVenVtOHpkMWRlWjhBTCI7fXM6ODoicmVnaXN0cnkiO086MjQ6Ikpvb21sYVxSZWdpc3RyeVxSZWdpc3RyeSI6Mzp7czo3OiIAKgBkYXRhIjtPOjg6InN0ZENsYXNzIjoxOntzOjU6InVzZXJzIjtPOjg6InN0ZENsYXNzIjoxOntzOjU6ImxvZ2luIjtPOjg6InN0ZENsYXNzIjoxOntzOjQ6ImZvcm0iO086ODoic3RkQ2xhc3MiOjI6e3M6NDoiZGF0YSI7YTowOnt9czo2OiJyZXR1cm4iO3M6MjA6ImluZGV4LnBocD9JdGVtaWQ9MTAxIjt9fX19czoxNDoiACoAaW5pdGlhbGl6ZWQiO2I6MDtzOjk6InNlcGFyYXRvciI7czoxOiIuIjt9czo0OiJ1c2VyIjtPOjIwOiJKb29tbGFcQ01TXFVzZXJcVXNlciI6MTp7czoyOiJpZCI7czozOiIzODAiO31zOjExOiJhcHBsaWNhdGlvbiI7Tzo4OiJzdGRDbGFzcyI6MTp7czo1OiJxdWV1ZSI7YTowOnt9fX19czoxNDoiACoAaW5pdGlhbGl6ZWQiO2I6MDtzOjk6InNlcGFyYXRvciI7czoxOiIuIjt9\";', 380, 'danielM117'),
-(0x6c72687434616a6e386b6d37336236387373703039613966706d, 0, 0, 1612768195, 'joomla|s:1020:\"TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjozOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjE6e3M6OToiX19kZWZhdWx0IjtPOjg6InN0ZENsYXNzIjo0OntzOjc6InNlc3Npb24iO086ODoic3RkQ2xhc3MiOjM6e3M6NzoiY291bnRlciI7aToyNDtzOjU6InRpbWVyIjtPOjg6InN0ZENsYXNzIjozOntzOjU6InN0YXJ0IjtpOjE2MTI3NjU1MjM7czo0OiJsYXN0IjtpOjE2MTI3NjgxOTM7czozOiJub3ciO2k6MTYxMjc2ODE5NTt9czo1OiJ0b2tlbiI7czozMjoieGE2TTkweHQyMVI1QnQwUlRiVXp1bTh6ZDFkZVo4QUwiO31zOjg6InJlZ2lzdHJ5IjtPOjI0OiJKb29tbGFcUmVnaXN0cnlcUmVnaXN0cnkiOjM6e3M6NzoiACoAZGF0YSI7Tzo4OiJzdGRDbGFzcyI6MTp7czo1OiJ1c2VycyI7Tzo4OiJzdGRDbGFzcyI6MTp7czo1OiJsb2dpbiI7Tzo4OiJzdGRDbGFzcyI6MTp7czo0OiJmb3JtIjtPOjg6InN0ZENsYXNzIjoyOntzOjQ6ImRhdGEiO2E6MDp7fXM6NjoicmV0dXJuIjtzOjIwOiJpbmRleC5waHA/SXRlbWlkPTEwMSI7fX19fXM6MTQ6IgAqAGluaXRpYWxpemVkIjtiOjA7czo5OiJzZXBhcmF0b3IiO3M6MToiLiI7fXM6NDoidXNlciI7TzoyMDoiSm9vbWxhXENNU1xVc2VyXFVzZXIiOjE6e3M6MjoiaWQiO3M6MzoiMzgwIjt9czoxMToiYXBwbGljYXRpb24iO086ODoic3RkQ2xhc3MiOjE6e3M6NToicXVldWUiO2E6MDp7fX19fXM6MTQ6IgAqAGluaXRpYWxpemVkIjtiOjA7czo5OiJzZXBhcmF0b3IiO3M6MToiLiI7fQ==\";', 380, 'danielM117'),
-(0x7369363136733468306a307664316b7469396665337476756361, 1, 0, 1612768658, 'joomla|s:2172:\"TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjozOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjE6e3M6OToiX19kZWZhdWx0IjtPOjg6InN0ZENsYXNzIjo0OntzOjc6InNlc3Npb24iO086ODoic3RkQ2xhc3MiOjM6e3M6NzoiY291bnRlciI7aToxMDI7czo1OiJ0b2tlbiI7czozMjoiZ0x6OWt3aUNvMU52MjVhM3dPMVQ4ZUF5bWVhbFNLd0siO3M6NToidGltZXIiO086ODoic3RkQ2xhc3MiOjM6e3M6NToic3RhcnQiO2k6MTYxMjc2NzgyNjtzOjQ6Imxhc3QiO2k6MTYxMjc2ODY1NztzOjM6Im5vdyI7aToxNjEyNzY4NjU4O319czo4OiJyZWdpc3RyeSI7TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjozOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjM6e3M6MTE6ImNvbV9tb2R1bGVzIjtPOjg6InN0ZENsYXNzIjozOntzOjQ6ImVkaXQiO086ODoic3RkQ2xhc3MiOjE6e3M6NjoibW9kdWxlIjtPOjg6InN0ZENsYXNzIjoyOntzOjI6ImlkIjthOjA6e31zOjQ6ImRhdGEiO047fX1zOjM6ImFkZCI7Tzo4OiJzdGRDbGFzcyI6MTp7czo2OiJtb2R1bGUiO086ODoic3RkQ2xhc3MiOjI6e3M6MTI6ImV4dGVuc2lvbl9pZCI7TjtzOjY6InBhcmFtcyI7Tjt9fXM6NzoibW9kdWxlcyI7Tzo4OiJzdGRDbGFzcyI6NDp7czo2OiJmaWx0ZXIiO2E6Nzp7czo2OiJzZWFyY2giO3M6MDoiIjtzOjU6InN0YXRlIjtzOjA6IiI7czo4OiJwb3NpdGlvbiI7czowOiIiO3M6NjoibW9kdWxlIjtzOjA6IiI7czo4OiJtZW51aXRlbSI7czowOiIiO3M6NjoiYWNjZXNzIjtzOjA6IiI7czo4OiJsYW5ndWFnZSI7czowOiIiO31zOjk6ImNsaWVudF9pZCI7aTowO3M6NDoibGlzdCI7YToyOntzOjEyOiJmdWxsb3JkZXJpbmciO3M6MTQ6ImEucG9zaXRpb24gQVNDIjtzOjU6ImxpbWl0IjtzOjI6IjIwIjt9czoxMDoibGltaXRzdGFydCI7aToyMDt9fXM6MTM6ImNvbV9pbnN0YWxsZXIiO086ODoic3RkQ2xhc3MiOjM6e3M6NzoibWVzc2FnZSI7czowOiIiO3M6MTc6ImV4dGVuc2lvbl9tZXNzYWdlIjtzOjA6IiI7czoxMjoicmVkaXJlY3RfdXJsIjtOO31zOjExOiJjb21fcGx1Z2lucyI7Tzo4OiJzdGRDbGFzcyI6MTp7czo3OiJwbHVnaW5zIjtPOjg6InN0ZENsYXNzIjozOntzOjY6ImZpbHRlciI7YTo1OntzOjY6InNlYXJjaCI7czozOiJhcmkiO3M6NzoiZW5hYmxlZCI7czowOiIiO3M6NjoiZm9sZGVyIjtzOjA6IiI7czo3OiJlbGVtZW50IjtzOjA6IiI7czo2OiJhY2Nlc3MiO3M6MDoiIjt9czo0OiJsaXN0IjthOjQ6e3M6MTI6ImZ1bGxvcmRlcmluZyI7czoxMDoiZm9sZGVyIEFTQyI7czo1OiJsaW1pdCI7czoyOiIyMCI7czo5OiJzb3J0VGFibGUiO3M6NjoiZm9sZGVyIjtzOjE0OiJkaXJlY3Rpb25UYWJsZSI7czozOiJBU0MiO31zOjEwOiJsaW1pdHN0YXJ0IjtpOjA7fX19czoxNDoiACoAaW5pdGlhbGl6ZWQiO2I6MDtzOjk6InNlcGFyYXRvciI7czoxOiIuIjt9czo0OiJ1c2VyIjtPOjIwOiJKb29tbGFcQ01TXFVzZXJcVXNlciI6MTp7czoyOiJpZCI7czozOiIzODAiO31zOjExOiJhcHBsaWNhdGlvbiI7Tzo4OiJzdGRDbGFzcyI6MTp7czo1OiJxdWV1ZSI7YTowOnt9fX19czoxNDoiACoAaW5pdGlhbGl6ZWQiO2I6MDtzOjk6InNlcGFyYXRvciI7czoxOiIuIjt9\";', 380, 'danielM117');
+(0x30716e6b6a32316d747337333271726e3830756a6f3464666739, 1, 0, 1612773712, 'joomla|s:3648:\"TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjozOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjE6e3M6OToiX19kZWZhdWx0IjtPOjg6InN0ZENsYXNzIjo1OntzOjc6InNlc3Npb24iO086ODoic3RkQ2xhc3MiOjM6e3M6NzoiY291bnRlciI7aToyMDY7czo1OiJ0aW1lciI7Tzo4OiJzdGRDbGFzcyI6Mzp7czo1OiJzdGFydCI7aToxNjEyNzY5MzY2O3M6NDoibGFzdCI7aToxNjEyNzczNzEwO3M6Mzoibm93IjtpOjE2MTI3NzM3MTI7fXM6NToidG9rZW4iO3M6MzI6ImVPd3VsZDFPQkJhM0ZUMEZKUWZGM1R3d1M1TjhtWEVuIjt9czo4OiJyZWdpc3RyeSI7TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjozOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjU6e3M6OToiY29tX21lbnVzIjtPOjg6InN0ZENsYXNzIjoyOntzOjU6Iml0ZW1zIjtPOjg6InN0ZENsYXNzIjo0OntzOjg6Im1lbnV0eXBlIjtzOjg6Im1haW5tZW51IjtzOjk6ImNsaWVudF9pZCI7aTowO3M6NDoibGlzdCI7YTo0OntzOjk6ImRpcmVjdGlvbiI7czozOiJhc2MiO3M6NToibGltaXQiO3M6MjoiMjAiO3M6ODoib3JkZXJpbmciO3M6NToiYS5sZnQiO3M6NToic3RhcnQiO2Q6MDt9czoxMDoibGltaXRzdGFydCI7aTowO31zOjQ6ImVkaXQiO086ODoic3RkQ2xhc3MiOjE6e3M6NDoiaXRlbSI7Tzo4OiJzdGRDbGFzcyI6NDp7czo0OiJkYXRhIjtOO3M6NDoidHlwZSI7TjtzOjQ6ImxpbmsiO047czoyOiJpZCI7YTowOnt9fX19czoxMToiY29tX2NvbnRlbnQiO086ODoic3RkQ2xhc3MiOjI6e3M6NDoiZWRpdCI7Tzo4OiJzdGRDbGFzcyI6MTp7czo3OiJhcnRpY2xlIjtPOjg6InN0ZENsYXNzIjoyOntzOjQ6ImRhdGEiO047czoyOiJpZCI7YTozOntpOjA7aToyMDtpOjE7aToxOTtpOjI7aToyODt9fX1zOjg6ImFydGljbGVzIjtPOjg6InN0ZENsYXNzIjozOntzOjY6ImZpbHRlciI7YTo0OntzOjY6InNlYXJjaCI7czowOiIiO3M6OToicHVibGlzaGVkIjtzOjA6IiI7czo4OiJsYW5ndWFnZSI7czowOiIiO3M6NToibGV2ZWwiO3M6MDoiIjt9czo0OiJsaXN0IjthOjI6e3M6MTI6ImZ1bGxvcmRlcmluZyI7czo5OiJhLmlkIERFU0MiO3M6NToibGltaXQiO3M6MjoiNTAiO31zOjEwOiJsaW1pdHN0YXJ0IjtpOjA7fX1zOjEzOiJjb21faW5zdGFsbGVyIjtPOjg6InN0ZENsYXNzIjo0OntzOjc6Im1lc3NhZ2UiO3M6MDoiIjtzOjE3OiJleHRlbnNpb25fbWVzc2FnZSI7czowOiIiO3M6MTI6InJlZGlyZWN0X3VybCI7TjtzOjY6Im1hbmFnZSI7Tzo4OiJzdGRDbGFzcyI6Mzp7czo2OiJmaWx0ZXIiO2E6NTp7czo2OiJzZWFyY2giO3M6MDoiIjtzOjY6InN0YXR1cyI7czowOiIiO3M6OToiY2xpZW50X2lkIjtzOjA6IiI7czo0OiJ0eXBlIjtzOjA6IiI7czo2OiJmb2xkZXIiO3M6MDoiIjt9czo0OiJsaXN0IjthOjI6e3M6MTI6ImZ1bGxvcmRlcmluZyI7czo4OiJuYW1lIEFTQyI7czo1OiJsaW1pdCI7czozOiIxMDAiO31zOjEwOiJsaW1pdHN0YXJ0IjtpOjA7fX1zOjE0OiJjb21fY2F0ZWdvcmllcyI7Tzo4OiJzdGRDbGFzcyI6Mjp7czoxMDoiY2F0ZWdvcmllcyI7Tzo4OiJzdGRDbGFzcyI6MTp7czo3OiJjb250ZW50IjtPOjg6InN0ZENsYXNzIjoyOntzOjY6ImZpbHRlciI7Tzo4OiJzdGRDbGFzcyI6MTp7czo5OiJleHRlbnNpb24iO3M6MTE6ImNvbV9jb250ZW50Ijt9czo0OiJsaXN0IjthOjQ6e3M6OToiZGlyZWN0aW9uIjtzOjM6ImFzYyI7czo1OiJsaW1pdCI7czoyOiIyMCI7czo4OiJvcmRlcmluZyI7czo1OiJhLmxmdCI7czo1OiJzdGFydCI7ZDowO319fXM6NDoiZWRpdCI7Tzo4OiJzdGRDbGFzcyI6MTp7czo4OiJjYXRlZ29yeSI7Tzo4OiJzdGRDbGFzcyI6Mjp7czoyOiJpZCI7YTowOnt9czo0OiJkYXRhIjtOO319fXM6MTE6ImNvbV9tb2R1bGVzIjtPOjg6InN0ZENsYXNzIjozOntzOjc6Im1vZHVsZXMiO086ODoic3RkQ2xhc3MiOjQ6e3M6NjoiZmlsdGVyIjthOjc6e3M6Njoic2VhcmNoIjtzOjA6IiI7czo1OiJzdGF0ZSI7czowOiIiO3M6ODoicG9zaXRpb24iO3M6MDoiIjtzOjY6Im1vZHVsZSI7czowOiIiO3M6ODoibWVudWl0ZW0iO3M6MDoiIjtzOjY6ImFjY2VzcyI7czowOiIiO3M6ODoibGFuZ3VhZ2UiO3M6MDoiIjt9czo5OiJjbGllbnRfaWQiO2k6MDtzOjQ6Imxpc3QiO2E6Mjp7czoxMjoiZnVsbG9yZGVyaW5nIjtzOjE0OiJhLnBvc2l0aW9uIEFTQyI7czo1OiJsaW1pdCI7czoyOiIyMCI7fXM6MTA6ImxpbWl0c3RhcnQiO2k6MDt9czo0OiJlZGl0IjtPOjg6InN0ZENsYXNzIjoxOntzOjY6Im1vZHVsZSI7Tzo4OiJzdGRDbGFzcyI6Mjp7czoyOiJpZCI7YTowOnt9czo0OiJkYXRhIjtOO319czozOiJhZGQiO086ODoic3RkQ2xhc3MiOjE6e3M6NjoibW9kdWxlIjtPOjg6InN0ZENsYXNzIjoyOntzOjEyOiJleHRlbnNpb25faWQiO047czo2OiJwYXJhbXMiO047fX19fXM6MTQ6IgAqAGluaXRpYWxpemVkIjtiOjA7czo5OiJzZXBhcmF0b3IiO3M6MToiLiI7fXM6NDoidXNlciI7TzoyMDoiSm9vbWxhXENNU1xVc2VyXFVzZXIiOjE6e3M6MjoiaWQiO3M6MzoiMzgwIjt9czo5OiJjb21fbWVkaWEiO086ODoic3RkQ2xhc3MiOjE6e3M6MTA6InJldHVybl91cmwiO3M6MjY6ImluZGV4LnBocD9vcHRpb249Y29tX21lZGlhIjt9czoxMToiYXBwbGljYXRpb24iO086ODoic3RkQ2xhc3MiOjE6e3M6NToicXVldWUiO2E6MDp7fX19fXM6MTQ6IgAqAGluaXRpYWxpemVkIjtiOjA7czo5OiJzZXBhcmF0b3IiO3M6MToiLiI7fQ==\";', 380, 'danielM117'),
+(0x76666f3230647435756f617430306e366e366f65706867687134, 0, 0, 1612773691, 'joomla|s:1336:\"TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjozOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjE6e3M6OToiX19kZWZhdWx0IjtPOjg6InN0ZENsYXNzIjozOntzOjc6InNlc3Npb24iO086ODoic3RkQ2xhc3MiOjM6e3M6NzoiY291bnRlciI7aTo3NTtzOjU6InRpbWVyIjtPOjg6InN0ZENsYXNzIjozOntzOjU6InN0YXJ0IjtpOjE2MTI3NzA2NTI7czo0OiJsYXN0IjtpOjE2MTI3NzM2NTg7czozOiJub3ciO2k6MTYxMjc3MzY5MTt9czo1OiJ0b2tlbiI7czozMjoiTGdrUmRYZklHbGpWcTY2Q2x1cU5LdUV1ZkxSeEtSWDIiO31zOjg6InJlZ2lzdHJ5IjtPOjI0OiJKb29tbGFcUmVnaXN0cnlcUmVnaXN0cnkiOjM6e3M6NzoiACoAZGF0YSI7Tzo4OiJzdGRDbGFzcyI6Mzp7czo1OiJ1c2VycyI7Tzo4OiJzdGRDbGFzcyI6MTp7czo1OiJsb2dpbiI7Tzo4OiJzdGRDbGFzcyI6MTp7czo0OiJmb3JtIjtPOjg6InN0ZENsYXNzIjoyOntzOjY6InJldHVybiI7czoyMDoiaW5kZXgucGhwP0l0ZW1pZD0xMDEiO3M6NDoiZGF0YSI7YTowOnt9fX19czo2OiJnbG9iYWwiO086ODoic3RkQ2xhc3MiOjE6e3M6NDoibGlzdCI7Tzo4OiJzdGRDbGFzcyI6MTp7czo1OiJsaW1pdCI7aToyMDt9fXM6ODoiY29tX3RhZ3MiO086ODoic3RkQ2xhc3MiOjE6e3M6MzoidGFnIjtPOjg6InN0ZENsYXNzIjoxOntzOjQ6Imxpc3QiO086ODoic3RkQ2xhc3MiOjE6e3M6MzoiMzowIjtPOjg6InN0ZENsYXNzIjozOntzOjEyOiJmaWx0ZXJfb3JkZXIiO3M6MDoiIjtzOjIyOiJmaWx0ZXJfb3JkZXJfZGlyZWN0aW9uIjtzOjA6IiI7czoxMzoiZmlsdGVyX3NlYXJjaCI7czowOiIiO319fX19czoxNDoiACoAaW5pdGlhbGl6ZWQiO2I6MDtzOjk6InNlcGFyYXRvciI7czoxOiIuIjt9czo0OiJ1c2VyIjtPOjIwOiJKb29tbGFcQ01TXFVzZXJcVXNlciI6MTp7czoyOiJpZCI7czozOiIzODAiO319fXM6MTQ6IgAqAGluaXRpYWxpemVkIjtiOjA7czo5OiJzZXBhcmF0b3IiO3M6MToiLiI7fQ==\";', 380, 'danielM117');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_tags`
+-- Table structure for table `f3ts9_tags`
 --
 
 CREATE TABLE `f3ts9_tags` (
@@ -2871,14 +2992,14 @@ CREATE TABLE `f3ts9_tags` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_tags`
+-- Dumping data for table `f3ts9_tags`
 --
 
 INSERT INTO `f3ts9_tags` (`id`, `parent_id`, `lft`, `rgt`, `level`, `path`, `title`, `alias`, `note`, `description`, `published`, `checked_out`, `checked_out_time`, `access`, `params`, `metadesc`, `metakey`, `metadata`, `created_user_id`, `created_time`, `created_by_alias`, `modified_user_id`, `modified_time`, `images`, `urls`, `hits`, `language`, `version`, `publish_up`, `publish_down`) VALUES
 (1, 0, 0, 33, 0, '', 'ROOT', 'root', '', '', 1, 0, '0000-00-00 00:00:00', 1, '', '', '', '', 380, '2021-02-06 01:23:05', '', 0, '0000-00-00 00:00:00', '', '', 0, '*', 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(2, 1, 1, 2, 1, 'fotos', 'fotos', 'fotos', '', '', 1, 0, '2021-02-06 08:41:45', 1, '{}', '', '', '{}', 380, '2021-02-06 08:41:45', '', 0, '2021-02-06 08:41:45', '{}', '{}', 0, '*', 1, '2021-02-06 08:41:45', '2021-02-06 08:41:45'),
-(3, 1, 3, 4, 1, 'articulos-con-fotos', 'artículos con fotos', 'articulos-con-fotos', '', '', 1, 0, '2021-02-06 08:41:45', 1, '{}', '', '', '{}', 380, '2021-02-06 08:41:45', '', 0, '2021-02-06 08:41:45', '{}', '{}', 1, '*', 1, '2021-02-06 08:41:45', '2021-02-06 08:41:45'),
-(4, 1, 5, 6, 1, 'laminas', 'laminas', 'laminas', '', '', 1, 0, '2021-02-06 08:41:45', 1, '{}', '', '', '{}', 380, '2021-02-06 08:41:45', '', 0, '2021-02-06 08:41:45', '{}', '{}', 4, '*', 1, '2021-02-06 08:41:45', '2021-02-06 08:41:45'),
+(2, 1, 1, 2, 1, 'fotos', 'fotos', 'fotos', '', '', 1, 0, '2021-02-06 08:41:45', 1, '{}', '', '', '{}', 380, '2021-02-06 08:41:45', '', 0, '2021-02-06 08:41:45', '{}', '{}', 1, '*', 1, '2021-02-06 08:41:45', '2021-02-06 08:41:45'),
+(3, 1, 3, 4, 1, 'articulos-con-fotos', 'artículos con fotos', 'articulos-con-fotos', '', '', 1, 0, '2021-02-06 08:41:45', 1, '{}', '', '', '{}', 380, '2021-02-06 08:41:45', '', 0, '2021-02-06 08:41:45', '{}', '{}', 8, '*', 1, '2021-02-06 08:41:45', '2021-02-06 08:41:45'),
+(4, 1, 5, 6, 1, 'laminas', 'laminas', 'laminas', '', '', 1, 0, '2021-02-06 08:41:45', 1, '{}', '', '', '{}', 380, '2021-02-06 08:41:45', '', 0, '2021-02-06 08:41:45', '{}', '{}', 6, '*', 1, '2021-02-06 08:41:45', '2021-02-06 08:41:45'),
 (5, 1, 7, 8, 1, 'videos', 'videos', 'videos', '', '', 1, 0, '2021-02-06 08:43:49', 1, '{}', '', '', '{}', 380, '2021-02-06 08:43:49', '', 0, '2021-02-06 08:43:49', '{}', '{}', 0, '*', 1, '2021-02-06 08:43:49', '2021-02-06 08:43:49'),
 (6, 1, 9, 10, 1, 'articulos-con-videos', 'articulos con videos', 'articulos-con-videos', '', '', 1, 0, '2021-02-06 08:43:49', 1, '{}', '', '', '{}', 380, '2021-02-06 08:43:49', '', 0, '2021-02-06 08:43:49', '{}', '{}', 0, '*', 1, '2021-02-06 08:43:49', '2021-02-06 08:43:49'),
 (7, 1, 11, 12, 1, 'podcasts', 'podcasts', 'podcasts', '', '', 1, 0, '2021-02-06 08:47:29', 1, '{}', '', '', '{}', 380, '2021-02-06 08:47:29', '', 0, '2021-02-06 08:47:29', '{}', '{}', 0, '*', 1, '2021-02-06 08:47:29', '2021-02-06 08:47:29'),
@@ -2896,7 +3017,7 @@ INSERT INTO `f3ts9_tags` (`id`, `parent_id`, `lft`, `rgt`, `level`, `path`, `tit
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_template_styles`
+-- Table structure for table `f3ts9_template_styles`
 --
 
 CREATE TABLE `f3ts9_template_styles` (
@@ -2909,7 +3030,7 @@ CREATE TABLE `f3ts9_template_styles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_template_styles`
+-- Dumping data for table `f3ts9_template_styles`
 --
 
 INSERT INTO `f3ts9_template_styles` (`id`, `template`, `client_id`, `home`, `title`, `params`) VALUES
@@ -2922,7 +3043,7 @@ INSERT INTO `f3ts9_template_styles` (`id`, `template`, `client_id`, `home`, `tit
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_ucm_base`
+-- Table structure for table `f3ts9_ucm_base`
 --
 
 CREATE TABLE `f3ts9_ucm_base` (
@@ -2933,7 +3054,7 @@ CREATE TABLE `f3ts9_ucm_base` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_ucm_base`
+-- Dumping data for table `f3ts9_ucm_base`
 --
 
 INSERT INTO `f3ts9_ucm_base` (`ucm_id`, `ucm_item_id`, `ucm_type_id`, `ucm_language_id`) VALUES
@@ -2953,12 +3074,18 @@ INSERT INTO `f3ts9_ucm_base` (`ucm_id`, `ucm_item_id`, `ucm_type_id`, `ucm_langu
 (14, 30, 5, 0),
 (17, 17, 1, 0),
 (18, 19, 1, 0),
-(19, 20, 1, 0);
+(19, 20, 1, 0),
+(20, 22, 1, 0),
+(21, 23, 1, 0),
+(22, 24, 1, 0),
+(23, 25, 1, 0),
+(24, 26, 1, 0),
+(25, 28, 1, 0);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_ucm_content`
+-- Table structure for table `f3ts9_ucm_content`
 --
 
 CREATE TABLE `f3ts9_ucm_content` (
@@ -2997,32 +3124,38 @@ CREATE TABLE `f3ts9_ucm_content` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Contains core content data in name spaced fields';
 
 --
--- Volcado de datos para la tabla `f3ts9_ucm_content`
+-- Dumping data for table `f3ts9_ucm_content`
 --
 
 INSERT INTO `f3ts9_ucm_content` (`core_content_id`, `core_type_alias`, `core_title`, `core_alias`, `core_body`, `core_state`, `core_checked_out_time`, `core_checked_out_user_id`, `core_access`, `core_params`, `core_featured`, `core_metadata`, `core_created_user_id`, `core_created_by_alias`, `core_created_time`, `core_modified_user_id`, `core_modified_time`, `core_language`, `core_publish_up`, `core_publish_down`, `core_content_item_id`, `asset_id`, `core_images`, `core_urls`, `core_hits`, `core_version`, `core_ordering`, `core_metakey`, `core_metadesc`, `core_catid`, `core_xreference`, `core_type_id`) VALUES
 (1, 'com_content.category', 'Fotos Nuevas', 'fotos-nuevas', '', 1, '0000-00-00 00:00:00', 0, 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', 0, '{\"author\":\"\",\"robots\":\"\"}', 380, '', '2021-02-06 08:41:45', 0, '2021-02-06 08:41:45', '*', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 17, 91, '{}', '{}', 0, 1, 0, '', '', 1, '', 5),
-(2, 'com_content.category', 'Fotos cargadas al repositorio', 'fotos-cargadas-al-repositorio', '', 1, '0000-00-00 00:00:00', 0, 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', 0, '{\"author\":\"\",\"robots\":\"\"}', 380, '', '2021-02-06 08:42:47', 0, '2021-02-06 08:42:47', '*', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 18, 93, '{}', '{}', 0, 1, 0, '', '', 17, '', 5),
-(3, 'com_content.category', 'Artículos con fotos', 'articulos-con-fotos', '', 1, '0000-00-00 00:00:00', 0, 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', 0, '{\"author\":\"\",\"robots\":\"\"}', 380, '', '2021-02-06 08:43:15', 0, '2021-02-06 08:43:15', '*', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 19, 95, '{}', '{}', 0, 1, 0, '', '', 17, '', 5),
+(2, 'com_content.category', 'Fotos cargadas al repositorio', 'fotos-cargadas-al-repositorio', '<p>Esta categoría contiene unicamente artículos con fotos que se han cargado al repositorio Blow your mind.</p>', 1, '0000-00-00 00:00:00', 0, 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', 0, '{\"author\":\"\",\"robots\":\"\"}', 380, '', '2021-02-06 08:42:47', 380, '2021-02-08 08:01:06', '*', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 18, 93, '{}', '{}', 0, 1, 0, '', '', 17, '', 5),
+(3, 'com_content.category', 'Artículos con fotos', 'articulos-con-fotos', '<p>Esta categoría contiene unicamente artículos con fotos e información de descripción que se han cargado al repositorio Blow your mind.</p>', 1, '0000-00-00 00:00:00', 0, 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', 0, '{\"author\":\"\",\"robots\":\"\"}', 380, '', '2021-02-06 08:43:15', 380, '2021-02-08 08:05:31', '*', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 19, 95, '{}', '{}', 0, 1, 0, '', '', 17, '', 5),
 (4, 'com_content.category', 'Videos Nuevos', 'videos-nuevos', '', 1, '0000-00-00 00:00:00', 0, 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', 0, '{\"author\":\"\",\"robots\":\"\"}', 380, '', '2021-02-06 08:43:49', 0, '2021-02-06 08:43:49', '*', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 20, 97, '{}', '{}', 0, 1, 0, '', '', 1, '', 5),
-(5, 'com_content.category', 'Artículos con videos', 'articulos-con-videos', '', 1, '0000-00-00 00:00:00', 0, 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', 0, '{\"author\":\"\",\"robots\":\"\"}', 380, '', '2021-02-06 08:44:33', 0, '2021-02-06 08:44:33', '*', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 21, 99, '{}', '{}', 0, 1, 0, '', '', 20, '', 5),
-(6, 'com_content.category', 'Videos cargados al repositorio', 'videos-cargados-al-repositorio', '', 1, '0000-00-00 00:00:00', 0, 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', 0, '{\"author\":\"\",\"robots\":\"\"}', 380, '', '2021-02-06 08:46:20', 0, '2021-02-06 08:46:20', '*', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 22, 101, '{}', '{}', 0, 1, 0, '', '', 20, '', 5),
+(5, 'com_content.category', 'Artículos con videos', 'articulos-con-videos', '<p>Esta categoría contiene unicamente artículos con videos e información descriptiva que se han cargado al repositorio Blow your mind. Los videos pueden cargarse desde el propio repositorio o pueden ser a través de youtube.</p>', 1, '0000-00-00 00:00:00', 0, 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', 0, '{\"author\":\"\",\"robots\":\"\"}', 380, '', '2021-02-06 08:44:33', 380, '2021-02-08 08:06:31', '*', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 21, 99, '{}', '{}', 0, 1, 0, '', '', 20, '', 5),
+(6, 'com_content.category', 'Videos cargados al repositorio', 'videos-cargados-al-repositorio', '<p>Esta categoría contiene unicamente artículos con videos que se han cargado al repositorio Blow your mind. Los videos pueden cargarse desde el propio repositorio o pueden ser a través de youtube.</p>', 1, '0000-00-00 00:00:00', 0, 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', 0, '{\"author\":\"\",\"robots\":\"\"}', 380, '', '2021-02-06 08:46:20', 380, '2021-02-08 08:07:06', '*', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 22, 101, '{}', '{}', 0, 1, 0, '', '', 20, '', 5),
 (7, 'com_content.category', 'Podcast Nuevos', 'podcast-nuevos', '', 1, '0000-00-00 00:00:00', 0, 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', 0, '{\"author\":\"\",\"robots\":\"\"}', 380, '', '2021-02-06 08:47:29', 0, '2021-02-06 08:47:29', '*', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 23, 103, '{}', '{}', 0, 1, 0, '', '', 1, '', 5),
-(8, 'com_content.category', 'Podcasts cargadas al repositorio', 'podcasts-cargadas-al-repositorio', '', 1, '0000-00-00 00:00:00', 0, 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', 0, '{\"author\":\"\",\"robots\":\"\"}', 380, '', '2021-02-06 08:47:46', 0, '2021-02-06 08:47:46', '*', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 24, 105, '{}', '{}', 0, 1, 0, '', '', 23, '', 5),
-(9, 'com_content.category', 'Artículos con podcasts', 'articulos-con-podcasts', '', 1, '0000-00-00 00:00:00', 0, 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', 0, '{\"author\":\"\",\"robots\":\"\"}', 380, '', '2021-02-06 08:48:12', 0, '2021-02-06 08:48:12', '*', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 25, 107, '{}', '{}', 0, 1, 0, '', '', 23, '', 5),
+(8, 'com_content.category', 'Podcasts cargadas al repositorio', 'podcasts-cargadas-al-repositorio', '<p>Esta categoría contiene unicamente artículos con audios y podcasts que se han cargado al repositorio Blow your mind.</p>', 1, '0000-00-00 00:00:00', 0, 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', 0, '{\"author\":\"\",\"robots\":\"\"}', 380, '', '2021-02-06 08:47:46', 380, '2021-02-08 08:07:51', '*', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 24, 105, '{}', '{}', 0, 1, 0, '', '', 23, '', 5),
+(9, 'com_content.category', 'Artículos con podcasts', 'articulos-con-podcasts', '<p>Esta categoría contiene unicamente artículos con audios y podcasts e información descriptiva como el texto del audio que se han cargado al repositorio Blow your mind.</p>', 1, '0000-00-00 00:00:00', 0, 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', 0, '{\"author\":\"\",\"robots\":\"\"}', 380, '', '2021-02-06 08:48:12', 380, '2021-02-08 08:08:57', '*', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 25, 107, '{}', '{}', 0, 1, 0, '', '', 23, '', 5),
 (10, 'com_content.category', 'Documentos Nuevos', 'documentos-nuevos', '', 1, '0000-00-00 00:00:00', 0, 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', 0, '{\"author\":\"\",\"robots\":\"\"}', 380, '', '2021-02-06 09:23:55', 380, '2021-02-08 06:25:10', '*', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 26, 109, '{}', '{}', 0, 1, 0, '', '', 1, '', 5),
 (11, 'com_content.category', 'PDF', 'pdf', '', 1, '0000-00-00 00:00:00', 0, 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', 0, '{\"author\":\"\",\"robots\":\"\"}', 380, '', '2021-02-06 09:26:00', 0, '2021-02-06 09:26:00', '*', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 27, 111, '{}', '{}', 0, 1, 0, '', '', 26, '', 5),
 (12, 'com_content.category', 'Word', 'word', '', 1, '0000-00-00 00:00:00', 0, 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', 0, '{\"author\":\"\",\"robots\":\"\"}', 380, '', '2021-02-06 09:26:37', 0, '2021-02-06 09:26:37', '*', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 28, 113, '{}', '{}', 0, 1, 0, '', '', 26, '', 5),
 (13, 'com_content.category', 'Excel', 'excel', '', 1, '0000-00-00 00:00:00', 0, 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', 0, '{\"author\":\"\",\"robots\":\"\"}', 380, '', '2021-02-06 09:27:00', 0, '2021-02-06 09:27:00', '*', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 29, 115, '{}', '{}', 0, 1, 0, '', '', 26, '', 5),
 (14, 'com_content.category', 'Power Point', 'power-point', '', 1, '0000-00-00 00:00:00', 0, 2, '{\"category_layout\":\"\",\"image\":\"\",\"image_alt\":\"\"}', 0, '{\"author\":\"\",\"robots\":\"\"}', 380, '', '2021-02-06 09:27:32', 0, '2021-02-06 09:27:32', '*', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 30, 117, '{}', '{}', 0, 1, 0, '', '', 26, '', 5),
 (17, 'com_content.article', 'Las neuronas', 'las-neuronas', '<p><img src=\"images/imagenes/conexiones2.jpg\" alt=\"\" width=\"420\" height=\"210\" /></p>\r\n<p>Las neuronas tienen la capacidad de comunicarse con precisión, rapidez y a larga distancia con otras células, ya sean nerviosas, musculares o glandulares. A través de las neuronas se transmiten señales eléctricas denominadas impulsos nerviosos. Estos impulsos nerviosos viajan por toda la neurona comenzando por las dendritas hasta llegar a los botones terminales, que se pueden conectar con otra neurona, fibras musculares o glándulas. La conexión entre una neurona y otra se denomina sinapsis. Las neuronas conforman e interconectan los tres componentes del sistema nervioso: sensitivo, motor e integrador o mixto; de esta manera, un estímulo que es captado en alguna región sensorial entrega cierta información que es conducida a través de las neuronas y es analizada por el componente integrador, el cual puede elaborar una respuesta, cuya señal es conducida a través de las neuronas. Dicha respuesta es ejecutada mediante una acción motora, como la contracción muscular o secreción glandular.  </p>', 1, '0000-00-00 00:00:00', 0, 1, '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 0, '{\"robots\":\"\",\"author\":\"\",\"rights\":\"\",\"xreference\":\"\"}', 382, '', '2021-02-07 00:55:24', 380, '2021-02-07 01:00:53', '*', '2021-02-07 00:55:40', '0000-00-00 00:00:00', 17, 124, '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', 1, 3, 0, '', '', 19, '', 1),
-(18, 'com_content.article', 'Cerebro', 'cerebro', '<p><img src=\"images/fotos/barin_examination.jpg\" width=\"800\" height=\"500\" /></p>\r\n<p> </p>\r\n<p>Las zonas del cerebro son:</p>', 1, '0000-00-00 00:00:00', 0, 1, '{\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 0, '{}', 380, '', '2021-02-07 22:43:18', 0, '2021-02-07 22:43:18', '*', '2021-02-07 22:43:18', '0000-00-00 00:00:00', 19, 142, '{}', '{}', 0, 1, 0, NULL, NULL, 15, '', 1),
-(19, 'com_content.article', 'Cerebro', 'cerebro', '<p><img src=\"images/fotos/barin_examination.jpg\" alt=\"\" /></p>\r\n<p> </p>\r\n<p>dadsadadasd</p>', 1, '0000-00-00 00:00:00', 0, 1, '{\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 0, '{}', 380, '', '2021-02-07 22:47:32', 0, '2021-02-07 22:47:32', '*', '2021-02-07 22:47:32', '0000-00-00 00:00:00', 20, 144, '{}', '{}', 0, 1, 0, NULL, NULL, 19, '', 1);
+(18, 'com_content.article', 'Cerebro', 'cerebro', '<p><img src=\"images/fotos/barin_examination.jpg\" width=\"800\" height=\"500\" /></p>\r\n<p> </p>\r\n<p>Las zonas del cerebro son:</p>', -2, '0000-00-00 00:00:00', 0, 1, '{\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 0, '{}', 380, '', '2021-02-07 22:43:18', 0, '2021-02-07 22:43:18', '*', '2021-02-07 22:43:18', '0000-00-00 00:00:00', 19, 142, '{}', '{}', 0, 1, 0, NULL, NULL, 15, '', 1),
+(19, 'com_content.article', 'Cerebro', 'cerebro', '<p><img src=\"images/fotos/barin_examination.jpg\" alt=\"\" width=\"787\" height=\"426\" /></p>\r\n<p> </p>\r\n<p>Un ejemplo de la examinación del cerebro humano.</p>', 1, '0000-00-00 00:00:00', 0, 1, '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 0, '{}', 380, '', '2021-02-07 22:47:32', 380, '2021-02-08 08:19:06', '*', '2021-02-07 22:47:32', '0000-00-00 00:00:00', 20, 144, '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', 0, 2, 2, '', '', 19, '', 1),
+(20, 'com_content.article', 'Partes del cráneo', 'partes-del-craneo', '<p><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"images/anatomia_craneo.png\" alt=\"\" width=\"469\" height=\"365\" /></p>\r\n<p>El cráneo es el esqueleto de la cabeza y diversos huesos constituyen sus dos partes: el neurocráneo y esplacnocráneo. El neurocráneo es la caja ósea del encéfalo y sus cubiertas membranosas. En un adulto, está formado por una serie de ocho huesos: cuatro impares centrados en la línea media (frontal, etmoides, esfenoides y occipital) y dos series de pares bilaterales (temporal y parietal). Los huesos del denominado neurocráneo en conjunto conforman otras dos estructuras anatómicas: Los huesos frontal, parietales y occipital suelen conformar una estructura de techo parecido a una cúpula, denominada calvaria o bóveda craneal, mientras que el hueso esfenoides y temporales forman parte de la base del cráneo.</p>\r\n<p>El esplacnocráneo o viscerocráneo, también llamado esqueleto facial, constituye la parte anterior del cráneo y se compone de los huesos que rodean la boca (maxilares y mandíbula), la nariz/cavidad nasal y la mayor parte de las cavidades orbitarias. Este consta de 14 huesos irregulares: dos huesos impares centrados (mandíbula y vómer) y seis huesos pares bilaterales (maxilar, cornete nasal inferior, cigomático, palatino, nasal y lagrimal). Los maxilares y la mandíbula albergan los dientes; dicho de otra manera, proporcionan las cavidades y el hueso de sostén para los dientes maxilares y mandibulares. Los maxilares forman la mayor parte del esqueleto facial superior, fijado a la base del cráneo. La mandíbula forma el esqueleto facial inferior, siendo este de carácter móvil al articularse con la base del cráneo en las articulaciones temporomandibulares.</p>', 1, '0000-00-00 00:00:00', 0, 2, '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 0, '{}', 380, '', '2021-02-08 07:40:53', 0, '2021-02-08 07:40:53', '*', '2021-02-08 07:40:53', '0000-00-00 00:00:00', 22, 147, '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', 0, 1, 0, NULL, NULL, 19, '', 1),
+(21, 'com_content.article', 'Fotos de neuronas', 'fotos-de-neuronas', '<p><img src=\"images/imagenes/cerebro.jpg\" alt=\"\" /></p>', 1, '0000-00-00 00:00:00', 0, 1, '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 0, '{}', 380, '', '2021-02-08 07:41:36', 0, '2021-02-08 07:41:36', '*', '2021-02-08 07:41:36', '0000-00-00 00:00:00', 23, 149, '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', 0, 1, 0, NULL, NULL, 18, '', 1),
+(22, 'com_content.article', 'La Caja Torácica', 'la-caja-toracica', '<p> </p>\r\n<p><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"images/caja_toraxicajpg.jpg\" alt=\"\" /></p>\r\n<p style=\"text-align: justify;\">El tórax es la parte del cuerpo humano que está entre la base del cuello y el diafragma. Contiene a los pulmones, el corazón, voluminosos vasos sanguíneos, linfáticos y la arteria aorta (ascendente, arco y descendente), la vena cava inferior, la cadena ganglionar simpática de donde salen las ramas esplácnicas, las venas ácigos (mayor y menor), el esófago y el conducto torácico. Su división fundamentalmente consiste en el mediastino y las dos cavidades pulmonares.</p>\r\n<p style=\"text-align: justify;\">Tiene forma de cono truncado o pirámide y su pared está formada por los arcos costales (costillas) y los músculos intercostales, que se unen anteriormente al hueso esternón por medio de cartílagos y posteriormente a la columna vertebral. La función de esta formación osteocartilaginosa, es la de proteger los órganos internos de los traumatismos mecánicos, que de otra manera podrían lesionarlos.</p>\r\n<p style=\"text-align: justify;\">La caja torácica tiene la particularidad de ser expansible, permitiendo la inspiración (inhalación). Además, su último par de costillas son flotantes, ya que están unidas solo a las vértebras, en la parte posterior, lo que permite su ensanchamiento en el embarazo.</p>\r\n<p style=\"text-align: justify;\">El nombre deriva del Latín thorax, y este del griego -θώραξ-; que significa propiamente coraza.</p>', 1, '0000-00-00 00:00:00', 0, 1, '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 0, '{}', 380, '', '2021-02-08 07:44:57', 0, '2021-02-08 07:44:57', '*', '2021-02-08 07:44:57', '0000-00-00 00:00:00', 24, 151, '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', 0, 1, 0, NULL, NULL, 19, '', 1),
+(23, 'com_content.article', 'Imagen de neurona', 'imagen-de-neurona', '<p><img src=\"images/imagenes/cerebro.jpg\" alt=\"\" width=\"680\" height=\"372\" /></p>', 1, '0000-00-00 00:00:00', 0, 1, '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 0, '{}', 380, '', '2021-02-08 07:50:50', 0, '2021-02-08 07:50:50', '*', '2021-02-08 07:50:50', '0000-00-00 00:00:00', 25, 153, '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', 0, 1, 0, NULL, NULL, 18, '', 1),
+(24, 'com_content.article', 'Artículo sobre las partes del cerebro', 'articulo-sobre-las-partes-del-cerebro', '<pre><code>{google_docs}https://docs.google.com/document/d/e/2PACX-1vSZbk0N2NhHRhkYJiuwxQr3hS1Il6eB3IQv9BVQyEXNZQWtidVILIjoequx4Zm9jQ/pub{/google_docs}</code></pre>', 1, '0000-00-00 00:00:00', 0, 2, '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 0, '{}', 380, '', '2021-02-08 08:21:16', 380, '2021-02-08 08:26:17', '*', '2021-02-08 08:21:16', '0000-00-00 00:00:00', 26, 155, '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', 0, 6, 0, '', '', 28, '', 1),
+(25, 'com_content.article', 'Documento de la caja torácica', 'documento-de-la-caja-toracica', '<pre><code>{google_docs}https://docs.google.com/document/d/e/2PACX-1vSmgygovOW6cJq1iehDIl9py3JZydg4doXNKHIn90WvzZlWyTza3-gk6vtwC_x7KQ/pub{/google_docs}</code></pre>', 1, '0000-00-00 00:00:00', 0, 1, '{\"article_layout\":\"\",\"show_title\":\"\",\"link_titles\":\"\",\"show_tags\":\"\",\"show_intro\":\"\",\"info_block_position\":\"\",\"info_block_show_title\":\"\",\"show_category\":\"\",\"link_category\":\"\",\"show_parent_category\":\"\",\"link_parent_category\":\"\",\"show_associations\":\"\",\"show_author\":\"\",\"link_author\":\"\",\"show_create_date\":\"\",\"show_modify_date\":\"\",\"show_publish_date\":\"\",\"show_item_navigation\":\"\",\"show_icons\":\"\",\"show_print_icon\":\"\",\"show_email_icon\":\"\",\"show_vote\":\"\",\"show_hits\":\"\",\"show_noauth\":\"\",\"urls_position\":\"\",\"alternative_readmore\":\"\",\"article_page_title\":\"\",\"show_publishing_options\":\"\",\"show_article_options\":\"\",\"show_urls_images_backend\":\"\",\"show_urls_images_frontend\":\"\",\"helix_ultimate_image\":\"\",\"helix_ultimate_article_format\":\"standard\",\"helix_ultimate_audio\":\"\",\"helix_ultimate_gallery\":\"\",\"helix_ultimate_video\":\"\"}', 0, '{}', 380, '', '2021-02-08 08:27:27', 0, '2021-02-08 08:41:50', '*', '2021-02-08 08:27:27', '0000-00-00 00:00:00', 28, 158, '{\"image_intro\":\"\",\"float_intro\":\"\",\"image_intro_alt\":\"\",\"image_intro_caption\":\"\",\"image_fulltext\":\"\",\"float_fulltext\":\"\",\"image_fulltext_alt\":\"\",\"image_fulltext_caption\":\"\"}', '{\"urla\":false,\"urlatext\":\"\",\"targeta\":\"\",\"urlb\":false,\"urlbtext\":\"\",\"targetb\":\"\",\"urlc\":false,\"urlctext\":\"\",\"targetc\":\"\"}', 1, 15, 0, '', '', 28, '', 1);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_ucm_history`
+-- Table structure for table `f3ts9_ucm_history`
 --
 
 CREATE TABLE `f3ts9_ucm_history` (
@@ -3039,7 +3172,7 @@ CREATE TABLE `f3ts9_ucm_history` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_ucm_history`
+-- Dumping data for table `f3ts9_ucm_history`
 --
 
 INSERT INTO `f3ts9_ucm_history` (`version_id`, `ucm_item_id`, `ucm_type_id`, `version_note`, `save_date`, `editor_user_id`, `character_count`, `sha1_hash`, `version_data`, `keep_forever`) VALUES
@@ -3126,12 +3259,41 @@ INSERT INTO `f3ts9_ucm_history` (`version_id`, `ucm_item_id`, `ucm_type_id`, `ve
 (102, 21, 1, '', '2021-02-08 06:01:10', 380, 2541, '2affea2f34e7550312022cb9e409823269b1367f', '{\"id\":21,\"asset_id\":\"145\",\"title\":\"Prueba de ari\",\"alias\":\"prueba-de-ari\",\"introtext\":\"<p><code><\\/code><\\/p>\\r\\n<p><code>{aridoc engine=\\\"google\\\" width=\\\"550\\\" height=\\\"450\\\"}images\\/archivos\\/PruebaDJmodulo.pdf{\\/aridoc}<\\/code><\\/p>\\r\\n<p><code>{aridoc engine=\\\"office\\\" width=\\\"550\\\" height=\\\"450\\\"}images\\/archivos\\/Proyecto_practoicum.ppxt{\\/aridoc}<\\/code><\\/p>\\r\\n<p><code>{aridoc engine=\\\"pdfjs\\\" width=\\\"600\\\" height=\\\"300\\\"}images\\/archivos\\/PruebaDJmodulo.pdf{\\/aridoc}<\\/code><\\/p>\\r\\n<p><code>{aridoc engine=\\\"google\\\" width=\\\"600\\\" height=\\\"300\\\"}http:\\/\\/bibliotecadigital.usb.edu.co\\/bitstream\\/10819\\/3858\\/1\\/Historia_Neuropsicologia_Facultad_Leal_2017.pdf{\\/aridoc}<\\/code><br \\/><code><\\/code><br \\/><code><\\/code><\\/p>\",\"fulltext\":\"\",\"state\":1,\"catid\":\"27\",\"created\":\"2021-02-08 01:13:25\",\"created_by\":\"380\",\"created_by_alias\":\"\",\"modified\":\"2021-02-08 06:01:10\",\"modified_by\":\"380\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 05:53:51\",\"publish_up\":\"2021-02-08 01:13:25\",\"publish_down\":\"0000-00-00 00:00:00\",\"images\":\"{\\\"image_intro\\\":\\\"\\\",\\\"float_intro\\\":\\\"\\\",\\\"image_intro_alt\\\":\\\"\\\",\\\"image_intro_caption\\\":\\\"\\\",\\\"image_fulltext\\\":\\\"\\\",\\\"float_fulltext\\\":\\\"\\\",\\\"image_fulltext_alt\\\":\\\"\\\",\\\"image_fulltext_caption\\\":\\\"\\\"}\",\"urls\":\"{\\\"urla\\\":false,\\\"urlatext\\\":\\\"\\\",\\\"targeta\\\":\\\"\\\",\\\"urlb\\\":false,\\\"urlbtext\\\":\\\"\\\",\\\"targetb\\\":\\\"\\\",\\\"urlc\\\":false,\\\"urlctext\\\":\\\"\\\",\\\"targetc\\\":\\\"\\\"}\",\"attribs\":\"{\\\"article_layout\\\":\\\"\\\",\\\"show_title\\\":\\\"\\\",\\\"link_titles\\\":\\\"\\\",\\\"show_tags\\\":\\\"\\\",\\\"show_intro\\\":\\\"\\\",\\\"info_block_position\\\":\\\"\\\",\\\"info_block_show_title\\\":\\\"\\\",\\\"show_category\\\":\\\"\\\",\\\"link_category\\\":\\\"\\\",\\\"show_parent_category\\\":\\\"\\\",\\\"link_parent_category\\\":\\\"\\\",\\\"show_associations\\\":\\\"\\\",\\\"show_author\\\":\\\"\\\",\\\"link_author\\\":\\\"\\\",\\\"show_create_date\\\":\\\"\\\",\\\"show_modify_date\\\":\\\"\\\",\\\"show_publish_date\\\":\\\"\\\",\\\"show_item_navigation\\\":\\\"\\\",\\\"show_icons\\\":\\\"\\\",\\\"show_print_icon\\\":\\\"\\\",\\\"show_email_icon\\\":\\\"\\\",\\\"show_vote\\\":\\\"\\\",\\\"show_hits\\\":\\\"\\\",\\\"show_noauth\\\":\\\"\\\",\\\"urls_position\\\":\\\"\\\",\\\"alternative_readmore\\\":\\\"\\\",\\\"article_page_title\\\":\\\"\\\",\\\"show_publishing_options\\\":\\\"\\\",\\\"show_article_options\\\":\\\"\\\",\\\"show_urls_images_backend\\\":\\\"\\\",\\\"show_urls_images_frontend\\\":\\\"\\\",\\\"helix_ultimate_image\\\":\\\"\\\",\\\"helix_ultimate_article_format\\\":\\\"standard\\\",\\\"helix_ultimate_audio\\\":\\\"\\\",\\\"helix_ultimate_gallery\\\":\\\"\\\",\\\"helix_ultimate_video\\\":\\\"\\\"}\",\"version\":33,\"ordering\":\"0\",\"metakey\":\"\",\"metadesc\":\"\",\"access\":\"1\",\"hits\":\"0\",\"metadata\":\"{}\",\"featured\":\"0\",\"language\":\"*\",\"xreference\":\"\",\"note\":\"\"}', 0),
 (103, 21, 1, '', '2021-02-08 06:06:02', 380, 2541, 'e146b30dd9a94ec69a7d962a355a2f4173c0e52b', '{\"id\":21,\"asset_id\":\"145\",\"title\":\"Prueba de ari\",\"alias\":\"prueba-de-ari\",\"introtext\":\"<p><code><\\/code><\\/p>\\r\\n<p><code>{aridoc engine=\\\"google\\\" width=\\\"550\\\" height=\\\"450\\\"}images\\/archivos\\/PruebaDJmodulo.pdf{\\/aridoc}<\\/code><\\/p>\\r\\n<p><code>{aridoc engine=\\\"office\\\" width=\\\"550\\\" height=\\\"450\\\"}images\\/archivos\\/proyecto_practoicum.ppxt{\\/aridoc}<\\/code><\\/p>\\r\\n<p><code>{aridoc engine=\\\"pdfjs\\\" width=\\\"600\\\" height=\\\"300\\\"}images\\/archivos\\/PruebaDJmodulo.pdf{\\/aridoc}<\\/code><\\/p>\\r\\n<p><code>{aridoc engine=\\\"google\\\" width=\\\"600\\\" height=\\\"300\\\"}http:\\/\\/bibliotecadigital.usb.edu.co\\/bitstream\\/10819\\/3858\\/1\\/Historia_Neuropsicologia_Facultad_Leal_2017.pdf{\\/aridoc}<\\/code><br \\/><code><\\/code><br \\/><code><\\/code><\\/p>\",\"fulltext\":\"\",\"state\":1,\"catid\":\"27\",\"created\":\"2021-02-08 01:13:25\",\"created_by\":\"380\",\"created_by_alias\":\"\",\"modified\":\"2021-02-08 06:06:02\",\"modified_by\":\"380\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 06:03:15\",\"publish_up\":\"2021-02-08 01:13:25\",\"publish_down\":\"0000-00-00 00:00:00\",\"images\":\"{\\\"image_intro\\\":\\\"\\\",\\\"float_intro\\\":\\\"\\\",\\\"image_intro_alt\\\":\\\"\\\",\\\"image_intro_caption\\\":\\\"\\\",\\\"image_fulltext\\\":\\\"\\\",\\\"float_fulltext\\\":\\\"\\\",\\\"image_fulltext_alt\\\":\\\"\\\",\\\"image_fulltext_caption\\\":\\\"\\\"}\",\"urls\":\"{\\\"urla\\\":false,\\\"urlatext\\\":\\\"\\\",\\\"targeta\\\":\\\"\\\",\\\"urlb\\\":false,\\\"urlbtext\\\":\\\"\\\",\\\"targetb\\\":\\\"\\\",\\\"urlc\\\":false,\\\"urlctext\\\":\\\"\\\",\\\"targetc\\\":\\\"\\\"}\",\"attribs\":\"{\\\"article_layout\\\":\\\"\\\",\\\"show_title\\\":\\\"\\\",\\\"link_titles\\\":\\\"\\\",\\\"show_tags\\\":\\\"\\\",\\\"show_intro\\\":\\\"\\\",\\\"info_block_position\\\":\\\"\\\",\\\"info_block_show_title\\\":\\\"\\\",\\\"show_category\\\":\\\"\\\",\\\"link_category\\\":\\\"\\\",\\\"show_parent_category\\\":\\\"\\\",\\\"link_parent_category\\\":\\\"\\\",\\\"show_associations\\\":\\\"\\\",\\\"show_author\\\":\\\"\\\",\\\"link_author\\\":\\\"\\\",\\\"show_create_date\\\":\\\"\\\",\\\"show_modify_date\\\":\\\"\\\",\\\"show_publish_date\\\":\\\"\\\",\\\"show_item_navigation\\\":\\\"\\\",\\\"show_icons\\\":\\\"\\\",\\\"show_print_icon\\\":\\\"\\\",\\\"show_email_icon\\\":\\\"\\\",\\\"show_vote\\\":\\\"\\\",\\\"show_hits\\\":\\\"\\\",\\\"show_noauth\\\":\\\"\\\",\\\"urls_position\\\":\\\"\\\",\\\"alternative_readmore\\\":\\\"\\\",\\\"article_page_title\\\":\\\"\\\",\\\"show_publishing_options\\\":\\\"\\\",\\\"show_article_options\\\":\\\"\\\",\\\"show_urls_images_backend\\\":\\\"\\\",\\\"show_urls_images_frontend\\\":\\\"\\\",\\\"helix_ultimate_image\\\":\\\"\\\",\\\"helix_ultimate_article_format\\\":\\\"standard\\\",\\\"helix_ultimate_audio\\\":\\\"\\\",\\\"helix_ultimate_gallery\\\":\\\"\\\",\\\"helix_ultimate_video\\\":\\\"\\\"}\",\"version\":35,\"ordering\":\"0\",\"metakey\":\"\",\"metadesc\":\"\",\"access\":\"1\",\"hits\":\"0\",\"metadata\":\"{}\",\"featured\":\"0\",\"language\":\"*\",\"xreference\":\"\",\"note\":\"\"}', 0),
 (104, 21, 1, '', '2021-02-08 06:07:11', 380, 2695, 'a1d6fcfb3897ca027479984adb66304d1cbd23e7', '{\"id\":21,\"asset_id\":\"145\",\"title\":\"Prueba de ari\",\"alias\":\"prueba-de-ari\",\"introtext\":\"<p><code><\\/code><\\/p>\\r\\n<p><code>{aridoc engine=\\\"google\\\" width=\\\"550\\\" height=\\\"450\\\"}images\\/archivos\\/PruebaDJmodulo.pdf{\\/aridoc}<\\/code><\\/p>\\r\\n<p><code>{aridoc engine=\\\"google\\\" width=\\\"600\\\" height=\\\"300\\\"}images\\/archivos\\/proyecto_practoicum.pptx{\\/aridoc}<\\/code><br \\/><code><\\/code><\\/p>\\r\\n<p><code>{aridoc engine=\\\"office\\\" width=\\\"550\\\" height=\\\"450\\\"}images\\/archivos\\/proyecto_practoicum.pptx{\\/aridoc}<\\/code><\\/p>\\r\\n<p><code>{aridoc engine=\\\"pdfjs\\\" width=\\\"600\\\" height=\\\"300\\\"}images\\/archivos\\/PruebaDJmodulo.pdf{\\/aridoc}<\\/code><\\/p>\\r\\n<p><code>{aridoc engine=\\\"google\\\" width=\\\"600\\\" height=\\\"300\\\"}http:\\/\\/bibliotecadigital.usb.edu.co\\/bitstream\\/10819\\/3858\\/1\\/Historia_Neuropsicologia_Facultad_Leal_2017.pdf{\\/aridoc}<\\/code><br \\/><code><\\/code><br \\/><code><\\/code><\\/p>\",\"fulltext\":\"\",\"state\":1,\"catid\":\"27\",\"created\":\"2021-02-08 01:13:25\",\"created_by\":\"380\",\"created_by_alias\":\"\",\"modified\":\"2021-02-08 06:07:11\",\"modified_by\":\"380\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 06:06:02\",\"publish_up\":\"2021-02-08 01:13:25\",\"publish_down\":\"0000-00-00 00:00:00\",\"images\":\"{\\\"image_intro\\\":\\\"\\\",\\\"float_intro\\\":\\\"\\\",\\\"image_intro_alt\\\":\\\"\\\",\\\"image_intro_caption\\\":\\\"\\\",\\\"image_fulltext\\\":\\\"\\\",\\\"float_fulltext\\\":\\\"\\\",\\\"image_fulltext_alt\\\":\\\"\\\",\\\"image_fulltext_caption\\\":\\\"\\\"}\",\"urls\":\"{\\\"urla\\\":false,\\\"urlatext\\\":\\\"\\\",\\\"targeta\\\":\\\"\\\",\\\"urlb\\\":false,\\\"urlbtext\\\":\\\"\\\",\\\"targetb\\\":\\\"\\\",\\\"urlc\\\":false,\\\"urlctext\\\":\\\"\\\",\\\"targetc\\\":\\\"\\\"}\",\"attribs\":\"{\\\"article_layout\\\":\\\"\\\",\\\"show_title\\\":\\\"\\\",\\\"link_titles\\\":\\\"\\\",\\\"show_tags\\\":\\\"\\\",\\\"show_intro\\\":\\\"\\\",\\\"info_block_position\\\":\\\"\\\",\\\"info_block_show_title\\\":\\\"\\\",\\\"show_category\\\":\\\"\\\",\\\"link_category\\\":\\\"\\\",\\\"show_parent_category\\\":\\\"\\\",\\\"link_parent_category\\\":\\\"\\\",\\\"show_associations\\\":\\\"\\\",\\\"show_author\\\":\\\"\\\",\\\"link_author\\\":\\\"\\\",\\\"show_create_date\\\":\\\"\\\",\\\"show_modify_date\\\":\\\"\\\",\\\"show_publish_date\\\":\\\"\\\",\\\"show_item_navigation\\\":\\\"\\\",\\\"show_icons\\\":\\\"\\\",\\\"show_print_icon\\\":\\\"\\\",\\\"show_email_icon\\\":\\\"\\\",\\\"show_vote\\\":\\\"\\\",\\\"show_hits\\\":\\\"\\\",\\\"show_noauth\\\":\\\"\\\",\\\"urls_position\\\":\\\"\\\",\\\"alternative_readmore\\\":\\\"\\\",\\\"article_page_title\\\":\\\"\\\",\\\"show_publishing_options\\\":\\\"\\\",\\\"show_article_options\\\":\\\"\\\",\\\"show_urls_images_backend\\\":\\\"\\\",\\\"show_urls_images_frontend\\\":\\\"\\\",\\\"helix_ultimate_image\\\":\\\"\\\",\\\"helix_ultimate_article_format\\\":\\\"standard\\\",\\\"helix_ultimate_audio\\\":\\\"\\\",\\\"helix_ultimate_gallery\\\":\\\"\\\",\\\"helix_ultimate_video\\\":\\\"\\\"}\",\"version\":36,\"ordering\":\"0\",\"metakey\":\"\",\"metadesc\":\"\",\"access\":\"1\",\"hits\":\"0\",\"metadata\":\"{}\",\"featured\":\"0\",\"language\":\"*\",\"xreference\":\"\",\"note\":\"\"}', 0),
-(105, 26, 5, '', '2021-02-08 06:25:10', 380, 612, '9fa3e6f962e264203fedfc527937eb8cfce6bc47', '{\"id\":26,\"asset_id\":\"108\",\"parent_id\":\"1\",\"lft\":\"47\",\"rgt\":\"56\",\"level\":\"1\",\"path\":\"documentos-nuevos\",\"extension\":\"com_content\",\"title\":\"Documentos Nuevos\",\"alias\":\"documentos-nuevos\",\"note\":\"\",\"description\":\"\",\"published\":\"1\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 06:23:04\",\"access\":\"2\",\"params\":\"{\\\"category_layout\\\":\\\"\\\",\\\"image\\\":\\\"\\\",\\\"image_alt\\\":\\\"\\\"}\",\"metadesc\":\"\",\"metakey\":\"\",\"metadata\":\"{\\\"author\\\":\\\"\\\",\\\"robots\\\":\\\"\\\"}\",\"created_user_id\":\"380\",\"created_time\":\"2021-02-06 09:23:55\",\"modified_user_id\":\"380\",\"modified_time\":\"2021-02-08 06:25:10\",\"hits\":\"0\",\"language\":\"*\",\"version\":\"1\"}', 0);
+(105, 26, 5, '', '2021-02-08 06:25:10', 380, 612, '9fa3e6f962e264203fedfc527937eb8cfce6bc47', '{\"id\":26,\"asset_id\":\"108\",\"parent_id\":\"1\",\"lft\":\"47\",\"rgt\":\"56\",\"level\":\"1\",\"path\":\"documentos-nuevos\",\"extension\":\"com_content\",\"title\":\"Documentos Nuevos\",\"alias\":\"documentos-nuevos\",\"note\":\"\",\"description\":\"\",\"published\":\"1\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 06:23:04\",\"access\":\"2\",\"params\":\"{\\\"category_layout\\\":\\\"\\\",\\\"image\\\":\\\"\\\",\\\"image_alt\\\":\\\"\\\"}\",\"metadesc\":\"\",\"metakey\":\"\",\"metadata\":\"{\\\"author\\\":\\\"\\\",\\\"robots\\\":\\\"\\\"}\",\"created_user_id\":\"380\",\"created_time\":\"2021-02-06 09:23:55\",\"modified_user_id\":\"380\",\"modified_time\":\"2021-02-08 06:25:10\",\"hits\":\"0\",\"language\":\"*\",\"version\":\"1\"}', 0),
+(106, 22, 1, '', '2021-02-08 07:40:53', 380, 3782, 'eb769a9634736d2dbef4746149074df793fb14b0', '{\"id\":22,\"asset_id\":146,\"title\":\"Partes del cr\\u00e1neo\",\"alias\":\"partes-del-craneo\",\"introtext\":\"<p><img style=\\\"display: block; margin-left: auto; margin-right: auto;\\\" src=\\\"images\\/anatomia_craneo.png\\\" alt=\\\"\\\" width=\\\"469\\\" height=\\\"365\\\" \\/><\\/p>\\r\\n<p>El cr\\u00e1neo es el esqueleto de la cabeza y diversos huesos constituyen sus dos partes: el neurocr\\u00e1neo y esplacnocr\\u00e1neo. El neurocr\\u00e1neo es la caja \\u00f3sea del enc\\u00e9falo y sus cubiertas membranosas. En un adulto, est\\u00e1 formado por una serie de ocho huesos: cuatro impares centrados en la l\\u00ednea media (frontal, etmoides, esfenoides y occipital) y dos series de pares bilaterales (temporal y parietal). Los huesos del denominado neurocr\\u00e1neo en conjunto conforman otras dos estructuras anat\\u00f3micas: Los huesos frontal, parietales y occipital suelen conformar una estructura de techo parecido a una c\\u00fapula, denominada calvaria o b\\u00f3veda craneal, mientras que el hueso esfenoides y temporales forman parte de la base del cr\\u00e1neo.<\\/p>\\r\\n<p>El esplacnocr\\u00e1neo o viscerocr\\u00e1neo, tambi\\u00e9n llamado esqueleto facial, constituye la parte anterior del cr\\u00e1neo y se compone de los huesos que rodean la boca (maxilares y mand\\u00edbula), la nariz\\/cavidad nasal y la mayor parte de las cavidades orbitarias. Este consta de 14 huesos irregulares: dos huesos impares centrados (mand\\u00edbula y v\\u00f3mer) y seis huesos pares bilaterales (maxilar, cornete nasal inferior, cigom\\u00e1tico, palatino, nasal y lagrimal). Los maxilares y la mand\\u00edbula albergan los dientes; dicho de otra manera, proporcionan las cavidades y el hueso de sost\\u00e9n para los dientes maxilares y mandibulares. Los maxilares forman la mayor parte del esqueleto facial superior, fijado a la base del cr\\u00e1neo. La mand\\u00edbula forma el esqueleto facial inferior, siendo este de car\\u00e1cter m\\u00f3vil al articularse con la base del cr\\u00e1neo en las articulaciones temporomandibulares.<\\/p>\",\"fulltext\":\"\",\"state\":1,\"catid\":\"19\",\"created\":\"2021-02-08 07:40:53\",\"created_by\":\"380\",\"created_by_alias\":null,\"modified\":\"2021-02-08 07:40:53\",\"modified_by\":null,\"checked_out\":null,\"checked_out_time\":null,\"publish_up\":\"2021-02-08 07:40:53\",\"publish_down\":\"0000-00-00 00:00:00\",\"images\":\"{\\\"image_intro\\\":\\\"\\\",\\\"float_intro\\\":\\\"\\\",\\\"image_intro_alt\\\":\\\"\\\",\\\"image_intro_caption\\\":\\\"\\\",\\\"image_fulltext\\\":\\\"\\\",\\\"float_fulltext\\\":\\\"\\\",\\\"image_fulltext_alt\\\":\\\"\\\",\\\"image_fulltext_caption\\\":\\\"\\\"}\",\"urls\":\"{\\\"urla\\\":false,\\\"urlatext\\\":\\\"\\\",\\\"targeta\\\":\\\"\\\",\\\"urlb\\\":false,\\\"urlbtext\\\":\\\"\\\",\\\"targetb\\\":\\\"\\\",\\\"urlc\\\":false,\\\"urlctext\\\":\\\"\\\",\\\"targetc\\\":\\\"\\\"}\",\"attribs\":\"{\\\"article_layout\\\":\\\"\\\",\\\"show_title\\\":\\\"\\\",\\\"link_titles\\\":\\\"\\\",\\\"show_tags\\\":\\\"\\\",\\\"show_intro\\\":\\\"\\\",\\\"info_block_position\\\":\\\"\\\",\\\"info_block_show_title\\\":\\\"\\\",\\\"show_category\\\":\\\"\\\",\\\"link_category\\\":\\\"\\\",\\\"show_parent_category\\\":\\\"\\\",\\\"link_parent_category\\\":\\\"\\\",\\\"show_associations\\\":\\\"\\\",\\\"show_author\\\":\\\"\\\",\\\"link_author\\\":\\\"\\\",\\\"show_create_date\\\":\\\"\\\",\\\"show_modify_date\\\":\\\"\\\",\\\"show_publish_date\\\":\\\"\\\",\\\"show_item_navigation\\\":\\\"\\\",\\\"show_icons\\\":\\\"\\\",\\\"show_print_icon\\\":\\\"\\\",\\\"show_email_icon\\\":\\\"\\\",\\\"show_vote\\\":\\\"\\\",\\\"show_hits\\\":\\\"\\\",\\\"show_noauth\\\":\\\"\\\",\\\"urls_position\\\":\\\"\\\",\\\"alternative_readmore\\\":\\\"\\\",\\\"article_page_title\\\":\\\"\\\",\\\"show_publishing_options\\\":\\\"\\\",\\\"show_article_options\\\":\\\"\\\",\\\"show_urls_images_backend\\\":\\\"\\\",\\\"show_urls_images_frontend\\\":\\\"\\\",\\\"helix_ultimate_image\\\":\\\"\\\",\\\"helix_ultimate_article_format\\\":\\\"standard\\\",\\\"helix_ultimate_audio\\\":\\\"\\\",\\\"helix_ultimate_gallery\\\":\\\"\\\",\\\"helix_ultimate_video\\\":\\\"\\\"}\",\"version\":1,\"ordering\":null,\"metakey\":null,\"metadesc\":null,\"access\":\"2\",\"hits\":null,\"metadata\":\"{}\",\"featured\":\"0\",\"language\":\"*\",\"xreference\":null,\"note\":\"\"}', 0),
+(107, 23, 1, '', '2021-02-08 07:41:36', 380, 1946, 'e26ea4efc4e29c104712af50546d084198bbd852', '{\"id\":23,\"asset_id\":148,\"title\":\"Fotos de neuronas\",\"alias\":\"fotos-de-neuronas\",\"introtext\":\"<p><img src=\\\"images\\/imagenes\\/cerebro.jpg\\\" alt=\\\"\\\" \\/><\\/p>\",\"fulltext\":\"\",\"state\":1,\"catid\":\"18\",\"created\":\"2021-02-08 07:41:36\",\"created_by\":\"380\",\"created_by_alias\":null,\"modified\":\"2021-02-08 07:41:36\",\"modified_by\":null,\"checked_out\":null,\"checked_out_time\":null,\"publish_up\":\"2021-02-08 07:41:36\",\"publish_down\":\"0000-00-00 00:00:00\",\"images\":\"{\\\"image_intro\\\":\\\"\\\",\\\"float_intro\\\":\\\"\\\",\\\"image_intro_alt\\\":\\\"\\\",\\\"image_intro_caption\\\":\\\"\\\",\\\"image_fulltext\\\":\\\"\\\",\\\"float_fulltext\\\":\\\"\\\",\\\"image_fulltext_alt\\\":\\\"\\\",\\\"image_fulltext_caption\\\":\\\"\\\"}\",\"urls\":\"{\\\"urla\\\":false,\\\"urlatext\\\":\\\"\\\",\\\"targeta\\\":\\\"\\\",\\\"urlb\\\":false,\\\"urlbtext\\\":\\\"\\\",\\\"targetb\\\":\\\"\\\",\\\"urlc\\\":false,\\\"urlctext\\\":\\\"\\\",\\\"targetc\\\":\\\"\\\"}\",\"attribs\":\"{\\\"article_layout\\\":\\\"\\\",\\\"show_title\\\":\\\"\\\",\\\"link_titles\\\":\\\"\\\",\\\"show_tags\\\":\\\"\\\",\\\"show_intro\\\":\\\"\\\",\\\"info_block_position\\\":\\\"\\\",\\\"info_block_show_title\\\":\\\"\\\",\\\"show_category\\\":\\\"\\\",\\\"link_category\\\":\\\"\\\",\\\"show_parent_category\\\":\\\"\\\",\\\"link_parent_category\\\":\\\"\\\",\\\"show_associations\\\":\\\"\\\",\\\"show_author\\\":\\\"\\\",\\\"link_author\\\":\\\"\\\",\\\"show_create_date\\\":\\\"\\\",\\\"show_modify_date\\\":\\\"\\\",\\\"show_publish_date\\\":\\\"\\\",\\\"show_item_navigation\\\":\\\"\\\",\\\"show_icons\\\":\\\"\\\",\\\"show_print_icon\\\":\\\"\\\",\\\"show_email_icon\\\":\\\"\\\",\\\"show_vote\\\":\\\"\\\",\\\"show_hits\\\":\\\"\\\",\\\"show_noauth\\\":\\\"\\\",\\\"urls_position\\\":\\\"\\\",\\\"alternative_readmore\\\":\\\"\\\",\\\"article_page_title\\\":\\\"\\\",\\\"show_publishing_options\\\":\\\"\\\",\\\"show_article_options\\\":\\\"\\\",\\\"show_urls_images_backend\\\":\\\"\\\",\\\"show_urls_images_frontend\\\":\\\"\\\",\\\"helix_ultimate_image\\\":\\\"\\\",\\\"helix_ultimate_article_format\\\":\\\"standard\\\",\\\"helix_ultimate_audio\\\":\\\"\\\",\\\"helix_ultimate_gallery\\\":\\\"\\\",\\\"helix_ultimate_video\\\":\\\"\\\"}\",\"version\":1,\"ordering\":null,\"metakey\":null,\"metadesc\":null,\"access\":\"1\",\"hits\":null,\"metadata\":\"{}\",\"featured\":\"0\",\"language\":\"*\",\"xreference\":null,\"note\":\"\"}', 0);
+INSERT INTO `f3ts9_ucm_history` (`version_id`, `ucm_item_id`, `ucm_type_id`, `version_note`, `save_date`, `editor_user_id`, `character_count`, `sha1_hash`, `version_data`, `keep_forever`) VALUES
+(108, 24, 1, '', '2021-02-08 07:44:57', 380, 3595, '8ad40e580cb7911c78b8625a2d8a8a74720aaeff', '{\"id\":24,\"asset_id\":150,\"title\":\"La Caja Tor\\u00e1cica\",\"alias\":\"la-caja-toracica\",\"introtext\":\"<p>\\u00a0<\\/p>\\r\\n<p><img style=\\\"display: block; margin-left: auto; margin-right: auto;\\\" src=\\\"images\\/caja_toraxicajpg.jpg\\\" alt=\\\"\\\" \\/><\\/p>\\r\\n<p style=\\\"text-align: justify;\\\">El t\\u00f3rax es la parte del cuerpo humano que est\\u00e1 entre la base del cuello y el diafragma. Contiene a los pulmones, el coraz\\u00f3n, voluminosos vasos sangu\\u00edneos, linf\\u00e1ticos y la arteria aorta (ascendente, arco y descendente), la vena cava inferior, la cadena ganglionar simp\\u00e1tica de donde salen las ramas espl\\u00e1cnicas, las venas \\u00e1cigos (mayor y menor), el es\\u00f3fago y el conducto tor\\u00e1cico. Su divisi\\u00f3n fundamentalmente consiste en el mediastino y las dos cavidades pulmonares.<\\/p>\\r\\n<p style=\\\"text-align: justify;\\\">Tiene forma de cono truncado o pir\\u00e1mide y su pared est\\u00e1 formada por los arcos costales (costillas) y los m\\u00fasculos intercostales, que se unen anteriormente al hueso estern\\u00f3n por medio de cart\\u00edlagos y posteriormente a la columna vertebral. La funci\\u00f3n de esta formaci\\u00f3n osteocartilaginosa, es la de proteger los \\u00f3rganos internos de los traumatismos mec\\u00e1nicos, que de otra manera podr\\u00edan lesionarlos.<\\/p>\\r\\n<p style=\\\"text-align: justify;\\\">La caja tor\\u00e1cica tiene la particularidad de ser expansible, permitiendo la inspiraci\\u00f3n (inhalaci\\u00f3n). Adem\\u00e1s, su \\u00faltimo par de costillas son flotantes, ya que est\\u00e1n unidas solo a las v\\u00e9rtebras, en la parte posterior, lo que permite su ensanchamiento en el embarazo.<\\/p>\\r\\n<p style=\\\"text-align: justify;\\\">El nombre deriva del Lat\\u00edn thorax, y este del griego -\\u03b8\\u03ce\\u03c1\\u03b1\\u03be-; que significa propiamente coraza.<\\/p>\",\"fulltext\":\"\",\"state\":1,\"catid\":\"19\",\"created\":\"2021-02-08 07:44:57\",\"created_by\":\"380\",\"created_by_alias\":null,\"modified\":\"2021-02-08 07:44:57\",\"modified_by\":null,\"checked_out\":null,\"checked_out_time\":null,\"publish_up\":\"2021-02-08 07:44:57\",\"publish_down\":\"0000-00-00 00:00:00\",\"images\":\"{\\\"image_intro\\\":\\\"\\\",\\\"float_intro\\\":\\\"\\\",\\\"image_intro_alt\\\":\\\"\\\",\\\"image_intro_caption\\\":\\\"\\\",\\\"image_fulltext\\\":\\\"\\\",\\\"float_fulltext\\\":\\\"\\\",\\\"image_fulltext_alt\\\":\\\"\\\",\\\"image_fulltext_caption\\\":\\\"\\\"}\",\"urls\":\"{\\\"urla\\\":false,\\\"urlatext\\\":\\\"\\\",\\\"targeta\\\":\\\"\\\",\\\"urlb\\\":false,\\\"urlbtext\\\":\\\"\\\",\\\"targetb\\\":\\\"\\\",\\\"urlc\\\":false,\\\"urlctext\\\":\\\"\\\",\\\"targetc\\\":\\\"\\\"}\",\"attribs\":\"{\\\"article_layout\\\":\\\"\\\",\\\"show_title\\\":\\\"\\\",\\\"link_titles\\\":\\\"\\\",\\\"show_tags\\\":\\\"\\\",\\\"show_intro\\\":\\\"\\\",\\\"info_block_position\\\":\\\"\\\",\\\"info_block_show_title\\\":\\\"\\\",\\\"show_category\\\":\\\"\\\",\\\"link_category\\\":\\\"\\\",\\\"show_parent_category\\\":\\\"\\\",\\\"link_parent_category\\\":\\\"\\\",\\\"show_associations\\\":\\\"\\\",\\\"show_author\\\":\\\"\\\",\\\"link_author\\\":\\\"\\\",\\\"show_create_date\\\":\\\"\\\",\\\"show_modify_date\\\":\\\"\\\",\\\"show_publish_date\\\":\\\"\\\",\\\"show_item_navigation\\\":\\\"\\\",\\\"show_icons\\\":\\\"\\\",\\\"show_print_icon\\\":\\\"\\\",\\\"show_email_icon\\\":\\\"\\\",\\\"show_vote\\\":\\\"\\\",\\\"show_hits\\\":\\\"\\\",\\\"show_noauth\\\":\\\"\\\",\\\"urls_position\\\":\\\"\\\",\\\"alternative_readmore\\\":\\\"\\\",\\\"article_page_title\\\":\\\"\\\",\\\"show_publishing_options\\\":\\\"\\\",\\\"show_article_options\\\":\\\"\\\",\\\"show_urls_images_backend\\\":\\\"\\\",\\\"show_urls_images_frontend\\\":\\\"\\\",\\\"helix_ultimate_image\\\":\\\"\\\",\\\"helix_ultimate_article_format\\\":\\\"standard\\\",\\\"helix_ultimate_audio\\\":\\\"\\\",\\\"helix_ultimate_gallery\\\":\\\"\\\",\\\"helix_ultimate_video\\\":\\\"\\\"}\",\"version\":1,\"ordering\":null,\"metakey\":null,\"metadesc\":null,\"access\":\"1\",\"hits\":null,\"metadata\":\"{}\",\"featured\":\"0\",\"language\":\"*\",\"xreference\":null,\"note\":\"\"}', 0),
+(109, 25, 1, '', '2021-02-08 07:50:50', 380, 1975, '363b087c757aa65f69d5993ba5a12c87262fff18', '{\"id\":25,\"asset_id\":152,\"title\":\"Imagen de neurona\",\"alias\":\"imagen-de-neurona\",\"introtext\":\"<p><img src=\\\"images\\/imagenes\\/cerebro.jpg\\\" alt=\\\"\\\" width=\\\"680\\\" height=\\\"372\\\" \\/><\\/p>\",\"fulltext\":\"\",\"state\":1,\"catid\":\"18\",\"created\":\"2021-02-08 07:50:50\",\"created_by\":\"380\",\"created_by_alias\":null,\"modified\":\"2021-02-08 07:50:50\",\"modified_by\":null,\"checked_out\":null,\"checked_out_time\":null,\"publish_up\":\"2021-02-08 07:50:50\",\"publish_down\":\"0000-00-00 00:00:00\",\"images\":\"{\\\"image_intro\\\":\\\"\\\",\\\"float_intro\\\":\\\"\\\",\\\"image_intro_alt\\\":\\\"\\\",\\\"image_intro_caption\\\":\\\"\\\",\\\"image_fulltext\\\":\\\"\\\",\\\"float_fulltext\\\":\\\"\\\",\\\"image_fulltext_alt\\\":\\\"\\\",\\\"image_fulltext_caption\\\":\\\"\\\"}\",\"urls\":\"{\\\"urla\\\":false,\\\"urlatext\\\":\\\"\\\",\\\"targeta\\\":\\\"\\\",\\\"urlb\\\":false,\\\"urlbtext\\\":\\\"\\\",\\\"targetb\\\":\\\"\\\",\\\"urlc\\\":false,\\\"urlctext\\\":\\\"\\\",\\\"targetc\\\":\\\"\\\"}\",\"attribs\":\"{\\\"article_layout\\\":\\\"\\\",\\\"show_title\\\":\\\"\\\",\\\"link_titles\\\":\\\"\\\",\\\"show_tags\\\":\\\"\\\",\\\"show_intro\\\":\\\"\\\",\\\"info_block_position\\\":\\\"\\\",\\\"info_block_show_title\\\":\\\"\\\",\\\"show_category\\\":\\\"\\\",\\\"link_category\\\":\\\"\\\",\\\"show_parent_category\\\":\\\"\\\",\\\"link_parent_category\\\":\\\"\\\",\\\"show_associations\\\":\\\"\\\",\\\"show_author\\\":\\\"\\\",\\\"link_author\\\":\\\"\\\",\\\"show_create_date\\\":\\\"\\\",\\\"show_modify_date\\\":\\\"\\\",\\\"show_publish_date\\\":\\\"\\\",\\\"show_item_navigation\\\":\\\"\\\",\\\"show_icons\\\":\\\"\\\",\\\"show_print_icon\\\":\\\"\\\",\\\"show_email_icon\\\":\\\"\\\",\\\"show_vote\\\":\\\"\\\",\\\"show_hits\\\":\\\"\\\",\\\"show_noauth\\\":\\\"\\\",\\\"urls_position\\\":\\\"\\\",\\\"alternative_readmore\\\":\\\"\\\",\\\"article_page_title\\\":\\\"\\\",\\\"show_publishing_options\\\":\\\"\\\",\\\"show_article_options\\\":\\\"\\\",\\\"show_urls_images_backend\\\":\\\"\\\",\\\"show_urls_images_frontend\\\":\\\"\\\",\\\"helix_ultimate_image\\\":\\\"\\\",\\\"helix_ultimate_article_format\\\":\\\"standard\\\",\\\"helix_ultimate_audio\\\":\\\"\\\",\\\"helix_ultimate_gallery\\\":\\\"\\\",\\\"helix_ultimate_video\\\":\\\"\\\"}\",\"version\":1,\"ordering\":null,\"metakey\":null,\"metadesc\":null,\"access\":\"1\",\"hits\":null,\"metadata\":\"{}\",\"featured\":\"0\",\"language\":\"*\",\"xreference\":null,\"note\":\"\"}', 0),
+(110, 15, 5, '', '2021-02-08 07:58:49', 380, 697, '100949594cc373b25f648b38ccd6bb2c0556bdaa', '{\"id\":15,\"asset_id\":\"76\",\"parent_id\":\"1\",\"lft\":\"13\",\"rgt\":\"14\",\"level\":\"1\",\"path\":\"fotos\",\"extension\":\"com_content\",\"title\":\"Fotos\",\"alias\":\"fotos\",\"note\":\"\",\"description\":\"<p>Esta categor\\u00eda contiene unicamente art\\u00edculos con fotos que se han cargado al repositorio Blow your mind.<\\/p>\",\"published\":\"1\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 07:57:05\",\"access\":\"2\",\"params\":\"{\\\"category_layout\\\":\\\"\\\",\\\"image\\\":\\\"\\\",\\\"image_alt\\\":\\\"\\\"}\",\"metadesc\":\"\",\"metakey\":\"\",\"metadata\":\"{\\\"author\\\":\\\"\\\",\\\"robots\\\":\\\"\\\"}\",\"created_user_id\":\"380\",\"created_time\":\"2021-02-06 04:40:15\",\"modified_user_id\":\"380\",\"modified_time\":\"2021-02-08 07:58:49\",\"hits\":\"0\",\"language\":\"*\",\"version\":\"1\"}', 0),
+(111, 18, 5, '', '2021-02-08 08:01:06', 380, 784, '245b01840cb01894bef4a11b907b087689238002', '{\"id\":18,\"asset_id\":\"92\",\"parent_id\":\"17\",\"lft\":\"30\",\"rgt\":\"31\",\"level\":\"2\",\"path\":\"fotos-nuevas\\/fotos-cargadas-al-repositorio\",\"extension\":\"com_content\",\"title\":\"Fotos cargadas al repositorio\",\"alias\":\"fotos-cargadas-al-repositorio\",\"note\":\"\",\"description\":\"<p>Esta categor\\u00eda contiene unicamente art\\u00edculos con fotos que se han cargado al repositorio Blow your mind.<\\/p>\",\"published\":\"1\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 08:01:00\",\"access\":\"2\",\"params\":\"{\\\"category_layout\\\":\\\"\\\",\\\"image\\\":\\\"\\\",\\\"image_alt\\\":\\\"\\\"}\",\"metadesc\":\"\",\"metakey\":\"\",\"metadata\":\"{\\\"author\\\":\\\"\\\",\\\"robots\\\":\\\"\\\"}\",\"created_user_id\":\"380\",\"created_time\":\"2021-02-06 08:42:47\",\"modified_user_id\":\"380\",\"modified_time\":\"2021-02-08 08:01:06\",\"hits\":\"0\",\"language\":\"*\",\"version\":\"1\"}', 0),
+(112, 19, 5, '', '2021-02-08 08:05:31', 380, 798, '1dcb781d714803747e5c5dba9801648010024b05', '{\"id\":19,\"asset_id\":\"94\",\"parent_id\":\"17\",\"lft\":\"32\",\"rgt\":\"33\",\"level\":\"2\",\"path\":\"fotos-nuevas\\/articulos-con-fotos\",\"extension\":\"com_content\",\"title\":\"Art\\u00edculos con fotos\",\"alias\":\"articulos-con-fotos\",\"note\":\"\",\"description\":\"<p>Esta categor\\u00eda contiene unicamente art\\u00edculos con fotos e informaci\\u00f3n de descripci\\u00f3n que se han cargado al repositorio Blow your mind.<\\/p>\",\"published\":\"1\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 08:01:16\",\"access\":\"2\",\"params\":\"{\\\"category_layout\\\":\\\"\\\",\\\"image\\\":\\\"\\\",\\\"image_alt\\\":\\\"\\\"}\",\"metadesc\":\"\",\"metakey\":\"\",\"metadata\":\"{\\\"author\\\":\\\"\\\",\\\"robots\\\":\\\"\\\"}\",\"created_user_id\":\"380\",\"created_time\":\"2021-02-06 08:43:15\",\"modified_user_id\":\"380\",\"modified_time\":\"2021-02-08 08:05:31\",\"hits\":\"0\",\"language\":\"*\",\"version\":\"1\"}', 0),
+(113, 21, 5, '', '2021-02-08 08:06:31', 380, 889, '0ee037fae0085c9cb854cb421eb06ab03ab00bf9', '{\"id\":21,\"asset_id\":\"98\",\"parent_id\":\"20\",\"lft\":\"36\",\"rgt\":\"37\",\"level\":\"2\",\"path\":\"videos-nuevos\\/articulos-con-videos\",\"extension\":\"com_content\",\"title\":\"Art\\u00edculos con videos\",\"alias\":\"articulos-con-videos\",\"note\":\"\",\"description\":\"<p>Esta categor\\u00eda contiene unicamente art\\u00edculos con videos e informaci\\u00f3n descriptiva que se han cargado al repositorio Blow your mind. Los videos pueden cargarse desde el propio repositorio o pueden ser a trav\\u00e9s de youtube.<\\/p>\",\"published\":\"1\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 08:05:38\",\"access\":\"2\",\"params\":\"{\\\"category_layout\\\":\\\"\\\",\\\"image\\\":\\\"\\\",\\\"image_alt\\\":\\\"\\\"}\",\"metadesc\":\"\",\"metakey\":\"\",\"metadata\":\"{\\\"author\\\":\\\"\\\",\\\"robots\\\":\\\"\\\"}\",\"created_user_id\":\"380\",\"created_time\":\"2021-02-06 08:44:33\",\"modified_user_id\":\"380\",\"modified_time\":\"2021-02-08 08:06:31\",\"hits\":\"0\",\"language\":\"*\",\"version\":\"1\"}', 0),
+(114, 22, 5, '', '2021-02-08 08:07:06', 380, 884, '3e6ac065d39670e32afc9094e4c3a5ed38227bd4', '{\"id\":22,\"asset_id\":\"100\",\"parent_id\":\"20\",\"lft\":\"38\",\"rgt\":\"39\",\"level\":\"2\",\"path\":\"videos-nuevos\\/videos-cargados-al-repositorio\",\"extension\":\"com_content\",\"title\":\"Videos cargados al repositorio\",\"alias\":\"videos-cargados-al-repositorio\",\"note\":\"\",\"description\":\"<p>Esta categor\\u00eda contiene unicamente art\\u00edculos con videos que se han cargado al repositorio Blow your mind. Los videos pueden cargarse desde el propio repositorio o pueden ser a trav\\u00e9s de youtube.<\\/p>\",\"published\":\"1\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 08:06:51\",\"access\":\"2\",\"params\":\"{\\\"category_layout\\\":\\\"\\\",\\\"image\\\":\\\"\\\",\\\"image_alt\\\":\\\"\\\"}\",\"metadesc\":\"\",\"metakey\":\"\",\"metadata\":\"{\\\"author\\\":\\\"\\\",\\\"robots\\\":\\\"\\\"}\",\"created_user_id\":\"380\",\"created_time\":\"2021-02-06 08:46:20\",\"modified_user_id\":\"380\",\"modified_time\":\"2021-02-08 08:07:06\",\"hits\":\"0\",\"language\":\"*\",\"version\":\"1\"}', 0),
+(115, 24, 5, '', '2021-02-08 08:07:51', 380, 818, '159a3051e8b3e0dd59c0909c650ddf17d20f09f6', '{\"id\":24,\"asset_id\":\"104\",\"parent_id\":\"23\",\"lft\":\"42\",\"rgt\":\"43\",\"level\":\"2\",\"path\":\"podcast-nuevos\\/podcasts-cargadas-al-repositorio\",\"extension\":\"com_content\",\"title\":\"Podcasts cargadas al repositorio\",\"alias\":\"podcasts-cargadas-al-repositorio\",\"note\":\"\",\"description\":\"<p>Esta categor\\u00eda contiene unicamente art\\u00edculos con\\u00a0audios y podcasts\\u00a0que se han cargado al repositorio Blow your mind.<\\/p>\",\"published\":\"1\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 08:07:20\",\"access\":\"2\",\"params\":\"{\\\"category_layout\\\":\\\"\\\",\\\"image\\\":\\\"\\\",\\\"image_alt\\\":\\\"\\\"}\",\"metadesc\":\"\",\"metakey\":\"\",\"metadata\":\"{\\\"author\\\":\\\"\\\",\\\"robots\\\":\\\"\\\"}\",\"created_user_id\":\"380\",\"created_time\":\"2021-02-06 08:47:46\",\"modified_user_id\":\"380\",\"modified_time\":\"2021-02-08 08:07:51\",\"hits\":\"0\",\"language\":\"*\",\"version\":\"1\"}', 0),
+(116, 25, 5, '', '2021-02-08 08:08:57', 380, 843, '9d5142273ef20e27aa5ad89321457fe2a3fa1c2e', '{\"id\":25,\"asset_id\":\"106\",\"parent_id\":\"23\",\"lft\":\"44\",\"rgt\":\"45\",\"level\":\"2\",\"path\":\"podcast-nuevos\\/articulos-con-podcasts\",\"extension\":\"com_content\",\"title\":\"Art\\u00edculos con podcasts\",\"alias\":\"articulos-con-podcasts\",\"note\":\"\",\"description\":\"<p>Esta categor\\u00eda contiene unicamente art\\u00edculos con\\u00a0audios y podcasts e informaci\\u00f3n descriptiva como el texto del audio que se han cargado al repositorio Blow your mind.<\\/p>\",\"published\":\"1\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 08:07:56\",\"access\":\"2\",\"params\":\"{\\\"category_layout\\\":\\\"\\\",\\\"image\\\":\\\"\\\",\\\"image_alt\\\":\\\"\\\"}\",\"metadesc\":\"\",\"metakey\":\"\",\"metadata\":\"{\\\"author\\\":\\\"\\\",\\\"robots\\\":\\\"\\\"}\",\"created_user_id\":\"380\",\"created_time\":\"2021-02-06 08:48:12\",\"modified_user_id\":\"380\",\"modified_time\":\"2021-02-08 08:08:57\",\"hits\":\"0\",\"language\":\"*\",\"version\":\"1\"}', 0),
+(117, 20, 1, '', '2021-02-08 08:19:06', 380, 2056, 'b7c95290d2c840e262429cff4c43d574f0902a69', '{\"id\":20,\"asset_id\":\"143\",\"title\":\"Cerebro\",\"alias\":\"cerebro\",\"introtext\":\"<p><img src=\\\"images\\/fotos\\/barin_examination.jpg\\\" alt=\\\"\\\" width=\\\"787\\\" height=\\\"426\\\" \\/><\\/p>\\r\\n<p>\\u00a0<\\/p>\\r\\n<p>Un ejemplo de la examinaci\\u00f3n del cerebro humano.<\\/p>\",\"fulltext\":\"\",\"state\":1,\"catid\":\"19\",\"created\":\"2021-02-07 22:47:32\",\"created_by\":\"380\",\"created_by_alias\":\"\",\"modified\":\"2021-02-08 08:19:06\",\"modified_by\":\"380\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 08:18:30\",\"publish_up\":\"2021-02-07 22:47:32\",\"publish_down\":\"0000-00-00 00:00:00\",\"images\":\"{\\\"image_intro\\\":\\\"\\\",\\\"float_intro\\\":\\\"\\\",\\\"image_intro_alt\\\":\\\"\\\",\\\"image_intro_caption\\\":\\\"\\\",\\\"image_fulltext\\\":\\\"\\\",\\\"float_fulltext\\\":\\\"\\\",\\\"image_fulltext_alt\\\":\\\"\\\",\\\"image_fulltext_caption\\\":\\\"\\\"}\",\"urls\":\"{\\\"urla\\\":false,\\\"urlatext\\\":\\\"\\\",\\\"targeta\\\":\\\"\\\",\\\"urlb\\\":false,\\\"urlbtext\\\":\\\"\\\",\\\"targetb\\\":\\\"\\\",\\\"urlc\\\":false,\\\"urlctext\\\":\\\"\\\",\\\"targetc\\\":\\\"\\\"}\",\"attribs\":\"{\\\"article_layout\\\":\\\"\\\",\\\"show_title\\\":\\\"\\\",\\\"link_titles\\\":\\\"\\\",\\\"show_tags\\\":\\\"\\\",\\\"show_intro\\\":\\\"\\\",\\\"info_block_position\\\":\\\"\\\",\\\"info_block_show_title\\\":\\\"\\\",\\\"show_category\\\":\\\"\\\",\\\"link_category\\\":\\\"\\\",\\\"show_parent_category\\\":\\\"\\\",\\\"link_parent_category\\\":\\\"\\\",\\\"show_associations\\\":\\\"\\\",\\\"show_author\\\":\\\"\\\",\\\"link_author\\\":\\\"\\\",\\\"show_create_date\\\":\\\"\\\",\\\"show_modify_date\\\":\\\"\\\",\\\"show_publish_date\\\":\\\"\\\",\\\"show_item_navigation\\\":\\\"\\\",\\\"show_icons\\\":\\\"\\\",\\\"show_print_icon\\\":\\\"\\\",\\\"show_email_icon\\\":\\\"\\\",\\\"show_vote\\\":\\\"\\\",\\\"show_hits\\\":\\\"\\\",\\\"show_noauth\\\":\\\"\\\",\\\"urls_position\\\":\\\"\\\",\\\"alternative_readmore\\\":\\\"\\\",\\\"article_page_title\\\":\\\"\\\",\\\"show_publishing_options\\\":\\\"\\\",\\\"show_article_options\\\":\\\"\\\",\\\"show_urls_images_backend\\\":\\\"\\\",\\\"show_urls_images_frontend\\\":\\\"\\\",\\\"helix_ultimate_image\\\":\\\"\\\",\\\"helix_ultimate_article_format\\\":\\\"standard\\\",\\\"helix_ultimate_audio\\\":\\\"\\\",\\\"helix_ultimate_gallery\\\":\\\"\\\",\\\"helix_ultimate_video\\\":\\\"\\\"}\",\"version\":2,\"ordering\":\"2\",\"metakey\":\"\",\"metadesc\":\"\",\"access\":\"1\",\"hits\":\"0\",\"metadata\":\"{}\",\"featured\":\"0\",\"language\":\"*\",\"xreference\":\"\",\"note\":\"\"}', 0),
+(118, 26, 1, '', '2021-02-08 08:21:16', 380, 2172, 'b93bbf9a185bd59e7cb188a9471841897c06f4a3', '{\"id\":26,\"asset_id\":154,\"title\":\"Art\\u00edculo sobre las partes del cerebro\",\"alias\":\"articulo-sobre-las-partes-del-cerebro\",\"introtext\":\"<pre><code>{google_docs}https:\\/\\/docs.google.com\\/document\\/d\\/e\\/2PACX-1vSZbk0N2NhHRhkYJiuwxQr3hS1Il6eB3IQv9BVQyEXNZQWtidVILIjoequx4Zm9jQ\\/pub|width:200|height:200|border:1|border_style:solid|border_color:#000000{\\/google_docs}<\\/code><\\/pre>\",\"fulltext\":\"\",\"state\":1,\"catid\":\"28\",\"created\":\"2021-02-08 08:21:16\",\"created_by\":\"380\",\"created_by_alias\":null,\"modified\":\"2021-02-08 08:21:16\",\"modified_by\":null,\"checked_out\":null,\"checked_out_time\":null,\"publish_up\":\"2021-02-08 08:21:16\",\"publish_down\":\"0000-00-00 00:00:00\",\"images\":\"{\\\"image_intro\\\":\\\"\\\",\\\"float_intro\\\":\\\"\\\",\\\"image_intro_alt\\\":\\\"\\\",\\\"image_intro_caption\\\":\\\"\\\",\\\"image_fulltext\\\":\\\"\\\",\\\"float_fulltext\\\":\\\"\\\",\\\"image_fulltext_alt\\\":\\\"\\\",\\\"image_fulltext_caption\\\":\\\"\\\"}\",\"urls\":\"{\\\"urla\\\":false,\\\"urlatext\\\":\\\"\\\",\\\"targeta\\\":\\\"\\\",\\\"urlb\\\":false,\\\"urlbtext\\\":\\\"\\\",\\\"targetb\\\":\\\"\\\",\\\"urlc\\\":false,\\\"urlctext\\\":\\\"\\\",\\\"targetc\\\":\\\"\\\"}\",\"attribs\":\"{\\\"article_layout\\\":\\\"\\\",\\\"show_title\\\":\\\"\\\",\\\"link_titles\\\":\\\"\\\",\\\"show_tags\\\":\\\"\\\",\\\"show_intro\\\":\\\"\\\",\\\"info_block_position\\\":\\\"\\\",\\\"info_block_show_title\\\":\\\"\\\",\\\"show_category\\\":\\\"\\\",\\\"link_category\\\":\\\"\\\",\\\"show_parent_category\\\":\\\"\\\",\\\"link_parent_category\\\":\\\"\\\",\\\"show_associations\\\":\\\"\\\",\\\"show_author\\\":\\\"\\\",\\\"link_author\\\":\\\"\\\",\\\"show_create_date\\\":\\\"\\\",\\\"show_modify_date\\\":\\\"\\\",\\\"show_publish_date\\\":\\\"\\\",\\\"show_item_navigation\\\":\\\"\\\",\\\"show_icons\\\":\\\"\\\",\\\"show_print_icon\\\":\\\"\\\",\\\"show_email_icon\\\":\\\"\\\",\\\"show_vote\\\":\\\"\\\",\\\"show_hits\\\":\\\"\\\",\\\"show_noauth\\\":\\\"\\\",\\\"urls_position\\\":\\\"\\\",\\\"alternative_readmore\\\":\\\"\\\",\\\"article_page_title\\\":\\\"\\\",\\\"show_publishing_options\\\":\\\"\\\",\\\"show_article_options\\\":\\\"\\\",\\\"show_urls_images_backend\\\":\\\"\\\",\\\"show_urls_images_frontend\\\":\\\"\\\",\\\"helix_ultimate_image\\\":\\\"\\\",\\\"helix_ultimate_article_format\\\":\\\"standard\\\",\\\"helix_ultimate_audio\\\":\\\"\\\",\\\"helix_ultimate_gallery\\\":\\\"\\\",\\\"helix_ultimate_video\\\":\\\"\\\"}\",\"version\":1,\"ordering\":null,\"metakey\":null,\"metadesc\":null,\"access\":\"2\",\"hits\":null,\"metadata\":\"{}\",\"featured\":\"0\",\"language\":\"*\",\"xreference\":null,\"note\":\"\"}', 0),
+(119, 26, 1, '', '2021-02-08 08:23:47', 380, 2113, '8a768113dd76f55871318214fd0ba2004af29488', '{\"id\":26,\"asset_id\":\"154\",\"title\":\"Art\\u00edculo sobre las partes del cerebro\",\"alias\":\"articulo-sobre-las-partes-del-cerebro\",\"introtext\":\"<pre><code>{google_docs}https:\\/\\/docs.google.com\\/document\\/d\\/e\\/2PACX-1vSZbk0N2NhHRhkYJiuwxQr3hS1Il6eB3IQv9BVQyEXNZQWtidVILIjoequx4Zm9jQ\\/pub{\\/google_docs}<\\/code><\\/pre>\",\"fulltext\":\"\",\"state\":1,\"catid\":\"28\",\"created\":\"2021-02-08 08:21:16\",\"created_by\":\"380\",\"created_by_alias\":\"\",\"modified\":\"2021-02-08 08:23:47\",\"modified_by\":\"380\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 08:21:16\",\"publish_up\":\"2021-02-08 08:21:16\",\"publish_down\":\"0000-00-00 00:00:00\",\"images\":\"{\\\"image_intro\\\":\\\"\\\",\\\"float_intro\\\":\\\"\\\",\\\"image_intro_alt\\\":\\\"\\\",\\\"image_intro_caption\\\":\\\"\\\",\\\"image_fulltext\\\":\\\"\\\",\\\"float_fulltext\\\":\\\"\\\",\\\"image_fulltext_alt\\\":\\\"\\\",\\\"image_fulltext_caption\\\":\\\"\\\"}\",\"urls\":\"{\\\"urla\\\":false,\\\"urlatext\\\":\\\"\\\",\\\"targeta\\\":\\\"\\\",\\\"urlb\\\":false,\\\"urlbtext\\\":\\\"\\\",\\\"targetb\\\":\\\"\\\",\\\"urlc\\\":false,\\\"urlctext\\\":\\\"\\\",\\\"targetc\\\":\\\"\\\"}\",\"attribs\":\"{\\\"article_layout\\\":\\\"\\\",\\\"show_title\\\":\\\"\\\",\\\"link_titles\\\":\\\"\\\",\\\"show_tags\\\":\\\"\\\",\\\"show_intro\\\":\\\"\\\",\\\"info_block_position\\\":\\\"\\\",\\\"info_block_show_title\\\":\\\"\\\",\\\"show_category\\\":\\\"\\\",\\\"link_category\\\":\\\"\\\",\\\"show_parent_category\\\":\\\"\\\",\\\"link_parent_category\\\":\\\"\\\",\\\"show_associations\\\":\\\"\\\",\\\"show_author\\\":\\\"\\\",\\\"link_author\\\":\\\"\\\",\\\"show_create_date\\\":\\\"\\\",\\\"show_modify_date\\\":\\\"\\\",\\\"show_publish_date\\\":\\\"\\\",\\\"show_item_navigation\\\":\\\"\\\",\\\"show_icons\\\":\\\"\\\",\\\"show_print_icon\\\":\\\"\\\",\\\"show_email_icon\\\":\\\"\\\",\\\"show_vote\\\":\\\"\\\",\\\"show_hits\\\":\\\"\\\",\\\"show_noauth\\\":\\\"\\\",\\\"urls_position\\\":\\\"\\\",\\\"alternative_readmore\\\":\\\"\\\",\\\"article_page_title\\\":\\\"\\\",\\\"show_publishing_options\\\":\\\"\\\",\\\"show_article_options\\\":\\\"\\\",\\\"show_urls_images_backend\\\":\\\"\\\",\\\"show_urls_images_frontend\\\":\\\"\\\",\\\"helix_ultimate_image\\\":\\\"\\\",\\\"helix_ultimate_article_format\\\":\\\"standard\\\",\\\"helix_ultimate_audio\\\":\\\"\\\",\\\"helix_ultimate_gallery\\\":\\\"\\\",\\\"helix_ultimate_video\\\":\\\"\\\"}\",\"version\":2,\"ordering\":\"0\",\"metakey\":\"\",\"metadesc\":\"\",\"access\":\"2\",\"hits\":\"0\",\"metadata\":\"{}\",\"featured\":\"0\",\"language\":\"*\",\"xreference\":\"\",\"note\":\"\"}', 0),
+(120, 26, 1, '', '2021-02-08 08:25:45', 380, 2113, 'd7619a5bab8dcaef5f133fb5dc74e04af493622a', '{\"id\":26,\"asset_id\":\"154\",\"title\":\"Art\\u00edculo sobre las partes del cerebro\",\"alias\":\"articulo-sobre-las-partes-del-cerebro\",\"introtext\":\"<pre><code>{google_docs}https:\\/\\/docs.google.com\\/document\\/d\\/e\\/2PACX-1vTXek7HDiguBPJA3p5sjC0At5EU8l1ZBNSaii44hU804OTkVXOlsp5nEQ1mpME-hA\\/pub{\\/google_docs}<\\/code><\\/pre>\",\"fulltext\":\"\",\"state\":1,\"catid\":\"28\",\"created\":\"2021-02-08 08:21:16\",\"created_by\":\"380\",\"created_by_alias\":\"\",\"modified\":\"2021-02-08 08:25:45\",\"modified_by\":\"380\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 08:25:06\",\"publish_up\":\"2021-02-08 08:21:16\",\"publish_down\":\"0000-00-00 00:00:00\",\"images\":\"{\\\"image_intro\\\":\\\"\\\",\\\"float_intro\\\":\\\"\\\",\\\"image_intro_alt\\\":\\\"\\\",\\\"image_intro_caption\\\":\\\"\\\",\\\"image_fulltext\\\":\\\"\\\",\\\"float_fulltext\\\":\\\"\\\",\\\"image_fulltext_alt\\\":\\\"\\\",\\\"image_fulltext_caption\\\":\\\"\\\"}\",\"urls\":\"{\\\"urla\\\":false,\\\"urlatext\\\":\\\"\\\",\\\"targeta\\\":\\\"\\\",\\\"urlb\\\":false,\\\"urlbtext\\\":\\\"\\\",\\\"targetb\\\":\\\"\\\",\\\"urlc\\\":false,\\\"urlctext\\\":\\\"\\\",\\\"targetc\\\":\\\"\\\"}\",\"attribs\":\"{\\\"article_layout\\\":\\\"\\\",\\\"show_title\\\":\\\"\\\",\\\"link_titles\\\":\\\"\\\",\\\"show_tags\\\":\\\"\\\",\\\"show_intro\\\":\\\"\\\",\\\"info_block_position\\\":\\\"\\\",\\\"info_block_show_title\\\":\\\"\\\",\\\"show_category\\\":\\\"\\\",\\\"link_category\\\":\\\"\\\",\\\"show_parent_category\\\":\\\"\\\",\\\"link_parent_category\\\":\\\"\\\",\\\"show_associations\\\":\\\"\\\",\\\"show_author\\\":\\\"\\\",\\\"link_author\\\":\\\"\\\",\\\"show_create_date\\\":\\\"\\\",\\\"show_modify_date\\\":\\\"\\\",\\\"show_publish_date\\\":\\\"\\\",\\\"show_item_navigation\\\":\\\"\\\",\\\"show_icons\\\":\\\"\\\",\\\"show_print_icon\\\":\\\"\\\",\\\"show_email_icon\\\":\\\"\\\",\\\"show_vote\\\":\\\"\\\",\\\"show_hits\\\":\\\"\\\",\\\"show_noauth\\\":\\\"\\\",\\\"urls_position\\\":\\\"\\\",\\\"alternative_readmore\\\":\\\"\\\",\\\"article_page_title\\\":\\\"\\\",\\\"show_publishing_options\\\":\\\"\\\",\\\"show_article_options\\\":\\\"\\\",\\\"show_urls_images_backend\\\":\\\"\\\",\\\"show_urls_images_frontend\\\":\\\"\\\",\\\"helix_ultimate_image\\\":\\\"\\\",\\\"helix_ultimate_article_format\\\":\\\"standard\\\",\\\"helix_ultimate_audio\\\":\\\"\\\",\\\"helix_ultimate_gallery\\\":\\\"\\\",\\\"helix_ultimate_video\\\":\\\"\\\"}\",\"version\":4,\"ordering\":\"0\",\"metakey\":\"\",\"metadesc\":\"\",\"access\":\"2\",\"hits\":\"0\",\"metadata\":\"{}\",\"featured\":\"0\",\"language\":\"*\",\"xreference\":\"\",\"note\":\"\"}', 0),
+(121, 27, 1, '', '2021-02-08 08:26:56', 380, 2072, '0c063f6720e7b5faef8a278b47feb7e10d3a42cc', '{\"id\":27,\"asset_id\":156,\"title\":\"Documento de las neuronas\",\"alias\":\"documento-de-las-neuronas\",\"introtext\":\"<pre><code>{google_docs}https:\\/\\/docs.google.com\\/document\\/d\\/e\\/2PACX-1vRHDfDQkeHDSuAcz9YMIqCdWHUTBxkyK3BToJ99H6e0IQcRGav5Ic5gV07oCQaZPg\\/pub{\\/google_docs}<\\/code><\\/pre>\",\"fulltext\":\"\",\"state\":1,\"catid\":\"2\",\"created\":\"2021-02-08 08:26:56\",\"created_by\":\"380\",\"created_by_alias\":null,\"modified\":\"2021-02-08 08:26:56\",\"modified_by\":null,\"checked_out\":null,\"checked_out_time\":null,\"publish_up\":\"2021-02-08 08:26:56\",\"publish_down\":\"0000-00-00 00:00:00\",\"images\":\"{\\\"image_intro\\\":\\\"\\\",\\\"float_intro\\\":\\\"\\\",\\\"image_intro_alt\\\":\\\"\\\",\\\"image_intro_caption\\\":\\\"\\\",\\\"image_fulltext\\\":\\\"\\\",\\\"float_fulltext\\\":\\\"\\\",\\\"image_fulltext_alt\\\":\\\"\\\",\\\"image_fulltext_caption\\\":\\\"\\\"}\",\"urls\":\"{\\\"urla\\\":false,\\\"urlatext\\\":\\\"\\\",\\\"targeta\\\":\\\"\\\",\\\"urlb\\\":false,\\\"urlbtext\\\":\\\"\\\",\\\"targetb\\\":\\\"\\\",\\\"urlc\\\":false,\\\"urlctext\\\":\\\"\\\",\\\"targetc\\\":\\\"\\\"}\",\"attribs\":\"{\\\"article_layout\\\":\\\"\\\",\\\"show_title\\\":\\\"\\\",\\\"link_titles\\\":\\\"\\\",\\\"show_tags\\\":\\\"\\\",\\\"show_intro\\\":\\\"\\\",\\\"info_block_position\\\":\\\"\\\",\\\"info_block_show_title\\\":\\\"\\\",\\\"show_category\\\":\\\"\\\",\\\"link_category\\\":\\\"\\\",\\\"show_parent_category\\\":\\\"\\\",\\\"link_parent_category\\\":\\\"\\\",\\\"show_associations\\\":\\\"\\\",\\\"show_author\\\":\\\"\\\",\\\"link_author\\\":\\\"\\\",\\\"show_create_date\\\":\\\"\\\",\\\"show_modify_date\\\":\\\"\\\",\\\"show_publish_date\\\":\\\"\\\",\\\"show_item_navigation\\\":\\\"\\\",\\\"show_icons\\\":\\\"\\\",\\\"show_print_icon\\\":\\\"\\\",\\\"show_email_icon\\\":\\\"\\\",\\\"show_vote\\\":\\\"\\\",\\\"show_hits\\\":\\\"\\\",\\\"show_noauth\\\":\\\"\\\",\\\"urls_position\\\":\\\"\\\",\\\"alternative_readmore\\\":\\\"\\\",\\\"article_page_title\\\":\\\"\\\",\\\"show_publishing_options\\\":\\\"\\\",\\\"show_article_options\\\":\\\"\\\",\\\"show_urls_images_backend\\\":\\\"\\\",\\\"show_urls_images_frontend\\\":\\\"\\\",\\\"helix_ultimate_image\\\":\\\"\\\",\\\"helix_ultimate_article_format\\\":\\\"standard\\\",\\\"helix_ultimate_audio\\\":\\\"\\\",\\\"helix_ultimate_gallery\\\":\\\"\\\",\\\"helix_ultimate_video\\\":\\\"\\\"}\",\"version\":1,\"ordering\":null,\"metakey\":null,\"metadesc\":null,\"access\":\"1\",\"hits\":null,\"metadata\":\"{}\",\"featured\":\"0\",\"language\":\"*\",\"xreference\":null,\"note\":\"\"}', 0),
+(123, 27, 1, '', '2021-02-08 08:27:58', 380, 2084, 'edd81cd1f82cde2c996c7d566cd4179361f5420a', '{\"id\":27,\"asset_id\":\"156\",\"title\":\"Documento de las neuronas\",\"alias\":\"documento-de-las-neuronas\",\"introtext\":\"<pre><code>{google_docs}https:\\/\\/docs.google.com\\/document\\/d\\/e\\/2PACX-1vRHDfDQkeHDSuAcz9YMIqCdWHUTBxkyK3BToJ99H6e0IQcRGav5Ic5gV07oCQaZPg\\/pub{\\/google_docs}<\\/code><\\/pre>\",\"fulltext\":\"\",\"state\":1,\"catid\":\"28\",\"created\":\"2021-02-08 08:26:56\",\"created_by\":\"380\",\"created_by_alias\":\"\",\"modified\":\"2021-02-08 08:27:58\",\"modified_by\":\"380\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 08:27:50\",\"publish_up\":\"2021-02-08 08:26:56\",\"publish_down\":\"0000-00-00 00:00:00\",\"images\":\"{\\\"image_intro\\\":\\\"\\\",\\\"float_intro\\\":\\\"\\\",\\\"image_intro_alt\\\":\\\"\\\",\\\"image_intro_caption\\\":\\\"\\\",\\\"image_fulltext\\\":\\\"\\\",\\\"float_fulltext\\\":\\\"\\\",\\\"image_fulltext_alt\\\":\\\"\\\",\\\"image_fulltext_caption\\\":\\\"\\\"}\",\"urls\":\"{\\\"urla\\\":false,\\\"urlatext\\\":\\\"\\\",\\\"targeta\\\":\\\"\\\",\\\"urlb\\\":false,\\\"urlbtext\\\":\\\"\\\",\\\"targetb\\\":\\\"\\\",\\\"urlc\\\":false,\\\"urlctext\\\":\\\"\\\",\\\"targetc\\\":\\\"\\\"}\",\"attribs\":\"{\\\"article_layout\\\":\\\"\\\",\\\"show_title\\\":\\\"\\\",\\\"link_titles\\\":\\\"\\\",\\\"show_tags\\\":\\\"\\\",\\\"show_intro\\\":\\\"\\\",\\\"info_block_position\\\":\\\"\\\",\\\"info_block_show_title\\\":\\\"\\\",\\\"show_category\\\":\\\"\\\",\\\"link_category\\\":\\\"\\\",\\\"show_parent_category\\\":\\\"\\\",\\\"link_parent_category\\\":\\\"\\\",\\\"show_associations\\\":\\\"\\\",\\\"show_author\\\":\\\"\\\",\\\"link_author\\\":\\\"\\\",\\\"show_create_date\\\":\\\"\\\",\\\"show_modify_date\\\":\\\"\\\",\\\"show_publish_date\\\":\\\"\\\",\\\"show_item_navigation\\\":\\\"\\\",\\\"show_icons\\\":\\\"\\\",\\\"show_print_icon\\\":\\\"\\\",\\\"show_email_icon\\\":\\\"\\\",\\\"show_vote\\\":\\\"\\\",\\\"show_hits\\\":\\\"\\\",\\\"show_noauth\\\":\\\"\\\",\\\"urls_position\\\":\\\"\\\",\\\"alternative_readmore\\\":\\\"\\\",\\\"article_page_title\\\":\\\"\\\",\\\"show_publishing_options\\\":\\\"\\\",\\\"show_article_options\\\":\\\"\\\",\\\"show_urls_images_backend\\\":\\\"\\\",\\\"show_urls_images_frontend\\\":\\\"\\\",\\\"helix_ultimate_image\\\":\\\"\\\",\\\"helix_ultimate_article_format\\\":\\\"standard\\\",\\\"helix_ultimate_audio\\\":\\\"\\\",\\\"helix_ultimate_gallery\\\":\\\"\\\",\\\"helix_ultimate_video\\\":\\\"\\\"}\",\"version\":2,\"ordering\":\"0\",\"metakey\":\"\",\"metadesc\":\"\",\"access\":\"1\",\"hits\":\"0\",\"metadata\":\"{}\",\"featured\":\"0\",\"language\":\"*\",\"xreference\":\"\",\"note\":\"\"}', 0),
+(125, 28, 1, '', '2021-02-08 08:36:37', 380, 2154, '6c64a9e56edf50925f07335ebe649124720cf188', '{\"id\":28,\"asset_id\":\"157\",\"title\":\"Documento de la caja tor\\u00e1cica\",\"alias\":\"documento-de-la-caja-toracica\",\"introtext\":\"<p><code>{google_docs}https:\\/\\/docs.google.com\\/document\\/d\\/e\\/2PACX1vSmgygovOW6cJq1iehDIl9py3JZydg4doXNKHIn90WvzZlWyTza3gk6vtwC_x7KQ\\/pub<\\/code><code>|width:200|height:200|border:1|border_style:solid<\\/code>{\\/google_docs}<\\/p>\",\"fulltext\":\"\",\"state\":1,\"catid\":\"28\",\"created\":\"2021-02-08 08:27:27\",\"created_by\":\"380\",\"created_by_alias\":\"\",\"modified\":\"2021-02-08 08:36:37\",\"modified_by\":\"380\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 08:36:10\",\"publish_up\":\"2021-02-08 08:27:27\",\"publish_down\":\"0000-00-00 00:00:00\",\"images\":\"{\\\"image_intro\\\":\\\"\\\",\\\"float_intro\\\":\\\"\\\",\\\"image_intro_alt\\\":\\\"\\\",\\\"image_intro_caption\\\":\\\"\\\",\\\"image_fulltext\\\":\\\"\\\",\\\"float_fulltext\\\":\\\"\\\",\\\"image_fulltext_alt\\\":\\\"\\\",\\\"image_fulltext_caption\\\":\\\"\\\"}\",\"urls\":\"{\\\"urla\\\":false,\\\"urlatext\\\":\\\"\\\",\\\"targeta\\\":\\\"\\\",\\\"urlb\\\":false,\\\"urlbtext\\\":\\\"\\\",\\\"targetb\\\":\\\"\\\",\\\"urlc\\\":false,\\\"urlctext\\\":\\\"\\\",\\\"targetc\\\":\\\"\\\"}\",\"attribs\":\"{\\\"article_layout\\\":\\\"\\\",\\\"show_title\\\":\\\"\\\",\\\"link_titles\\\":\\\"\\\",\\\"show_tags\\\":\\\"\\\",\\\"show_intro\\\":\\\"\\\",\\\"info_block_position\\\":\\\"\\\",\\\"info_block_show_title\\\":\\\"\\\",\\\"show_category\\\":\\\"\\\",\\\"link_category\\\":\\\"\\\",\\\"show_parent_category\\\":\\\"\\\",\\\"link_parent_category\\\":\\\"\\\",\\\"show_associations\\\":\\\"\\\",\\\"show_author\\\":\\\"\\\",\\\"link_author\\\":\\\"\\\",\\\"show_create_date\\\":\\\"\\\",\\\"show_modify_date\\\":\\\"\\\",\\\"show_publish_date\\\":\\\"\\\",\\\"show_item_navigation\\\":\\\"\\\",\\\"show_icons\\\":\\\"\\\",\\\"show_print_icon\\\":\\\"\\\",\\\"show_email_icon\\\":\\\"\\\",\\\"show_vote\\\":\\\"\\\",\\\"show_hits\\\":\\\"\\\",\\\"show_noauth\\\":\\\"\\\",\\\"urls_position\\\":\\\"\\\",\\\"alternative_readmore\\\":\\\"\\\",\\\"article_page_title\\\":\\\"\\\",\\\"show_publishing_options\\\":\\\"\\\",\\\"show_article_options\\\":\\\"\\\",\\\"show_urls_images_backend\\\":\\\"\\\",\\\"show_urls_images_frontend\\\":\\\"\\\",\\\"helix_ultimate_image\\\":\\\"\\\",\\\"helix_ultimate_article_format\\\":\\\"standard\\\",\\\"helix_ultimate_audio\\\":\\\"\\\",\\\"helix_ultimate_gallery\\\":\\\"\\\",\\\"helix_ultimate_video\\\":\\\"\\\"}\",\"version\":4,\"ordering\":\"0\",\"metakey\":\"\",\"metadesc\":\"\",\"access\":\"1\",\"hits\":\"0\",\"metadata\":\"{}\",\"featured\":\"0\",\"language\":\"*\",\"xreference\":\"\",\"note\":\"\"}', 0),
+(126, 28, 1, '', '2021-02-08 08:37:21', 380, 2126, '5dcb28b6b71133005a01e7e6f6f0e04798374285', '{\"id\":28,\"asset_id\":\"157\",\"title\":\"Documento de la caja tor\\u00e1cica\",\"alias\":\"documento-de-la-caja-toracica\",\"introtext\":\"<p><code>{google_docs}https:\\/\\/docs.google.com\\/document\\/d\\/e\\/2PACX1vSmgygovOW6cJq1iehDIl9py3JZydg4doXNKHIn90WvzZlWyTza3gk6vtwC_x7KQ\\/pub<\\/code><code>|width:450|height:600<\\/code>{\\/google_docs}<\\/p>\",\"fulltext\":\"\",\"state\":1,\"catid\":\"28\",\"created\":\"2021-02-08 08:27:27\",\"created_by\":\"380\",\"created_by_alias\":\"\",\"modified\":\"2021-02-08 08:37:21\",\"modified_by\":\"380\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 08:36:37\",\"publish_up\":\"2021-02-08 08:27:27\",\"publish_down\":\"0000-00-00 00:00:00\",\"images\":\"{\\\"image_intro\\\":\\\"\\\",\\\"float_intro\\\":\\\"\\\",\\\"image_intro_alt\\\":\\\"\\\",\\\"image_intro_caption\\\":\\\"\\\",\\\"image_fulltext\\\":\\\"\\\",\\\"float_fulltext\\\":\\\"\\\",\\\"image_fulltext_alt\\\":\\\"\\\",\\\"image_fulltext_caption\\\":\\\"\\\"}\",\"urls\":\"{\\\"urla\\\":false,\\\"urlatext\\\":\\\"\\\",\\\"targeta\\\":\\\"\\\",\\\"urlb\\\":false,\\\"urlbtext\\\":\\\"\\\",\\\"targetb\\\":\\\"\\\",\\\"urlc\\\":false,\\\"urlctext\\\":\\\"\\\",\\\"targetc\\\":\\\"\\\"}\",\"attribs\":\"{\\\"article_layout\\\":\\\"\\\",\\\"show_title\\\":\\\"\\\",\\\"link_titles\\\":\\\"\\\",\\\"show_tags\\\":\\\"\\\",\\\"show_intro\\\":\\\"\\\",\\\"info_block_position\\\":\\\"\\\",\\\"info_block_show_title\\\":\\\"\\\",\\\"show_category\\\":\\\"\\\",\\\"link_category\\\":\\\"\\\",\\\"show_parent_category\\\":\\\"\\\",\\\"link_parent_category\\\":\\\"\\\",\\\"show_associations\\\":\\\"\\\",\\\"show_author\\\":\\\"\\\",\\\"link_author\\\":\\\"\\\",\\\"show_create_date\\\":\\\"\\\",\\\"show_modify_date\\\":\\\"\\\",\\\"show_publish_date\\\":\\\"\\\",\\\"show_item_navigation\\\":\\\"\\\",\\\"show_icons\\\":\\\"\\\",\\\"show_print_icon\\\":\\\"\\\",\\\"show_email_icon\\\":\\\"\\\",\\\"show_vote\\\":\\\"\\\",\\\"show_hits\\\":\\\"\\\",\\\"show_noauth\\\":\\\"\\\",\\\"urls_position\\\":\\\"\\\",\\\"alternative_readmore\\\":\\\"\\\",\\\"article_page_title\\\":\\\"\\\",\\\"show_publishing_options\\\":\\\"\\\",\\\"show_article_options\\\":\\\"\\\",\\\"show_urls_images_backend\\\":\\\"\\\",\\\"show_urls_images_frontend\\\":\\\"\\\",\\\"helix_ultimate_image\\\":\\\"\\\",\\\"helix_ultimate_article_format\\\":\\\"standard\\\",\\\"helix_ultimate_audio\\\":\\\"\\\",\\\"helix_ultimate_gallery\\\":\\\"\\\",\\\"helix_ultimate_video\\\":\\\"\\\"}\",\"version\":5,\"ordering\":\"0\",\"metakey\":\"\",\"metadesc\":\"\",\"access\":\"1\",\"hits\":\"0\",\"metadata\":\"{}\",\"featured\":\"0\",\"language\":\"*\",\"xreference\":\"\",\"note\":\"\"}', 0),
+(127, 28, 1, '', '2021-02-08 08:38:01', 380, 2128, '396402812ab15a4f36806bd8bff7937a71f9416a', '{\"id\":28,\"asset_id\":\"157\",\"title\":\"Documento de la caja tor\\u00e1cica\",\"alias\":\"documento-de-la-caja-toracica\",\"introtext\":\"<p><code>{google_docs}https:\\/\\/docs.google.com\\/document\\/d\\/e\\/2PACX-1vSmgygovOW6cJq1iehDIl9py3JZydg4doXNKHIn90WvzZlWyTza3-gk6vtwC_x7KQ\\/pub<\\/code><code>|width:450|height:600<\\/code>{\\/google_docs}<\\/p>\",\"fulltext\":\"\",\"state\":1,\"catid\":\"28\",\"created\":\"2021-02-08 08:27:27\",\"created_by\":\"380\",\"created_by_alias\":\"\",\"modified\":\"2021-02-08 08:38:01\",\"modified_by\":\"380\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 08:37:21\",\"publish_up\":\"2021-02-08 08:27:27\",\"publish_down\":\"0000-00-00 00:00:00\",\"images\":\"{\\\"image_intro\\\":\\\"\\\",\\\"float_intro\\\":\\\"\\\",\\\"image_intro_alt\\\":\\\"\\\",\\\"image_intro_caption\\\":\\\"\\\",\\\"image_fulltext\\\":\\\"\\\",\\\"float_fulltext\\\":\\\"\\\",\\\"image_fulltext_alt\\\":\\\"\\\",\\\"image_fulltext_caption\\\":\\\"\\\"}\",\"urls\":\"{\\\"urla\\\":false,\\\"urlatext\\\":\\\"\\\",\\\"targeta\\\":\\\"\\\",\\\"urlb\\\":false,\\\"urlbtext\\\":\\\"\\\",\\\"targetb\\\":\\\"\\\",\\\"urlc\\\":false,\\\"urlctext\\\":\\\"\\\",\\\"targetc\\\":\\\"\\\"}\",\"attribs\":\"{\\\"article_layout\\\":\\\"\\\",\\\"show_title\\\":\\\"\\\",\\\"link_titles\\\":\\\"\\\",\\\"show_tags\\\":\\\"\\\",\\\"show_intro\\\":\\\"\\\",\\\"info_block_position\\\":\\\"\\\",\\\"info_block_show_title\\\":\\\"\\\",\\\"show_category\\\":\\\"\\\",\\\"link_category\\\":\\\"\\\",\\\"show_parent_category\\\":\\\"\\\",\\\"link_parent_category\\\":\\\"\\\",\\\"show_associations\\\":\\\"\\\",\\\"show_author\\\":\\\"\\\",\\\"link_author\\\":\\\"\\\",\\\"show_create_date\\\":\\\"\\\",\\\"show_modify_date\\\":\\\"\\\",\\\"show_publish_date\\\":\\\"\\\",\\\"show_item_navigation\\\":\\\"\\\",\\\"show_icons\\\":\\\"\\\",\\\"show_print_icon\\\":\\\"\\\",\\\"show_email_icon\\\":\\\"\\\",\\\"show_vote\\\":\\\"\\\",\\\"show_hits\\\":\\\"\\\",\\\"show_noauth\\\":\\\"\\\",\\\"urls_position\\\":\\\"\\\",\\\"alternative_readmore\\\":\\\"\\\",\\\"article_page_title\\\":\\\"\\\",\\\"show_publishing_options\\\":\\\"\\\",\\\"show_article_options\\\":\\\"\\\",\\\"show_urls_images_backend\\\":\\\"\\\",\\\"show_urls_images_frontend\\\":\\\"\\\",\\\"helix_ultimate_image\\\":\\\"\\\",\\\"helix_ultimate_article_format\\\":\\\"standard\\\",\\\"helix_ultimate_audio\\\":\\\"\\\",\\\"helix_ultimate_gallery\\\":\\\"\\\",\\\"helix_ultimate_video\\\":\\\"\\\"}\",\"version\":6,\"ordering\":\"0\",\"metakey\":\"\",\"metadesc\":\"\",\"access\":\"1\",\"hits\":\"0\",\"metadata\":\"{}\",\"featured\":\"0\",\"language\":\"*\",\"xreference\":\"\",\"note\":\"\"}', 0),
+(128, 28, 1, '', '2021-02-08 08:38:30', 380, 2198, '1a1138aac5fdb56024320b5d78d1696dd771d5cb', '{\"id\":28,\"asset_id\":\"157\",\"title\":\"Documento de la caja tor\\u00e1cica\",\"alias\":\"documento-de-la-caja-toracica\",\"introtext\":\"<p><code>{google_docs}https:\\/\\/docs.google.com\\/document\\/d\\/e\\/2PACX-1vSmgygovOW6cJq1iehDIl9py3JZydg4doXNKHIn90WvzZlWyTza3-gk6vtwC_x7KQ\\/pub<\\/code><\\/p>\\r\\n<pre><code>|border:1|border_style:solid|border_color:#000000<\\/code><\\/pre>\\r\\n<p><code><\\/code>{\\/google_docs}<\\/p>\",\"fulltext\":\"\",\"state\":1,\"catid\":\"28\",\"created\":\"2021-02-08 08:27:27\",\"created_by\":\"380\",\"created_by_alias\":\"\",\"modified\":\"2021-02-08 08:38:30\",\"modified_by\":\"380\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 08:38:01\",\"publish_up\":\"2021-02-08 08:27:27\",\"publish_down\":\"0000-00-00 00:00:00\",\"images\":\"{\\\"image_intro\\\":\\\"\\\",\\\"float_intro\\\":\\\"\\\",\\\"image_intro_alt\\\":\\\"\\\",\\\"image_intro_caption\\\":\\\"\\\",\\\"image_fulltext\\\":\\\"\\\",\\\"float_fulltext\\\":\\\"\\\",\\\"image_fulltext_alt\\\":\\\"\\\",\\\"image_fulltext_caption\\\":\\\"\\\"}\",\"urls\":\"{\\\"urla\\\":false,\\\"urlatext\\\":\\\"\\\",\\\"targeta\\\":\\\"\\\",\\\"urlb\\\":false,\\\"urlbtext\\\":\\\"\\\",\\\"targetb\\\":\\\"\\\",\\\"urlc\\\":false,\\\"urlctext\\\":\\\"\\\",\\\"targetc\\\":\\\"\\\"}\",\"attribs\":\"{\\\"article_layout\\\":\\\"\\\",\\\"show_title\\\":\\\"\\\",\\\"link_titles\\\":\\\"\\\",\\\"show_tags\\\":\\\"\\\",\\\"show_intro\\\":\\\"\\\",\\\"info_block_position\\\":\\\"\\\",\\\"info_block_show_title\\\":\\\"\\\",\\\"show_category\\\":\\\"\\\",\\\"link_category\\\":\\\"\\\",\\\"show_parent_category\\\":\\\"\\\",\\\"link_parent_category\\\":\\\"\\\",\\\"show_associations\\\":\\\"\\\",\\\"show_author\\\":\\\"\\\",\\\"link_author\\\":\\\"\\\",\\\"show_create_date\\\":\\\"\\\",\\\"show_modify_date\\\":\\\"\\\",\\\"show_publish_date\\\":\\\"\\\",\\\"show_item_navigation\\\":\\\"\\\",\\\"show_icons\\\":\\\"\\\",\\\"show_print_icon\\\":\\\"\\\",\\\"show_email_icon\\\":\\\"\\\",\\\"show_vote\\\":\\\"\\\",\\\"show_hits\\\":\\\"\\\",\\\"show_noauth\\\":\\\"\\\",\\\"urls_position\\\":\\\"\\\",\\\"alternative_readmore\\\":\\\"\\\",\\\"article_page_title\\\":\\\"\\\",\\\"show_publishing_options\\\":\\\"\\\",\\\"show_article_options\\\":\\\"\\\",\\\"show_urls_images_backend\\\":\\\"\\\",\\\"show_urls_images_frontend\\\":\\\"\\\",\\\"helix_ultimate_image\\\":\\\"\\\",\\\"helix_ultimate_article_format\\\":\\\"standard\\\",\\\"helix_ultimate_audio\\\":\\\"\\\",\\\"helix_ultimate_gallery\\\":\\\"\\\",\\\"helix_ultimate_video\\\":\\\"\\\"}\",\"version\":7,\"ordering\":\"0\",\"metakey\":\"\",\"metadesc\":\"\",\"access\":\"1\",\"hits\":\"0\",\"metadata\":\"{}\",\"featured\":\"0\",\"language\":\"*\",\"xreference\":\"\",\"note\":\"\"}', 0),
+(129, 28, 1, '', '2021-02-08 08:38:44', 380, 2219, '100463e222cdc71e0970bdf691427c44ce7a34ca', '{\"id\":28,\"asset_id\":\"157\",\"title\":\"Documento de la caja tor\\u00e1cica\",\"alias\":\"documento-de-la-caja-toracica\",\"introtext\":\"<p><code>{google_docs}https:\\/\\/docs.google.com\\/document\\/d\\/e\\/2PACX-1vSmgygovOW6cJq1iehDIl9py3JZydg4doXNKHIn90WvzZlWyTza3-gk6vtwC_x7KQ\\/pub<\\/code><\\/p>\\r\\n<pre><code>|width:200|height:200|border:1|border_style:solid|border_color:#000000<\\/code><\\/pre>\\r\\n<p><code><\\/code>{\\/google_docs}<\\/p>\",\"fulltext\":\"\",\"state\":1,\"catid\":\"28\",\"created\":\"2021-02-08 08:27:27\",\"created_by\":\"380\",\"created_by_alias\":\"\",\"modified\":\"2021-02-08 08:38:44\",\"modified_by\":\"380\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 08:38:30\",\"publish_up\":\"2021-02-08 08:27:27\",\"publish_down\":\"0000-00-00 00:00:00\",\"images\":\"{\\\"image_intro\\\":\\\"\\\",\\\"float_intro\\\":\\\"\\\",\\\"image_intro_alt\\\":\\\"\\\",\\\"image_intro_caption\\\":\\\"\\\",\\\"image_fulltext\\\":\\\"\\\",\\\"float_fulltext\\\":\\\"\\\",\\\"image_fulltext_alt\\\":\\\"\\\",\\\"image_fulltext_caption\\\":\\\"\\\"}\",\"urls\":\"{\\\"urla\\\":false,\\\"urlatext\\\":\\\"\\\",\\\"targeta\\\":\\\"\\\",\\\"urlb\\\":false,\\\"urlbtext\\\":\\\"\\\",\\\"targetb\\\":\\\"\\\",\\\"urlc\\\":false,\\\"urlctext\\\":\\\"\\\",\\\"targetc\\\":\\\"\\\"}\",\"attribs\":\"{\\\"article_layout\\\":\\\"\\\",\\\"show_title\\\":\\\"\\\",\\\"link_titles\\\":\\\"\\\",\\\"show_tags\\\":\\\"\\\",\\\"show_intro\\\":\\\"\\\",\\\"info_block_position\\\":\\\"\\\",\\\"info_block_show_title\\\":\\\"\\\",\\\"show_category\\\":\\\"\\\",\\\"link_category\\\":\\\"\\\",\\\"show_parent_category\\\":\\\"\\\",\\\"link_parent_category\\\":\\\"\\\",\\\"show_associations\\\":\\\"\\\",\\\"show_author\\\":\\\"\\\",\\\"link_author\\\":\\\"\\\",\\\"show_create_date\\\":\\\"\\\",\\\"show_modify_date\\\":\\\"\\\",\\\"show_publish_date\\\":\\\"\\\",\\\"show_item_navigation\\\":\\\"\\\",\\\"show_icons\\\":\\\"\\\",\\\"show_print_icon\\\":\\\"\\\",\\\"show_email_icon\\\":\\\"\\\",\\\"show_vote\\\":\\\"\\\",\\\"show_hits\\\":\\\"\\\",\\\"show_noauth\\\":\\\"\\\",\\\"urls_position\\\":\\\"\\\",\\\"alternative_readmore\\\":\\\"\\\",\\\"article_page_title\\\":\\\"\\\",\\\"show_publishing_options\\\":\\\"\\\",\\\"show_article_options\\\":\\\"\\\",\\\"show_urls_images_backend\\\":\\\"\\\",\\\"show_urls_images_frontend\\\":\\\"\\\",\\\"helix_ultimate_image\\\":\\\"\\\",\\\"helix_ultimate_article_format\\\":\\\"standard\\\",\\\"helix_ultimate_audio\\\":\\\"\\\",\\\"helix_ultimate_gallery\\\":\\\"\\\",\\\"helix_ultimate_video\\\":\\\"\\\"}\",\"version\":8,\"ordering\":\"0\",\"metakey\":\"\",\"metadesc\":\"\",\"access\":\"1\",\"hits\":\"0\",\"metadata\":\"{}\",\"featured\":\"0\",\"language\":\"*\",\"xreference\":\"\",\"note\":\"\"}', 0),
+(130, 28, 1, '', '2021-02-08 08:38:59', 380, 2198, '5cd1c99c91a7ed85ac5b9754b77c170a663ca0ef', '{\"id\":28,\"asset_id\":\"157\",\"title\":\"Documento de la caja tor\\u00e1cica\",\"alias\":\"documento-de-la-caja-toracica\",\"introtext\":\"<p><code>{google_docs}https:\\/\\/docs.google.com\\/document\\/d\\/e\\/2PACX-1vSmgygovOW6cJq1iehDIl9py3JZydg4doXNKHIn90WvzZlWyTza3-gk6vtwC_x7KQ\\/pub<\\/code><\\/p>\\r\\n<pre><code>|width:200|height:200|border:1|border_style:solid<\\/code><\\/pre>\\r\\n<p><code><\\/code>{\\/google_docs}<\\/p>\",\"fulltext\":\"\",\"state\":1,\"catid\":\"28\",\"created\":\"2021-02-08 08:27:27\",\"created_by\":\"380\",\"created_by_alias\":\"\",\"modified\":\"2021-02-08 08:38:59\",\"modified_by\":\"380\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 08:38:44\",\"publish_up\":\"2021-02-08 08:27:27\",\"publish_down\":\"0000-00-00 00:00:00\",\"images\":\"{\\\"image_intro\\\":\\\"\\\",\\\"float_intro\\\":\\\"\\\",\\\"image_intro_alt\\\":\\\"\\\",\\\"image_intro_caption\\\":\\\"\\\",\\\"image_fulltext\\\":\\\"\\\",\\\"float_fulltext\\\":\\\"\\\",\\\"image_fulltext_alt\\\":\\\"\\\",\\\"image_fulltext_caption\\\":\\\"\\\"}\",\"urls\":\"{\\\"urla\\\":false,\\\"urlatext\\\":\\\"\\\",\\\"targeta\\\":\\\"\\\",\\\"urlb\\\":false,\\\"urlbtext\\\":\\\"\\\",\\\"targetb\\\":\\\"\\\",\\\"urlc\\\":false,\\\"urlctext\\\":\\\"\\\",\\\"targetc\\\":\\\"\\\"}\",\"attribs\":\"{\\\"article_layout\\\":\\\"\\\",\\\"show_title\\\":\\\"\\\",\\\"link_titles\\\":\\\"\\\",\\\"show_tags\\\":\\\"\\\",\\\"show_intro\\\":\\\"\\\",\\\"info_block_position\\\":\\\"\\\",\\\"info_block_show_title\\\":\\\"\\\",\\\"show_category\\\":\\\"\\\",\\\"link_category\\\":\\\"\\\",\\\"show_parent_category\\\":\\\"\\\",\\\"link_parent_category\\\":\\\"\\\",\\\"show_associations\\\":\\\"\\\",\\\"show_author\\\":\\\"\\\",\\\"link_author\\\":\\\"\\\",\\\"show_create_date\\\":\\\"\\\",\\\"show_modify_date\\\":\\\"\\\",\\\"show_publish_date\\\":\\\"\\\",\\\"show_item_navigation\\\":\\\"\\\",\\\"show_icons\\\":\\\"\\\",\\\"show_print_icon\\\":\\\"\\\",\\\"show_email_icon\\\":\\\"\\\",\\\"show_vote\\\":\\\"\\\",\\\"show_hits\\\":\\\"\\\",\\\"show_noauth\\\":\\\"\\\",\\\"urls_position\\\":\\\"\\\",\\\"alternative_readmore\\\":\\\"\\\",\\\"article_page_title\\\":\\\"\\\",\\\"show_publishing_options\\\":\\\"\\\",\\\"show_article_options\\\":\\\"\\\",\\\"show_urls_images_backend\\\":\\\"\\\",\\\"show_urls_images_frontend\\\":\\\"\\\",\\\"helix_ultimate_image\\\":\\\"\\\",\\\"helix_ultimate_article_format\\\":\\\"standard\\\",\\\"helix_ultimate_audio\\\":\\\"\\\",\\\"helix_ultimate_gallery\\\":\\\"\\\",\\\"helix_ultimate_video\\\":\\\"\\\"}\",\"version\":9,\"ordering\":\"0\",\"metakey\":\"\",\"metadesc\":\"\",\"access\":\"1\",\"hits\":\"0\",\"metadata\":\"{}\",\"featured\":\"0\",\"language\":\"*\",\"xreference\":\"\",\"note\":\"\"}', 0);
+INSERT INTO `f3ts9_ucm_history` (`version_id`, `ucm_item_id`, `ucm_type_id`, `version_note`, `save_date`, `editor_user_id`, `character_count`, `sha1_hash`, `version_data`, `keep_forever`) VALUES
+(131, 28, 1, '', '2021-02-08 08:39:14', 380, 2180, '454636b99d8be09d5fc59139460c38ee0c6ff463', '{\"id\":28,\"asset_id\":\"157\",\"title\":\"Documento de la caja tor\\u00e1cica\",\"alias\":\"documento-de-la-caja-toracica\",\"introtext\":\"<p><code>{google_docs}https:\\/\\/docs.google.com\\/document\\/d\\/e\\/2PACX-1vSmgygovOW6cJq1iehDIl9py3JZydg4doXNKHIn90WvzZlWyTza3-gk6vtwC_x7KQ\\/pub<\\/code><\\/p>\\r\\n<pre><code>|width:200|height:200|border:1<\\/code><\\/pre>\\r\\n<p><code><\\/code>{\\/google_docs}<\\/p>\",\"fulltext\":\"\",\"state\":1,\"catid\":\"28\",\"created\":\"2021-02-08 08:27:27\",\"created_by\":\"380\",\"created_by_alias\":\"\",\"modified\":\"2021-02-08 08:39:14\",\"modified_by\":\"380\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 08:38:59\",\"publish_up\":\"2021-02-08 08:27:27\",\"publish_down\":\"0000-00-00 00:00:00\",\"images\":\"{\\\"image_intro\\\":\\\"\\\",\\\"float_intro\\\":\\\"\\\",\\\"image_intro_alt\\\":\\\"\\\",\\\"image_intro_caption\\\":\\\"\\\",\\\"image_fulltext\\\":\\\"\\\",\\\"float_fulltext\\\":\\\"\\\",\\\"image_fulltext_alt\\\":\\\"\\\",\\\"image_fulltext_caption\\\":\\\"\\\"}\",\"urls\":\"{\\\"urla\\\":false,\\\"urlatext\\\":\\\"\\\",\\\"targeta\\\":\\\"\\\",\\\"urlb\\\":false,\\\"urlbtext\\\":\\\"\\\",\\\"targetb\\\":\\\"\\\",\\\"urlc\\\":false,\\\"urlctext\\\":\\\"\\\",\\\"targetc\\\":\\\"\\\"}\",\"attribs\":\"{\\\"article_layout\\\":\\\"\\\",\\\"show_title\\\":\\\"\\\",\\\"link_titles\\\":\\\"\\\",\\\"show_tags\\\":\\\"\\\",\\\"show_intro\\\":\\\"\\\",\\\"info_block_position\\\":\\\"\\\",\\\"info_block_show_title\\\":\\\"\\\",\\\"show_category\\\":\\\"\\\",\\\"link_category\\\":\\\"\\\",\\\"show_parent_category\\\":\\\"\\\",\\\"link_parent_category\\\":\\\"\\\",\\\"show_associations\\\":\\\"\\\",\\\"show_author\\\":\\\"\\\",\\\"link_author\\\":\\\"\\\",\\\"show_create_date\\\":\\\"\\\",\\\"show_modify_date\\\":\\\"\\\",\\\"show_publish_date\\\":\\\"\\\",\\\"show_item_navigation\\\":\\\"\\\",\\\"show_icons\\\":\\\"\\\",\\\"show_print_icon\\\":\\\"\\\",\\\"show_email_icon\\\":\\\"\\\",\\\"show_vote\\\":\\\"\\\",\\\"show_hits\\\":\\\"\\\",\\\"show_noauth\\\":\\\"\\\",\\\"urls_position\\\":\\\"\\\",\\\"alternative_readmore\\\":\\\"\\\",\\\"article_page_title\\\":\\\"\\\",\\\"show_publishing_options\\\":\\\"\\\",\\\"show_article_options\\\":\\\"\\\",\\\"show_urls_images_backend\\\":\\\"\\\",\\\"show_urls_images_frontend\\\":\\\"\\\",\\\"helix_ultimate_image\\\":\\\"\\\",\\\"helix_ultimate_article_format\\\":\\\"standard\\\",\\\"helix_ultimate_audio\\\":\\\"\\\",\\\"helix_ultimate_gallery\\\":\\\"\\\",\\\"helix_ultimate_video\\\":\\\"\\\"}\",\"version\":10,\"ordering\":\"0\",\"metakey\":\"\",\"metadesc\":\"\",\"access\":\"1\",\"hits\":\"0\",\"metadata\":\"{}\",\"featured\":\"0\",\"language\":\"*\",\"xreference\":\"\",\"note\":\"\"}', 0),
+(132, 28, 1, '', '2021-02-08 08:39:30', 380, 2172, '6a87ec6d822aacf10a2c040a6f4937b8fbc38748', '{\"id\":28,\"asset_id\":\"157\",\"title\":\"Documento de la caja tor\\u00e1cica\",\"alias\":\"documento-de-la-caja-toracica\",\"introtext\":\"<p><code>{google_docs}https:\\/\\/docs.google.com\\/document\\/d\\/e\\/2PACX-1vSmgygovOW6cJq1iehDIl9py3JZydg4doXNKHIn90WvzZlWyTza3-gk6vtwC_x7KQ\\/pub<\\/code><\\/p>\\r\\n<pre><code>|width:200|height:200|<\\/code><\\/pre>\\r\\n<p><code><\\/code>{\\/google_docs}<\\/p>\",\"fulltext\":\"\",\"state\":1,\"catid\":\"28\",\"created\":\"2021-02-08 08:27:27\",\"created_by\":\"380\",\"created_by_alias\":\"\",\"modified\":\"2021-02-08 08:39:30\",\"modified_by\":\"380\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 08:39:14\",\"publish_up\":\"2021-02-08 08:27:27\",\"publish_down\":\"0000-00-00 00:00:00\",\"images\":\"{\\\"image_intro\\\":\\\"\\\",\\\"float_intro\\\":\\\"\\\",\\\"image_intro_alt\\\":\\\"\\\",\\\"image_intro_caption\\\":\\\"\\\",\\\"image_fulltext\\\":\\\"\\\",\\\"float_fulltext\\\":\\\"\\\",\\\"image_fulltext_alt\\\":\\\"\\\",\\\"image_fulltext_caption\\\":\\\"\\\"}\",\"urls\":\"{\\\"urla\\\":false,\\\"urlatext\\\":\\\"\\\",\\\"targeta\\\":\\\"\\\",\\\"urlb\\\":false,\\\"urlbtext\\\":\\\"\\\",\\\"targetb\\\":\\\"\\\",\\\"urlc\\\":false,\\\"urlctext\\\":\\\"\\\",\\\"targetc\\\":\\\"\\\"}\",\"attribs\":\"{\\\"article_layout\\\":\\\"\\\",\\\"show_title\\\":\\\"\\\",\\\"link_titles\\\":\\\"\\\",\\\"show_tags\\\":\\\"\\\",\\\"show_intro\\\":\\\"\\\",\\\"info_block_position\\\":\\\"\\\",\\\"info_block_show_title\\\":\\\"\\\",\\\"show_category\\\":\\\"\\\",\\\"link_category\\\":\\\"\\\",\\\"show_parent_category\\\":\\\"\\\",\\\"link_parent_category\\\":\\\"\\\",\\\"show_associations\\\":\\\"\\\",\\\"show_author\\\":\\\"\\\",\\\"link_author\\\":\\\"\\\",\\\"show_create_date\\\":\\\"\\\",\\\"show_modify_date\\\":\\\"\\\",\\\"show_publish_date\\\":\\\"\\\",\\\"show_item_navigation\\\":\\\"\\\",\\\"show_icons\\\":\\\"\\\",\\\"show_print_icon\\\":\\\"\\\",\\\"show_email_icon\\\":\\\"\\\",\\\"show_vote\\\":\\\"\\\",\\\"show_hits\\\":\\\"\\\",\\\"show_noauth\\\":\\\"\\\",\\\"urls_position\\\":\\\"\\\",\\\"alternative_readmore\\\":\\\"\\\",\\\"article_page_title\\\":\\\"\\\",\\\"show_publishing_options\\\":\\\"\\\",\\\"show_article_options\\\":\\\"\\\",\\\"show_urls_images_backend\\\":\\\"\\\",\\\"show_urls_images_frontend\\\":\\\"\\\",\\\"helix_ultimate_image\\\":\\\"\\\",\\\"helix_ultimate_article_format\\\":\\\"standard\\\",\\\"helix_ultimate_audio\\\":\\\"\\\",\\\"helix_ultimate_gallery\\\":\\\"\\\",\\\"helix_ultimate_video\\\":\\\"\\\"}\",\"version\":11,\"ordering\":\"0\",\"metakey\":\"\",\"metadesc\":\"\",\"access\":\"1\",\"hits\":\"0\",\"metadata\":\"{}\",\"featured\":\"0\",\"language\":\"*\",\"xreference\":\"\",\"note\":\"\"}', 0),
+(133, 28, 1, '', '2021-02-08 08:40:08', 380, 2192, '52169f0c7ea6cbfa50db37e9333554ab01aa57c8', '{\"id\":28,\"asset_id\":\"157\",\"title\":\"Documento de la caja tor\\u00e1cica\",\"alias\":\"documento-de-la-caja-toracica\",\"introtext\":\"<p><code>{google_docs}https:\\/\\/docs.google.com\\/document\\/d\\/e\\/2PACX-1vSmgygovOW6cJq1iehDIl9py3JZydg4doXNKHIn90WvzZlWyTza3-gk6vtwC_x7KQ\\/pub<\\/code><code>|width:200|height:200|border:1|border_style:solid|border_color:#000000<\\/code><code><\\/code>{\\/google_docs}<\\/p>\",\"fulltext\":\"\",\"state\":1,\"catid\":\"28\",\"created\":\"2021-02-08 08:27:27\",\"created_by\":\"380\",\"created_by_alias\":\"\",\"modified\":\"2021-02-08 08:40:08\",\"modified_by\":\"380\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 08:39:30\",\"publish_up\":\"2021-02-08 08:27:27\",\"publish_down\":\"0000-00-00 00:00:00\",\"images\":\"{\\\"image_intro\\\":\\\"\\\",\\\"float_intro\\\":\\\"\\\",\\\"image_intro_alt\\\":\\\"\\\",\\\"image_intro_caption\\\":\\\"\\\",\\\"image_fulltext\\\":\\\"\\\",\\\"float_fulltext\\\":\\\"\\\",\\\"image_fulltext_alt\\\":\\\"\\\",\\\"image_fulltext_caption\\\":\\\"\\\"}\",\"urls\":\"{\\\"urla\\\":false,\\\"urlatext\\\":\\\"\\\",\\\"targeta\\\":\\\"\\\",\\\"urlb\\\":false,\\\"urlbtext\\\":\\\"\\\",\\\"targetb\\\":\\\"\\\",\\\"urlc\\\":false,\\\"urlctext\\\":\\\"\\\",\\\"targetc\\\":\\\"\\\"}\",\"attribs\":\"{\\\"article_layout\\\":\\\"\\\",\\\"show_title\\\":\\\"\\\",\\\"link_titles\\\":\\\"\\\",\\\"show_tags\\\":\\\"\\\",\\\"show_intro\\\":\\\"\\\",\\\"info_block_position\\\":\\\"\\\",\\\"info_block_show_title\\\":\\\"\\\",\\\"show_category\\\":\\\"\\\",\\\"link_category\\\":\\\"\\\",\\\"show_parent_category\\\":\\\"\\\",\\\"link_parent_category\\\":\\\"\\\",\\\"show_associations\\\":\\\"\\\",\\\"show_author\\\":\\\"\\\",\\\"link_author\\\":\\\"\\\",\\\"show_create_date\\\":\\\"\\\",\\\"show_modify_date\\\":\\\"\\\",\\\"show_publish_date\\\":\\\"\\\",\\\"show_item_navigation\\\":\\\"\\\",\\\"show_icons\\\":\\\"\\\",\\\"show_print_icon\\\":\\\"\\\",\\\"show_email_icon\\\":\\\"\\\",\\\"show_vote\\\":\\\"\\\",\\\"show_hits\\\":\\\"\\\",\\\"show_noauth\\\":\\\"\\\",\\\"urls_position\\\":\\\"\\\",\\\"alternative_readmore\\\":\\\"\\\",\\\"article_page_title\\\":\\\"\\\",\\\"show_publishing_options\\\":\\\"\\\",\\\"show_article_options\\\":\\\"\\\",\\\"show_urls_images_backend\\\":\\\"\\\",\\\"show_urls_images_frontend\\\":\\\"\\\",\\\"helix_ultimate_image\\\":\\\"\\\",\\\"helix_ultimate_article_format\\\":\\\"standard\\\",\\\"helix_ultimate_audio\\\":\\\"\\\",\\\"helix_ultimate_gallery\\\":\\\"\\\",\\\"helix_ultimate_video\\\":\\\"\\\"}\",\"version\":12,\"ordering\":\"0\",\"metakey\":\"\",\"metadesc\":\"\",\"access\":\"1\",\"hits\":\"0\",\"metadata\":\"{}\",\"featured\":\"0\",\"language\":\"*\",\"xreference\":\"\",\"note\":\"\"}', 0),
+(134, 28, 1, '', '2021-02-08 08:41:26', 380, 2098, 'bc829ac835e909b450a5fe9768f942db4767eee9', '{\"id\":28,\"asset_id\":\"157\",\"title\":\"Documento de la caja tor\\u00e1cica\",\"alias\":\"documento-de-la-caja-toracica\",\"introtext\":\"<pre><code>{google_docs}https:\\/\\/docs.google.com\\/document\\/d\\/e\\/2PACX-1vSmgygovOW6cJq1iehDIl9py3JZydg4doXNKHIn90WvzZlWyTza3-gk6vtwC_x7KQ\\/pub{\\/google_docs}<\\/code><\\/pre>\",\"fulltext\":\"\",\"state\":1,\"catid\":\"28\",\"created\":\"2021-02-08 08:27:27\",\"created_by\":\"380\",\"created_by_alias\":\"\",\"modified\":\"2021-02-08 08:41:26\",\"modified_by\":\"380\",\"checked_out\":\"380\",\"checked_out_time\":\"2021-02-08 08:40:51\",\"publish_up\":\"2021-02-08 08:27:27\",\"publish_down\":\"0000-00-00 00:00:00\",\"images\":\"{\\\"image_intro\\\":\\\"\\\",\\\"float_intro\\\":\\\"\\\",\\\"image_intro_alt\\\":\\\"\\\",\\\"image_intro_caption\\\":\\\"\\\",\\\"image_fulltext\\\":\\\"\\\",\\\"float_fulltext\\\":\\\"\\\",\\\"image_fulltext_alt\\\":\\\"\\\",\\\"image_fulltext_caption\\\":\\\"\\\"}\",\"urls\":\"{\\\"urla\\\":false,\\\"urlatext\\\":\\\"\\\",\\\"targeta\\\":\\\"\\\",\\\"urlb\\\":false,\\\"urlbtext\\\":\\\"\\\",\\\"targetb\\\":\\\"\\\",\\\"urlc\\\":false,\\\"urlctext\\\":\\\"\\\",\\\"targetc\\\":\\\"\\\"}\",\"attribs\":\"{\\\"article_layout\\\":\\\"\\\",\\\"show_title\\\":\\\"\\\",\\\"link_titles\\\":\\\"\\\",\\\"show_tags\\\":\\\"\\\",\\\"show_intro\\\":\\\"\\\",\\\"info_block_position\\\":\\\"\\\",\\\"info_block_show_title\\\":\\\"\\\",\\\"show_category\\\":\\\"\\\",\\\"link_category\\\":\\\"\\\",\\\"show_parent_category\\\":\\\"\\\",\\\"link_parent_category\\\":\\\"\\\",\\\"show_associations\\\":\\\"\\\",\\\"show_author\\\":\\\"\\\",\\\"link_author\\\":\\\"\\\",\\\"show_create_date\\\":\\\"\\\",\\\"show_modify_date\\\":\\\"\\\",\\\"show_publish_date\\\":\\\"\\\",\\\"show_item_navigation\\\":\\\"\\\",\\\"show_icons\\\":\\\"\\\",\\\"show_print_icon\\\":\\\"\\\",\\\"show_email_icon\\\":\\\"\\\",\\\"show_vote\\\":\\\"\\\",\\\"show_hits\\\":\\\"\\\",\\\"show_noauth\\\":\\\"\\\",\\\"urls_position\\\":\\\"\\\",\\\"alternative_readmore\\\":\\\"\\\",\\\"article_page_title\\\":\\\"\\\",\\\"show_publishing_options\\\":\\\"\\\",\\\"show_article_options\\\":\\\"\\\",\\\"show_urls_images_backend\\\":\\\"\\\",\\\"show_urls_images_frontend\\\":\\\"\\\",\\\"helix_ultimate_image\\\":\\\"\\\",\\\"helix_ultimate_article_format\\\":\\\"standard\\\",\\\"helix_ultimate_audio\\\":\\\"\\\",\\\"helix_ultimate_gallery\\\":\\\"\\\",\\\"helix_ultimate_video\\\":\\\"\\\"}\",\"version\":14,\"ordering\":\"0\",\"metakey\":\"\",\"metadesc\":\"\",\"access\":\"1\",\"hits\":\"0\",\"metadata\":\"{}\",\"featured\":\"0\",\"language\":\"*\",\"xreference\":\"\",\"note\":\"\"}', 0);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_updates`
+-- Table structure for table `f3ts9_updates`
 --
 
 CREATE TABLE `f3ts9_updates` (
@@ -3152,93 +3314,93 @@ CREATE TABLE `f3ts9_updates` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Available Updates';
 
 --
--- Volcado de datos para la tabla `f3ts9_updates`
+-- Dumping data for table `f3ts9_updates`
 --
 
 INSERT INTO `f3ts9_updates` (`update_id`, `update_site_id`, `extension_id`, `name`, `description`, `element`, `type`, `folder`, `client_id`, `version`, `data`, `detailsurl`, `infourl`, `extra_query`) VALUES
-(324, 2, 0, 'Armenian', '', 'pkg_hy-AM', 'package', '', 0, '3.4.4.1', '', 'https://update.joomla.org/language/details3/hy-AM_details.xml', '', ''),
-(325, 2, 0, 'Malay', '', 'pkg_ms-MY', 'package', '', 0, '3.4.1.2', '', 'https://update.joomla.org/language/details3/ms-MY_details.xml', '', ''),
-(326, 2, 0, 'Romanian', '', 'pkg_ro-RO', 'package', '', 0, '3.9.22.1', '', 'https://update.joomla.org/language/details3/ro-RO_details.xml', '', ''),
-(327, 2, 0, 'Flemish', '', 'pkg_nl-BE', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/nl-BE_details.xml', '', ''),
-(328, 2, 0, 'Chinese Traditional', '', 'pkg_zh-TW', 'package', '', 0, '3.8.0.1', '', 'https://update.joomla.org/language/details3/zh-TW_details.xml', '', ''),
-(329, 2, 0, 'French', '', 'pkg_fr-FR', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/fr-FR_details.xml', '', ''),
-(330, 2, 0, 'Galician', '', 'pkg_gl-ES', 'package', '', 0, '3.3.1.2', '', 'https://update.joomla.org/language/details3/gl-ES_details.xml', '', ''),
-(331, 2, 0, 'Georgian', '', 'pkg_ka-GE', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/ka-GE_details.xml', '', ''),
-(332, 2, 0, 'Greek', '', 'pkg_el-GR', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/el-GR_details.xml', '', ''),
-(333, 2, 0, 'Japanese', '', 'pkg_ja-JP', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/ja-JP_details.xml', '', ''),
-(334, 2, 0, 'Hebrew', '', 'pkg_he-IL', 'package', '', 0, '3.1.1.2', '', 'https://update.joomla.org/language/details3/he-IL_details.xml', '', ''),
-(335, 2, 0, 'Bengali', '', 'pkg_bn-BD', 'package', '', 0, '3.8.10.1', '', 'https://update.joomla.org/language/details3/bn-BD_details.xml', '', ''),
-(336, 2, 0, 'Hungarian', '', 'pkg_hu-HU', 'package', '', 0, '3.9.19.1', '', 'https://update.joomla.org/language/details3/hu-HU_details.xml', '', ''),
-(337, 2, 0, 'Afrikaans', '', 'pkg_af-ZA', 'package', '', 0, '3.9.16.1', '', 'https://update.joomla.org/language/details3/af-ZA_details.xml', '', ''),
-(338, 2, 0, 'Arabic Unitag', '', 'pkg_ar-AA', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/ar-AA_details.xml', '', ''),
-(339, 2, 0, 'Belarusian', '', 'pkg_be-BY', 'package', '', 0, '3.2.1.2', '', 'https://update.joomla.org/language/details3/be-BY_details.xml', '', ''),
-(340, 2, 0, 'Bulgarian', '', 'pkg_bg-BG', 'package', '', 0, '3.6.5.2', '', 'https://update.joomla.org/language/details3/bg-BG_details.xml', '', ''),
-(341, 2, 0, 'Catalan', '', 'pkg_ca-ES', 'package', '', 0, '3.9.23.1', '', 'https://update.joomla.org/language/details3/ca-ES_details.xml', '', ''),
-(342, 2, 0, 'Chinese Simplified', '', 'pkg_zh-CN', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/zh-CN_details.xml', '', ''),
-(343, 2, 0, 'Croatian', '', 'pkg_hr-HR', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/hr-HR_details.xml', '', ''),
-(344, 2, 0, 'Czech', '', 'pkg_cs-CZ', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/cs-CZ_details.xml', '', ''),
-(345, 2, 0, 'Danish', '', 'pkg_da-DK', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/da-DK_details.xml', '', ''),
-(346, 2, 0, 'Dutch', '', 'pkg_nl-NL', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/nl-NL_details.xml', '', ''),
-(347, 2, 0, 'Esperanto', '', 'pkg_eo-XX', 'package', '', 0, '3.8.11.1', '', 'https://update.joomla.org/language/details3/eo-XX_details.xml', '', ''),
-(348, 2, 0, 'Estonian', '', 'pkg_et-EE', 'package', '', 0, '3.9.21.1', '', 'https://update.joomla.org/language/details3/et-EE_details.xml', '', ''),
-(349, 2, 0, 'Italian', '', 'pkg_it-IT', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/it-IT_details.xml', '', ''),
-(350, 2, 0, 'Khmer', '', 'pkg_km-KH', 'package', '', 0, '3.4.5.1', '', 'https://update.joomla.org/language/details3/km-KH_details.xml', '', ''),
-(351, 2, 0, 'Korean', '', 'pkg_ko-KR', 'package', '', 0, '3.8.9.1', '', 'https://update.joomla.org/language/details3/ko-KR_details.xml', '', ''),
-(352, 2, 0, 'Latvian', '', 'pkg_lv-LV', 'package', '', 0, '3.7.3.1', '', 'https://update.joomla.org/language/details3/lv-LV_details.xml', '', ''),
-(353, 2, 0, 'Lithuanian', '', 'pkg_lt-LT', 'package', '', 0, '3.9.16.1', '', 'https://update.joomla.org/language/details3/lt-LT_details.xml', '', ''),
-(354, 2, 0, 'Macedonian', '', 'pkg_mk-MK', 'package', '', 0, '3.6.5.1', '', 'https://update.joomla.org/language/details3/mk-MK_details.xml', '', ''),
-(355, 2, 0, 'Norwegian Bokmal', '', 'pkg_nb-NO', 'package', '', 0, '3.9.24.2', '', 'https://update.joomla.org/language/details3/nb-NO_details.xml', '', ''),
-(356, 2, 0, 'Norwegian Nynorsk', '', 'pkg_nn-NO', 'package', '', 0, '3.4.2.1', '', 'https://update.joomla.org/language/details3/nn-NO_details.xml', '', ''),
-(357, 2, 0, 'Persian', '', 'pkg_fa-IR', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/fa-IR_details.xml', '', ''),
-(358, 2, 0, 'Polish', '', 'pkg_pl-PL', 'package', '', 0, '3.9.13.1', '', 'https://update.joomla.org/language/details3/pl-PL_details.xml', '', ''),
-(359, 2, 0, 'Portuguese', '', 'pkg_pt-PT', 'package', '', 0, '3.9.15.1', '', 'https://update.joomla.org/language/details3/pt-PT_details.xml', '', ''),
-(360, 2, 0, 'Russian', '', 'pkg_ru-RU', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/ru-RU_details.xml', '', ''),
-(361, 2, 0, 'English AU', '', 'pkg_en-AU', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/en-AU_details.xml', '', ''),
-(362, 2, 0, 'Slovak', '', 'pkg_sk-SK', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/sk-SK_details.xml', '', ''),
-(363, 2, 0, 'English US', '', 'pkg_en-US', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/en-US_details.xml', '', ''),
-(364, 2, 0, 'Swedish', '', 'pkg_sv-SE', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/sv-SE_details.xml', '', ''),
-(365, 2, 0, 'Syriac', '', 'pkg_sy-IQ', 'package', '', 0, '3.4.5.1', '', 'https://update.joomla.org/language/details3/sy-IQ_details.xml', '', ''),
-(366, 2, 0, 'Tamil', '', 'pkg_ta-IN', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/ta-IN_details.xml', '', ''),
-(367, 2, 0, 'Thai', '', 'pkg_th-TH', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/th-TH_details.xml', '', ''),
-(368, 2, 0, 'Turkish', '', 'pkg_tr-TR', 'package', '', 0, '3.9.4.1', '', 'https://update.joomla.org/language/details3/tr-TR_details.xml', '', ''),
-(369, 2, 0, 'Ukrainian', '', 'pkg_uk-UA', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/uk-UA_details.xml', '', ''),
-(370, 2, 0, 'Uyghur', '', 'pkg_ug-CN', 'package', '', 0, '3.7.5.2', '', 'https://update.joomla.org/language/details3/ug-CN_details.xml', '', ''),
-(371, 2, 0, 'Albanian', '', 'pkg_sq-AL', 'package', '', 0, '3.1.1.2', '', 'https://update.joomla.org/language/details3/sq-AL_details.xml', '', ''),
-(372, 2, 0, 'Basque', '', 'pkg_eu-ES', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/eu-ES_details.xml', '', ''),
-(373, 2, 0, 'Hindi', '', 'pkg_hi-IN', 'package', '', 0, '3.3.6.2', '', 'https://update.joomla.org/language/details3/hi-IN_details.xml', '', ''),
-(374, 2, 0, 'German DE', '', 'pkg_de-DE', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/de-DE_details.xml', '', ''),
-(375, 2, 0, 'Portuguese Brazil', '', 'pkg_pt-BR', 'package', '', 0, '3.9.21.1', '', 'https://update.joomla.org/language/details3/pt-BR_details.xml', '', ''),
-(376, 2, 0, 'Serbian Latin', '', 'pkg_sr-YU', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/sr-YU_details.xml', '', ''),
-(377, 2, 0, 'Bosnian', '', 'pkg_bs-BA', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/bs-BA_details.xml', '', ''),
-(378, 2, 0, 'Serbian Cyrillic', '', 'pkg_sr-RS', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/sr-RS_details.xml', '', ''),
-(379, 2, 0, 'Vietnamese', '', 'pkg_vi-VN', 'package', '', 0, '3.2.1.2', '', 'https://update.joomla.org/language/details3/vi-VN_details.xml', '', ''),
-(380, 2, 0, 'Bahasa Indonesia', '', 'pkg_id-ID', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/id-ID_details.xml', '', ''),
-(381, 2, 0, 'Finnish', '', 'pkg_fi-FI', 'package', '', 0, '3.9.16.1', '', 'https://update.joomla.org/language/details3/fi-FI_details.xml', '', ''),
-(382, 2, 0, 'Swahili', '', 'pkg_sw-KE', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/sw-KE_details.xml', '', ''),
-(383, 2, 0, 'Montenegrin', '', 'pkg_srp-ME', 'package', '', 0, '3.3.1.2', '', 'https://update.joomla.org/language/details3/srp-ME_details.xml', '', ''),
-(384, 2, 0, 'English CA', '', 'pkg_en-CA', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/en-CA_details.xml', '', ''),
-(385, 2, 0, 'French CA', '', 'pkg_fr-CA', 'package', '', 0, '3.6.5.1', '', 'https://update.joomla.org/language/details3/fr-CA_details.xml', '', ''),
-(386, 2, 0, 'Welsh', '', 'pkg_cy-GB', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/cy-GB_details.xml', '', ''),
-(387, 2, 0, 'Sinhala', '', 'pkg_si-LK', 'package', '', 0, '3.3.1.2', '', 'https://update.joomla.org/language/details3/si-LK_details.xml', '', ''),
-(388, 2, 0, 'Dari Persian', '', 'pkg_prs-AF', 'package', '', 0, '3.4.4.3', '', 'https://update.joomla.org/language/details3/prs-AF_details.xml', '', ''),
-(389, 2, 0, 'Turkmen', '', 'pkg_tk-TM', 'package', '', 0, '3.5.0.2', '', 'https://update.joomla.org/language/details3/tk-TM_details.xml', '', ''),
-(390, 2, 0, 'Irish', '', 'pkg_ga-IE', 'package', '', 0, '3.8.13.1', '', 'https://update.joomla.org/language/details3/ga-IE_details.xml', '', ''),
-(391, 2, 0, 'Dzongkha', '', 'pkg_dz-BT', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/dz-BT_details.xml', '', ''),
-(392, 2, 0, 'Slovenian', '', 'pkg_sl-SI', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/sl-SI_details.xml', '', ''),
-(393, 2, 0, 'Spanish CO', '', 'pkg_es-CO', 'package', '', 0, '3.9.15.1', '', 'https://update.joomla.org/language/details3/es-CO_details.xml', '', ''),
-(394, 2, 0, 'German CH', '', 'pkg_de-CH', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/de-CH_details.xml', '', ''),
-(395, 2, 0, 'German AT', '', 'pkg_de-AT', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/de-AT_details.xml', '', ''),
-(396, 2, 0, 'German LI', '', 'pkg_de-LI', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/de-LI_details.xml', '', ''),
-(397, 2, 0, 'German LU', '', 'pkg_de-LU', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/de-LU_details.xml', '', ''),
-(398, 2, 0, 'English NZ', '', 'pkg_en-NZ', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/en-NZ_details.xml', '', ''),
-(399, 2, 0, 'Kazakh', '', 'pkg_kk-KZ', 'package', '', 0, '3.9.23.1', '', 'https://update.joomla.org/language/details3/kk-KZ_details.xml', '', ''),
-(400, 5, 10005, 'System - Helix Ultimate Framework', '', 'helixultimate', 'plugin', 'system', 0, '1.1.2', '', 'http://www.joomshaper.com/updates/plg-system-helixultimate.xml', '', ''),
-(401, 6, 0, 'shaper_helixultimate', 'Shaper Helixultimate', 'shaper_helixultimate', 'template', '', 0, '1.1.2', '', 'https://www.joomshaper.com/updates/shaper-helixultimate.xml', '', '');
+(402, 2, 0, 'Armenian', '', 'pkg_hy-AM', 'package', '', 0, '3.4.4.1', '', 'https://update.joomla.org/language/details3/hy-AM_details.xml', '', ''),
+(403, 2, 0, 'Malay', '', 'pkg_ms-MY', 'package', '', 0, '3.4.1.2', '', 'https://update.joomla.org/language/details3/ms-MY_details.xml', '', ''),
+(404, 2, 0, 'Romanian', '', 'pkg_ro-RO', 'package', '', 0, '3.9.22.1', '', 'https://update.joomla.org/language/details3/ro-RO_details.xml', '', ''),
+(405, 2, 0, 'Flemish', '', 'pkg_nl-BE', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/nl-BE_details.xml', '', ''),
+(406, 2, 0, 'Chinese Traditional', '', 'pkg_zh-TW', 'package', '', 0, '3.8.0.1', '', 'https://update.joomla.org/language/details3/zh-TW_details.xml', '', ''),
+(407, 2, 0, 'French', '', 'pkg_fr-FR', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/fr-FR_details.xml', '', ''),
+(408, 2, 0, 'Galician', '', 'pkg_gl-ES', 'package', '', 0, '3.3.1.2', '', 'https://update.joomla.org/language/details3/gl-ES_details.xml', '', ''),
+(409, 2, 0, 'Georgian', '', 'pkg_ka-GE', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/ka-GE_details.xml', '', ''),
+(410, 2, 0, 'Greek', '', 'pkg_el-GR', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/el-GR_details.xml', '', ''),
+(411, 2, 0, 'Japanese', '', 'pkg_ja-JP', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/ja-JP_details.xml', '', ''),
+(412, 2, 0, 'Hebrew', '', 'pkg_he-IL', 'package', '', 0, '3.1.1.2', '', 'https://update.joomla.org/language/details3/he-IL_details.xml', '', ''),
+(413, 2, 0, 'Bengali', '', 'pkg_bn-BD', 'package', '', 0, '3.8.10.1', '', 'https://update.joomla.org/language/details3/bn-BD_details.xml', '', ''),
+(414, 2, 0, 'Hungarian', '', 'pkg_hu-HU', 'package', '', 0, '3.9.19.1', '', 'https://update.joomla.org/language/details3/hu-HU_details.xml', '', ''),
+(415, 2, 0, 'Afrikaans', '', 'pkg_af-ZA', 'package', '', 0, '3.9.16.1', '', 'https://update.joomla.org/language/details3/af-ZA_details.xml', '', ''),
+(416, 2, 0, 'Arabic Unitag', '', 'pkg_ar-AA', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/ar-AA_details.xml', '', ''),
+(417, 2, 0, 'Belarusian', '', 'pkg_be-BY', 'package', '', 0, '3.2.1.2', '', 'https://update.joomla.org/language/details3/be-BY_details.xml', '', ''),
+(418, 2, 0, 'Bulgarian', '', 'pkg_bg-BG', 'package', '', 0, '3.6.5.2', '', 'https://update.joomla.org/language/details3/bg-BG_details.xml', '', ''),
+(419, 2, 0, 'Catalan', '', 'pkg_ca-ES', 'package', '', 0, '3.9.23.1', '', 'https://update.joomla.org/language/details3/ca-ES_details.xml', '', ''),
+(420, 2, 0, 'Chinese Simplified', '', 'pkg_zh-CN', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/zh-CN_details.xml', '', ''),
+(421, 2, 0, 'Croatian', '', 'pkg_hr-HR', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/hr-HR_details.xml', '', ''),
+(422, 2, 0, 'Czech', '', 'pkg_cs-CZ', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/cs-CZ_details.xml', '', ''),
+(423, 2, 0, 'Danish', '', 'pkg_da-DK', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/da-DK_details.xml', '', ''),
+(424, 2, 0, 'Dutch', '', 'pkg_nl-NL', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/nl-NL_details.xml', '', ''),
+(425, 2, 0, 'Esperanto', '', 'pkg_eo-XX', 'package', '', 0, '3.8.11.1', '', 'https://update.joomla.org/language/details3/eo-XX_details.xml', '', ''),
+(426, 2, 0, 'Estonian', '', 'pkg_et-EE', 'package', '', 0, '3.9.21.1', '', 'https://update.joomla.org/language/details3/et-EE_details.xml', '', ''),
+(427, 2, 0, 'Italian', '', 'pkg_it-IT', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/it-IT_details.xml', '', ''),
+(428, 2, 0, 'Khmer', '', 'pkg_km-KH', 'package', '', 0, '3.4.5.1', '', 'https://update.joomla.org/language/details3/km-KH_details.xml', '', ''),
+(429, 2, 0, 'Korean', '', 'pkg_ko-KR', 'package', '', 0, '3.8.9.1', '', 'https://update.joomla.org/language/details3/ko-KR_details.xml', '', ''),
+(430, 2, 0, 'Latvian', '', 'pkg_lv-LV', 'package', '', 0, '3.7.3.1', '', 'https://update.joomla.org/language/details3/lv-LV_details.xml', '', ''),
+(431, 2, 0, 'Lithuanian', '', 'pkg_lt-LT', 'package', '', 0, '3.9.16.1', '', 'https://update.joomla.org/language/details3/lt-LT_details.xml', '', ''),
+(432, 2, 0, 'Macedonian', '', 'pkg_mk-MK', 'package', '', 0, '3.6.5.1', '', 'https://update.joomla.org/language/details3/mk-MK_details.xml', '', ''),
+(433, 2, 0, 'Norwegian Bokmal', '', 'pkg_nb-NO', 'package', '', 0, '3.9.24.2', '', 'https://update.joomla.org/language/details3/nb-NO_details.xml', '', ''),
+(434, 2, 0, 'Norwegian Nynorsk', '', 'pkg_nn-NO', 'package', '', 0, '3.4.2.1', '', 'https://update.joomla.org/language/details3/nn-NO_details.xml', '', ''),
+(435, 2, 0, 'Persian', '', 'pkg_fa-IR', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/fa-IR_details.xml', '', ''),
+(436, 2, 0, 'Polish', '', 'pkg_pl-PL', 'package', '', 0, '3.9.13.1', '', 'https://update.joomla.org/language/details3/pl-PL_details.xml', '', ''),
+(437, 2, 0, 'Portuguese', '', 'pkg_pt-PT', 'package', '', 0, '3.9.15.1', '', 'https://update.joomla.org/language/details3/pt-PT_details.xml', '', ''),
+(438, 2, 0, 'Russian', '', 'pkg_ru-RU', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/ru-RU_details.xml', '', ''),
+(439, 2, 0, 'English AU', '', 'pkg_en-AU', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/en-AU_details.xml', '', ''),
+(440, 2, 0, 'Slovak', '', 'pkg_sk-SK', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/sk-SK_details.xml', '', ''),
+(441, 2, 0, 'English US', '', 'pkg_en-US', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/en-US_details.xml', '', ''),
+(442, 2, 0, 'Swedish', '', 'pkg_sv-SE', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/sv-SE_details.xml', '', ''),
+(443, 2, 0, 'Syriac', '', 'pkg_sy-IQ', 'package', '', 0, '3.4.5.1', '', 'https://update.joomla.org/language/details3/sy-IQ_details.xml', '', ''),
+(444, 2, 0, 'Tamil', '', 'pkg_ta-IN', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/ta-IN_details.xml', '', ''),
+(445, 2, 0, 'Thai', '', 'pkg_th-TH', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/th-TH_details.xml', '', ''),
+(446, 2, 0, 'Turkish', '', 'pkg_tr-TR', 'package', '', 0, '3.9.4.1', '', 'https://update.joomla.org/language/details3/tr-TR_details.xml', '', ''),
+(447, 2, 0, 'Ukrainian', '', 'pkg_uk-UA', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/uk-UA_details.xml', '', ''),
+(448, 2, 0, 'Uyghur', '', 'pkg_ug-CN', 'package', '', 0, '3.7.5.2', '', 'https://update.joomla.org/language/details3/ug-CN_details.xml', '', ''),
+(449, 2, 0, 'Albanian', '', 'pkg_sq-AL', 'package', '', 0, '3.1.1.2', '', 'https://update.joomla.org/language/details3/sq-AL_details.xml', '', ''),
+(450, 2, 0, 'Basque', '', 'pkg_eu-ES', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/eu-ES_details.xml', '', ''),
+(451, 2, 0, 'Hindi', '', 'pkg_hi-IN', 'package', '', 0, '3.3.6.2', '', 'https://update.joomla.org/language/details3/hi-IN_details.xml', '', ''),
+(452, 2, 0, 'German DE', '', 'pkg_de-DE', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/de-DE_details.xml', '', ''),
+(453, 2, 0, 'Portuguese Brazil', '', 'pkg_pt-BR', 'package', '', 0, '3.9.21.1', '', 'https://update.joomla.org/language/details3/pt-BR_details.xml', '', ''),
+(454, 2, 0, 'Serbian Latin', '', 'pkg_sr-YU', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/sr-YU_details.xml', '', ''),
+(455, 2, 0, 'Bosnian', '', 'pkg_bs-BA', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/bs-BA_details.xml', '', ''),
+(456, 2, 0, 'Serbian Cyrillic', '', 'pkg_sr-RS', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/sr-RS_details.xml', '', ''),
+(457, 2, 0, 'Vietnamese', '', 'pkg_vi-VN', 'package', '', 0, '3.2.1.2', '', 'https://update.joomla.org/language/details3/vi-VN_details.xml', '', ''),
+(458, 2, 0, 'Bahasa Indonesia', '', 'pkg_id-ID', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/id-ID_details.xml', '', ''),
+(459, 2, 0, 'Finnish', '', 'pkg_fi-FI', 'package', '', 0, '3.9.16.1', '', 'https://update.joomla.org/language/details3/fi-FI_details.xml', '', ''),
+(460, 2, 0, 'Swahili', '', 'pkg_sw-KE', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/sw-KE_details.xml', '', ''),
+(461, 2, 0, 'Montenegrin', '', 'pkg_srp-ME', 'package', '', 0, '3.3.1.2', '', 'https://update.joomla.org/language/details3/srp-ME_details.xml', '', ''),
+(462, 2, 0, 'English CA', '', 'pkg_en-CA', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/en-CA_details.xml', '', ''),
+(463, 2, 0, 'French CA', '', 'pkg_fr-CA', 'package', '', 0, '3.6.5.1', '', 'https://update.joomla.org/language/details3/fr-CA_details.xml', '', ''),
+(464, 2, 0, 'Welsh', '', 'pkg_cy-GB', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/cy-GB_details.xml', '', ''),
+(465, 2, 0, 'Sinhala', '', 'pkg_si-LK', 'package', '', 0, '3.3.1.2', '', 'https://update.joomla.org/language/details3/si-LK_details.xml', '', ''),
+(466, 2, 0, 'Dari Persian', '', 'pkg_prs-AF', 'package', '', 0, '3.4.4.3', '', 'https://update.joomla.org/language/details3/prs-AF_details.xml', '', ''),
+(467, 2, 0, 'Turkmen', '', 'pkg_tk-TM', 'package', '', 0, '3.5.0.2', '', 'https://update.joomla.org/language/details3/tk-TM_details.xml', '', ''),
+(468, 2, 0, 'Irish', '', 'pkg_ga-IE', 'package', '', 0, '3.8.13.1', '', 'https://update.joomla.org/language/details3/ga-IE_details.xml', '', ''),
+(469, 2, 0, 'Dzongkha', '', 'pkg_dz-BT', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/dz-BT_details.xml', '', ''),
+(470, 2, 0, 'Slovenian', '', 'pkg_sl-SI', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/sl-SI_details.xml', '', ''),
+(471, 2, 0, 'Spanish CO', '', 'pkg_es-CO', 'package', '', 0, '3.9.15.1', '', 'https://update.joomla.org/language/details3/es-CO_details.xml', '', ''),
+(472, 2, 0, 'German CH', '', 'pkg_de-CH', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/de-CH_details.xml', '', ''),
+(473, 2, 0, 'German AT', '', 'pkg_de-AT', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/de-AT_details.xml', '', ''),
+(474, 2, 0, 'German LI', '', 'pkg_de-LI', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/de-LI_details.xml', '', ''),
+(475, 2, 0, 'German LU', '', 'pkg_de-LU', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/de-LU_details.xml', '', ''),
+(476, 2, 0, 'English NZ', '', 'pkg_en-NZ', 'package', '', 0, '3.9.24.1', '', 'https://update.joomla.org/language/details3/en-NZ_details.xml', '', ''),
+(477, 2, 0, 'Kazakh', '', 'pkg_kk-KZ', 'package', '', 0, '3.9.23.1', '', 'https://update.joomla.org/language/details3/kk-KZ_details.xml', '', ''),
+(478, 5, 10005, 'System - Helix Ultimate Framework', '', 'helixultimate', 'plugin', 'system', 0, '1.1.2', '', 'http://www.joomshaper.com/updates/plg-system-helixultimate.xml', '', ''),
+(479, 6, 0, 'shaper_helixultimate', 'Shaper Helixultimate', 'shaper_helixultimate', 'template', '', 0, '1.1.2', '', 'https://www.joomshaper.com/updates/shaper-helixultimate.xml', '', '');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_update_sites`
+-- Table structure for table `f3ts9_update_sites`
 --
 
 CREATE TABLE `f3ts9_update_sites` (
@@ -3252,24 +3414,24 @@ CREATE TABLE `f3ts9_update_sites` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Update Sites';
 
 --
--- Volcado de datos para la tabla `f3ts9_update_sites`
+-- Dumping data for table `f3ts9_update_sites`
 --
 
 INSERT INTO `f3ts9_update_sites` (`update_site_id`, `name`, `type`, `location`, `enabled`, `last_check_timestamp`, `extra_query`) VALUES
-(1, 'Joomla! Core', 'collection', 'https://update.joomla.org/core/list.xml', 1, 1612748535, ''),
-(2, 'Accredited Joomla! Translations', 'collection', 'https://update.joomla.org/language/translationlist_3.xml', 1, 1612734092, ''),
-(3, 'Joomla! Update Component Update Site', 'extension', 'https://update.joomla.org/core/extensions/com_joomlaupdate.xml', 1, 1612730350, ''),
-(4, 'WebInstaller Update Site', 'extension', 'https://appscdn.joomla.org/webapps/jedapps/webinstaller.xml', 1, 1612734093, ''),
-(5, 'System - Helix Ultimate Framework', 'extension', 'http://www.joomshaper.com/updates/plg-system-helixultimate.xml', 1, 1612734093, ''),
-(6, 'shaper_helixultimate', 'extension', 'https://www.joomshaper.com/updates/shaper-helixultimate.xml', 1, 1612734093, ''),
-(7, 'Easy File Uploader', 'extension', 'https://www.valorapps.com/index.php/component/pureupdateserver/extension/xml/3/file.xml', 1, 1612734095, ''),
+(1, 'Joomla! Core', 'collection', 'https://update.joomla.org/core/list.xml', 1, 1612770339, ''),
+(2, 'Accredited Joomla! Translations', 'collection', 'https://update.joomla.org/language/translationlist_3.xml', 1, 1612770344, ''),
+(3, 'Joomla! Update Component Update Site', 'extension', 'https://update.joomla.org/core/extensions/com_joomlaupdate.xml', 1, 1612770344, ''),
+(4, 'WebInstaller Update Site', 'extension', 'https://appscdn.joomla.org/webapps/jedapps/webinstaller.xml', 1, 1612770345, ''),
+(5, 'System - Helix Ultimate Framework', 'extension', 'http://www.joomshaper.com/updates/plg-system-helixultimate.xml', 1, 1612770347, ''),
+(6, 'shaper_helixultimate', 'extension', 'https://www.joomshaper.com/updates/shaper-helixultimate.xml', 1, 1612770348, ''),
+(7, 'Easy File Uploader', 'extension', 'https://www.valorapps.com/index.php/component/pureupdateserver/extension/xml/3/file.xml', 1, 1612770350, ''),
 (8, 'DJ-ImageSlider Package', 'extension', 'http://dj-extensions.com/updates/djimageslider.xml', 0, 0, ''),
-(9, 'AllVideos', 'extension', 'https://cdn.joomlaworks.org/updates/allvideos.xml', 1, 1612734096, '');
+(9, 'AllVideos', 'extension', 'https://cdn.joomlaworks.org/updates/allvideos.xml', 1, 1612770351, '');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_update_sites_extensions`
+-- Table structure for table `f3ts9_update_sites_extensions`
 --
 
 CREATE TABLE `f3ts9_update_sites_extensions` (
@@ -3278,7 +3440,7 @@ CREATE TABLE `f3ts9_update_sites_extensions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Links extensions to update sites';
 
 --
--- Volcado de datos para la tabla `f3ts9_update_sites_extensions`
+-- Dumping data for table `f3ts9_update_sites_extensions`
 --
 
 INSERT INTO `f3ts9_update_sites_extensions` (`update_site_id`, `extension_id`) VALUES
@@ -3296,7 +3458,7 @@ INSERT INTO `f3ts9_update_sites_extensions` (`update_site_id`, `extension_id`) V
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_usergroups`
+-- Table structure for table `f3ts9_usergroups`
 --
 
 CREATE TABLE `f3ts9_usergroups` (
@@ -3308,7 +3470,7 @@ CREATE TABLE `f3ts9_usergroups` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_usergroups`
+-- Dumping data for table `f3ts9_usergroups`
 --
 
 INSERT INTO `f3ts9_usergroups` (`id`, `parent_id`, `lft`, `rgt`, `title`) VALUES
@@ -3328,7 +3490,7 @@ INSERT INTO `f3ts9_usergroups` (`id`, `parent_id`, `lft`, `rgt`, `title`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_users`
+-- Table structure for table `f3ts9_users`
 --
 
 CREATE TABLE `f3ts9_users` (
@@ -3351,11 +3513,11 @@ CREATE TABLE `f3ts9_users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_users`
+-- Dumping data for table `f3ts9_users`
 --
 
 INSERT INTO `f3ts9_users` (`id`, `name`, `username`, `email`, `password`, `block`, `sendEmail`, `registerDate`, `lastvisitDate`, `activation`, `params`, `lastResetTime`, `resetCount`, `otpKey`, `otep`, `requireReset`) VALUES
-(380, 'Super User', 'danielM117', 'lfquizhpe1@utpl.edu.ec', '$2y$10$.q26ni62C9gJhkHL2kkjCeLDs3leUfXlLfC0zEW1l9wn/2UttyNdm', 0, 1, '2021-02-06 01:23:07', '2021-02-08 07:03:46', '0', '', '0000-00-00 00:00:00', 0, '', '', 0),
+(380, 'Super User', 'danielM117', 'lfquizhpe1@utpl.edu.ec', '$2y$10$.q26ni62C9gJhkHL2kkjCeLDs3leUfXlLfC0zEW1l9wn/2UttyNdm', 0, 1, '2021-02-06 01:23:07', '2021-02-08 07:51:03', '0', '', '0000-00-00 00:00:00', 0, '', '', 0),
 (381, 'Docente', 'docente', 'docente@ejemplo.com', '$2y$10$CgpRlf53BxngtZCj1ViytedlHYgQI68VMH/qb86URluGg8xpRD1tW', 0, 0, '2021-02-06 16:56:01', '0000-00-00 00:00:00', '', '{\"admin_style\":\"\",\"admin_language\":\"\",\"language\":\"\",\"editor\":\"\",\"timezone\":\"\"}', '0000-00-00 00:00:00', 0, '', '', 0),
 (382, 'Estudiante', 'estudiante', 'estudiante@ejemplo.com', '$2y$10$6ViJK3m/iQ5/Q8iBXjo4lureDVsRGk8erl3Qm8GHkXzPC0fjxgxpW', 0, 0, '2021-02-06 16:57:03', '2021-02-07 00:04:19', '', '{\"admin_style\":\"\",\"admin_language\":\"\",\"language\":\"\",\"editor\":\"\",\"timezone\":\"\"}', '0000-00-00 00:00:00', 0, '', '', 0),
 (383, 'Supervisor', 'supervisor', 'supervisor@ejemplo.com', '$2y$10$4k2tyf3bzvL2auuyt/D4JuatP3.hUdAaQqRMUuWze4a2fxep40HL.', 0, 0, '2021-02-06 16:58:16', '0000-00-00 00:00:00', '', '{\"admin_style\":\"\",\"admin_language\":\"\",\"language\":\"\",\"editor\":\"\",\"timezone\":\"\"}', '0000-00-00 00:00:00', 0, '', '', 0),
@@ -3365,7 +3527,7 @@ INSERT INTO `f3ts9_users` (`id`, `name`, `username`, `email`, `password`, `block
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_user_keys`
+-- Table structure for table `f3ts9_user_keys`
 --
 
 CREATE TABLE `f3ts9_user_keys` (
@@ -3381,7 +3543,7 @@ CREATE TABLE `f3ts9_user_keys` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_user_notes`
+-- Table structure for table `f3ts9_user_notes`
 --
 
 CREATE TABLE `f3ts9_user_notes` (
@@ -3405,7 +3567,7 @@ CREATE TABLE `f3ts9_user_notes` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_user_profiles`
+-- Table structure for table `f3ts9_user_profiles`
 --
 
 CREATE TABLE `f3ts9_user_profiles` (
@@ -3416,7 +3578,7 @@ CREATE TABLE `f3ts9_user_profiles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Simple user profile storage table';
 
 --
--- Volcado de datos para la tabla `f3ts9_user_profiles`
+-- Dumping data for table `f3ts9_user_profiles`
 --
 
 INSERT INTO `f3ts9_user_profiles` (`user_id`, `profile_key`, `profile_value`, `ordering`) VALUES
@@ -3454,7 +3616,7 @@ INSERT INTO `f3ts9_user_profiles` (`user_id`, `profile_key`, `profile_value`, `o
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_user_usergroup_map`
+-- Table structure for table `f3ts9_user_usergroup_map`
 --
 
 CREATE TABLE `f3ts9_user_usergroup_map` (
@@ -3463,7 +3625,7 @@ CREATE TABLE `f3ts9_user_usergroup_map` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_user_usergroup_map`
+-- Dumping data for table `f3ts9_user_usergroup_map`
 --
 
 INSERT INTO `f3ts9_user_usergroup_map` (`user_id`, `group_id`) VALUES
@@ -3477,7 +3639,7 @@ INSERT INTO `f3ts9_user_usergroup_map` (`user_id`, `group_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_utf8_conversion`
+-- Table structure for table `f3ts9_utf8_conversion`
 --
 
 CREATE TABLE `f3ts9_utf8_conversion` (
@@ -3485,7 +3647,7 @@ CREATE TABLE `f3ts9_utf8_conversion` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_utf8_conversion`
+-- Dumping data for table `f3ts9_utf8_conversion`
 --
 
 INSERT INTO `f3ts9_utf8_conversion` (`converted`) VALUES
@@ -3494,7 +3656,7 @@ INSERT INTO `f3ts9_utf8_conversion` (`converted`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `f3ts9_viewlevels`
+-- Table structure for table `f3ts9_viewlevels`
 --
 
 CREATE TABLE `f3ts9_viewlevels` (
@@ -3505,7 +3667,7 @@ CREATE TABLE `f3ts9_viewlevels` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `f3ts9_viewlevels`
+-- Dumping data for table `f3ts9_viewlevels`
 --
 
 INSERT INTO `f3ts9_viewlevels` (`id`, `title`, `ordering`, `rules`) VALUES
@@ -3516,11 +3678,11 @@ INSERT INTO `f3ts9_viewlevels` (`id`, `title`, `ordering`, `rules`) VALUES
 (6, 'Super Users', 4, '[8]');
 
 --
--- Índices para tablas volcadas
+-- Indexes for dumped tables
 --
 
 --
--- Indices de la tabla `f3ts9_action_logs`
+-- Indexes for table `f3ts9_action_logs`
 --
 ALTER TABLE `f3ts9_action_logs`
   ADD PRIMARY KEY (`id`),
@@ -3530,26 +3692,26 @@ ALTER TABLE `f3ts9_action_logs`
   ADD KEY `idx_extension_item_id` (`extension`,`item_id`);
 
 --
--- Indices de la tabla `f3ts9_action_logs_extensions`
+-- Indexes for table `f3ts9_action_logs_extensions`
 --
 ALTER TABLE `f3ts9_action_logs_extensions`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `f3ts9_action_logs_users`
+-- Indexes for table `f3ts9_action_logs_users`
 --
 ALTER TABLE `f3ts9_action_logs_users`
   ADD PRIMARY KEY (`user_id`),
   ADD KEY `idx_notify` (`notify`);
 
 --
--- Indices de la tabla `f3ts9_action_log_config`
+-- Indexes for table `f3ts9_action_log_config`
 --
 ALTER TABLE `f3ts9_action_log_config`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `f3ts9_assets`
+-- Indexes for table `f3ts9_assets`
 --
 ALTER TABLE `f3ts9_assets`
   ADD PRIMARY KEY (`id`),
@@ -3558,14 +3720,14 @@ ALTER TABLE `f3ts9_assets`
   ADD KEY `idx_parent_id` (`parent_id`);
 
 --
--- Indices de la tabla `f3ts9_associations`
+-- Indexes for table `f3ts9_associations`
 --
 ALTER TABLE `f3ts9_associations`
   ADD PRIMARY KEY (`context`,`id`),
   ADD KEY `idx_key` (`key`);
 
 --
--- Indices de la tabla `f3ts9_banners`
+-- Indexes for table `f3ts9_banners`
 --
 ALTER TABLE `f3ts9_banners`
   ADD PRIMARY KEY (`id`),
@@ -3576,7 +3738,7 @@ ALTER TABLE `f3ts9_banners`
   ADD KEY `idx_language` (`language`);
 
 --
--- Indices de la tabla `f3ts9_banner_clients`
+-- Indexes for table `f3ts9_banner_clients`
 --
 ALTER TABLE `f3ts9_banner_clients`
   ADD PRIMARY KEY (`id`),
@@ -3584,7 +3746,7 @@ ALTER TABLE `f3ts9_banner_clients`
   ADD KEY `idx_metakey_prefix` (`metakey_prefix`(100));
 
 --
--- Indices de la tabla `f3ts9_banner_tracks`
+-- Indexes for table `f3ts9_banner_tracks`
 --
 ALTER TABLE `f3ts9_banner_tracks`
   ADD PRIMARY KEY (`track_date`,`track_type`,`banner_id`),
@@ -3593,7 +3755,7 @@ ALTER TABLE `f3ts9_banner_tracks`
   ADD KEY `idx_banner_id` (`banner_id`);
 
 --
--- Indices de la tabla `f3ts9_categories`
+-- Indexes for table `f3ts9_categories`
 --
 ALTER TABLE `f3ts9_categories`
   ADD PRIMARY KEY (`id`),
@@ -3606,7 +3768,7 @@ ALTER TABLE `f3ts9_categories`
   ADD KEY `idx_language` (`language`);
 
 --
--- Indices de la tabla `f3ts9_contact_details`
+-- Indexes for table `f3ts9_contact_details`
 --
 ALTER TABLE `f3ts9_contact_details`
   ADD PRIMARY KEY (`id`),
@@ -3620,7 +3782,7 @@ ALTER TABLE `f3ts9_contact_details`
   ADD KEY `idx_xreference` (`xreference`);
 
 --
--- Indices de la tabla `f3ts9_content`
+-- Indexes for table `f3ts9_content`
 --
 ALTER TABLE `f3ts9_content`
   ADD PRIMARY KEY (`id`),
@@ -3635,7 +3797,7 @@ ALTER TABLE `f3ts9_content`
   ADD KEY `idx_alias` (`alias`(191));
 
 --
--- Indices de la tabla `f3ts9_contentitem_tag_map`
+-- Indexes for table `f3ts9_contentitem_tag_map`
 --
 ALTER TABLE `f3ts9_contentitem_tag_map`
   ADD UNIQUE KEY `uc_ItemnameTagid` (`type_id`,`content_item_id`,`tag_id`),
@@ -3644,33 +3806,33 @@ ALTER TABLE `f3ts9_contentitem_tag_map`
   ADD KEY `idx_core_content_id` (`core_content_id`);
 
 --
--- Indices de la tabla `f3ts9_content_frontpage`
+-- Indexes for table `f3ts9_content_frontpage`
 --
 ALTER TABLE `f3ts9_content_frontpage`
   ADD PRIMARY KEY (`content_id`);
 
 --
--- Indices de la tabla `f3ts9_content_rating`
+-- Indexes for table `f3ts9_content_rating`
 --
 ALTER TABLE `f3ts9_content_rating`
   ADD PRIMARY KEY (`content_id`);
 
 --
--- Indices de la tabla `f3ts9_content_types`
+-- Indexes for table `f3ts9_content_types`
 --
 ALTER TABLE `f3ts9_content_types`
   ADD PRIMARY KEY (`type_id`),
   ADD KEY `idx_alias` (`type_alias`(100));
 
 --
--- Indices de la tabla `f3ts9_djimageslider`
+-- Indexes for table `f3ts9_djimageslider`
 --
 ALTER TABLE `f3ts9_djimageslider`
   ADD PRIMARY KEY (`id`),
   ADD KEY `catid` (`catid`,`published`);
 
 --
--- Indices de la tabla `f3ts9_extensions`
+-- Indexes for table `f3ts9_extensions`
 --
 ALTER TABLE `f3ts9_extensions`
   ADD PRIMARY KEY (`extension_id`),
@@ -3679,7 +3841,7 @@ ALTER TABLE `f3ts9_extensions`
   ADD KEY `extension` (`type`,`element`,`folder`,`client_id`);
 
 --
--- Indices de la tabla `f3ts9_fields`
+-- Indexes for table `f3ts9_fields`
 --
 ALTER TABLE `f3ts9_fields`
   ADD PRIMARY KEY (`id`),
@@ -3691,13 +3853,13 @@ ALTER TABLE `f3ts9_fields`
   ADD KEY `idx_language` (`language`);
 
 --
--- Indices de la tabla `f3ts9_fields_categories`
+-- Indexes for table `f3ts9_fields_categories`
 --
 ALTER TABLE `f3ts9_fields_categories`
   ADD PRIMARY KEY (`field_id`,`category_id`);
 
 --
--- Indices de la tabla `f3ts9_fields_groups`
+-- Indexes for table `f3ts9_fields_groups`
 --
 ALTER TABLE `f3ts9_fields_groups`
   ADD PRIMARY KEY (`id`),
@@ -3709,20 +3871,20 @@ ALTER TABLE `f3ts9_fields_groups`
   ADD KEY `idx_language` (`language`);
 
 --
--- Indices de la tabla `f3ts9_fields_values`
+-- Indexes for table `f3ts9_fields_values`
 --
 ALTER TABLE `f3ts9_fields_values`
   ADD KEY `idx_field_id` (`field_id`),
   ADD KEY `idx_item_id` (`item_id`(191));
 
 --
--- Indices de la tabla `f3ts9_finder_filters`
+-- Indexes for table `f3ts9_finder_filters`
 --
 ALTER TABLE `f3ts9_finder_filters`
   ADD PRIMARY KEY (`filter_id`);
 
 --
--- Indices de la tabla `f3ts9_finder_links`
+-- Indexes for table `f3ts9_finder_links`
 --
 ALTER TABLE `f3ts9_finder_links`
   ADD PRIMARY KEY (`link_id`),
@@ -3734,7 +3896,7 @@ ALTER TABLE `f3ts9_finder_links`
   ADD KEY `idx_published_sale` (`published`,`state`,`access`,`publish_start_date`,`publish_end_date`,`sale_price`);
 
 --
--- Indices de la tabla `f3ts9_finder_links_terms0`
+-- Indexes for table `f3ts9_finder_links_terms0`
 --
 ALTER TABLE `f3ts9_finder_links_terms0`
   ADD PRIMARY KEY (`link_id`,`term_id`),
@@ -3742,7 +3904,7 @@ ALTER TABLE `f3ts9_finder_links_terms0`
   ADD KEY `idx_link_term_weight` (`link_id`,`term_id`,`weight`);
 
 --
--- Indices de la tabla `f3ts9_finder_links_terms1`
+-- Indexes for table `f3ts9_finder_links_terms1`
 --
 ALTER TABLE `f3ts9_finder_links_terms1`
   ADD PRIMARY KEY (`link_id`,`term_id`),
@@ -3750,7 +3912,7 @@ ALTER TABLE `f3ts9_finder_links_terms1`
   ADD KEY `idx_link_term_weight` (`link_id`,`term_id`,`weight`);
 
 --
--- Indices de la tabla `f3ts9_finder_links_terms2`
+-- Indexes for table `f3ts9_finder_links_terms2`
 --
 ALTER TABLE `f3ts9_finder_links_terms2`
   ADD PRIMARY KEY (`link_id`,`term_id`),
@@ -3758,7 +3920,7 @@ ALTER TABLE `f3ts9_finder_links_terms2`
   ADD KEY `idx_link_term_weight` (`link_id`,`term_id`,`weight`);
 
 --
--- Indices de la tabla `f3ts9_finder_links_terms3`
+-- Indexes for table `f3ts9_finder_links_terms3`
 --
 ALTER TABLE `f3ts9_finder_links_terms3`
   ADD PRIMARY KEY (`link_id`,`term_id`),
@@ -3766,7 +3928,7 @@ ALTER TABLE `f3ts9_finder_links_terms3`
   ADD KEY `idx_link_term_weight` (`link_id`,`term_id`,`weight`);
 
 --
--- Indices de la tabla `f3ts9_finder_links_terms4`
+-- Indexes for table `f3ts9_finder_links_terms4`
 --
 ALTER TABLE `f3ts9_finder_links_terms4`
   ADD PRIMARY KEY (`link_id`,`term_id`),
@@ -3774,7 +3936,7 @@ ALTER TABLE `f3ts9_finder_links_terms4`
   ADD KEY `idx_link_term_weight` (`link_id`,`term_id`,`weight`);
 
 --
--- Indices de la tabla `f3ts9_finder_links_terms5`
+-- Indexes for table `f3ts9_finder_links_terms5`
 --
 ALTER TABLE `f3ts9_finder_links_terms5`
   ADD PRIMARY KEY (`link_id`,`term_id`),
@@ -3782,7 +3944,7 @@ ALTER TABLE `f3ts9_finder_links_terms5`
   ADD KEY `idx_link_term_weight` (`link_id`,`term_id`,`weight`);
 
 --
--- Indices de la tabla `f3ts9_finder_links_terms6`
+-- Indexes for table `f3ts9_finder_links_terms6`
 --
 ALTER TABLE `f3ts9_finder_links_terms6`
   ADD PRIMARY KEY (`link_id`,`term_id`),
@@ -3790,7 +3952,7 @@ ALTER TABLE `f3ts9_finder_links_terms6`
   ADD KEY `idx_link_term_weight` (`link_id`,`term_id`,`weight`);
 
 --
--- Indices de la tabla `f3ts9_finder_links_terms7`
+-- Indexes for table `f3ts9_finder_links_terms7`
 --
 ALTER TABLE `f3ts9_finder_links_terms7`
   ADD PRIMARY KEY (`link_id`,`term_id`),
@@ -3798,7 +3960,7 @@ ALTER TABLE `f3ts9_finder_links_terms7`
   ADD KEY `idx_link_term_weight` (`link_id`,`term_id`,`weight`);
 
 --
--- Indices de la tabla `f3ts9_finder_links_terms8`
+-- Indexes for table `f3ts9_finder_links_terms8`
 --
 ALTER TABLE `f3ts9_finder_links_terms8`
   ADD PRIMARY KEY (`link_id`,`term_id`),
@@ -3806,7 +3968,7 @@ ALTER TABLE `f3ts9_finder_links_terms8`
   ADD KEY `idx_link_term_weight` (`link_id`,`term_id`,`weight`);
 
 --
--- Indices de la tabla `f3ts9_finder_links_terms9`
+-- Indexes for table `f3ts9_finder_links_terms9`
 --
 ALTER TABLE `f3ts9_finder_links_terms9`
   ADD PRIMARY KEY (`link_id`,`term_id`),
@@ -3814,7 +3976,7 @@ ALTER TABLE `f3ts9_finder_links_terms9`
   ADD KEY `idx_link_term_weight` (`link_id`,`term_id`,`weight`);
 
 --
--- Indices de la tabla `f3ts9_finder_links_termsa`
+-- Indexes for table `f3ts9_finder_links_termsa`
 --
 ALTER TABLE `f3ts9_finder_links_termsa`
   ADD PRIMARY KEY (`link_id`,`term_id`),
@@ -3822,7 +3984,7 @@ ALTER TABLE `f3ts9_finder_links_termsa`
   ADD KEY `idx_link_term_weight` (`link_id`,`term_id`,`weight`);
 
 --
--- Indices de la tabla `f3ts9_finder_links_termsb`
+-- Indexes for table `f3ts9_finder_links_termsb`
 --
 ALTER TABLE `f3ts9_finder_links_termsb`
   ADD PRIMARY KEY (`link_id`,`term_id`),
@@ -3830,7 +3992,7 @@ ALTER TABLE `f3ts9_finder_links_termsb`
   ADD KEY `idx_link_term_weight` (`link_id`,`term_id`,`weight`);
 
 --
--- Indices de la tabla `f3ts9_finder_links_termsc`
+-- Indexes for table `f3ts9_finder_links_termsc`
 --
 ALTER TABLE `f3ts9_finder_links_termsc`
   ADD PRIMARY KEY (`link_id`,`term_id`),
@@ -3838,7 +4000,7 @@ ALTER TABLE `f3ts9_finder_links_termsc`
   ADD KEY `idx_link_term_weight` (`link_id`,`term_id`,`weight`);
 
 --
--- Indices de la tabla `f3ts9_finder_links_termsd`
+-- Indexes for table `f3ts9_finder_links_termsd`
 --
 ALTER TABLE `f3ts9_finder_links_termsd`
   ADD PRIMARY KEY (`link_id`,`term_id`),
@@ -3846,7 +4008,7 @@ ALTER TABLE `f3ts9_finder_links_termsd`
   ADD KEY `idx_link_term_weight` (`link_id`,`term_id`,`weight`);
 
 --
--- Indices de la tabla `f3ts9_finder_links_termse`
+-- Indexes for table `f3ts9_finder_links_termse`
 --
 ALTER TABLE `f3ts9_finder_links_termse`
   ADD PRIMARY KEY (`link_id`,`term_id`),
@@ -3854,7 +4016,7 @@ ALTER TABLE `f3ts9_finder_links_termse`
   ADD KEY `idx_link_term_weight` (`link_id`,`term_id`,`weight`);
 
 --
--- Indices de la tabla `f3ts9_finder_links_termsf`
+-- Indexes for table `f3ts9_finder_links_termsf`
 --
 ALTER TABLE `f3ts9_finder_links_termsf`
   ADD PRIMARY KEY (`link_id`,`term_id`),
@@ -3862,7 +4024,7 @@ ALTER TABLE `f3ts9_finder_links_termsf`
   ADD KEY `idx_link_term_weight` (`link_id`,`term_id`,`weight`);
 
 --
--- Indices de la tabla `f3ts9_finder_taxonomy`
+-- Indexes for table `f3ts9_finder_taxonomy`
 --
 ALTER TABLE `f3ts9_finder_taxonomy`
   ADD PRIMARY KEY (`id`),
@@ -3873,7 +4035,7 @@ ALTER TABLE `f3ts9_finder_taxonomy`
   ADD KEY `idx_parent_published` (`parent_id`,`state`,`access`);
 
 --
--- Indices de la tabla `f3ts9_finder_taxonomy_map`
+-- Indexes for table `f3ts9_finder_taxonomy_map`
 --
 ALTER TABLE `f3ts9_finder_taxonomy_map`
   ADD PRIMARY KEY (`link_id`,`node_id`),
@@ -3881,7 +4043,7 @@ ALTER TABLE `f3ts9_finder_taxonomy_map`
   ADD KEY `node_id` (`node_id`);
 
 --
--- Indices de la tabla `f3ts9_finder_terms`
+-- Indexes for table `f3ts9_finder_terms`
 --
 ALTER TABLE `f3ts9_finder_terms`
   ADD PRIMARY KEY (`term_id`),
@@ -3891,35 +4053,35 @@ ALTER TABLE `f3ts9_finder_terms`
   ADD KEY `idx_soundex_phrase` (`soundex`,`phrase`);
 
 --
--- Indices de la tabla `f3ts9_finder_terms_common`
+-- Indexes for table `f3ts9_finder_terms_common`
 --
 ALTER TABLE `f3ts9_finder_terms_common`
   ADD KEY `idx_word_lang` (`term`,`language`),
   ADD KEY `idx_lang` (`language`);
 
 --
--- Indices de la tabla `f3ts9_finder_tokens`
+-- Indexes for table `f3ts9_finder_tokens`
 --
 ALTER TABLE `f3ts9_finder_tokens`
   ADD KEY `idx_word` (`term`),
   ADD KEY `idx_context` (`context`);
 
 --
--- Indices de la tabla `f3ts9_finder_tokens_aggregate`
+-- Indexes for table `f3ts9_finder_tokens_aggregate`
 --
 ALTER TABLE `f3ts9_finder_tokens_aggregate`
   ADD KEY `token` (`term`),
   ADD KEY `keyword_id` (`term_id`);
 
 --
--- Indices de la tabla `f3ts9_finder_types`
+-- Indexes for table `f3ts9_finder_types`
 --
 ALTER TABLE `f3ts9_finder_types`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `title` (`title`);
 
 --
--- Indices de la tabla `f3ts9_languages`
+-- Indexes for table `f3ts9_languages`
 --
 ALTER TABLE `f3ts9_languages`
   ADD PRIMARY KEY (`lang_id`),
@@ -3929,7 +4091,7 @@ ALTER TABLE `f3ts9_languages`
   ADD KEY `idx_ordering` (`ordering`);
 
 --
--- Indices de la tabla `f3ts9_menu`
+-- Indexes for table `f3ts9_menu`
 --
 ALTER TABLE `f3ts9_menu`
   ADD PRIMARY KEY (`id`),
@@ -3942,27 +4104,27 @@ ALTER TABLE `f3ts9_menu`
   ADD KEY `idx_language` (`language`);
 
 --
--- Indices de la tabla `f3ts9_menu_types`
+-- Indexes for table `f3ts9_menu_types`
 --
 ALTER TABLE `f3ts9_menu_types`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `idx_menutype` (`menutype`);
 
 --
--- Indices de la tabla `f3ts9_messages`
+-- Indexes for table `f3ts9_messages`
 --
 ALTER TABLE `f3ts9_messages`
   ADD PRIMARY KEY (`message_id`),
   ADD KEY `useridto_state` (`user_id_to`,`state`);
 
 --
--- Indices de la tabla `f3ts9_messages_cfg`
+-- Indexes for table `f3ts9_messages_cfg`
 --
 ALTER TABLE `f3ts9_messages_cfg`
   ADD UNIQUE KEY `idx_user_var_name` (`user_id`,`cfg_name`);
 
 --
--- Indices de la tabla `f3ts9_modules`
+-- Indexes for table `f3ts9_modules`
 --
 ALTER TABLE `f3ts9_modules`
   ADD PRIMARY KEY (`id`),
@@ -3971,13 +4133,13 @@ ALTER TABLE `f3ts9_modules`
   ADD KEY `idx_language` (`language`);
 
 --
--- Indices de la tabla `f3ts9_modules_menu`
+-- Indexes for table `f3ts9_modules_menu`
 --
 ALTER TABLE `f3ts9_modules_menu`
   ADD PRIMARY KEY (`moduleid`,`menuid`);
 
 --
--- Indices de la tabla `f3ts9_newsfeeds`
+-- Indexes for table `f3ts9_newsfeeds`
 --
 ALTER TABLE `f3ts9_newsfeeds`
   ADD PRIMARY KEY (`id`),
@@ -3990,32 +4152,32 @@ ALTER TABLE `f3ts9_newsfeeds`
   ADD KEY `idx_xreference` (`xreference`);
 
 --
--- Indices de la tabla `f3ts9_overrider`
+-- Indexes for table `f3ts9_overrider`
 --
 ALTER TABLE `f3ts9_overrider`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `f3ts9_postinstall_messages`
+-- Indexes for table `f3ts9_postinstall_messages`
 --
 ALTER TABLE `f3ts9_postinstall_messages`
   ADD PRIMARY KEY (`postinstall_message_id`);
 
 --
--- Indices de la tabla `f3ts9_privacy_consents`
+-- Indexes for table `f3ts9_privacy_consents`
 --
 ALTER TABLE `f3ts9_privacy_consents`
   ADD PRIMARY KEY (`id`),
   ADD KEY `idx_user_id` (`user_id`);
 
 --
--- Indices de la tabla `f3ts9_privacy_requests`
+-- Indexes for table `f3ts9_privacy_requests`
 --
 ALTER TABLE `f3ts9_privacy_requests`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `f3ts9_redirect_links`
+-- Indexes for table `f3ts9_redirect_links`
 --
 ALTER TABLE `f3ts9_redirect_links`
   ADD PRIMARY KEY (`id`),
@@ -4023,13 +4185,13 @@ ALTER TABLE `f3ts9_redirect_links`
   ADD KEY `idx_link_modifed` (`modified_date`);
 
 --
--- Indices de la tabla `f3ts9_schemas`
+-- Indexes for table `f3ts9_schemas`
 --
 ALTER TABLE `f3ts9_schemas`
   ADD PRIMARY KEY (`extension_id`,`version_id`);
 
 --
--- Indices de la tabla `f3ts9_session`
+-- Indexes for table `f3ts9_session`
 --
 ALTER TABLE `f3ts9_session`
   ADD PRIMARY KEY (`session_id`),
@@ -4038,7 +4200,7 @@ ALTER TABLE `f3ts9_session`
   ADD KEY `client_id_guest` (`client_id`,`guest`);
 
 --
--- Indices de la tabla `f3ts9_tags`
+-- Indexes for table `f3ts9_tags`
 --
 ALTER TABLE `f3ts9_tags`
   ADD PRIMARY KEY (`id`),
@@ -4051,7 +4213,7 @@ ALTER TABLE `f3ts9_tags`
   ADD KEY `idx_language` (`language`);
 
 --
--- Indices de la tabla `f3ts9_template_styles`
+-- Indexes for table `f3ts9_template_styles`
 --
 ALTER TABLE `f3ts9_template_styles`
   ADD PRIMARY KEY (`id`),
@@ -4060,7 +4222,7 @@ ALTER TABLE `f3ts9_template_styles`
   ADD KEY `idx_client_id_home` (`client_id`,`home`);
 
 --
--- Indices de la tabla `f3ts9_ucm_base`
+-- Indexes for table `f3ts9_ucm_base`
 --
 ALTER TABLE `f3ts9_ucm_base`
   ADD PRIMARY KEY (`ucm_id`),
@@ -4069,7 +4231,7 @@ ALTER TABLE `f3ts9_ucm_base`
   ADD KEY `idx_ucm_language_id` (`ucm_language_id`);
 
 --
--- Indices de la tabla `f3ts9_ucm_content`
+-- Indexes for table `f3ts9_ucm_content`
 --
 ALTER TABLE `f3ts9_ucm_content`
   ADD PRIMARY KEY (`core_content_id`),
@@ -4087,7 +4249,7 @@ ALTER TABLE `f3ts9_ucm_content`
   ADD KEY `idx_core_type_id` (`core_type_id`);
 
 --
--- Indices de la tabla `f3ts9_ucm_history`
+-- Indexes for table `f3ts9_ucm_history`
 --
 ALTER TABLE `f3ts9_ucm_history`
   ADD PRIMARY KEY (`version_id`),
@@ -4095,25 +4257,25 @@ ALTER TABLE `f3ts9_ucm_history`
   ADD KEY `idx_save_date` (`save_date`);
 
 --
--- Indices de la tabla `f3ts9_updates`
+-- Indexes for table `f3ts9_updates`
 --
 ALTER TABLE `f3ts9_updates`
   ADD PRIMARY KEY (`update_id`);
 
 --
--- Indices de la tabla `f3ts9_update_sites`
+-- Indexes for table `f3ts9_update_sites`
 --
 ALTER TABLE `f3ts9_update_sites`
   ADD PRIMARY KEY (`update_site_id`);
 
 --
--- Indices de la tabla `f3ts9_update_sites_extensions`
+-- Indexes for table `f3ts9_update_sites_extensions`
 --
 ALTER TABLE `f3ts9_update_sites_extensions`
   ADD PRIMARY KEY (`update_site_id`,`extension_id`);
 
 --
--- Indices de la tabla `f3ts9_usergroups`
+-- Indexes for table `f3ts9_usergroups`
 --
 ALTER TABLE `f3ts9_usergroups`
   ADD PRIMARY KEY (`id`),
@@ -4123,7 +4285,7 @@ ALTER TABLE `f3ts9_usergroups`
   ADD KEY `idx_usergroup_nested_set_lookup` (`lft`,`rgt`) USING BTREE;
 
 --
--- Indices de la tabla `f3ts9_users`
+-- Indexes for table `f3ts9_users`
 --
 ALTER TABLE `f3ts9_users`
   ADD PRIMARY KEY (`id`),
@@ -4133,7 +4295,7 @@ ALTER TABLE `f3ts9_users`
   ADD KEY `email` (`email`);
 
 --
--- Indices de la tabla `f3ts9_user_keys`
+-- Indexes for table `f3ts9_user_keys`
 --
 ALTER TABLE `f3ts9_user_keys`
   ADD PRIMARY KEY (`id`),
@@ -4141,7 +4303,7 @@ ALTER TABLE `f3ts9_user_keys`
   ADD KEY `user_id` (`user_id`);
 
 --
--- Indices de la tabla `f3ts9_user_notes`
+-- Indexes for table `f3ts9_user_notes`
 --
 ALTER TABLE `f3ts9_user_notes`
   ADD PRIMARY KEY (`id`),
@@ -4149,270 +4311,270 @@ ALTER TABLE `f3ts9_user_notes`
   ADD KEY `idx_category_id` (`catid`);
 
 --
--- Indices de la tabla `f3ts9_user_profiles`
+-- Indexes for table `f3ts9_user_profiles`
 --
 ALTER TABLE `f3ts9_user_profiles`
   ADD UNIQUE KEY `idx_user_id_profile_key` (`user_id`,`profile_key`);
 
 --
--- Indices de la tabla `f3ts9_user_usergroup_map`
+-- Indexes for table `f3ts9_user_usergroup_map`
 --
 ALTER TABLE `f3ts9_user_usergroup_map`
   ADD PRIMARY KEY (`user_id`,`group_id`);
 
 --
--- Indices de la tabla `f3ts9_viewlevels`
+-- Indexes for table `f3ts9_viewlevels`
 --
 ALTER TABLE `f3ts9_viewlevels`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `idx_assetgroup_title_lookup` (`title`);
 
 --
--- AUTO_INCREMENT de las tablas volcadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_action_logs`
+-- AUTO_INCREMENT for table `f3ts9_action_logs`
 --
 ALTER TABLE `f3ts9_action_logs`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=821;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=914;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_action_logs_extensions`
+-- AUTO_INCREMENT for table `f3ts9_action_logs_extensions`
 --
 ALTER TABLE `f3ts9_action_logs_extensions`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_action_log_config`
+-- AUTO_INCREMENT for table `f3ts9_action_log_config`
 --
 ALTER TABLE `f3ts9_action_log_config`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_assets`
+-- AUTO_INCREMENT for table `f3ts9_assets`
 --
 ALTER TABLE `f3ts9_assets`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Primary Key', AUTO_INCREMENT=146;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Primary Key', AUTO_INCREMENT=159;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_banners`
+-- AUTO_INCREMENT for table `f3ts9_banners`
 --
 ALTER TABLE `f3ts9_banners`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_banner_clients`
+-- AUTO_INCREMENT for table `f3ts9_banner_clients`
 --
 ALTER TABLE `f3ts9_banner_clients`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_categories`
+-- AUTO_INCREMENT for table `f3ts9_categories`
 --
 ALTER TABLE `f3ts9_categories`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_contact_details`
+-- AUTO_INCREMENT for table `f3ts9_contact_details`
 --
 ALTER TABLE `f3ts9_contact_details`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_content`
+-- AUTO_INCREMENT for table `f3ts9_content`
 --
 ALTER TABLE `f3ts9_content`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_content_types`
+-- AUTO_INCREMENT for table `f3ts9_content_types`
 --
 ALTER TABLE `f3ts9_content_types`
   MODIFY `type_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10000;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_djimageslider`
+-- AUTO_INCREMENT for table `f3ts9_djimageslider`
 --
 ALTER TABLE `f3ts9_djimageslider`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_extensions`
+-- AUTO_INCREMENT for table `f3ts9_extensions`
 --
 ALTER TABLE `f3ts9_extensions`
   MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10018;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_fields`
+-- AUTO_INCREMENT for table `f3ts9_fields`
 --
 ALTER TABLE `f3ts9_fields`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_fields_groups`
+-- AUTO_INCREMENT for table `f3ts9_fields_groups`
 --
 ALTER TABLE `f3ts9_fields_groups`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_finder_filters`
+-- AUTO_INCREMENT for table `f3ts9_finder_filters`
 --
 ALTER TABLE `f3ts9_finder_filters`
   MODIFY `filter_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_finder_links`
+-- AUTO_INCREMENT for table `f3ts9_finder_links`
 --
 ALTER TABLE `f3ts9_finder_links`
   MODIFY `link_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_finder_taxonomy`
+-- AUTO_INCREMENT for table `f3ts9_finder_taxonomy`
 --
 ALTER TABLE `f3ts9_finder_taxonomy`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_finder_terms`
+-- AUTO_INCREMENT for table `f3ts9_finder_terms`
 --
 ALTER TABLE `f3ts9_finder_terms`
   MODIFY `term_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_finder_types`
+-- AUTO_INCREMENT for table `f3ts9_finder_types`
 --
 ALTER TABLE `f3ts9_finder_types`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_languages`
+-- AUTO_INCREMENT for table `f3ts9_languages`
 --
 ALTER TABLE `f3ts9_languages`
   MODIFY `lang_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_menu`
+-- AUTO_INCREMENT for table `f3ts9_menu`
 --
 ALTER TABLE `f3ts9_menu`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=119;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_menu_types`
+-- AUTO_INCREMENT for table `f3ts9_menu_types`
 --
 ALTER TABLE `f3ts9_menu_types`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_messages`
+-- AUTO_INCREMENT for table `f3ts9_messages`
 --
 ALTER TABLE `f3ts9_messages`
   MODIFY `message_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_modules`
+-- AUTO_INCREMENT for table `f3ts9_modules`
 --
 ALTER TABLE `f3ts9_modules`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=109;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_newsfeeds`
+-- AUTO_INCREMENT for table `f3ts9_newsfeeds`
 --
 ALTER TABLE `f3ts9_newsfeeds`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_overrider`
+-- AUTO_INCREMENT for table `f3ts9_overrider`
 --
 ALTER TABLE `f3ts9_overrider`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key';
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_postinstall_messages`
+-- AUTO_INCREMENT for table `f3ts9_postinstall_messages`
 --
 ALTER TABLE `f3ts9_postinstall_messages`
   MODIFY `postinstall_message_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_privacy_consents`
+-- AUTO_INCREMENT for table `f3ts9_privacy_consents`
 --
 ALTER TABLE `f3ts9_privacy_consents`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_privacy_requests`
+-- AUTO_INCREMENT for table `f3ts9_privacy_requests`
 --
 ALTER TABLE `f3ts9_privacy_requests`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_redirect_links`
+-- AUTO_INCREMENT for table `f3ts9_redirect_links`
 --
 ALTER TABLE `f3ts9_redirect_links`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_tags`
+-- AUTO_INCREMENT for table `f3ts9_tags`
 --
 ALTER TABLE `f3ts9_tags`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_template_styles`
+-- AUTO_INCREMENT for table `f3ts9_template_styles`
 --
 ALTER TABLE `f3ts9_template_styles`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_ucm_content`
+-- AUTO_INCREMENT for table `f3ts9_ucm_content`
 --
 ALTER TABLE `f3ts9_ucm_content`
-  MODIFY `core_content_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `core_content_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_ucm_history`
+-- AUTO_INCREMENT for table `f3ts9_ucm_history`
 --
 ALTER TABLE `f3ts9_ucm_history`
-  MODIFY `version_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=106;
+  MODIFY `version_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=135;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_updates`
+-- AUTO_INCREMENT for table `f3ts9_updates`
 --
 ALTER TABLE `f3ts9_updates`
-  MODIFY `update_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=402;
+  MODIFY `update_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=480;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_update_sites`
+-- AUTO_INCREMENT for table `f3ts9_update_sites`
 --
 ALTER TABLE `f3ts9_update_sites`
   MODIFY `update_site_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_usergroups`
+-- AUTO_INCREMENT for table `f3ts9_usergroups`
 --
 ALTER TABLE `f3ts9_usergroups`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Primary Key', AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_users`
+-- AUTO_INCREMENT for table `f3ts9_users`
 --
 ALTER TABLE `f3ts9_users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=386;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_user_keys`
+-- AUTO_INCREMENT for table `f3ts9_user_keys`
 --
 ALTER TABLE `f3ts9_user_keys`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_user_notes`
+-- AUTO_INCREMENT for table `f3ts9_user_notes`
 --
 ALTER TABLE `f3ts9_user_notes`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `f3ts9_viewlevels`
+-- AUTO_INCREMENT for table `f3ts9_viewlevels`
 --
 ALTER TABLE `f3ts9_viewlevels`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Primary Key', AUTO_INCREMENT=7;
